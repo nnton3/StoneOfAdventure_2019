@@ -7,41 +7,47 @@ namespace StoneOfAdventure.Movement
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Collider2D))]
+    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(Flip))]
     public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody2D rb;
         private float moveHorizontal;
         private float moveVertical;
         [SerializeField] private float playerMovespeed = 1f;
+        [SerializeField] private float playerMovespeedInAir = 1f;
         private bool isGrounded;
         [SerializeField] private float jumpPower;
-        [SerializeField] private bool onLadder;
-        [SerializeField] private bool canClimbDown;
+       
         private Animator anim;
         private float direction = 0f;
         public float Direction  => direction;
+        private Flip flip;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
+            flip = GetComponent<Flip>();
         }
 
         private void FixedUpdate()
         {
-            Debug.Log(canClimbDown);
             MoveLogic();
             PlayMoveAnimation();
             ClimbLogic();
             JumpLogic();
 
             Vector2 currentMovespeed = new Vector2(moveHorizontal, moveVertical);
-            rb.velocity = currentMovespeed;
+
+            bool NotInTheAir = isGrounded || onLadder;
+            if (NotInTheAir) rb.velocity = currentMovespeed;
+            else rb.AddForce(currentMovespeed, ForceMode2D.Force);
         }
 
         private void JumpLogic()
         {
-            if (Input.GetAxis("Jump") > 0)
+            if (Input.GetAxisRaw("Jump") > 0)
             {
                 if (isGrounded) rb.AddForce(Vector2.up * jumpPower);
             }
@@ -60,38 +66,16 @@ namespace StoneOfAdventure.Movement
         {
             if (!onLadder)
             {
-                float playerMoveInput = Input.GetAxis("Horizontal");
-                if (playerMoveInput != 0f) direction = (playerMoveInput > 0) ? 1 : -1;
+                float playerMoveInput = Input.GetAxisRaw("Horizontal");
+                if (playerMoveInput != 0f)
+                {
+                    direction = (playerMoveInput > 0) ? 1 : -1;
+                    flip.CheckDirection(direction);
+                }
                 else direction = 0f;
                 moveHorizontal = direction * playerMovespeed;
             }
-        }
-
-        private void ClimbLogic()
-        {
-            if (canClimb)
-            {
-                float playerClimbInput = Input.GetAxis("Vertical");
-
-                if (playerClimbInput != 0)
-                {
-                    onLadder = true;
-                    rb.bodyType = RigidbodyType2D.Kinematic;
-                }
-
-                if (onLadder)
-                {
-                    if (!canClimbDown && playerClimbInput < 0f)
-                    {
-                        moveVertical = 0f;
-                        onLadder = false;
-                        rb.bodyType = RigidbodyType2D.Dynamic;
-                    }
-                    else moveVertical = playerClimbInput * playerMovespeed;
-                }
-                else moveVertical = rb.velocity.y;
-            }
-            else moveVertical = rb.velocity.y;
+            else moveHorizontal = 0f;
         }
 
         private void PlayMoveAnimation()
@@ -101,23 +85,60 @@ namespace StoneOfAdventure.Movement
             anim.SetBool("climb", onLadder);
         }
 
+        [SerializeField] private bool onLadder;
+        [SerializeField] private bool canClimbDown = true;
+        [SerializeField] private bool canClimbUp = true;
         [SerializeField] private bool canClimb;
+
+        private void ClimbLogic()
+        {
+            if (canClimb)
+            {
+                float playerClimbInput = Input.GetAxisRaw("Vertical");
+
+                if (playerClimbInput != 0)
+                {
+                    onLadder = true;
+                    rb.bodyType = RigidbodyType2D.Kinematic;
+                }
+
+                if (onLadder)
+                {
+                    if (LadderEnd(playerClimbInput))
+                    {
+                        StopVerticalMove();
+                    }
+                    else moveVertical = playerClimbInput * playerMovespeed;
+                }
+                else moveVertical = rb.velocity.y;
+            }
+            else moveVertical = rb.velocity.y;
+        }
+
+        private void StopVerticalMove()
+        {
+            moveVertical = 0f;
+            onLadder = false;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+
+        private bool LadderEnd(float playerClimbInput)
+        {
+            return ((!canClimbDown && playerClimbInput < 0f) || (!canClimbUp && playerClimbInput > 0f));
+        }
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("Ladder")) canClimb = true;
-            if (collision.CompareTag("LadderStopper")) canClimbDown = false;
+            if (collision.CompareTag("DownStopper")) canClimbDown = false;
+            if (collision.CompareTag("UpperStopper")) canClimbUp = false;
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.CompareTag("Ladder"))
-            {
-                rb.bodyType = RigidbodyType2D.Dynamic;
-                canClimb = false;
-                onLadder = false;
-            }
-
-            if (collision.CompareTag("LadderStopper")) canClimbDown = true;
+            if (collision.CompareTag("Ladder")) canClimb = false;
+            if (collision.CompareTag("DownStopper")) canClimbDown = true;
+            if (collision.CompareTag("UpperStopper")) canClimbUp = true;
         }
     }
 }

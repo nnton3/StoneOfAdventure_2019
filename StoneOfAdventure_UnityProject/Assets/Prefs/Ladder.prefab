@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 978600519460207125}
   m_Layer: 0
   m_Name: DownStopper
-  m_TagString: LadderStopper
+  m_TagString: DownStopper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 5319296249325026432}
   m_Layer: 0
   m_Name: UpperStopper
-  m_TagString: Untagged
+  m_TagString: UpperStopper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8434814869989155158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.465, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4667, y: -0, z: 0}
   m_LocalScale: {x: 0.075, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2978862490202830092}
