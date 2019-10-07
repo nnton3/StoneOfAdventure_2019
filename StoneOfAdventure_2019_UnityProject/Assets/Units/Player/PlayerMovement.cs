@@ -5,31 +5,16 @@ using UnityEngine;
 
 namespace StoneOfAdventure.Movement
 {
-    [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(Collider2D))]
-    [RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(Flip))]
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : Mover
     {
-        private Rigidbody2D rb;
         private float moveHorizontal;
         private float moveVertical;
-        [SerializeField] private float playerMovespeed = 1f;
         [SerializeField] private float playerMovespeedInAir = 1f;
         private bool isGrounded;
         [SerializeField] private float jumpPower;
        
-        private Animator anim;
         private float direction = 0f;
         public float Direction  => direction;
-        private Flip flip;
-
-        private void Start()
-        {
-            rb = GetComponent<Rigidbody2D>();
-            anim = GetComponent<Animator>();
-            flip = GetComponent<Flip>();
-        }
 
         private void FixedUpdate()
         {
@@ -73,14 +58,14 @@ namespace StoneOfAdventure.Movement
                     flip.CheckDirection(direction);
                 }
                 else direction = 0f;
-                moveHorizontal = direction * playerMovespeed;
+                moveHorizontal = direction * movespeed;
             }
             else moveHorizontal = 0f;
         }
 
         private void PlayMoveAnimation()
         {
-            anim.SetBool("moveHorizontal", Math.Abs(moveHorizontal) == playerMovespeed);
+            anim.SetBool("moveHorizontal", Math.Abs(moveHorizontal) == movespeed);
             anim.SetFloat("moveVertical", moveVertical);
             anim.SetBool("climb", onLadder);
         }
@@ -108,7 +93,7 @@ namespace StoneOfAdventure.Movement
                     {
                         StopVerticalMove();
                     }
-                    else moveVertical = playerClimbInput * playerMovespeed;
+                    else moveVertical = playerClimbInput * movespeed;
                 }
                 else moveVertical = rb.velocity.y;
             }
