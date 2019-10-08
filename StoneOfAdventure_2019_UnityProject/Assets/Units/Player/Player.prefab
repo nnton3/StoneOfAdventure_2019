@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3520417983458046491}
   - component: {fileID: 3520417983458046497}
   - component: {fileID: 3520417983458046493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,9 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c9745549b972a498ba7dca78b74a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovespeed: 5
   playerMovespeedInAir: 1
   jumpPower: 800
+  movespeed: 5
   onLadder: 0
   canClimbDown: 1
   canClimbUp: 1

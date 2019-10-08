@@ -15,7 +15,7 @@ public class Flip : MonoBehaviour
         else if (currentDirection < 0 && isFacingRight) FlipObject();
     }
 
-    private void FlipObject()
+    public void FlipObject()
     {
         //меняем направление движения персонажа
         isFacingRight = !isFacingRight;

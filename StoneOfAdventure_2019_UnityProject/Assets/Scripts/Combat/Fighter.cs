@@ -5,28 +5,50 @@ using System;
 
 namespace StoneOfAdventure.Combat
 {
-    public class Combat : MonoBehaviour
+    public class Fighter : MonoBehaviour
     {
         private EnemyDetector enemyDetector;
         private Animator anim;
         private Mover mover;
-        private GameObject player;
+        private Flip flip;
+        [SerializeField] private GameObject player;
         [SerializeField] private float attackRange;
 
         private void Start()
         {
-            enemyDetector = GetComponent<EnemyDetector>();
+            enemyDetector = GetComponentInChildren<EnemyDetector>();
             anim = GetComponent<Animator>();
             mover = GetComponent<Mover>();
+            flip = GetComponent<Flip>();
         }
 
         private void Update()
         {
             if (player)
             {
-                if (PlayerInAttackRange()) anim.SetTrigger("attack");
-                else mover.MoveTo(CalculateDirection());
+                if (PlayerInAttackRange())
+                {
+                    if (PlayerInFront())
+                    {
+                        anim.SetTrigger("attack");
+                        mover.MoveTo(0f);
+                    }
+                    else flip.FlipObject();
+                }
+                else
+                {
+                    mover.MoveTo(CalculateDirection());
+                }
             }
+        }
+
+        private bool PlayerInFront()
+        {
+            if (flip.isFacingRight && CalculateDirection() == 1f ||
+                !flip.isFacingRight && CalculateDirection() == -1f)
+                return true;
+            else
+                return false;
         }
 
         private float CalculateDirection()

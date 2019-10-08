@@ -28,6 +28,12 @@ namespace StoneOfAdventure.Movement
             flip.CheckDirection(direction);
             Vector2 horizontalMove = Vector2.right * direction * movespeed;
             rb.AddForce(horizontalMove, ForceMode2D.Force);
+            anim.SetBool("moveHorizontal", direction != 0f);
+        }
+
+        public void Cancel()
+        {
+            rb.AddForce(Vector2.zero);
         }
     }
 }

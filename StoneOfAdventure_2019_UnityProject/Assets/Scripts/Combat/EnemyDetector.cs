@@ -5,8 +5,8 @@ namespace StoneOfAdventure.Combat
 {
     public class EnemyDetector : MonoBehaviour
     {
-        public UnityEvent PlayerDetected;
-        public UnityEvent PlayerLost;
+        [HideInInspector] public UnityEvent PlayerDetected;
+        [HideInInspector] public UnityEvent PlayerLost;
         private GameObject player;
         public GameObject Player => player;
 

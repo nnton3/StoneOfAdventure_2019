@@ -4,13 +4,13 @@ using StoneOfAdventure.Combat;
 
 public class Zombie : MonoBehaviour
 {
-    Combat combat;
+    Fighter combat;
     EnemyDetector enemyDetector;
     private object target;
 
     private void Start()
     {
-        combat = GetComponent<Combat>();
+        combat = GetComponent<Fighter>();
         enemyDetector = GetComponent<EnemyDetector>();
 
         enemyDetector.PlayerDetected.AddListener(() => combat.UpdateTarget());

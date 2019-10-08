@@ -5,8 +5,19 @@ using UnityEngine;
 
 namespace StoneOfAdventure.Movement
 {
-    public class PlayerMovement : Mover
+    public class PlayerMovement : MonoBehaviour
     {
+        protected Rigidbody2D rb;
+        protected Animator anim;
+        protected Flip flip;
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+            flip = GetComponent<Flip>();
+        }
+
         private float moveHorizontal;
         private float moveVertical;
         [SerializeField] private float playerMovespeedInAir = 1f;
@@ -15,6 +26,7 @@ namespace StoneOfAdventure.Movement
        
         private float direction = 0f;
         public float Direction  => direction;
+        [SerializeField] protected float movespeed;
 
         private void FixedUpdate()
         {
