@@ -25,6 +25,9 @@ namespace StoneOfAdventure.Combat
             anim.SetTrigger("attack");
         }
 
-        public void Cancel() { }
+        public void Cancel()
+        {
+            anim.ResetTrigger("attack");
+        }
     }
 }

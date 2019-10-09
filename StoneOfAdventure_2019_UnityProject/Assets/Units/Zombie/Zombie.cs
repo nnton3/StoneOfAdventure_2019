@@ -38,21 +38,18 @@ public class Zombie : MonoBehaviour
             {
                 if (PlayerInFront())
                 {
-                    Debug.Log("attack");
                     fighter.StartAttack();
                 }
                 else flip.FlipObject();
             }
             else
             {
-                Debug.Log("move");
                 mover.MoveTo(CalculateDirection());
             }
         }
         else
         {
             scheduler.CancelCurrentAction();
-            Debug.Log("idle");
         }
     }
 
