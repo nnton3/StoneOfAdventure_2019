@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StoneOfAdventure
+namespace StoneOfAdventure.Core
 {
     public class ActionScheduler : MonoBehaviour
     {
