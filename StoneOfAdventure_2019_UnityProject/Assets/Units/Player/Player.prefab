@@ -13,10 +13,13 @@ GameObject:
   - component: {fileID: 3520417983458046492}
   - component: {fileID: 3520417983458046494}
   - component: {fileID: 3520417983458046491}
-  - component: {fileID: 3520417983458046497}
   - component: {fileID: 3520417983458046493}
-  - component: {fileID: 1600262883457730252}
-  - component: {fileID: 8324152658984875916}
+  - component: {fileID: 8427074520926705902}
+  - component: {fileID: 1825850958122654924}
+  - component: {fileID: 3243500578990739840}
+  - component: {fileID: 5892908468101052148}
+  - component: {fileID: 1992790661128874373}
+  - component: {fileID: 5923775862933923228}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -152,25 +155,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3520417983458046497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3520417983458046496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c9745549b972a498ba7dca78b74a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMovespeedInAir: 1
-  jumpPower: 800
-  movespeed: 5
-  onLadder: 0
-  canClimbDown: 1
-  canClimbUp: 1
-  canClimb: 0
 --- !u!114 &3520417983458046493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +168,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
---- !u!114 &1600262883457730252
+--- !u!114 &8427074520926705902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbabf8469da0cd40b7d354aa76dbaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1825850958122654924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,8 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36b25b407ecc9408da2164757ab4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0
---- !u!114 &8324152658984875916
+--- !u!114 &3243500578990739840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,6 +201,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 3520417983458046496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a41809217507ba64d9b5cf62d0ddc12f, type: 3}
+  m_Script: {fileID: 11500000, guid: e57ee85868082cd49bd496405eceb9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movespeed: 5
+--- !u!114 &5892908468101052148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9cacd2a9264244c8568fb7154bcb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1992790661128874373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991024c51e78d8b40b035ef210d0cc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5923775862933923228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb9c53f9eba53745b84483e54318234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
