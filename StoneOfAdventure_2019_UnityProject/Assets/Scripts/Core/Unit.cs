@@ -51,6 +51,7 @@ namespace StoneOfAdventure.Core
 
         public void AttackFinished()
         {
+            Debug.Log("work");
             State = idleState;
         }
     }
