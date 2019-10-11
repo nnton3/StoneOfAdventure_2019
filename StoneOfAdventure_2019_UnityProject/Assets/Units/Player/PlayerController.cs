@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
+using StoneOfAdventure.Core;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Unit
 {
     
 }

@@ -12,30 +12,25 @@ namespace StoneOfAdventure.Movement
         protected Rigidbody2D rb;
         protected Animator anim;
         protected Flip flip;
-        private ActionScheduler scheduler;
-        [SerializeField] protected float movespeed;
 
         protected virtual void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
             flip = GetComponent<Flip>();
-            scheduler = GetComponent<ActionScheduler>();
         }
 
-        internal void MoveTo(float direction)
+        internal void MoveTo(float direction, float movespeed)
         {
-            Debug.Log("moving");
-            scheduler.StartAction(this);
             flip.CheckDirection(direction);
             Vector2 horizontalMove = Vector2.right * direction * movespeed;
-            rb.AddForce(horizontalMove, ForceMode2D.Force);
+            rb.velocity = horizontalMove;
             anim.SetBool("moveHorizontal", true);
         }
 
         public void Cancel()
         {
-            rb.AddForce(Vector2.zero);
+            rb.velocity = Vector2.zero;
             anim.SetBool("moveHorizontal", false);
         }
     }
