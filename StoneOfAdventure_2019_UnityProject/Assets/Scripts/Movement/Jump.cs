@@ -11,6 +11,7 @@ namespace StoneOfAdventure.Movement
         private Unit unit;
         private Animator anim;
         private JumpState jumpState;
+        private MoveVerticalState moveVertical;
 
         private void Start()
         {
@@ -19,15 +20,26 @@ namespace StoneOfAdventure.Movement
             anim = GetComponent<Animator>();
 
             jumpState = GetComponent<JumpState>();
+            moveVertical = GetComponent<MoveVerticalState>();
         }
 
-        public void ToJump(float jumpPower)
+        public void ToJump(Vector2 direction, float jumpPower)
         {
             if (isGrounded)
             {
-                rb.AddForce(Vector2.up * jumpPower);
-                inTheAir = true;
+                JumpLogic(direction, jumpPower);
             }
+        }
+
+        public void ToJumpOnLadder(Vector2 direction, float jumpPower)
+        {
+            JumpLogic(direction, jumpPower);
+        }
+
+        private void JumpLogic(Vector2 direction, float jumpPower)
+        {
+            rb.AddForce(direction * jumpPower);
+            inTheAir = true;
         }
 
         void IsGroundedUpdate(Collision2D collision, bool value)
@@ -49,11 +61,14 @@ namespace StoneOfAdventure.Movement
         private void OnCollisionExit2D(Collision2D collision)
         {
             IsGroundedUpdate(collision, false);
-            anim.SetBool("jump", true);
-            if (unit.State != jumpState)
+            if (unit.State != moveVertical)
             {
-                unit.PlayerFell();
-                inTheAir = true;
+                anim.SetBool("jump", true);
+                if (unit.State != jumpState)
+                {
+                    unit.PlayerFell();
+                    inTheAir = true;
+                }
             }
         }
     }

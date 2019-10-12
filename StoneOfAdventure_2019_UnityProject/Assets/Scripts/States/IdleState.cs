@@ -9,7 +9,9 @@ public class IdleState : MonoBehaviour, IUnitState
     private Fighter fighter;
     private Jump jump;
     private Unit unit;
-    private MoveHorizontalState movehHrizontalState;
+    private Climb climb;
+    private MoveHorizontalState moveHorizontalState;
+    private MoveVerticalState moveVerticalState;
     private AttackState attackState;
     private JumpState jumpState;
 
@@ -18,7 +20,9 @@ public class IdleState : MonoBehaviour, IUnitState
         fighter = GetComponent<Fighter>();
         jump = GetComponent<Jump>();
         unit = GetComponent<Unit>();
-        movehHrizontalState = GetComponent<MoveHorizontalState>();
+        climb = GetComponent<Climb>();
+        moveHorizontalState = GetComponent<MoveHorizontalState>();
+        moveVerticalState = GetComponent<MoveVerticalState>();
         attackState = GetComponent<AttackState>();
         jumpState = GetComponent<JumpState>();
     }
@@ -29,25 +33,22 @@ public class IdleState : MonoBehaviour, IUnitState
         unit.State = attackState;
     }
 
-    public void Idle()
-    {
-        return;
-    }
+    public void Idle() { return; }
 
     public void Jump(float jumpPower)
     {
         unit.State = jumpState;
-        jump.ToJump(jumpPower);  
+        jump.ToJump(Vector2.up, jumpPower);  
     }
 
     public void MoveHorizontal(float direction, float movespeed)
     {
-        if (direction != 0f) unit.State = movehHrizontalState;
+        if (direction != 0f) unit.State = moveHorizontalState;
     }
 
-    public void MoveVertical()
+    public void MoveVertical(float direction, float verticalMovespeed)
     {
-        throw new NotImplementedException();
+        if (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb) unit.State = moveVerticalState;
     }
 
     public void Fell()

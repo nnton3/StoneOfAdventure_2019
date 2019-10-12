@@ -23,7 +23,7 @@ public class AttackState : MonoBehaviour, IUnitState
 
     public void MoveHorizontal(float direction, float movespeed) { return; }
 
-    public void MoveVertical() { return; }
+    public void MoveVertical(float direction, float verticalMovespeed) { return; }
 
     public void Fell() { unit.State = jumpState; }
 }

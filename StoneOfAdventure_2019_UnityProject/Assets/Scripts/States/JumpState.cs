@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
+using StoneOfAdventure.Core;
 
 public class JumpState : MonoBehaviour, IUnitState
 {
+    private Unit unit;
     private Mover mover;
+    private MoveVerticalState moveVerticalState;
 
     private void Start()
     {
+        unit = GetComponent<Unit>();
         mover = GetComponent<Mover>();
+        moveVerticalState = GetComponent<MoveVerticalState>();
     }
 
     public void Attack() { return; }
@@ -21,9 +26,9 @@ public class JumpState : MonoBehaviour, IUnitState
         mover.MoveInJumpTo(direction, movespeed);
     }
 
-    public void MoveVertical()
+    public void MoveVertical(float direction, float verticalMovespeed)
     {
-        throw new System.NotImplementedException();
+        if (direction != 0f) unit.State = moveVerticalState;
     }
 
     public void Fell() { return; }

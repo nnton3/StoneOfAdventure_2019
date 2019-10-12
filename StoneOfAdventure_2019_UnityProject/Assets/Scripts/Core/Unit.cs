@@ -9,6 +9,9 @@ namespace StoneOfAdventure.Core
         [SerializeField] private float movespeed = 5f;
         [SerializeField] private float movespeedInTheAir = 5f;
         [SerializeField] private float jumpPower = 800f;
+        [SerializeField] private float verticalMovespeed = 3f;
+
+        [SerializeField] private string currentState = "";
 
         private void Start()
         {
@@ -19,9 +22,11 @@ namespace StoneOfAdventure.Core
         private void Update()
         {
             MoveHorizontal(Input.GetAxisRaw("Horizontal"));
-            // if (Input.GetAxisRaw("Vertical") != 0f) MoveVertical();
+            MoveVertical(Input.GetAxisRaw("Vertical"));
             if (Input.GetAxisRaw("Fire1") != 0f) Attack();
             if (Input.GetAxisRaw("Jump") != 0f) Jump();
+
+            currentState = State.ToString();
         }
 
         public IUnitState State { get; set; }
@@ -36,9 +41,9 @@ namespace StoneOfAdventure.Core
             State.MoveHorizontal(direction, (State == GetComponent<JumpState>()) ? movespeedInTheAir : movespeed);
         }
 
-        private void MoveVertical()
+        private void MoveVertical(float direction)
         {
-            State.MoveVertical();
+            State.MoveVertical(direction, verticalMovespeed);
         }
 
         private void Attack()
