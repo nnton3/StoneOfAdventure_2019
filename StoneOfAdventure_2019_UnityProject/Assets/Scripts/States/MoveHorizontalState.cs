@@ -6,6 +6,7 @@ using StoneOfAdventure.Combat;
 
 public class MoveHorizontalState : MonoBehaviour, IUnitState
 {
+    private Animator anim;
     private Fighter fighter;
     private Mover mover;
     private Jump jump;
@@ -18,6 +19,7 @@ public class MoveHorizontalState : MonoBehaviour, IUnitState
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         fighter = GetComponent<Fighter>();
         mover = GetComponent<Mover>();
         jump = GetComponent<Jump>();
@@ -42,6 +44,7 @@ public class MoveHorizontalState : MonoBehaviour, IUnitState
     {
         unit.State = jumpState;
         jump.ToJump(Vector2.up, jumpPower);
+        anim.SetBool("moveHorizontal", false);
     }
 
     public void MoveHorizontal(float direction, float movespeed)
@@ -57,7 +60,8 @@ public class MoveHorizontalState : MonoBehaviour, IUnitState
 
     public void MoveVertical(float direction, float verticalMovespeed)
     {
-        if (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb)
+        bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
+        if (unitCanClimbOnLadder)
         {
             mover.Cancel();
             unit.State = moveVerticalState;
