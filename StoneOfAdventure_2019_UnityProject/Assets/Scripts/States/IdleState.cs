@@ -48,7 +48,8 @@ public class IdleState : MonoBehaviour, IUnitState
 
     public void MoveVertical(float direction, float verticalMovespeed)
     {
-        if (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb) unit.State = moveVerticalState;
+        bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
+        if (unitCanClimbOnLadder) unit.State = moveVerticalState;
     }
 
     public void Fell()
