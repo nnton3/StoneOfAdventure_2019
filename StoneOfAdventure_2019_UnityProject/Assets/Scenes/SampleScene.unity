@@ -454,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1659312, y: 0.29203215, z: -10}
+  m_LocalPosition: {x: 3.1659312, y: 1.492032, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 337770569}
@@ -1945,7 +1945,7 @@ CompositeCollider2D:
       - {x: -3, y: -2.875}
       - {x: -2.8125, y: -3}
       - {x: -2, y: -3}
-  m_VertexDistance: 0.05
+  m_VertexDistance: 0.5
 --- !u!50 &565227463
 Rigidbody2D:
   serializedVersion: 4
@@ -7303,7 +7303,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.7
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.1
   m_DeadZoneHeight: 0.1
@@ -7387,7 +7387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174947471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.91, y: 0.42, z: -10}
+  m_LocalPosition: {x: 2.91, y: 1.6199999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1111827863}
@@ -7830,5 +7830,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ef5619c81cf43a9449af95fd86430471,
         type: 3}
+    - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243500578990739840, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: jumpPower
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243500578990739840, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: movespeedInTheAir
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}

@@ -2,20 +2,25 @@
 using System;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.Combat;
+using StoneOfAdventure.Movement;
 
 public class IdleState : MonoBehaviour, IUnitState
 {
     private Fighter fighter;
+    private Jump jump;
     private Unit unit;
     private MoveHorizontalState movehHrizontalState;
     private AttackState attackState;
+    private JumpState jumpState;
 
     private void Start()
     {
         fighter = GetComponent<Fighter>();
+        jump = GetComponent<Jump>();
         unit = GetComponent<Unit>();
         movehHrizontalState = GetComponent<MoveHorizontalState>();
         attackState = GetComponent<AttackState>();
+        jumpState = GetComponent<JumpState>();
     }
 
     public void Attack()
@@ -29,9 +34,10 @@ public class IdleState : MonoBehaviour, IUnitState
         return;
     }
 
-    public void Jump()
+    public void Jump(float jumpPower)
     {
-        throw new NotImplementedException();
+        unit.State = jumpState;
+        jump.ToJump(jumpPower);  
     }
 
     public void MoveHorizontal(float direction, float movespeed)
@@ -42,5 +48,10 @@ public class IdleState : MonoBehaviour, IUnitState
     public void MoveVertical()
     {
         throw new NotImplementedException();
+    }
+
+    public void Fell()
+    {
+        unit.State = jumpState;
     }
 }

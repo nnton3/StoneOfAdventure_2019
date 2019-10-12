@@ -6,7 +6,9 @@ namespace StoneOfAdventure.Core
     public class Unit : MonoBehaviour
     {
         private IdleState idleState;
-        [SerializeField] private float movespeed;
+        [SerializeField] private float movespeed = 5f;
+        [SerializeField] private float movespeedInTheAir = 5f;
+        [SerializeField] private float jumpPower = 800f;
 
         private void Start()
         {
@@ -19,7 +21,7 @@ namespace StoneOfAdventure.Core
             MoveHorizontal(Input.GetAxisRaw("Horizontal"));
             // if (Input.GetAxisRaw("Vertical") != 0f) MoveVertical();
             if (Input.GetAxisRaw("Fire1") != 0f) Attack();
-            // if (Input.GetAxisRaw("Jump") != 0f) Jump();
+            if (Input.GetAxisRaw("Jump") != 0f) Jump();
         }
 
         public IUnitState State { get; set; }
@@ -31,7 +33,7 @@ namespace StoneOfAdventure.Core
 
         private void MoveHorizontal(float direction)
         {
-            State.MoveHorizontal(direction, movespeed);
+            State.MoveHorizontal(direction, (State == GetComponent<JumpState>()) ? movespeedInTheAir : movespeed);
         }
 
         private void MoveVertical()
@@ -46,13 +48,17 @@ namespace StoneOfAdventure.Core
 
         private void Jump()
         {
-            State.Jump();
+            State.Jump(jumpPower);
         }
 
-        public void AttackFinished()
+        public void DisableState()
         {
-            Debug.Log("work");
             State = idleState;
+        }
+
+        internal void PlayerFell()
+        {
+            State.Fell();
         }
     }
 }
