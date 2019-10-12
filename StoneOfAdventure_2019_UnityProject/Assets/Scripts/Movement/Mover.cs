@@ -28,6 +28,13 @@ namespace StoneOfAdventure.Movement
             anim.SetBool("moveHorizontal", true);
         }
 
+        internal void MoveInJumpTo(float direction, float movespeed)
+        {
+            flip.CheckDirection(direction);
+            Vector2 horizontalMove = new Vector2(direction * movespeed, 0f);
+            rb.AddForce(horizontalMove, ForceMode2D.Force);
+        }
+
         public void Cancel()
         {
             rb.velocity = Vector2.zero;
