@@ -1,19 +1,26 @@
 ﻿using UnityEngine;
-using StoneOfAdventure.Combat;
 using System;
 
 namespace StoneOfAdventure.Combat
 {
     public class PlayerFighter : Fighter
     {
-        public void GetDamage()
+        private Vector3 relativePosition;
+        AttackCollider attackCollider;
+        [SerializeField] private float damage;
+
+        protected override void Start()
         {
-            DetectionEnemies();
+            base.Start();
+            attackCollider = GetComponentInChildren<AttackCollider>();
         }
 
-        private void DetectionEnemies()
+        public void Hit()
         {
-            throw new NotImplementedException();
+            foreach (var enemie in attackCollider.EnemieList)
+            {
+                enemie.ApplyDamage(damage);
+            }
         }
     }
 }

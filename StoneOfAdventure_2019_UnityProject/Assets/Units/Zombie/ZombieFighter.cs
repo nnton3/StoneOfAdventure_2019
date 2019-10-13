@@ -17,14 +17,18 @@ public class ZombieFighter : Fighter
     // Animation event
     public void Hit()
     {
-        Vector2 attackDirection = Vector2.right;// * ((flip.isFacingRight) ? 1 : -1);
+        Vector2 attackDirection = Vector2.right * ((flip.isFacingRight) ? 1 : -1);
         Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y + 0.5f);
-        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, attackDirection, attackRange, attackedLayer);
-        
-        if (hit)
+        Debug.Log("direction = " + attackDirection + ", rayOrigin = " + rayOrigin);
+        RaycastHit2D[] hit = Physics2D.RaycastAll(rayOrigin, attackDirection, attackRange);
+
+        foreach (var collider in hit)
         {
-            Debug.Log(hit.transform.GetComponent<IDamaged>() == null);
-            hit.transform.GetComponent<IDamaged>().ApplyDamage(damage);
+            if (collider.transform.CompareTag("Player"))
+            {
+                Debug.Log(collider.transform.GetComponent<IDamaged>() == null);
+                collider.transform.GetComponent<IDamaged>().ApplyDamage(damage);
+            }
         }
     }
 }

@@ -25,7 +25,7 @@ namespace StoneOfAdventure.Combat
                 unit.Dead();
                 healthPoints = 0f;
             }
-            healthPoints -= damage;
+            else healthPoints -= damage;
         }
 
         private bool IsDead(float damage)

@@ -42,6 +42,7 @@ public class ZombieHorizontalMoveState : MonoBehaviour, IZombieState
 
     public void Dead()
     {
+        mover.Cancel();
         anim.SetTrigger("dead");
         unit.State = deathState;
     }
