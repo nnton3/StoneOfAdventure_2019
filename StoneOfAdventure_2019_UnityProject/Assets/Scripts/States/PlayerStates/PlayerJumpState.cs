@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
-using StoneOfAdventure.Core;
 
-public class JumpState : MonoBehaviour, IUnitState
+public class PlayerJumpState : MonoBehaviour, IPlayerState
 {
-    private Unit unit;
+    private PlayerStateController unit;
     private Mover mover;
-    private MoveVerticalState moveVerticalState;
+    private Climb climb;
+    private PlayerMoveVerticalState moveVerticalState;
 
     private void Start()
     {
-        unit = GetComponent<Unit>();
+        unit = GetComponent<PlayerStateController>();
         mover = GetComponent<Mover>();
-        moveVerticalState = GetComponent<MoveVerticalState>();
+        climb = GetComponent<Climb>();
+        moveVerticalState = GetComponent<PlayerMoveVerticalState>();
     }
 
     public void Attack() { return; }
@@ -28,7 +29,8 @@ public class JumpState : MonoBehaviour, IUnitState
 
     public void MoveVertical(float direction, float verticalMovespeed)
     {
-        if (direction != 0f) unit.State = moveVerticalState;
+        bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
+        if (unitCanClimbOnLadder) unit.State = moveVerticalState;
     }
 
     public void Fell() { return; }

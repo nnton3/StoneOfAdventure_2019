@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
-using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour
     {
         private Animator anim;
 
-        private void Start()
+        protected virtual void Start()
         {
             anim = GetComponent<Animator>();
         }

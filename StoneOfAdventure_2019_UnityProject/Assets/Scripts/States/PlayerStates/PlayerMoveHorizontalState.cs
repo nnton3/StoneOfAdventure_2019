@@ -1,21 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 using StoneOfAdventure.Movement;
-using StoneOfAdventure.Core;
 using StoneOfAdventure.Combat;
 
-public class MoveHorizontalState : MonoBehaviour, IUnitState
+public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
 {
     private Animator anim;
     private Fighter fighter;
     private Mover mover;
     private Jump jump;
-    private Unit unit;
+    private PlayerStateController unit;
     private Climb climb;
-    private IdleState idleState;
-    private AttackState attackState;
-    private JumpState jumpState;
-    private MoveVerticalState moveVerticalState;
+    private PlayerAttackState attackState;
+    private PlayerJumpState jumpState;
+    private PlayerMoveVerticalState moveVerticalState;
 
     private void Start()
     {
@@ -23,12 +21,11 @@ public class MoveHorizontalState : MonoBehaviour, IUnitState
         fighter = GetComponent<Fighter>();
         mover = GetComponent<Mover>();
         jump = GetComponent<Jump>();
-        unit = GetComponent<Unit>();
+        unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
-        idleState = GetComponent<IdleState>();
-        attackState = GetComponent<AttackState>();
-        jumpState = GetComponent<JumpState>();
-        moveVerticalState = GetComponent<MoveVerticalState>();
+        attackState = GetComponent<PlayerAttackState>();
+        jumpState = GetComponent<PlayerJumpState>();
+        moveVerticalState = GetComponent<PlayerMoveVerticalState>();
     }
 
     public void Attack()
@@ -51,7 +48,7 @@ public class MoveHorizontalState : MonoBehaviour, IUnitState
     {
         if (direction == 0f)
         {
-            unit.State = idleState;
+            unit.DisableState();
             mover.Cancel();
             return;
         }

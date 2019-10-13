@@ -27,5 +27,11 @@ namespace StoneOfAdventure.Combat
                 PlayerLost.Invoke();
             }
         }
+
+        private void OnDisable()
+        {
+            PlayerDetected.RemoveAllListeners();
+            PlayerLost.RemoveAllListeners();
+        }
     }
 }

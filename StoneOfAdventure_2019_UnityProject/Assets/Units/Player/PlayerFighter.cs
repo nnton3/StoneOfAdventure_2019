@@ -1,4 +1,19 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using System;
 
-public class PlayerFighter : Fighter { }
+namespace StoneOfAdventure.Combat
+{
+    public class PlayerFighter : Fighter
+    {
+        public void GetDamage()
+        {
+            DetectionEnemies();
+        }
+
+        private void DetectionEnemies()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
