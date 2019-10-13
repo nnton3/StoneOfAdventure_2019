@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 4603871013170009232}
   - component: {fileID: 5276332428803179151}
   - component: {fileID: 1825850958122654924}
-  - component: {fileID: 3243500578990739840}
   - component: {fileID: 5892908468101052148}
   - component: {fileID: 1992790661128874373}
   - component: {fileID: 9091805962849246524}
@@ -211,7 +210,6 @@ MonoBehaviour:
   onLadder: 0
   canClimbDown: 1
   canClimbUp: 1
-  canClimb: 0
 --- !u!114 &1825850958122654924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,22 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36b25b407ecc9408da2164757ab4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3243500578990739840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3520417983458046496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e57ee85868082cd49bd496405eceb9ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movespeed: 5
-  movespeedInTheAir: 5
-  jumpPower: 800
-  verticalMovespeed: 3
 --- !u!114 &5892908468101052148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7058079e6070d8446acd5223b751f11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpPowerScaleOnLadder: 1
 --- !u!114 &172458513711717137
 MonoBehaviour:
   m_ObjectHideFlags: 0

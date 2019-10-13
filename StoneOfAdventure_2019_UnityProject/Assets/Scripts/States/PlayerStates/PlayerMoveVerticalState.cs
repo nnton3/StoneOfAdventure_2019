@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
-using StoneOfAdventure.Core;
 
-public class MoveVerticalState : MonoBehaviour, IUnitState
+public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
 {
-    private Unit unit;
+    private PlayerStateController unit;
     private Climb climb;
     private Jump jump;
-    private JumpState jumpState;
+    private PlayerJumpState jumpState;
     [SerializeField] private float jumpPowerScaleOnLadder = 1f;
 
     private void Start()
     {
-        unit = GetComponent<Unit>();
+        unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
         jump = GetComponent<Jump>();
-        jumpState = GetComponent<JumpState>();
+        jumpState = GetComponent<PlayerJumpState>();
     }
 
     public void Attack() { return; }
