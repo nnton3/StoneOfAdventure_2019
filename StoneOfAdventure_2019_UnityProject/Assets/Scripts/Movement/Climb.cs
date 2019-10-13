@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Movement
 {
     public class Climb : MonoBehaviour
     {
         Rigidbody2D rb;
-        private PlayerStateController unit;
+        private Unit unit;
         Vector2 moveVertical;
 
         [SerializeField] private bool onLadder;
@@ -16,7 +17,7 @@ namespace StoneOfAdventure.Movement
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
-            unit = GetComponent<PlayerStateController>();
+            unit = GetComponent<Unit>();
         }
 
         public void TryToClimb(float direction, float verticalMovespeed)

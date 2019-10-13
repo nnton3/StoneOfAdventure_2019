@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public interface IPlayerState
+public interface IUnitState
 {
     void Idle();
     void MoveHorizontal(float direction, float movespeed);

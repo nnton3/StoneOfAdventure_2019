@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Movement
 {
@@ -7,19 +8,19 @@ namespace StoneOfAdventure.Movement
         private bool isGrounded;
         private Rigidbody2D rb;
         private bool inTheAir = false;
-        private PlayerStateController unit;
+        private Unit unit;
         private Animator anim;
-        private PlayerJumpState jumpState;
-        private PlayerMoveVerticalState moveVertical;
+        private JumpState jumpState;
+        private MoveVerticalState moveVertical;
 
         private void Start()
         {
-            unit = GetComponent<PlayerStateController>();
+            unit = GetComponent<Unit>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
 
-            jumpState = GetComponent<PlayerJumpState>();
-            moveVertical = GetComponent<PlayerMoveVerticalState>();
+            jumpState = GetComponent<JumpState>();
+            moveVertical = GetComponent<MoveVerticalState>();
         }
 
         public void ToJump(Vector2 direction, float jumpPower)
