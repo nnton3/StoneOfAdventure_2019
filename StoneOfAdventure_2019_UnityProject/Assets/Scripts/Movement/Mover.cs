@@ -1,5 +1,4 @@
-﻿using StoneOfAdventure.Core;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StoneOfAdventure.Movement
 {
@@ -7,7 +6,7 @@ namespace StoneOfAdventure.Movement
     [RequireComponent(typeof(Flip))]
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(Collider2D))]
-    public class Mover : MonoBehaviour, IAction
+    public class Mover : MonoBehaviour
     {
         protected Rigidbody2D rb;
         protected Animator anim;

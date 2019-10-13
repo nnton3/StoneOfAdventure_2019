@@ -1,30 +1,29 @@
 ﻿using UnityEngine;
 using System;
-using StoneOfAdventure.Core;
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Movement;
 
-public class IdleState : MonoBehaviour, IUnitState
+public class PlayerIdleState : MonoBehaviour, IPlayerState
 {
     private Fighter fighter;
     private Jump jump;
-    private Unit unit;
+    private PlayerStateController unit;
     private Climb climb;
-    private MoveHorizontalState moveHorizontalState;
-    private MoveVerticalState moveVerticalState;
-    private AttackState attackState;
-    private JumpState jumpState;
+    private PlayerMoveHorizontalState moveHorizontalState;
+    private PlayerMoveVerticalState moveVerticalState;
+    private PlayerAttackState attackState;
+    private PlayerJumpState jumpState;
 
     private void Start()
     {
         fighter = GetComponent<Fighter>();
         jump = GetComponent<Jump>();
-        unit = GetComponent<Unit>();
+        unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
-        moveHorizontalState = GetComponent<MoveHorizontalState>();
-        moveVerticalState = GetComponent<MoveVerticalState>();
-        attackState = GetComponent<AttackState>();
-        jumpState = GetComponent<JumpState>();
+        moveHorizontalState = GetComponent<PlayerMoveHorizontalState>();
+        moveVerticalState = GetComponent<PlayerMoveVerticalState>();
+        attackState = GetComponent<PlayerAttackState>();
+        jumpState = GetComponent<PlayerJumpState>();
     }
 
     public void Attack()

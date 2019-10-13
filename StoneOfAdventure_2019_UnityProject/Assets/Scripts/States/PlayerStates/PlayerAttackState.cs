@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
-using StoneOfAdventure.Core;
 using StoneOfAdventure.Combat;
 
-public class AttackState : MonoBehaviour, IUnitState
+public class PlayerAttackState : MonoBehaviour, IPlayerState
 {
     private Fighter fighter;
-    private Unit unit;
-    private JumpState jumpState;
+    private PlayerStateController unit;
+    private PlayerJumpState jumpState;
 
     private void Start()
     {
         fighter = GetComponent<Fighter>();
-        unit = GetComponent<Unit>();
-        jumpState = GetComponent<JumpState>();
+        unit = GetComponent<PlayerStateController>();
+        jumpState = GetComponent<PlayerJumpState>();
     }
 
     public void Attack() { return; }
