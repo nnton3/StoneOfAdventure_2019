@@ -10332,6 +10332,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051336, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: attackedLayer
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}
 --- !u!1001 &2978862489446121824
@@ -10574,7 +10579,12 @@ PrefabInstance:
     - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: jumpPower
-      value: 1200
+      value: 1650
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: movespeedInTheAir
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}
