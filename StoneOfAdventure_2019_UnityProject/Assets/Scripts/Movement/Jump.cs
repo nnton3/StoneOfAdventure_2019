@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace StoneOfAdventure.Movement
 {
@@ -6,7 +7,7 @@ namespace StoneOfAdventure.Movement
     {
         private bool isGrounded;
         private Rigidbody2D rb;
-        private bool inTheAir = false;
+        [SerializeField] private bool inTheAir = false;
         private PlayerStateController unit;
         private Animator anim;
         private PlayerJumpState jumpState;
@@ -41,6 +42,13 @@ namespace StoneOfAdventure.Movement
             inTheAir = true;
         }
 
+        internal void Cancel()
+        {
+            unit.DisableState();
+            inTheAir = false;
+            anim.SetBool("jump", inTheAir);
+        }
+
         void IsGroundedUpdate(Collision2D collision, bool value)
         {
             if (collision.gameObject.tag == ("Ground")) isGrounded = value;
@@ -49,11 +57,10 @@ namespace StoneOfAdventure.Movement
         private void OnCollisionEnter2D(Collision2D collision)
         {
             IsGroundedUpdate(collision, true);
-            anim.SetBool("jump", false);
             if (inTheAir)
             {
-                unit.DisableState();
                 inTheAir = false;
+                Cancel();
             }
         }
 
@@ -62,11 +69,11 @@ namespace StoneOfAdventure.Movement
             IsGroundedUpdate(collision, false);
             if (unit.State != moveVertical)
             {
-                anim.SetBool("jump", true);
                 if (unit.State != jumpState)
                 {
                     unit.PlayerFell();
                     inTheAir = true;
+                    anim.SetBool("jump", inTheAir);
                 }
             }
         }

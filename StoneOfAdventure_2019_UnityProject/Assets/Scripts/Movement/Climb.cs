@@ -4,9 +4,10 @@ namespace StoneOfAdventure.Movement
 {
     public class Climb : MonoBehaviour
     {
-        Rigidbody2D rb;
+        private Rigidbody2D rb;
+        private Animator anim;
         private PlayerStateController unit;
-        Vector2 moveVertical;
+        private Vector2 moveVertical;
 
         [SerializeField] private bool onLadder;
         [SerializeField] private bool canClimbDown = true;
@@ -16,6 +17,7 @@ namespace StoneOfAdventure.Movement
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
             unit = GetComponent<PlayerStateController>();
         }
 
@@ -31,6 +33,8 @@ namespace StoneOfAdventure.Movement
                 moveVertical = Vector2.up * direction * verticalMovespeed;
             }
             rb.velocity = moveVertical;
+            anim.SetBool("climb", onLadder);
+            anim.SetFloat("moveVertical", direction);
         }
 
         public void StopVerticalMove()
@@ -39,6 +43,7 @@ namespace StoneOfAdventure.Movement
             onLadder = false;
             rb.bodyType = RigidbodyType2D.Dynamic;
             unit.DisableState();
+            anim.SetBool("climb", onLadder);
         }
 
         public bool LadderEnd(float playerClimbInput)

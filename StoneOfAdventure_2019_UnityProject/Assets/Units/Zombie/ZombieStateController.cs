@@ -77,5 +77,6 @@ public class ZombieStateController : MonoBehaviour
     public void Dead()
     {
         State.Dead();
+        enemyDetector.enabled = false;
     }
 }

@@ -6,6 +6,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
     private PlayerStateController unit;
     private Mover mover;
     private Climb climb;
+    private Jump jump;
     private PlayerMoveVerticalState moveVerticalState;
 
     private void Start()
@@ -13,6 +14,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
         unit = GetComponent<PlayerStateController>();
         mover = GetComponent<Mover>();
         climb = GetComponent<Climb>();
+        jump = GetComponent<Jump>();
         moveVerticalState = GetComponent<PlayerMoveVerticalState>();
     }
 
@@ -30,7 +32,11 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
     public void MoveVertical(float direction, float verticalMovespeed)
     {
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
-        if (unitCanClimbOnLadder) unit.State = moveVerticalState;
+        if (unitCanClimbOnLadder)
+        {
+            jump.Cancel();
+            unit.State = moveVerticalState;
+        }
     }
 
     public void Fell() { return; }

@@ -21,16 +21,16 @@ public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
 
     public void Fell()
     {
-        unit.State = jumpState;
         climb.StopVerticalMove();
+        unit.State = jumpState;
     }
 
     public void Idle() { return; }
 
     public void Jump(float jumpPower)
     {
-        unit.State = jumpState;
         climb.StopVerticalMove();
+        unit.State = jumpState;
         jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
     }
 

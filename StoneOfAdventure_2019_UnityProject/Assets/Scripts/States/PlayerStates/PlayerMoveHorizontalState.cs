@@ -67,6 +67,7 @@ public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
 
     public void Fell()
     {
+        mover.Cancel();
         unit.State = jumpState;
     }
 }

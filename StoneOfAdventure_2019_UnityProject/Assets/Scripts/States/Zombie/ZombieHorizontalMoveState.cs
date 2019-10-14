@@ -20,6 +20,7 @@ public class ZombieHorizontalMoveState : MonoBehaviour, IZombieState
         anim = GetComponent<Animator>();
 
         attackState = GetComponent<ZombieAttackState>();
+        deathState = GetComponent<ZombieDeathState>();
     }
 
     public void Attack()

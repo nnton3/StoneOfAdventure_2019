@@ -21,7 +21,7 @@ public class PlayerStateController : MonoBehaviour
         MoveHorizontal(Input.GetAxisRaw("Horizontal"));
         MoveVertical(Input.GetAxisRaw("Vertical"));
         if (Input.GetAxisRaw("Fire1") != 0f) Attack();
-        if (Input.GetAxisRaw("Jump") != 0f) Jump();
+        if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
         currentState = State.ToString();
     }
