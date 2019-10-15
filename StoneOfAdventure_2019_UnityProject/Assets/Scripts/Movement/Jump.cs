@@ -5,7 +5,7 @@ namespace StoneOfAdventure.Movement
 {
     public class Jump : MonoBehaviour
     {
-        private bool isGrounded;
+        [SerializeField] private bool isGrounded;
         private Rigidbody2D rb;
         [SerializeField] private bool inTheAir = false;
         private PlayerStateController unit;
@@ -50,31 +50,33 @@ namespace StoneOfAdventure.Movement
             anim.SetTrigger("landed");
         }
 
-        void IsGroundedUpdate(Collision2D collision, bool value)
+        void IsGroundedUpdate(bool value)
         {
-            if (collision.gameObject.tag == ("Ground")) isGrounded = value;
+            isGrounded = value;
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            IsGroundedUpdate(collision, true);
-            if (inTheAir)
+            if (collision.gameObject.tag == ("Ground"))
             {
-                inTheAir = false;
-                Cancel();
+                IsGroundedUpdate(true);
+                if (inTheAir) Cancel();
             }
         }
 
         private void OnCollisionExit2D(Collision2D collision)
         {
-            IsGroundedUpdate(collision, false);
-            if (unit.State != moveVertical)
+            if (collision.gameObject.tag == ("Ground"))
             {
-                if (unit.State != jumpState)
+                IsGroundedUpdate(false);
+                if (unit.State != moveVertical)
                 {
-                    unit.PlayerFell();
-                    inTheAir = true;
-                    anim.SetTrigger("jump");
+                    if (unit.State != jumpState)
+                    {
+                        unit.PlayerFell();
+                        inTheAir = true;
+                        anim.SetTrigger("jump");
+                    }
                 }
             }
         }

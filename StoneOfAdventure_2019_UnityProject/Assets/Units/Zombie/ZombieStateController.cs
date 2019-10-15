@@ -70,7 +70,7 @@ public class ZombieStateController : MonoBehaviour
 
     private void Attack() { State.Attack(); }
 
-    private void MoveHorizontal(float direction, float movespeed) { Debug.Log(State == null); State.MoveHorizontal(direction, movespeed); }
+    private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 
     public void DisableState() { State = idleState; }
 
