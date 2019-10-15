@@ -40,13 +40,14 @@ namespace StoneOfAdventure.Movement
         {
             rb.AddForce(direction * jumpPower);
             inTheAir = true;
+            anim.SetTrigger("jump");
         }
 
         internal void Cancel()
         {
             unit.DisableState();
             inTheAir = false;
-            anim.SetBool("jump", inTheAir);
+            anim.SetTrigger("landed");
         }
 
         void IsGroundedUpdate(Collision2D collision, bool value)
@@ -73,7 +74,7 @@ namespace StoneOfAdventure.Movement
                 {
                     unit.PlayerFell();
                     inTheAir = true;
-                    anim.SetBool("jump", inTheAir);
+                    anim.SetTrigger("jump");
                 }
             }
         }
