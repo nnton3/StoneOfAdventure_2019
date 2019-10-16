@@ -6705,7 +6705,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 565227460}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d97ec9bab99d89f408ad69f6ff7e195c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -12661,6 +12661,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.8125
+      objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -12709,7 +12714,7 @@ PrefabInstance:
     - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: movespeedInTheAir
-      value: 25
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}

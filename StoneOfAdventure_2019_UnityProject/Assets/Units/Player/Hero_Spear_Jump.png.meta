@@ -151,18 +151,18 @@ TextureImporter:
       name: Hero_Spear_Jump_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 30
-        height: 13
+        x: 6
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba8dcd1d06e85c1458149c8a8beb19df
+      spriteID: 9e11642ad433ad744be1238bb9a0cf51
       vertices: []
       indices: 
       edges: []
@@ -171,18 +171,18 @@ TextureImporter:
       name: Hero_Spear_Jump_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 5
-        width: 30
-        height: 13
+        x: 98
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19de57e79de42c498f602c91780a695
+      spriteID: 4d4e67bcbeca6a9468a87ca9b5bce95e
       vertices: []
       indices: 
       edges: []
@@ -191,18 +191,18 @@ TextureImporter:
       name: Hero_Spear_Jump_2
       rect:
         serializedVersion: 2
-        x: 184
-        y: 5
-        width: 30
-        height: 13
+        x: 190
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6876c80593ecf442b128de1c5cf2644
+      spriteID: 12220e655931560409d0aa14a35f22b3
       vertices: []
       indices: 
       edges: []
@@ -211,18 +211,18 @@ TextureImporter:
       name: Hero_Spear_Jump_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 5
-        width: 30
-        height: 13
+        x: 283
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e494291d47b658542925bf6b4f9655de
+      spriteID: 038b6e5acfdd34a4585b9e804c34a18a
       vertices: []
       indices: 
       edges: []
@@ -231,18 +231,18 @@ TextureImporter:
       name: Hero_Spear_Jump_4
       rect:
         serializedVersion: 2
-        x: 361
-        y: 5
-        width: 30
-        height: 13
+        x: 375
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6faa605b5920c4740a8609aff3a7b424
+      spriteID: 6740c617833b81b4d9f4415c72041587
       vertices: []
       indices: 
       edges: []
@@ -251,78 +251,18 @@ TextureImporter:
       name: Hero_Spear_Jump_5
       rect:
         serializedVersion: 2
-        x: 449
-        y: 5
-        width: 30
-        height: 13
+        x: 467
+        y: 3
+        width: 29
+        height: 14
       alignment: 9
-      pivot: {x: 0.27, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c95aa89f6f5b424dafb97521ebbe259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hero_Spear_Jump_6
-      rect:
-        serializedVersion: 2
-        x: 537
-        y: 5
-        width: 30
-        height: 13
-      alignment: 9
-      pivot: {x: 0.27, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 680c606085f19b34da9cdde4d3c8f834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hero_Spear_Jump_7
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 5
-        width: 30
-        height: 13
-      alignment: 9
-      pivot: {x: 0.27, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed208d127a711764a873d704a2bf9ae3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hero_Spear_Jump_8
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 5
-        width: 30
-        height: 13
-      alignment: 9
-      pivot: {x: 0.27, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3375de524e58354baad9d80ca2ec715
+      spriteID: 5673f242a194d8c449cf29905e76f5b1
       vertices: []
       indices: 
       edges: []
