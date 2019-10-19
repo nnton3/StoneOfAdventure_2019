@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using StoneOfAdventure.Movement;
 
 namespace StoneOfAdventure.Combat
 {
@@ -19,7 +18,7 @@ namespace StoneOfAdventure.Combat
 
         public void Cancel()
         {
-            anim.ResetTrigger("attack");
+            anim.SetTrigger("disable");
         }
     }
 }

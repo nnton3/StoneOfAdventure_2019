@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using StoneOfAdventure.Core;
 
-public class PlayerStateController : MonoBehaviour
+public class PlayerStateController : Unit
 {
     private PlayerIdleState idleState;
     [SerializeField] private float movespeed = 5f;
@@ -21,6 +23,7 @@ public class PlayerStateController : MonoBehaviour
         MoveHorizontal(Input.GetAxisRaw("Horizontal"));
         MoveVertical(Input.GetAxisRaw("Vertical"));
         if (Input.GetAxisRaw("Fire1") != 0f) Attack();
+        if (Input.GetAxisRaw("Fire2") != 0f) Skill1();
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
         currentState = State.ToString();
@@ -48,12 +51,17 @@ public class PlayerStateController : MonoBehaviour
         State.Attack();
     }
 
+    private void Skill1()
+    {
+        State.Skill1();
+    }
+
     private void Jump()
     {
         State.Jump(jumpPower);
     }
 
-    public void DisableState()
+    public override void DisableState()
     {
         State = idleState;
     }

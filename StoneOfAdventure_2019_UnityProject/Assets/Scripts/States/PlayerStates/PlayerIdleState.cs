@@ -6,6 +6,7 @@ using StoneOfAdventure.Movement;
 public class PlayerIdleState : MonoBehaviour, IPlayerState
 {
     private Fighter fighter;
+    private PlayerSkill1 playerSkill1;
     private Jump jump;
     private PlayerStateController unit;
     private Climb climb;
@@ -17,6 +18,7 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
     private void Start()
     {
         fighter = GetComponent<Fighter>();
+        playerSkill1 = GetComponent<PlayerSkill1>();
         jump = GetComponent<Jump>();
         unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
@@ -54,5 +56,11 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
     public void Fell()
     {
         unit.State = jumpState;
+    }
+
+    public void Skill1()
+    {
+        playerSkill1.StartUse();
+        unit.State = attackState;
     }
 }

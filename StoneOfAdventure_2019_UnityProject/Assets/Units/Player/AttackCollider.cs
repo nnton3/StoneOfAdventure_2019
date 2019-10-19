@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StoneOfAdventure.Combat
 {
-    public class AttackCollider : MonoBehaviour
+    public class AttackCollider : MonoBehaviour     // TODO Add "loaded params" (collider bounds) if unit have more than one AOE skill
     {
         [SerializeField] private List<Health> enemiesList = new List<Health>();
         public List<Health> EnemieList => enemiesList;

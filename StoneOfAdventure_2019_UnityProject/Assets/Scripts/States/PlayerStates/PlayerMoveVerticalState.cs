@@ -41,4 +41,6 @@ public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
     {
         climb.TryToClimb(direction, verticalMovespeed);
     }
+
+    public void Skill1() { return; }
 }

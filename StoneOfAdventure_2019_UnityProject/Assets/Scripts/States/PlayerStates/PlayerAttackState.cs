@@ -25,4 +25,6 @@ public class PlayerAttackState : MonoBehaviour, IPlayerState
     public void MoveVertical(float direction, float verticalMovespeed) { return; }
 
     public void Fell() { unit.State = jumpState; }
+
+    public void Skill1() { return; }
 }

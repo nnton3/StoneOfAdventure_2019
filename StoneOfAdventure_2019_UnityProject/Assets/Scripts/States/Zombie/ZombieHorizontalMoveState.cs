@@ -8,9 +8,11 @@ public class ZombieHorizontalMoveState : MonoBehaviour, IZombieState
     private Mover mover;
     private ZombieStateController unit;
     private Animator anim;
+    private Stunned stunned;
 
     private ZombieAttackState attackState;
     private ZombieDeathState deathState;
+    private ZombieStunState stunState;
 
     private void Start()
     {
@@ -18,9 +20,11 @@ public class ZombieHorizontalMoveState : MonoBehaviour, IZombieState
         mover = GetComponent<Mover>();
         unit = GetComponent<ZombieStateController>();
         anim = GetComponent<Animator>();
+        stunned = GetComponent<Stunned>();
 
         attackState = GetComponent<ZombieAttackState>();
         deathState = GetComponent<ZombieDeathState>();
+        stunState = GetComponent<ZombieStunState>();
     }
 
     public void Attack()
@@ -46,5 +50,12 @@ public class ZombieHorizontalMoveState : MonoBehaviour, IZombieState
         mover.Cancel();
         anim.SetTrigger("dead");
         unit.State = deathState;
+    }
+
+    public void Stun(float time)
+    {
+        mover.Cancel();
+        unit.State = stunState;
+        stunned.ApplyStun(time);
     }
 }

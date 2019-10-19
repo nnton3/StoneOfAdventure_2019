@@ -30,7 +30,7 @@ namespace StoneOfAdventure.Combat
 
         private bool IsDead(float damage)
         {
-            return HealthPoints < damage;
+            return HealthPoints <= damage;
         }
     }
 }

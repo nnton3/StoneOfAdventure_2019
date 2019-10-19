@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using StoneOfAdventure.Core;
 
-public class ZombieStateController : MonoBehaviour
+public class ZombieStateController : Unit
 {
     private Flip flip;
     private EnemyDetector enemyDetector;
@@ -72,11 +73,16 @@ public class ZombieStateController : MonoBehaviour
 
     private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 
-    public void DisableState() { State = idleState; }
+    public override void DisableState() { State = idleState; }
 
     public void Dead()
     {
         State.Dead();
         enemyDetector.enabled = false;
+    }
+
+    public override void ApplyStun(float timeOfStun)
+    {
+        State.Stun(timeOfStun);
     }
 }

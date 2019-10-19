@@ -41,4 +41,6 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
     }
 
     public void Fell() { return; }
+
+    public void Skill1() { return; }
 }

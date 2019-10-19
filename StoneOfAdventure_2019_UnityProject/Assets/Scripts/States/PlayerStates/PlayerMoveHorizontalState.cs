@@ -14,11 +14,13 @@ public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
     private PlayerAttackState attackState;
     private PlayerJumpState jumpState;
     private PlayerMoveVerticalState moveVerticalState;
+    private PlayerSkill1 playerSkill1;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         fighter = GetComponent<Fighter>();
+        playerSkill1 = GetComponent<PlayerSkill1>();
         mover = GetComponent<Mover>();
         jump = GetComponent<Jump>();
         unit = GetComponent<PlayerStateController>();
@@ -69,5 +71,12 @@ public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
     {
         mover.Cancel();
         unit.State = jumpState;
+    }
+
+    public void Skill1()
+    {
+        playerSkill1.StartUse();
+        mover.Cancel();
+        unit.State = attackState;
     }
 }
