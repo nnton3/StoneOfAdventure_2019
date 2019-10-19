@@ -14,6 +14,18 @@ TextureImporter:
     21300018: third_skill_9
     21300020: third_skill_10
     21300022: third_skill_11
+    21300024: Player_with_spear_skill2_0
+    21300026: Player_with_spear_skill2_1
+    21300028: Player_with_spear_skill2_2
+    21300030: Player_with_spear_skill2_3
+    21300032: Player_with_spear_skill2_4
+    21300034: Player_with_spear_skill2_5
+    21300036: Player_with_spear_skill2_6
+    21300038: Player_with_spear_skill2_7
+    21300040: Player_with_spear_skill2_8
+    21300042: Player_with_spear_skill2_9
+    21300044: Player_with_spear_skill2_10
+    21300046: Player_with_spear_skill2_11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -151,11 +163,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: third_skill_0
+      name: Player_with_spear_skill2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4
+        y: 2
         width: 103
         height: 16
       alignment: 9
@@ -165,13 +177,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a7b5f2423c63649a99376e40a891ac
+      spriteID: 0cc6d72027752d045b096d8e459f0ffe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_1
+      name: Player_with_spear_skill2_1
       rect:
         serializedVersion: 2
         x: 240
@@ -185,13 +197,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c262f3108981f944a79f0ac45cfde3e
+      spriteID: dca14acf9f261b241b0c559a181656be
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_2
+      name: Player_with_spear_skill2_2
       rect:
         serializedVersion: 2
         x: 476
@@ -205,33 +217,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e38339026335844db86fc71532d3c24
+      spriteID: f9a10e67f210aef4c800deeda5c956a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_3
-      rect:
-        serializedVersion: 2
-        x: 501
-        y: 11
-        width: 4
-        height: 5
-      alignment: 9
-      pivot: {x: 0.75, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c3138903be1d4344840ab022eeeb697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: third_skill_4
+      name: Player_with_spear_skill2_3
       rect:
         serializedVersion: 2
         x: 712
@@ -245,13 +237,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd290edd1b88b694eaed346e3d65d0f0
+      spriteID: 2570eed6b9b37114da92c011ee5ead30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_5
+      name: Player_with_spear_skill2_4
       rect:
         serializedVersion: 2
         x: 949
@@ -265,13 +257,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bf304a44a1843e4e99c0611aad9142d
+      spriteID: 4e2147a9656c7a2478813a0adeab639d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_6
+      name: Player_with_spear_skill2_5
       rect:
         serializedVersion: 2
         x: 1185
@@ -285,13 +277,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 416eabec697e3d54fa2ce22e9f1bcd5f
+      spriteID: 42c3734947a4f68488f1c1cc09be116c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_7
+      name: Player_with_spear_skill2_6
       rect:
         serializedVersion: 2
         x: 1421
@@ -305,33 +297,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ac6ccda4652274f8acbbb4ee83beef
+      spriteID: 09d8402efb858a1409a54d8abf0a15d7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_8
-      rect:
-        serializedVersion: 2
-        x: 1486
-        y: 14
-        width: 10
-        height: 4
-      alignment: 9
-      pivot: {x: 0.75, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ada81ee8f19908b439ddebf61d3d1385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: third_skill_9
+      name: Player_with_spear_skill2_7
       rect:
         serializedVersion: 2
         x: 1657
@@ -345,33 +317,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f922a40f9e1eba74f93b20551afbe414
+      spriteID: 8e19f28b934a8b742b07dc913cc81b7b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: third_skill_10
-      rect:
-        serializedVersion: 2
-        x: 1722
-        y: 14
-        width: 10
-        height: 4
-      alignment: 9
-      pivot: {x: 0.75, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a28873ec4b81b74396a7460e4fee1f1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: third_skill_11
+      name: Player_with_spear_skill2_8
       rect:
         serializedVersion: 2
         x: 1893
@@ -385,7 +337,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b48de9945003d947a9493d1a50d775a
+      spriteID: 9c9f1a8f7de62f44a97ea05837b460f2
       vertices: []
       indices: 
       edges: []
