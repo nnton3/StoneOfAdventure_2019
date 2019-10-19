@@ -8,6 +8,7 @@ namespace StoneOfAdventure.Movement
         [SerializeField] private bool isGrounded;
         private Rigidbody2D rb;
         [SerializeField] private bool inTheAir = false;
+        public bool InTheAir => inTheAir;
         private PlayerStateController unit;
         private Animator anim;
         private PlayerJumpState jumpState;

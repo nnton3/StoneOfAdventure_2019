@@ -10,4 +10,5 @@ public interface IPlayerState
     void Jump(float jumpPower);
     void Fell();
     void Skill1();
+    void Skill2();
 }

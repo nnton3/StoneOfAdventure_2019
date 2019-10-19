@@ -5,8 +5,11 @@ using StoneOfAdventure.Movement;
 
 public class PlayerIdleState : MonoBehaviour, IPlayerState
 {
+    #region Variables
+    private Rigidbody2D rb;
     private Fighter fighter;
     private PlayerSkill1 playerSkill1;
+    private PlayerSkill2 playerSkill2;
     private Jump jump;
     private PlayerStateController unit;
     private Climb climb;
@@ -14,11 +17,14 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
     private PlayerMoveVerticalState moveVerticalState;
     private PlayerAttackState attackState;
     private PlayerJumpState jumpState;
+    #endregion
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         fighter = GetComponent<Fighter>();
         playerSkill1 = GetComponent<PlayerSkill1>();
+        playerSkill2 = GetComponent<PlayerSkill2>();
         jump = GetComponent<Jump>();
         unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
@@ -61,6 +67,14 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
     public void Skill1()
     {
         playerSkill1.StartUse();
+        unit.State = attackState;
+    }
+
+    public void Skill2()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+        transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+        playerSkill2.StartUse();
         unit.State = attackState;
     }
 }

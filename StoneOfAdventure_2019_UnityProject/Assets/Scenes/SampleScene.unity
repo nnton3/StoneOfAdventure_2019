@@ -1572,7 +1572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.980931, y: 2.0664308, z: -10}
+  m_LocalPosition: {x: 3.4259312, y: 2.2864308, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249327434}
@@ -8696,7 +8696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174947471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.725, y: 2.1943986, z: -10}
+  m_LocalPosition: {x: 3.17, y: 2.4143987, z: -10}
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children:
   - {fileID: 1111827863}
@@ -12442,12 +12442,12 @@ PrefabInstance:
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.725
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.85
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
@@ -12635,10 +12635,20 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046494, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2889162741772917915, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: timeOfStun
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: movespeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}

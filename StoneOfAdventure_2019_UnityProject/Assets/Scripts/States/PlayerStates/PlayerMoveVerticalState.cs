@@ -43,4 +43,6 @@ public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
     }
 
     public void Skill1() { return; }
+
+    public void Skill2() { return; }
 }

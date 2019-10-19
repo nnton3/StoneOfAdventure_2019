@@ -5,7 +5,9 @@ using StoneOfAdventure.Combat;
 
 public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
 {
+    #region Variables
     private Animator anim;
+    private Rigidbody2D rb;
     private Fighter fighter;
     private Mover mover;
     private Jump jump;
@@ -15,12 +17,15 @@ public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
     private PlayerJumpState jumpState;
     private PlayerMoveVerticalState moveVerticalState;
     private PlayerSkill1 playerSkill1;
-
+    private PlayerSkill2 playerSkill2;
+    #endregion 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         fighter = GetComponent<Fighter>();
         playerSkill1 = GetComponent<PlayerSkill1>();
+        playerSkill2 = GetComponent<PlayerSkill2>();
         mover = GetComponent<Mover>();
         jump = GetComponent<Jump>();
         unit = GetComponent<PlayerStateController>();
@@ -76,6 +81,15 @@ public class PlayerMoveHorizontalState : MonoBehaviour, IPlayerState
     public void Skill1()
     {
         playerSkill1.StartUse();
+        mover.Cancel();
+        unit.State = attackState;
+    }
+
+    public void Skill2()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+        transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+        playerSkill2.StartUse();
         mover.Cancel();
         unit.State = attackState;
     }

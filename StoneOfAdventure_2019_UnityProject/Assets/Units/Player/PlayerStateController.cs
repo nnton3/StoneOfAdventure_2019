@@ -24,6 +24,7 @@ public class PlayerStateController : Unit
         MoveVertical(Input.GetAxisRaw("Vertical"));
         if (Input.GetAxisRaw("Fire1") != 0f) Attack();
         if (Input.GetAxisRaw("Fire2") != 0f) Skill1();
+        if (Input.GetAxisRaw("Fire3") != 0f) Skill2();
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
         currentState = State.ToString();
@@ -56,6 +57,11 @@ public class PlayerStateController : Unit
         State.Skill1();
     }
 
+    private void Skill2()
+    {
+        State.Skill2();
+    }
+
     private void Jump()
     {
         State.Jump(jumpPower);
@@ -66,7 +72,7 @@ public class PlayerStateController : Unit
         State = idleState;
     }
 
-    internal void PlayerFell()
+    public void PlayerFell()
     {
         State.Fell();
     }
