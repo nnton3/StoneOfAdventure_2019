@@ -8,9 +8,9 @@ TextureImporter:
     21300006: 2strike_3
     21300008: 2strike_4
     21300010: 2strike_5
-    21300012: 2strike_6
-    21300014: 2strike_7
-    21300016: 2strike_8
+    21300012: 2strike_5
+    21300014: 2strike_6
+    21300016: 2strike_7
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -100,8 +100,8 @@ TextureImporter:
         y: 3
         width: 41
         height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,8 +120,8 @@ TextureImporter:
         y: 3
         width: 41
         height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.39, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,8 +140,8 @@ TextureImporter:
         y: 3
         width: 41
         height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         serializedVersion: 2
         x: 490
         y: 3
-        width: 32
+        width: 41
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -194,26 +194,6 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: 2strike_5
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 3
-        width: 11
-        height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a5437d12cfee384fb6bac13fcb35b98
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2strike_6
       rect:
         serializedVersion: 2
         x: 610
@@ -233,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2strike_7
+      name: 2strike_6
       rect:
         serializedVersion: 2
         x: 731
@@ -253,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2strike_8
+      name: 2strike_7
       rect:
         serializedVersion: 2
         x: 851

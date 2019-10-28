@@ -8,7 +8,7 @@ TextureImporter:
     21300006: 1strike_3
     21300008: 1strike_4
     21300010: 1strike_5
-    21300012: 1strike_6
+    21300012: 1strike_4
     21300014: 1strike_7
     21300016: 1strike_8
     21300018: 1strike_9
@@ -16,13 +16,14 @@ TextureImporter:
     21300022: 1strike_11
     21300024: 1strike_12
     21300026: 1strike_13
-    21300028: 1strike_14
-    21300030: 1strike_15
-    21300032: 1strike_16
-    21300034: 1strike_17
+    21300028: 1strike_7
+    21300030: 1strike_8
+    21300032: 1strike_9
+    21300034: 1strike_10
     21300036: 1strike_18
     21300038: 1strike_19
     21300040: 1strike_20
+    21300042: 1strike_6
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -68,7 +69,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -101,6 +102,61 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,8 +168,8 @@ TextureImporter:
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,8 +188,8 @@ TextureImporter:
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,8 +208,8 @@ TextureImporter:
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,8 +228,8 @@ TextureImporter:
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,215 +241,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_4
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 6
-        width: 49
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a52fbf77db0faa9488000c3b5fb9a8a3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_5
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 19
-        width: 36
-        height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37954809214fd274ca112410c0a305e0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_6
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 29
-        width: 5
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8959c7ddfac57a04e8e62ae2535d2c6e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 1strike_7
-      rect:
-        serializedVersion: 2
-        x: 485
-        y: 33
-        width: 28
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79a3c45fb20d6554cb94f2ce7fe3e0bc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_8
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 6
-        width: 37
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37718895d57cf9b49a631eb1d62c3041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_9
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 29
-        width: 5
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a79e3776c8ee334b9eb6d6497eea13c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_10
-      rect:
-        serializedVersion: 2
-        x: 599
-        y: 33
-        width: 28
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654516586fe681445b8853ff04673376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_11
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 29
-        width: 36
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81492f470ff8f214ea13f578ac7dd6c8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_12
-      rect:
-        serializedVersion: 2
-        x: 715
-        y: 33
-        width: 26
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34048d571d9a4514488651535454053c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_13
-      rect:
-        serializedVersion: 2
-        x: 718
-        y: 23
-        width: 23
-        height: 11
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba54d8a097aae424bb7e2234e5a93f48
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1strike_14
       rect:
         serializedVersion: 2
         x: 806
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -405,15 +261,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_15
+      name: 1strike_8
       rect:
         serializedVersion: 2
         x: 920
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,15 +281,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_16
+      name: 1strike_9
       rect:
         serializedVersion: 2
         x: 1034
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,15 +301,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_17
+      name: 1strike_10
       rect:
         serializedVersion: 2
         x: 1148
         y: 6
         width: 49
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,61 +321,61 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_18
+      name: 1strike_4
       rect:
         serializedVersion: 2
-        x: 592
+        x: 464
         y: 6
-        width: 35
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 49
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44609fbb1c419e6419c35de49895188b
+      spriteID: 8612e9501bcfc8c4498d331fe56ca378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_19
+      name: 1strike_5
       rect:
         serializedVersion: 2
-        x: 615
-        y: 23
-        width: 12
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 578
+        y: 6
+        width: 49
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a14d19096029be4dac435b2043d19e7
+      spriteID: e18438077c9b2cb4e81d79bff4364931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1strike_20
+      name: 1strike_6
       rect:
         serializedVersion: 2
         x: 692
         y: 6
         width: 49
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aebd3b00032dc1a46a266acbea61d608
+      spriteID: 810280c67e72660428f83d4e20e6bf0c
       vertices: []
       indices: 
       edges: []

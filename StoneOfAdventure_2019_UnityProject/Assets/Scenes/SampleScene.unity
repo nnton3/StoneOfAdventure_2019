@@ -1625,9 +1625,9 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 70
+  field of view: 40
   orthographic: 0
-  orthographic size: 7
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1651,7 +1651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5559312, y: -3.8535695, z: -10}
+  m_LocalPosition: {x: 0.25593123, y: -0.12796783, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249327434}
@@ -12733,6 +12733,21 @@ PrefabInstance:
         type: 3}
       propertyPath: spurtDelay
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947979656093614019, guid: 622be48bfad17f9469f6b42467496cff,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947979656093614019, guid: 622be48bfad17f9469f6b42467496cff,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947979656093614019, guid: 622be48bfad17f9469f6b42467496cff,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622be48bfad17f9469f6b42467496cff, type: 3}
