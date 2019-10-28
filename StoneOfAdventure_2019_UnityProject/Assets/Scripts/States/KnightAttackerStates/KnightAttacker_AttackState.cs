@@ -2,26 +2,26 @@
 using System.Collections;
 using StoneOfAdventure.Combat;
 
-public class ZombieAttackState : MonoBehaviour, IZombieState
+public class KnightAttacker_AttackState : MonoBehaviour, IKnightAttackerState
 {
     #region Variables
     private Animator anim;
-    private ZombieStateController unit;
+    private KnightAttacker_StateController unit;
     private Fighter fighter;
     private Stunned stunned;
 
-    private ZombieDeathState deathState;
-    private ZombieStunState stunState;
+    private KnightAttacker_DeathState deathState;
+    private KnightAttacker_StunState stunState;
     #endregion
     private void Start()
     {
         anim = GetComponent<Animator>();
-        unit = GetComponent<ZombieStateController>();
+        unit = GetComponent<KnightAttacker_StateController>();
         fighter = GetComponent<Fighter>();
         stunned = GetComponent<Stunned>();
 
-        deathState = GetComponent<ZombieDeathState>();
-        stunState = GetComponent<ZombieStunState>();
+        deathState = GetComponent<KnightAttacker_DeathState>();
+        stunState = GetComponent<KnightAttacker_StunState>();
     }
 
     public void Attack() { return; }
@@ -39,5 +39,10 @@ public class ZombieAttackState : MonoBehaviour, IZombieState
         fighter.Cancel();
         unit.State = stunState;
         stunned.ApplyStun(time);
+    }
+
+    public void Spurt()
+    {
+        return;
     }
 }

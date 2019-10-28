@@ -2,9 +2,10 @@
 
 namespace StoneOfAdventure.Core
 {
-public class Unit : MonoBehaviour
-{
-    public virtual void DisableState() { return; }
-    public virtual void ApplyStun(float time) { return; }
-}
+    public class Unit : MonoBehaviour
+    {
+        public virtual void DisableState() { return; }
+        public virtual void ApplyStun(float time) { return; }
+        public virtual void Dead() { return; }
+    }
 }

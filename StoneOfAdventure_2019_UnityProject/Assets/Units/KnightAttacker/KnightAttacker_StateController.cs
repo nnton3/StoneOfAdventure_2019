@@ -1,32 +1,44 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
+using UnityEngine;
 
-public class ZombieStateController : Unit
+public class KnightAttacker_StateController : Unit
 {
+    #region Variables
     private Flip flip;
     private EnemyDetector enemyDetector;
     private object target;
     private GameObject player;
-    public IZombieState State;
-    private ZombieIdleState idleState;
+    public IKnightAttackerState State;
+    private KnightAttacker_IdleState idleState;
 
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float movespeed = 3f;
 
     [SerializeField] private string currentState = "";
-
+    [SerializeField] private float spurtDelay = 5f;
+    #endregion
     private void Start()
     {
         enemyDetector = GetComponentInChildren<EnemyDetector>();
         flip = GetComponent<Flip>();
 
-        idleState = GetComponent<ZombieIdleState>();
+        idleState = GetComponent<KnightAttacker_IdleState>();
 
         DisableState();
-        
-        enemyDetector.PlayerDetected.AddListener(() => UpdateTarget());
-        enemyDetector.PlayerLost.AddListener(() => UpdateTarget());
+
+        enemyDetector.PlayerDetected.AddListener(() =>
+        {
+            UpdateTarget();
+            StartSpurtTimer();
+        });
+        enemyDetector.PlayerLost.AddListener(() =>
+        {
+            UpdateTarget();
+            StopSpurtTimer();
+        });
     }
 
     private void Update()
@@ -38,18 +50,39 @@ public class ZombieStateController : Unit
                 if (PlayerInFront()) Attack();
             }
         }
-        else DisableState();
+        else
+            DisableState();
 
         MoveHorizontal(CalculateDirection(), movespeed);
 
         currentState = State.ToString();
     }
 
+    private void StopSpurtTimer()
+    {
+        Debug.Log("stop");
+        StopCoroutine("SpurtTimer");
+    }
+
+    private void StartSpurtTimer()
+    {
+        Debug.Log("start");
+        StartCoroutine("SpurtTimer");
+    }
+
+    private IEnumerator SpurtTimer()
+    {
+        yield return new WaitForSeconds(spurtDelay);
+        Debug.Log("teleport");
+        Spurt();
+        StartSpurtTimer();
+    }
+
     private bool PlayerInFront()
     {
         if (flip.isFacingRight && CalculateDirection() == 1f ||
             !flip.isFacingRight && CalculateDirection() == -1f)
-             return true;
+            return true;
         else return false;
     }
 
@@ -70,6 +103,8 @@ public class ZombieStateController : Unit
     public void UpdateTarget() { player = enemyDetector.Player; }
 
     private void Attack() { State.Attack(); }
+
+    private void Spurt() { State.Spurt(); }
 
     private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 

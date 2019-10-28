@@ -4,14 +4,14 @@ namespace StoneOfAdventure.Combat
 {
     public class Fighter : MonoBehaviour
     {
-        private Animator anim;
+        protected Animator anim;
 
         protected virtual void Start()
         {
             anim = GetComponent<Animator>();
         }
 
-        public void StartAttack()
+        public virtual void StartAttack()
         {
             anim.SetTrigger("attack");
         }

@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Combat
 {
     public class Health : MonoBehaviour, IDamaged
     {
-        private ZombieStateController unit;
-        private ZombieDeathState deathState;
+        private Unit unit;
 
         private void Start()
         {
-            deathState = GetComponent<ZombieDeathState>();
-            unit = GetComponent<ZombieStateController>();
+            unit = GetComponent<Unit>();
         }
 
         [SerializeField] private float healthPoints = 100f;

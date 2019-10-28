@@ -4,6 +4,7 @@ using StoneOfAdventure.Movement;
 
 public class ZombieIdleState : MonoBehaviour, IZombieState
 {
+    #region Variables
     private Animator anim;
     private ZombieStateController unit;
     private Fighter fighter;
@@ -14,7 +15,7 @@ public class ZombieIdleState : MonoBehaviour, IZombieState
     private ZombieHorizontalMoveState moveHorizontalState;
     private ZombieDeathState deathState;
     private ZombieStunState stunState;
-
+    #endregion
     private void Start()
     {
         anim = GetComponent<Animator>();
