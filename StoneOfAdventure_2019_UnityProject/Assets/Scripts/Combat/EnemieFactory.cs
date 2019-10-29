@@ -1,37 +1,65 @@
-﻿using StoneOfAdventure.Core;
-using System;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.Tilemaps;
 
-public class EnemieFactory : MonoBehaviour
+namespace StoneOfAdventure.Core
 {
-    private Tilemap groundTilemap;
-    private Collider2D targetCol;
-
-    private void Start()
+    public class EnemieFactory : MonoBehaviour
     {
-        groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
-    }
+        private Tilemap groundTilemap;
+        private GameObject player;
 
-    private void SpawnEnemie()
-    {
-        Vector3 spawnPosition = ChangeSpawnPosition();
-        GameObject enemie = ChangeEnemie();
+        [SerializeField] private TileBase targetTile;
+        [SerializeField] private GameObject enemiePref;
+        [SerializeField] private Vector3Int boundSize = new Vector3Int(1, 1, 1);
+        [SerializeField] private float spawnDelay = 5f;
 
-    }
+        private void Start()
+        {
+            player = FindObjectOfType<PlayerStateController>().gameObject;
+            groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
 
-    private Vector3 ChangeSpawnPosition()
-    {
-        BoundsInt newB = new BoundsInt();
-        
-        TileBase[] groundTiles = groundTilemap.GetTilesBlock(newB);
+            InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
+        }
 
-        return Vector3.zero;
-    }
+        private void SpawnEnemie()
+        {
+            Vector3 spawnPosition = ChangeSpawnPosition();
+            Instantiate(enemiePref, spawnPosition, Quaternion.identity);
+            GameObject enemie = ChangeEnemie();
 
-    private GameObject ChangeEnemie()
-    {
-        throw new NotImplementedException();
+        }
+
+        private Vector3 ChangeSpawnPosition()
+        {
+            List<Vector3> targetPositions = new List<Vector3>();
+
+            Vector3 startCheckPoint = player.transform.position - (Vector3)boundSize / 2;
+
+            for (int i = 1; i < boundSize.x; i++)
+            {
+                for (int j = 1; j < boundSize.y; j++)
+                {
+                    Vector3 worldPositionCheck = startCheckPoint + new Vector3(i, j, 0f);
+                    Vector3Int tilePositionCheck = groundTilemap.WorldToCell(startCheckPoint + new Vector3(i, j, 0f));
+                    if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
+                    {
+                        Debug.Log(worldPositionCheck);
+                        targetPositions.Add(worldPositionCheck);
+                    }
+                }
+            }
+
+            Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
+            Debug.Log($"Position for spawn = {positionForSpawn}");
+            return positionForSpawn;
+        }
+
+        private GameObject ChangeEnemie()
+        {
+            return null;
+        }
     }
 }
