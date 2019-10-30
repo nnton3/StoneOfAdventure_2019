@@ -30,7 +30,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
 
     public void MoveHorizontal(float direction, float movespeed)
     {
-        mover.MoveInJumpTo(direction, movespeed);
+        mover.MoveInAirTo(direction, movespeed);
     }
 
     public void MoveVertical(float direction, float verticalMovespeed)

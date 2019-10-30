@@ -19,7 +19,7 @@ namespace StoneOfAdventure.Movement
             flip = GetComponent<Flip>();
         }
 
-        internal void MoveTo(float direction, float movespeed)
+        internal virtual void MoveTo(float direction, float movespeed)
         {
             flip.CheckDirection(direction);
             Vector2 horizontalMove = Vector2.right * direction * movespeed;
@@ -27,7 +27,7 @@ namespace StoneOfAdventure.Movement
             anim.SetBool("moveHorizontal", true);
         }
 
-        internal void MoveInJumpTo(float direction, float movespeed)
+        internal void MoveInAirTo(float direction, float movespeed)
         {
             flip.CheckDirection(direction);
             Vector2 horizontalMove = new Vector2(direction * movespeed, 0f);
