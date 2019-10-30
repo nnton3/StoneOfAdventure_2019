@@ -18,8 +18,8 @@ namespace StoneOfAdventure.Movement
         public void FlyTo(Vector2 direction, float movespeed)
         {
             flip.CheckDirection(direction.x);
-            Vector2 horizontalMove = direction * movespeed;
-            rb.AddForce(horizontalMove, ForceMode2D.Force);
+            Vector2 moveVector = direction * movespeed;
+            rb.velocity = moveVector;
             anim.SetBool("moveHorizontal", true);
         }
 

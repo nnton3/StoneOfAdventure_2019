@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 68fe4a6d395c5e44d9469595db652413
+guid: 2a8b79683d1cec84f81a7000a6549ce7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: walking_0
-    21300002: walking_1
-    21300004: walking_2
-    21300006: walking_3
+    21300000: bat_fly_0
+    21300002: bat_fly_1
+    21300004: bat_fly_2
+    21300006: bat_fly_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -67,7 +67,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,81 +88,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_0
+      name: bat_fly_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 9
-        width: 35
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 9
+        y: 4
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e3b4e3f540f144dbb22a0047b58807
+      spriteID: f1f71d353f8e4df489e86269c397de34
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_1
+      name: bat_fly_1
       rect:
         serializedVersion: 2
-        x: 126
-        y: 9
-        width: 35
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 138
+        y: 4
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0943b5e8ce318e4a82dfb65e711b1c6
+      spriteID: 28e9a2105589134478dc7bb424b17984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_2
+      name: bat_fly_2
       rect:
         serializedVersion: 2
-        x: 242
-        y: 9
-        width: 35
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 268
+        y: 4
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53702391540b019428ecddd65cdc3e1c
+      spriteID: adf20edab3ab38e4393f24d63c350151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_3
+      name: bat_fly_3
       rect:
         serializedVersion: 2
-        x: 357
-        y: 10
-        width: 35
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 397
+        y: 4
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c50c6d0c602194c87f41d7a566d7ac
+      spriteID: dfcfc67f23ce26c46a75dfce985c797e
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aeda90dbe8e018449ade5c1b87bdca23
+    spriteID: eb24cbff780034f47a671b1359c345b1
     vertices: []
     indices: 
     edges: []

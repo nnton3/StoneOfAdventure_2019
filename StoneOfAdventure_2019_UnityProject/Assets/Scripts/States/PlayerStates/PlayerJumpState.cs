@@ -38,7 +38,6 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
         if (unitCanClimbOnLadder)
         {
-            Debug.Log("move on ladder");
             jump.Cancel();
             unit.State = moveVerticalState;
         }

@@ -12,23 +12,17 @@ namespace StoneOfAdventure.Combat
             if (enemie.CompareTag("Player"))
             {
                 playerHealth = enemie.GetComponent<Health>();
-                StartAttack();
+                InvokeRepeating("Hit", 1f, 1f);
             }
         }
 
         private void OnTriggerExit2D(Collider2D enemie)
         {
-            Cancel();
+            if (enemie.CompareTag("Player")) { Cancel(); }
         }
+        
+        private void Hit() { playerHealth.ApplyDamage(damage); }
 
-        public override void StartAttack()
-        {
-            InvokeRepeating("Hit", 1f, 1f);
-        }
-
-        private void Hit()
-        {
-            playerHealth.ApplyDamage(damage);
-        }
+        public override void Cancel() { CancelInvoke("Hit"); }
     }
 }

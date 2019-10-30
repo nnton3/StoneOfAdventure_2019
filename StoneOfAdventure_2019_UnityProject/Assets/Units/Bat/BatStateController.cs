@@ -15,16 +15,19 @@ public class BatStateController : Unit
         flyer = GetComponent<Flyer>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (player)
-        {
-            Move();
-        }
+        if (player) Move((player.transform.position - transform.position).normalized);
     }
 
-    private void Move()
+    private void Move(Vector2 direction)
     {
-        flyer.FlyTo((player.transform.position - transform.position).normalized, movespeed);
+        flyer.FlyTo(direction, movespeed);
+    }
+
+    public override void Dead()
+    {
+        player = null;
+        Move(Vector2.zero);
     }
 }
