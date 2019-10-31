@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Events;
 using System;
 using StoneOfAdventure.Core;
 
@@ -8,10 +8,14 @@ namespace StoneOfAdventure.Combat
     public class Health : MonoBehaviour, IDamaged
     {
         private Unit unit;
-        private float maxHealthPosints;
+
+        [HideInInspector] public UnityEvent HPUpdated;
+        [HideInInspector] public UnityEvent MaxHealthUpdated;
 
         [SerializeField] private float healthPoints = 100f;
         public float HealthPoints => healthPoints;
+        private float maxHealthPoints;
+        public float MaxHealthPoints => maxHealthPoints;
 
         private void Start()
         {
@@ -26,8 +30,13 @@ namespace StoneOfAdventure.Combat
             {
                 unit.Dead();
                 healthPoints = 0f;
+                HPUpdated.Invoke();
             }
-            else healthPoints -= damage;
+            else
+            {
+                healthPoints -= damage;
+                HPUpdated.Invoke();
+            }
         }
 
         private bool IsDead(float damage)
@@ -37,12 +46,20 @@ namespace StoneOfAdventure.Combat
 
         public void Heal(float healValue)
         {
-            if (healthPoints < maxHealthPosints) healthPoints += healValue;
+            if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
+            HPUpdated.Invoke();
         }
 
         public void UpdateMaxHealthPoints(float value)
         {
-            maxHealthPosints = value;
+            maxHealthPoints = value;
+            MaxHealthUpdated.Invoke();
+        }
+
+        private void OnDisable()
+        {
+            HPUpdated.RemoveAllListeners();
+            MaxHealthUpdated.RemoveAllListeners();
         }
     }
 }

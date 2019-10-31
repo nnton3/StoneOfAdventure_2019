@@ -8,6 +8,7 @@ public class ZombieHeroldStateController : Unit
     private EnemyDetector enemyDetector;
     private object target;
     private GameObject player;
+    private ZombieBuffer alliesDetector;
     private ZombieIdleState idleState;
 
     [SerializeField] private float attackRange = 1f;
@@ -17,39 +18,19 @@ public class ZombieHeroldStateController : Unit
 
     private void Start()
     {
-        enemyDetector = GetComponentInChildren<EnemyDetector>();
+        alliesDetector = GetComponentInChildren<ZombieBuffer>();
         flip = GetComponent<Flip>();
 
         idleState = GetComponent<ZombieIdleState>();
 
         DisableState();
-
-        enemyDetector.PlayerDetected.AddListener(() => UpdateTarget());
-        enemyDetector.PlayerLost.AddListener(() => UpdateTarget());
     }
 
     private void Update()
     {
-        if (player)
-        {
-            if (PlayerInAttackRange())
-            {
-                if (PlayerInFront()) Attack();
-            }
-        }
-        else DisableState();
-
         MoveHorizontal(CalculateDirection(), movespeed);
 
         currentState = State.ToString();
-    }
-
-    private bool PlayerInFront()
-    {
-        if (flip.isFacingRight && CalculateDirection() == 1f ||
-            !flip.isFacingRight && CalculateDirection() == -1f)
-            return true;
-        else return false;
     }
 
     private float CalculateDirection()
@@ -61,14 +42,7 @@ public class ZombieHeroldStateController : Unit
         else return 0f;
     }
 
-    private bool PlayerInAttackRange()
-    {
-        return Mathf.Abs(transform.position.x - player.transform.position.x) <= attackRange;
-    }
-
     public void UpdateTarget() { player = enemyDetector.Player; }
-
-    private void Attack() { State.Attack(); }
 
     private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 
@@ -77,7 +51,7 @@ public class ZombieHeroldStateController : Unit
     public override void Dead()
     {
         State.Dead();
-        enemyDetector.enabled = false;
+        alliesDetector.enabled = false;
     }
 
     public override void ApplyStun(float timeOfStun)
