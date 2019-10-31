@@ -4,7 +4,7 @@ using StoneOfAdventure.Core;
 
 public class PlayerStateController : Unit
 {
-    private PlayerIdleState idleState;
+    private BaseState idleState;
     [SerializeField] private float movespeed = 5f;
     [SerializeField] private float movespeedInTheAir = 5f;
     [SerializeField] private float jumpPower = 800f;
@@ -29,8 +29,6 @@ public class PlayerStateController : Unit
 
         currentState = State.ToString();
     }
-
-    public IPlayerState State { get; set; }
 
     private void Idle()
     {

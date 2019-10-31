@@ -8,14 +8,17 @@ namespace StoneOfAdventure.Combat
     public class Health : MonoBehaviour, IDamaged
     {
         private Unit unit;
+        private float maxHealthPosints;
+
+        [SerializeField] private float healthPoints = 100f;
+        public float HealthPoints => healthPoints;
 
         private void Start()
         {
             unit = GetComponent<Unit>();
-        }
 
-        [SerializeField] private float healthPoints = 100f;
-        public float HealthPoints => healthPoints;
+            UpdateMaxHealthPoints(healthPoints);
+        }
 
         public void ApplyDamage(float damage)
         {
@@ -30,6 +33,16 @@ namespace StoneOfAdventure.Combat
         private bool IsDead(float damage)
         {
             return HealthPoints <= damage;
+        }
+
+        public void Heal(float healValue)
+        {
+            if (healthPoints < maxHealthPosints) healthPoints += healValue;
+        }
+
+        public void UpdateMaxHealthPoints(float value)
+        {
+            maxHealthPosints = value;
         }
     }
 }

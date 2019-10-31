@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 3601460222140525362}
   - component: {fileID: 3601460222140525366}
   - component: {fileID: 6127476304878788472}
+  - component: {fileID: 5493720661704818527}
+  - component: {fileID: 6469019203736854622}
   - component: {fileID: 4070768956074502337}
   - component: {fileID: 8952970309734705115}
   - component: {fileID: 2186871155526837392}
@@ -292,6 +294,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOfStun: 1
+--- !u!114 &5493720661704818527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601460222140525370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de02acc7acc0f24a917d89cfbade9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  State: {fileID: 0}
+  attackRange: 1
+  movespeed: 3
+  currentState: 
+--- !u!114 &6469019203736854622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601460222140525370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1085c1f076a27eb4bb1cc63e384364a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4070768956074502337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,9 +393,9 @@ GameObject:
   - component: {fileID: 3601460223767242207}
   - component: {fileID: 3601460223767242204}
   - component: {fileID: 3601460223767242205}
-  - component: {fileID: 3601460223767242206}
+  - component: {fileID: 7893951552256298687}
   m_Layer: 0
-  m_Name: PlayerDetector
+  m_Name: AlliesDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,7 +409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3601460223767242200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3601460222140525373}
@@ -430,9 +460,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 1}
+  m_Size: {x: 5, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3601460223767242206
+--- !u!114 &7893951552256298687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,16 +471,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3601460223767242200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3d9a665d3634948a33c99cdbb360df, type: 3}
+  m_Script: {fileID: 11500000, guid: 86774d3a9a2f6b0419352abe07887fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerDetected:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  PlayerLost:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  healValue: 1
+  periodicity: 1

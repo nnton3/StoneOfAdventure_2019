@@ -2,7 +2,7 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Movement;
 
-public class ZombieIdleState : MonoBehaviour, IZombieState
+public class ZombieIdleState : BaseState
 {
     #region Variables
     private Animator anim;
@@ -11,10 +11,10 @@ public class ZombieIdleState : MonoBehaviour, IZombieState
     private Mover mover;
     private Stunned stunned;
 
-    private ZombieAttackState attackState;
-    private ZombieHorizontalMoveState moveHorizontalState;
-    private ZombieDeathState deathState;
-    private ZombieStunState stunState;
+    private BaseState attackState;
+    private BaseState moveHorizontalState;
+    private BaseState deathState;
+    private BaseState stunState;
     #endregion
     private void Start()
     {
@@ -30,13 +30,13 @@ public class ZombieIdleState : MonoBehaviour, IZombieState
         stunState = GetComponent<ZombieStunState>();
     }
 
-    public void Attack()
+    public override void Attack()
     {
         unit.State = attackState;
         fighter.StartAttack();
     }
 
-    public void MoveHorizontal(float direction, float movespeed)
+    public override void MoveHorizontal(float direction, float movespeed)
     {
         if (direction == 0f)
         {
@@ -47,13 +47,13 @@ public class ZombieIdleState : MonoBehaviour, IZombieState
         unit.State = moveHorizontalState;
     }
 
-    public void Dead()
+    public override void Dead()
     {
         anim.SetTrigger("dead");
         unit.State = deathState;
     }
 
-    public void Stun(float time)
+    public override void Stun(float time)
     {
         unit.State = stunState;
         stunned.ApplyStun(time);

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
 
-public class PlayerAttackState : MonoBehaviour, IPlayerState
+public class PlayerAttackState : BaseState
 {
     private PlayerStateController unit;
     private PlayerJumpState jumpState;
@@ -12,19 +12,5 @@ public class PlayerAttackState : MonoBehaviour, IPlayerState
         jumpState = GetComponent<PlayerJumpState>();
     }
 
-    public void Attack() { return; }
-
-    public void Idle() { return; }
-
-    public void Jump(float jumpPower) { return; }
-
-    public void MoveHorizontal(float direction, float movespeed) { return; }
-
-    public void MoveVertical(float direction, float verticalMovespeed) { return; }
-
-    public void Fell() { unit.State = jumpState; }
-
-    public void Skill1() { return; }
-
-    public void Skill2() { return; }
+    public override void Fell() { unit.State = jumpState; }
 }

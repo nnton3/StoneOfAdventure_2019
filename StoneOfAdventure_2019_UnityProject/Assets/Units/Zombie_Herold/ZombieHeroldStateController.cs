@@ -2,7 +2,7 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 
-public class ZombieStateController : Unit
+public class ZombieHeroldStateController : Unit
 {
     private Flip flip;
     private EnemyDetector enemyDetector;
@@ -23,7 +23,7 @@ public class ZombieStateController : Unit
         idleState = GetComponent<ZombieIdleState>();
 
         DisableState();
-        
+
         enemyDetector.PlayerDetected.AddListener(() => UpdateTarget());
         enemyDetector.PlayerLost.AddListener(() => UpdateTarget());
     }
@@ -48,7 +48,7 @@ public class ZombieStateController : Unit
     {
         if (flip.isFacingRight && CalculateDirection() == 1f ||
             !flip.isFacingRight && CalculateDirection() == -1f)
-             return true;
+            return true;
         else return false;
     }
 

@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ZombieStunState : MonoBehaviour, IZombieState
+public class ZombieStunState : BaseState
 {
     private Animator anim;
     private ZombieStateController unit;
     private Stunned stunned;
 
-    private ZombieDeathState deathState;
+    private BaseState deathState;
 
     private void Start()
     {
@@ -18,16 +18,10 @@ public class ZombieStunState : MonoBehaviour, IZombieState
         deathState = GetComponent<ZombieDeathState>();
     }
 
-    public void Attack() { return; }
-
-    public void Dead()
+    public override void Dead()
     {
         anim.SetTrigger("dead");
         stunned.Cancel();
         unit.State = deathState;
     }
-
-    public void MoveHorizontal(float direction, float movespeed) { return; }
-
-    public void Stun(float time) { return; }
 }

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
 
-public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
+public class PlayerMoveVerticalState : BaseState
 {
     private PlayerStateController unit;
     private Climb climb;
     private Jump jump;
-    private PlayerJumpState jumpState;
+    private BaseState jumpState;
     [SerializeField] private float jumpPowerScaleOnLadder = 1f;
 
     private void Start()
@@ -17,17 +17,13 @@ public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
         jumpState = GetComponent<PlayerJumpState>();
     }
 
-    public void Attack() { return; }
-
-    public void Fell()
+    public override void Fell()
     {
         climb.StopVerticalMove();
         unit.State = jumpState;
     }
 
-    public void Idle() { return; }
-
-    public void Jump(float jumpPower)
+    public override void Jump(float jumpPower)
     {
         climb.StopVerticalMove();
         unit.State = jumpState;
@@ -35,14 +31,10 @@ public class PlayerMoveVerticalState : MonoBehaviour, IPlayerState
     }
 
     private float jumpDirection;
-    public void MoveHorizontal(float direction, float movespeed) { jumpDirection = direction; }
+    public override void MoveHorizontal(float direction, float movespeed) { jumpDirection = direction; }
 
-    public void MoveVertical(float direction, float verticalMovespeed)
+    public override void MoveVertical(float direction, float verticalMovespeed)
     {
         climb.TryToClimb(direction, verticalMovespeed);
     }
-
-    public void Skill1() { return; }
-
-    public void Skill2() { return; }
 }

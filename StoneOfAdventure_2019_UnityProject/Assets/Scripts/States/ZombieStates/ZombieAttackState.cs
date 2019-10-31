@@ -2,7 +2,7 @@
 using System.Collections;
 using StoneOfAdventure.Combat;
 
-public class ZombieAttackState : MonoBehaviour, IZombieState
+public class ZombieAttackState : BaseState
 {
     #region Variables
     private Animator anim;
@@ -10,8 +10,8 @@ public class ZombieAttackState : MonoBehaviour, IZombieState
     private Fighter fighter;
     private Stunned stunned;
 
-    private ZombieDeathState deathState;
-    private ZombieStunState stunState;
+    private BaseState deathState;
+    private BaseState stunState;
     #endregion
     private void Start()
     {
@@ -24,17 +24,13 @@ public class ZombieAttackState : MonoBehaviour, IZombieState
         stunState = GetComponent<ZombieStunState>();
     }
 
-    public void Attack() { return; }
-
-    public void Dead()
+    public override void Dead()
     {
         anim.SetTrigger("dead");
         unit.State = deathState;
     }
 
-    public void MoveHorizontal(float direction, float movespeed) { return; }
-
-    public void Stun(float time)
+    public override void Stun(float time)
     {
         fighter.Cancel();
         unit.State = stunState;

@@ -3,7 +3,7 @@ using System;
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Movement;
 
-public class PlayerIdleState : MonoBehaviour, IPlayerState
+public class PlayerIdleState : BaseState
 {
     #region Variables
     private Rigidbody2D rb;
@@ -13,10 +13,11 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
     private Jump jump;
     private PlayerStateController unit;
     private Climb climb;
-    private PlayerMoveHorizontalState moveHorizontalState;
-    private PlayerMoveVerticalState moveVerticalState;
-    private PlayerAttackState attackState;
-    private PlayerJumpState jumpState;
+
+    private BaseState moveHorizontalState;
+    private BaseState moveVerticalState;
+    private BaseState attackState;
+    private BaseState jumpState;
     #endregion
 
     private void Start()
@@ -34,43 +35,41 @@ public class PlayerIdleState : MonoBehaviour, IPlayerState
         jumpState = GetComponent<PlayerJumpState>();
     }
 
-    public void Attack()
+    public override void Attack()
     {
         fighter.StartAttack();
         unit.State = attackState;
     }
 
-    public void Idle() { return; }
-
-    public void Jump(float jumpPower)
+    public override void Jump(float jumpPower)
     {
         unit.State = jumpState;
         jump.ToJump(Vector2.up, jumpPower);  
     }
 
-    public void MoveHorizontal(float direction, float movespeed)
+    public override void MoveHorizontal(float direction, float movespeed)
     {
         if (direction != 0f) unit.State = moveHorizontalState;
     }
 
-    public void MoveVertical(float direction, float verticalMovespeed)
+    public override void MoveVertical(float direction, float verticalMovespeed)
     {
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
         if (unitCanClimbOnLadder) unit.State = moveVerticalState;
     }
 
-    public void Fell()
+    public override void Fell()
     {
         unit.State = jumpState;
     }
 
-    public void Skill1()
+    public override void Skill1()
     {
         playerSkill1.StartUse();
         unit.State = attackState;
     }
 
-    public void Skill2()
+    public override void Skill2()
     {
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
