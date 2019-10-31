@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
 using StoneOfAdventure.Combat;
+using StoneOfAdventure.Core;
 
 public class ZombieHorizontalMoveState : BaseState
 {
     #region Variables
     private Fighter fighter;
     private Mover mover;
-    private ZombieStateController unit;
+    private Unit unit;
     private Animator anim;
     private Stunned stunned;
 
@@ -19,7 +20,7 @@ public class ZombieHorizontalMoveState : BaseState
     {
         fighter = GetComponent<Fighter>();
         mover = GetComponent<Mover>();
-        unit = GetComponent<ZombieStateController>();
+        unit = GetComponent<Unit>();
         anim = GetComponent<Animator>();
         stunned = GetComponent<Stunned>();
 
