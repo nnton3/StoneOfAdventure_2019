@@ -180,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: bdab843d82b28fb41b8253c9cebc05f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -295,8 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7520c0be0b3864b42906ca472c306ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrounded: 0
-  inTheAir: 0
 --- !u!114 &5276332428803179151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillArea: {fileID: 0}
   damage: 10
-  movespeed: 10
+  movespeed: 22
   coolDown: 2
 --- !u!114 &6294659417202341041
 MonoBehaviour:
@@ -371,10 +369,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: {fileID: 0}
-  movespeed: 5
+  movespeed: 6
   movespeedInTheAir: 5
   jumpPower: 1675
-  verticalMovespeed: 3
+  verticalMovespeed: 5
   currentState: 
 --- !u!114 &5892908468101052148
 MonoBehaviour:
@@ -413,6 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPowerScaleOnLadder: 1
+  platformMap: {fileID: 0}
 --- !u!114 &172458513711717137
 MonoBehaviour:
   m_ObjectHideFlags: 0
