@@ -19,12 +19,6 @@ public class PlayerMoveVerticalState : BaseState
         jumpState = GetComponent<PlayerJumpState>();
     }
 
-    public override void Fell()
-    {
-        climb.StopVerticalMove();
-        unit.State = jumpState;
-    }
-
     public override void Jump(float jumpPower)
     {
         //if (InPlatform()) return;

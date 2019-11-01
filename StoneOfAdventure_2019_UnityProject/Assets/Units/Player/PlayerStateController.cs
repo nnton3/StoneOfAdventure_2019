@@ -28,6 +28,7 @@ public class PlayerStateController : Unit
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
         currentState = State.ToString();
+        Debug.Log(currentState);
     }
 
     private void Idle()

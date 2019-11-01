@@ -13034,15 +13034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieHerold
       objectReference: {fileID: 0}
-    - target: {fileID: 3601460222140525370, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3601460222140525373, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8099997
+      value: -3.833
       objectReference: {fileID: 0}
     - target: {fileID: 3601460222140525373, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
@@ -13096,41 +13091,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
+    - target: {fileID: 2480325433300431647, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6983678032700098867, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
-      propertyPath: m_AnchorMax.y
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6983678032991308213, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1336416322108989253, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
-      propertyPath: movespeed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2480325433300431634, guid: 0fdf8d88763870246a7ac3d3d8093284,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.666
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5493720661704818527, guid: 0fdf8d88763870246a7ac3d3d8093284, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fdf8d88763870246a7ac3d3d8093284, type: 3}
 --- !u!1001 &2978862489446121824
 PrefabInstance:
@@ -13202,7 +13171,7 @@ PrefabInstance:
     - target: {fileID: 2187703677053543177, guid: 335740db59eee764daa7d6ce7471eec7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.96
+      value: 3.07
       objectReference: {fileID: 0}
     - target: {fileID: 2978862490202830093, guid: 335740db59eee764daa7d6ce7471eec7,
         type: 3}
@@ -13313,6 +13282,11 @@ PrefabInstance:
       propertyPath: platformMap
       value: 
       objectReference: {fileID: 565227465}
+    - target: {fileID: 4603871013170009232, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}
 --- !u!224 &4608566659601694319 stripped
