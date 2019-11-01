@@ -21,7 +21,6 @@ public class ZombieFighter : Fighter
     {
         Vector2 attackDirection = Vector2.right * ((flip.isFacingRight) ? 1 : -1);
         Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y + 0.5f);
-        Debug.Log("direction = " + attackDirection + ", rayOrigin = " + rayOrigin);
         RaycastHit2D[] hit = Physics2D.RaycastAll(rayOrigin, attackDirection, attackRange);
 
         foreach (var collider in hit)

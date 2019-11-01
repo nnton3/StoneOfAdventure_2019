@@ -7,19 +7,20 @@ namespace StoneOfAdventure.UI
 {
     public class HPBar : MonoBehaviour
     {
-        private Health health;
-        private Slider hpBar;
+        protected Health health;
+        protected Slider hpBar;
 
-        private void Start()
+        protected virtual void Start()
         {
             health = GetComponentInParent<Health>();
             hpBar = GetComponent<Slider>();
 
             health.MaxHealthUpdated.AddListener(UpdateHPBar);
             health.HPUpdated.AddListener(UpdateHPBar);
+            UpdateHPBar();
         }
 
-        private void UpdateHPBar()
+        protected void UpdateHPBar()
         {
             hpBar.maxValue = health.MaxHealthPoints;
             hpBar.value = health.HealthPoints;

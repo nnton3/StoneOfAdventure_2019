@@ -12,6 +12,7 @@ public class PlayerJumpState : BaseState
     private PlayerSkill2 playerSkill2;
 
     private BaseState moveVerticalState;
+    private BaseState skill2State;
     #endregion
 
     private void Start()
@@ -22,7 +23,9 @@ public class PlayerJumpState : BaseState
         climb = GetComponent<Climb>();
         jump = GetComponent<Jump>();
         playerSkill2 = GetComponent<PlayerSkill2>();
+
         moveVerticalState = GetComponent<PlayerMoveVerticalState>();
+        skill2State = GetComponent<PlayerSkill2State>();
     }
 
     public override void MoveHorizontal(float direction, float movespeed)
@@ -35,13 +38,13 @@ public class PlayerJumpState : BaseState
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
         if (unitCanClimbOnLadder)
         {
-            jump.Cancel();
             unit.State = moveVerticalState;
         }
     }
 
     public override void Skill2()
     {
+        unit.State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         playerSkill2.StartUse();
     }

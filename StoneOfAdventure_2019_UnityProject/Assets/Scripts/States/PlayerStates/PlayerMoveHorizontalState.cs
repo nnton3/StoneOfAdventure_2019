@@ -19,7 +19,8 @@ public class PlayerMoveHorizontalState : BaseState
     private BaseState attackState;
     private BaseState jumpState;
     private BaseState moveVerticalState;
-    #endregion 
+    private BaseState skill2State;
+    #endregion
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -31,9 +32,11 @@ public class PlayerMoveHorizontalState : BaseState
         jump = GetComponent<Jump>();
         unit = GetComponent<PlayerStateController>();
         climb = GetComponent<Climb>();
+
         attackState = GetComponent<PlayerAttackState>();
         jumpState = GetComponent<PlayerJumpState>();
         moveVerticalState = GetComponent<PlayerMoveVerticalState>();
+        skill2State = GetComponent<PlayerSkill2State>();
     }
 
     public override void Attack()
@@ -86,10 +89,9 @@ public class PlayerMoveHorizontalState : BaseState
 
     public override void Skill2()
     {
+        unit.State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
         playerSkill2.StartUse();
-        mover.Cancel();
-        unit.State = attackState;
     }
 }

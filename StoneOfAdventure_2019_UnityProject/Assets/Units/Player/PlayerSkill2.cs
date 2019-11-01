@@ -50,11 +50,7 @@ public class PlayerSkill2 : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         mover.Cancel();
-        if (jump.InTheAir)
-        {
-            unit.PlayerFell();
-            return;
-        }
         unit.DisableState();
+        if (!jump.isGrounded) { unit.Fell(); }
     }
 }

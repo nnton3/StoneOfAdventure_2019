@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
+using System;
+using UnityEngine.Tilemaps;
 
 public class PlayerMoveVerticalState : BaseState
 {
@@ -25,9 +27,16 @@ public class PlayerMoveVerticalState : BaseState
 
     public override void Jump(float jumpPower)
     {
+        //if (InPlatform()) return;
         climb.StopVerticalMove();
         unit.State = jumpState;
         jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
+    }
+
+    [SerializeField] private Tilemap platformMap;
+    private bool InPlatform()
+    {
+        return platformMap.GetTile(platformMap.WorldToCell(transform.position + Vector3.up)) != null;
     }
 
     private float jumpDirection;

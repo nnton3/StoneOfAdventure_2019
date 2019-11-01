@@ -65,7 +65,6 @@ public class ZombieHeroldStateController : Unit
         TileBase nextTile = groundMap.GetTile(groundMap.WorldToCell(transform.position + Vector3.down + currentDirection));
         if (nextTile == groundTile)
         {
-            Debug.Log(nextTile == groundTile);
             return currentDirection.x;
         }
         else return -currentDirection.x;

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
+using System.Collections;
 
 public class ZombieStateController : Unit
 {
@@ -9,6 +10,7 @@ public class ZombieStateController : Unit
     private object target;
     private GameObject player;
     private ZombieIdleState idleState;
+    private BaseState deathState;
 
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float movespeed = 3f;
@@ -21,6 +23,7 @@ public class ZombieStateController : Unit
         flip = GetComponent<Flip>();
 
         idleState = GetComponent<ZombieIdleState>();
+        deathState = GetComponent<ZombieDeathState>();
 
         DisableState();
         
@@ -30,6 +33,7 @@ public class ZombieStateController : Unit
 
     private void Update()
     {
+        if (State == deathState) return;
         if (player)
         {
             if (PlayerInAttackRange())
@@ -37,7 +41,6 @@ public class ZombieStateController : Unit
                 if (PlayerInFront()) Attack();
             }
         }
-        else DisableState();
 
         MoveHorizontal(CalculateDirection(), movespeed);
 
@@ -66,7 +69,11 @@ public class ZombieStateController : Unit
         return Mathf.Abs(transform.position.x - player.transform.position.x) <= attackRange;
     }
 
-    public void UpdateTarget() { player = enemyDetector.Player; }
+    public void UpdateTarget()
+    {
+        player = enemyDetector.Player;
+        if (player == null) DisableState();
+    }
 
     private void Attack() { State.Attack(); }
 
@@ -77,7 +84,13 @@ public class ZombieStateController : Unit
     public override void Dead()
     {
         State.Dead();
-        enemyDetector.enabled = false;
+        StartCoroutine("DestroyCorrupse");
+    }
+
+    IEnumerator DestroyCorrupse()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 
     public override void ApplyStun(float timeOfStun)

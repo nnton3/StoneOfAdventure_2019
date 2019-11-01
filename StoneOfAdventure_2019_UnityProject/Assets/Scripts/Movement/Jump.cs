@@ -1,27 +1,21 @@
-﻿using System;
+﻿using StoneOfAdventure.Core;
+using System;
 using UnityEngine;
 
 namespace StoneOfAdventure.Movement
 {
     public class Jump : MonoBehaviour
     {
-        [SerializeField] private bool isGrounded;
+        public bool isGrounded { get; private set; }
         private Rigidbody2D rb;
-        [SerializeField] private bool inTheAir = false;
-        public bool InTheAir => inTheAir;
-        private PlayerStateController unit;
+        private Unit unit;
         private Animator anim;
-        private PlayerJumpState jumpState;
-        private PlayerMoveVerticalState moveVertical;
 
         private void Start()
         {
-            unit = GetComponent<PlayerStateController>();
+            unit = GetComponent<Unit>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
-
-            jumpState = GetComponent<PlayerJumpState>();
-            moveVertical = GetComponent<PlayerMoveVerticalState>();
         }
 
         public void ToJump(Vector2 direction, float jumpPower)
@@ -40,15 +34,7 @@ namespace StoneOfAdventure.Movement
         private void JumpLogic(Vector2 direction, float jumpPower)
         {
             rb.AddForce(direction * jumpPower);
-            inTheAir = true;
             anim.SetTrigger("jump");
-        }
-
-        internal void Cancel()
-        {
-            unit.DisableState();
-            inTheAir = false;
-            anim.SetTrigger("landed");
         }
 
         void IsGroundedUpdate(bool value)
@@ -61,7 +47,7 @@ namespace StoneOfAdventure.Movement
             if (collision.gameObject.tag == ("Ground"))
             {
                 IsGroundedUpdate(true);
-                if (inTheAir) Cancel();
+                unit.DisableState();
             }
         }
 
@@ -70,15 +56,7 @@ namespace StoneOfAdventure.Movement
             if (collision.gameObject.tag == ("Ground"))
             {
                 IsGroundedUpdate(false);
-                if (unit.State != moveVertical)
-                {
-                    if (unit.State != jumpState)
-                    {
-                        unit.PlayerFell();
-                        inTheAir = true;
-                        anim.SetTrigger("jump");
-                    }
-                }
+                unit.Fell();
             }
         }
     }

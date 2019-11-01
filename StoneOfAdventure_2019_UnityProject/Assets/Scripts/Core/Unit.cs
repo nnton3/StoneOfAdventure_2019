@@ -9,5 +9,7 @@ namespace StoneOfAdventure.Core
         public virtual void DisableState() { return; }
         public virtual void ApplyStun(float time) { return; }
         public virtual void Dead() { return; }
+
+        public virtual void Fell() { return; }
     }
 }

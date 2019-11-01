@@ -70,7 +70,7 @@ public class PlayerStateController : Unit
         State = idleState;
     }
 
-    public void PlayerFell()
+    public override void Fell()
     {
         State.Fell();
     }
