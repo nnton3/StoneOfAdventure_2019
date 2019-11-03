@@ -11,6 +11,7 @@ public class ZombieStateController : Unit
     private GameObject player;
     private ZombieIdleState idleState;
     private BaseState deathState;
+    private PatrolBehaviour patrolBehaviour;
 
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float movespeed = 3f;
@@ -21,6 +22,7 @@ public class ZombieStateController : Unit
     {
         enemyDetector = GetComponentInChildren<EnemyDetector>();
         flip = GetComponent<Flip>();
+        patrolBehaviour = GetComponent<PatrolBehaviour>();
 
         idleState = GetComponent<ZombieIdleState>();
         deathState = GetComponent<ZombieDeathState>();
@@ -33,6 +35,7 @@ public class ZombieStateController : Unit
 
     private void Update()
     {
+        Debug.Log(State.ToString());
         if (State == deathState) return;
         if (player)
         {
@@ -40,9 +43,13 @@ public class ZombieStateController : Unit
             {
                 if (PlayerInFront()) Attack();
             }
+            MoveHorizontal(CalculateDirection(), movespeed);
         }
-
-        MoveHorizontal(CalculateDirection(), movespeed);
+        else
+        {
+            patrolBehaviour.UpdatePatrolBehaviour();
+            MoveHorizontal(patrolBehaviour.PatrolDirection, movespeed);
+        }
 
         currentState = State.ToString();
     }
@@ -84,6 +91,8 @@ public class ZombieStateController : Unit
     public override void Dead()
     {
         State.Dead();
+        enemyDetector.PlayerDetected.RemoveAllListeners();
+        enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
     }
 
