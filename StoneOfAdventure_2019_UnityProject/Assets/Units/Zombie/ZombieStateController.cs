@@ -35,7 +35,6 @@ public class ZombieStateController : Unit
 
     private void Update()
     {
-        Debug.Log(State.ToString());
         if (State == deathState) return;
         if (player)
         {

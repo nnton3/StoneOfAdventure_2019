@@ -27,7 +27,6 @@ public class ZombieFighter : Fighter
         {
             if (collider.transform.CompareTag("Player"))
             {
-                Debug.Log(collider.transform.GetComponent<IDamaged>() == null);
                 collider.transform.GetComponent<IDamaged>().ApplyDamage(damage);
             }
         }

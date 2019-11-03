@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 25
-  m_Sprite: {fileID: 21300000, guid: bdab843d82b28fb41b8253c9cebc05f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e6a9722cc9e89949ba3ec6d5866ff0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -208,8 +208,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.9375, y: 0.875}
+    pivot: {x: 0.3, y: 0}
+    oldSize: {x: 1.8125, y: 0.875}
     newSize: {x: 0.9375, y: 0.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -271,6 +271,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
+  Flipped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &8427074520926705902
 MonoBehaviour:
   m_ObjectHideFlags: 0

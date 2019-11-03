@@ -270,6 +270,8 @@ GameObject:
   - component: {fileID: 6530545018956296930}
   - component: {fileID: 6530545018956296933}
   - component: {fileID: 6530545018956296932}
+  - component: {fileID: 1770477985060428284}
+  - component: {fileID: 3157352045856574829}
   m_Layer: 5
   m_Name: HPBar
   m_TagString: Untagged
@@ -357,6 +359,38 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1770477985060428284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530545018956296935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56e412287cdea42b633683cc39f80a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsUI: {fileID: 3756439879945803741, guid: a6abf61797120cb4ba918b563031117e,
+    type: 3}
+--- !u!114 &3157352045856574829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530545018956296935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf90c8fcd9272e74baad9b657388f664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFacingRight: 1
+  Flipped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &6530545019037631243
 GameObject:
   m_ObjectHideFlags: 0

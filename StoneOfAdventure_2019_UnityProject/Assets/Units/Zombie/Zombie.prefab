@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 2129822073166226697}
   - component: {fileID: 7913249878129167813}
   - component: {fileID: 2677293136967742501}
+  - component: {fileID: 9130162151884358291}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Enemie
@@ -202,6 +203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
+  Flipped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &658190849188051339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +335,18 @@ MonoBehaviour:
   patrolDelay: 2
   groundTile: {fileID: 11400000, guid: 5eece359f1848404b9f8e6cbc6d4a042, type: 2}
   currentPatrolState: 1
+--- !u!114 &9130162151884358291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658190849188051335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55b74d3f16490e4b8e159490d5ccf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &658190850852845413
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Flip : MonoBehaviour
 {
     //переменная для определения направления персонажа вправо/влево
     [HideInInspector]
     public bool isFacingRight = true;
+    [HideInInspector] public UnityEvent Flipped;
     
     public void CheckDirection(float currentDirection)
     {
@@ -25,5 +27,11 @@ public class Flip : MonoBehaviour
         theScale.x *= -1;
         //задаем новый размер персонажа, равный старому, но зеркально отраженный
         transform.localScale = theScale;
+        Flipped.Invoke();
+    }
+
+    private void OnDisable()
+    {
+        Flipped.RemoveAllListeners();
     }
 }

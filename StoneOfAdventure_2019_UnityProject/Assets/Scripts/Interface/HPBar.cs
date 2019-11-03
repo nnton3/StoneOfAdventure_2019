@@ -14,7 +14,7 @@ namespace StoneOfAdventure.UI
         {
             health = GetComponentInParent<Health>();
             hpBar = GetComponent<Slider>();
-
+            
             health.MaxHealthUpdated.AddListener(UpdateHPBar);
             health.HPUpdated.AddListener(UpdateHPBar);
             UpdateHPBar();

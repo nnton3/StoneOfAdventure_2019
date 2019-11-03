@@ -45,4 +45,9 @@ public class PatrolBehaviour : MonoBehaviour
         else return -currentDirection.x;
     }
 
+    public void Cancel()
+    {
+        StopCoroutine("PatrolTimer");
+        PatrolDirection = 0f;
+    }
 }
