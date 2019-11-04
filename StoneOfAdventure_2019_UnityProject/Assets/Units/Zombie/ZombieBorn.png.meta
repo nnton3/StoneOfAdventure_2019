@@ -122,18 +122,18 @@ TextureImporter:
       name: ZombieBorn_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 4
-        width: 1
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 4
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e570b2135da29394e9f80090a1adda98
+      spriteID: a2279ecaecda3be4a8e4c98b5930e6bd
       vertices: []
       indices: 
       edges: []
@@ -142,18 +142,18 @@ TextureImporter:
       name: ZombieBorn_1
       rect:
         serializedVersion: 2
-        x: 103
-        y: 4
-        width: 6
-        height: 2
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 60
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a6a9a6fd40ed5643b2ba20e0fde2de5
+      spriteID: 9d90ffb35b6e0ed41bb0542f5bc95e29
       vertices: []
       indices: 
       edges: []
@@ -162,18 +162,18 @@ TextureImporter:
       name: ZombieBorn_2
       rect:
         serializedVersion: 2
-        x: 159
-        y: 3
-        width: 9
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 115
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e48f71e59c6bdd47a9a7e75804cc2e6
+      spriteID: 4bc1c40385c3a134b87ab5b1f9ffd555
       vertices: []
       indices: 
       edges: []
@@ -182,18 +182,18 @@ TextureImporter:
       name: ZombieBorn_3
       rect:
         serializedVersion: 2
-        x: 180
-        y: 3
-        width: 10
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 171
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1035c4859b9924e4a82da2ecb8db8d92
+      spriteID: a5104e81763cb3143843208a98d0eacc
       vertices: []
       indices: 
       edges: []
@@ -202,18 +202,18 @@ TextureImporter:
       name: ZombieBorn_4
       rect:
         serializedVersion: 2
-        x: 202
-        y: 3
-        width: 11
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 227
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6303bc864e13dd41bae143941136228
+      spriteID: 19738eb2933c07744aa50c59ee0e5720
       vertices: []
       indices: 
       edges: []
@@ -222,18 +222,18 @@ TextureImporter:
       name: ZombieBorn_5
       rect:
         serializedVersion: 2
-        x: 226
-        y: 3
-        width: 12
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 282
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcfa16aa516ee8a4db64d5e2f5e3db2c
+      spriteID: d8982732b542c33439e4647a9154e1bf
       vertices: []
       indices: 
       edges: []
@@ -242,18 +242,18 @@ TextureImporter:
       name: ZombieBorn_6
       rect:
         serializedVersion: 2
-        x: 257
-        y: 3
-        width: 12
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 338
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a8e9079a1dce0429cd457430ecfd88
+      spriteID: 7b75bd28f82b27641a2d89a7c0852dee
       vertices: []
       indices: 
       edges: []
@@ -262,18 +262,18 @@ TextureImporter:
       name: ZombieBorn_7
       rect:
         serializedVersion: 2
-        x: 288
-        y: 3
-        width: 14
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 394
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e741c6d3ffb544b8a775f1cefb2c5b
+      spriteID: 11510b196adb2444ea2e7b3acc047fbe
       vertices: []
       indices: 
       edges: []
@@ -282,18 +282,18 @@ TextureImporter:
       name: ZombieBorn_8
       rect:
         serializedVersion: 2
-        x: 321
-        y: 3
+        x: 450
+        y: 0
         width: 15
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7a957026aa4a444eba9481ec3191f88
+      spriteID: 795296404a2d6664883dd8418002534c
       vertices: []
       indices: 
       edges: []
@@ -302,18 +302,18 @@ TextureImporter:
       name: ZombieBorn_9
       rect:
         serializedVersion: 2
-        x: 355
-        y: 3
-        width: 13
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 505
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c4c358e66b487468590b20d86a1ae4
+      spriteID: 5ffd0c612e067b048bf97e95b5401608
       vertices: []
       indices: 
       edges: []
@@ -322,18 +322,18 @@ TextureImporter:
       name: ZombieBorn_10
       rect:
         serializedVersion: 2
-        x: 389
-        y: 3
-        width: 11
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 561
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0acda519f22d2e438b6955e6acb5db9
+      spriteID: e98768e6b62f7a54d9964a43058f5f8b
       vertices: []
       indices: 
       edges: []
@@ -342,18 +342,18 @@ TextureImporter:
       name: ZombieBorn_11
       rect:
         serializedVersion: 2
-        x: 421
-        y: 3
-        width: 11
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 617
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 538285c67b8fc0242bd53f60a984d069
+      spriteID: 931cdbfc8bbee574581a3a9abb61d684
       vertices: []
       indices: 
       edges: []
@@ -362,18 +362,18 @@ TextureImporter:
       name: ZombieBorn_12
       rect:
         serializedVersion: 2
-        x: 453
-        y: 4
-        width: 11
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 672
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f21e824bfad7d740bbfe584b47ea6d8
+      spriteID: c6b4f000955e4684bb31bdab70de61b7
       vertices: []
       indices: 
       edges: []
@@ -382,18 +382,18 @@ TextureImporter:
       name: ZombieBorn_13
       rect:
         serializedVersion: 2
-        x: 477
-        y: 3
-        width: 13
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 728
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c1193fcfea8974ea3f98433482e939
+      spriteID: dc8c28c33b9502242a4901198264cc50
       vertices: []
       indices: 
       edges: []
@@ -402,18 +402,18 @@ TextureImporter:
       name: ZombieBorn_14
       rect:
         serializedVersion: 2
-        x: 509
-        y: 3
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 784
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c42982f5f93881b4bac4bf09afddcc45
+      spriteID: 9b76fa447b5e05e40b3b010d914ecd64
       vertices: []
       indices: 
       edges: []
@@ -422,18 +422,18 @@ TextureImporter:
       name: ZombieBorn_15
       rect:
         serializedVersion: 2
-        x: 539
-        y: 3
-        width: 10
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 839
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90c112e53065f3f4f9441faf9e2619ad
+      spriteID: 8df6d06494e5a4e4585a16bbc4ff0268
       vertices: []
       indices: 
       edges: []
@@ -442,18 +442,18 @@ TextureImporter:
       name: ZombieBorn_16
       rect:
         serializedVersion: 2
-        x: 18
-        y: 4
-        width: 1
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 895
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 985fd89b91f8d524d960c85e4e49600a
+      spriteID: 16d5a791d89b6f840a92fe036f98ca4e
       vertices: []
       indices: 
       edges: []
@@ -462,18 +462,18 @@ TextureImporter:
       name: ZombieBorn_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 4
-        width: 3
-        height: 3
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 951
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22476d70bc7b8204785d3608671f415f
+      spriteID: 068b225405089424cb807143a6818995
       vertices: []
       indices: 
       edges: []
@@ -482,18 +482,18 @@ TextureImporter:
       name: ZombieBorn_18
       rect:
         serializedVersion: 2
-        x: 47
-        y: 4
-        width: 4
-        height: 2
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1007
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17ab27dd1360f304ab2208531ab18323
+      spriteID: f3264e89915002d4489dbec9ad9f2523
       vertices: []
       indices: 
       edges: []
@@ -502,18 +502,18 @@ TextureImporter:
       name: ZombieBorn_19
       rect:
         serializedVersion: 2
-        x: 59
-        y: 4
-        width: 4
-        height: 2
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1062
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6f0d589258d38849aebab1c84cf4164
+      spriteID: ab3269fddd842b3418010427263c4d27
       vertices: []
       indices: 
       edges: []
@@ -522,18 +522,18 @@ TextureImporter:
       name: ZombieBorn_20
       rect:
         serializedVersion: 2
-        x: 75
-        y: 4
-        width: 4
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1118
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbddba541164834f8aa2a9114f92263
+      spriteID: 08940eb1f9c3ea340a79a086d4a86847
       vertices: []
       indices: 
       edges: []
@@ -542,18 +542,18 @@ TextureImporter:
       name: ZombieBorn_21
       rect:
         serializedVersion: 2
-        x: 88
-        y: 4
-        width: 6
-        height: 3
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1174
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dd9531af71447344883b1a467e64f56
+      spriteID: 51e289b193f730649a2e8c59adbc8dbf
       vertices: []
       indices: 
       edges: []
@@ -562,18 +562,18 @@ TextureImporter:
       name: ZombieBorn_22
       rect:
         serializedVersion: 2
-        x: 119
-        y: 4
-        width: 8
-        height: 3
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1229
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5dc9c618103b714f9e19fb850a65902
+      spriteID: 96c9f14072c88aa41bbf872449385cf1
       vertices: []
       indices: 
       edges: []
@@ -582,18 +582,18 @@ TextureImporter:
       name: ZombieBorn_23
       rect:
         serializedVersion: 2
-        x: 139
-        y: 4
-        width: 7
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1285
+        y: 0
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71dfb2389bcd92c46abf6d6be3e63725
+      spriteID: b0423ecabd32c3d40aa00d0d090ff6bb
       vertices: []
       indices: 
       edges: []
@@ -601,7 +601,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dd7e10aed4735784c899fcd3cdf7f049
     vertices: []
     indices: 
     edges: []
