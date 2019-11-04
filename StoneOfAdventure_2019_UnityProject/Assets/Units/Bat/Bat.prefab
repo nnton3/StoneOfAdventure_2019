@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bcadc250b67734eb0f3bb57a9d2a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Attack:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   damage: 1
 --- !u!61 &8410564180581215074
 BoxCollider2D:
@@ -104,12 +109,12 @@ GameObject:
   - component: {fileID: 5529957313187058679}
   - component: {fileID: 5529957313187058687}
   - component: {fileID: 5529957313187058672}
+  - component: {fileID: 6239576121986912131}
   - component: {fileID: 3515940580394369803}
   - component: {fileID: 5529957313187058674}
   - component: {fileID: 5529957313187058676}
   - component: {fileID: 5529957313187058673}
   - component: {fileID: 2075140156964113833}
-  - component: {fileID: 6239576121986912131}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemie
@@ -171,7 +176,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2a8b79683d1cec84f81a7000a6549ce7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.875, y: 0.875}
@@ -199,6 +204,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &6239576121986912131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529957313187058664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.4375, y: 1.9375}
+    newSize: {x: 1.875, y: 0.875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.75}
+  m_EdgeRadius: 0
 --- !u!50 &3515940580394369803
 Rigidbody2D:
   serializedVersion: 4
@@ -259,6 +290,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
+  Flipped:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2075140156964113833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,29 +318,3 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   healthPoints: 10
---- !u!61 &6239576121986912131
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529957313187058664}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 1}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.4375, y: 1.9375}
-    newSize: {x: 1.875, y: 0.875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.75}
-  m_EdgeRadius: 0

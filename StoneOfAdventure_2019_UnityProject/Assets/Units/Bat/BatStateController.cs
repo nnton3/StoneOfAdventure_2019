@@ -6,6 +6,7 @@ public class BatStateController : Unit
 {
     private GameObject player;
     private Flyer flyer;
+    private Animator anim;
 
     [SerializeField] private float movespeed;
     
@@ -13,6 +14,7 @@ public class BatStateController : Unit
     {
         player = GameObject.FindGameObjectWithTag("Player");
         flyer = GetComponent<Flyer>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -29,5 +31,11 @@ public class BatStateController : Unit
     {
         player = null;
         Move(Vector2.zero);
+        anim.SetTrigger("dead");
+    }
+
+    public void DestroyUnit()
+    {
+        Destroy(gameObject);
     }
 }

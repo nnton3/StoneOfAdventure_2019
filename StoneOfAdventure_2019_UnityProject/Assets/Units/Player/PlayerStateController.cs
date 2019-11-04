@@ -7,6 +7,7 @@ public class PlayerStateController : Unit
     private BaseState idleState;
     [SerializeField] private float movespeed = 5f;
     [SerializeField] private float movespeedInTheAir = 5f;
+    public float MovespeedScale = 1f;
     [SerializeField] private float jumpPower = 800f;
     [SerializeField] private float verticalMovespeed = 3f;
 
@@ -37,7 +38,7 @@ public class PlayerStateController : Unit
 
     private void MoveHorizontal(float direction)
     {
-        State.MoveHorizontal(direction, (State == GetComponent<PlayerJumpState>()) ? movespeedInTheAir : movespeed);
+        State.MoveHorizontal(direction, (State == GetComponent<PlayerJumpState>()) ? movespeedInTheAir : (movespeed * MovespeedScale));
     }
 
     private void MoveVertical(float direction)

@@ -1,22 +1,18 @@
 fileFormatVersion: 2
-guid: 4bea3dfe20552684586cec457f0401db
+guid: 5f9b0f65fec6c9c43a59f7efa43162dc
 TextureImporter:
   fileIDToRecycleName:
-    21300000: born_0
-    21300002: born_1
-    21300004: born_2
-    21300006: born_3
-    21300008: born_4
-    21300010: born_5
-    21300012: born_6
-    21300014: born_7
-    21300016: born_8
-    21300018: born_9
-    21300020: born_10
-    21300022: born_11
-    21300024: born_12
-    21300026: born_13
-    21300028: born_14
+    21300000: zombie_idle_0
+    21300002: zombie_idle_1
+    21300004: zombie_idle_2
+    21300006: zombie_idle_3
+    21300008: zombie_idle_4
+    21300010: zombie_idle_5
+    21300012: zombie_idle_6
+    21300014: zombie_idle_7
+    21300016: zombie_idle_8
+    21300018: zombie_idle_9
+    21300020: zombie_idle_10
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -58,8 +54,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -99,13 +95,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: born_0
+      name: zombie_idle_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 297
-        height: 34
+        x: 3
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +109,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa38a1d18591fd4eae54c7913acd8f2
+      spriteID: 8976e59c07e7144419aa101233c39e49
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_1
+      name: zombie_idle_1
       rect:
         serializedVersion: 2
-        x: 334
-        y: 3
-        width: 242
-        height: 34
+        x: 81
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +129,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64aebe0530decb54d9718f3b1d10036f
+      spriteID: d2917ca7ef182eb4baff0bf73e57f6ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_2
+      name: zombie_idle_2
       rect:
         serializedVersion: 2
-        x: 609
-        y: 3
-        width: 22
-        height: 34
+        x: 158
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +149,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37f7e4a8fee020542abf5c7afb22f30f
+      spriteID: f29b45f82c8fa8a48ace8b990e1dd17b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_3
+      name: zombie_idle_3
       rect:
         serializedVersion: 2
-        x: 665
-        y: 3
-        width: 22
-        height: 34
+        x: 236
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,19 +169,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b84344217da4b184da411dd85458f81c
+      spriteID: 17cd829e4b84c1f4f820da4812f4967b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_4
+      name: zombie_idle_4
       rect:
         serializedVersion: 2
-        x: 720
-        y: 3
-        width: 22
-        height: 34
+        x: 313
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,19 +189,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7e17eb6fd1fbf45bf3c743e3bbf595
+      spriteID: 3c65a5029521e6e4b9867636bb788180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_5
+      name: zombie_idle_5
       rect:
         serializedVersion: 2
-        x: 775
-        y: 3
-        width: 22
-        height: 34
+        x: 391
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69c803b106b7c84faa187d96e393364
+      spriteID: 478f61c5de560ea49a6b9da0806fa940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_6
+      name: zombie_idle_6
       rect:
         serializedVersion: 2
-        x: 830
-        y: 3
-        width: 22
-        height: 34
+        x: 468
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,19 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2d623c1d744b045b9affe79eb5a862
+      spriteID: 80d616711729d8e4984d472d7f194081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_7
+      name: zombie_idle_7
       rect:
         serializedVersion: 2
-        x: 885
-        y: 3
-        width: 22
-        height: 34
+        x: 546
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,19 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91cfdbf14744dd04e8e5ab7a8871683b
+      spriteID: c0b0ed90a43498046bab8389d7dce53b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_8
+      name: zombie_idle_8
       rect:
         serializedVersion: 2
-        x: 940
-        y: 3
-        width: 22
-        height: 34
+        x: 623
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,19 +269,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd15fa434fa52c4caa3b1786f6c5529
+      spriteID: 7b9c0c9eeba29914dab145892d195f0e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_9
+      name: zombie_idle_9
       rect:
         serializedVersion: 2
-        x: 995
-        y: 3
-        width: 22
-        height: 34
+        x: 701
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,19 +289,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb71ba9e0f372e34dbec4c2f7f81b640
+      spriteID: 8298552f0e711714a9f4a08e18173fbe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: born_10
+      name: zombie_idle_10
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 3
-        width: 22
-        height: 34
+        x: 778
+        y: 1
+        width: 17
+        height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,87 +309,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 501c44b8966911548910f9a2e53443e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: born_11
-      rect:
-        serializedVersion: 2
-        x: 1105
-        y: 3
-        width: 22
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 788fefa2788a2884485e03f6e40fb881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: born_12
-      rect:
-        serializedVersion: 2
-        x: 1160
-        y: 3
-        width: 22
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1326ce8563fc6304ebb77752bba82079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: born_13
-      rect:
-        serializedVersion: 2
-        x: 1215
-        y: 3
-        width: 22
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fde65f74d2748a4397a8b14679305d6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: born_14
-      rect:
-        serializedVersion: 2
-        x: 1270
-        y: 3
-        width: 22
-        height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8083efd2a68e944498b2d8292b70ced1
+      spriteID: 59ac080d189f7de4c87ed478ac0fa253
       vertices: []
       indices: 
       edges: []
@@ -401,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6dab1b7eecb20314ba7d98db2edc058d
+    spriteID: 1a91e58a7b3960b4b92c6264bef080dd
     vertices: []
     indices: 
     edges: []

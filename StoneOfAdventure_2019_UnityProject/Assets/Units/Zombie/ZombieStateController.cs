@@ -15,6 +15,7 @@ public class ZombieStateController : Unit
 
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float movespeed = 3f;
+    [SerializeField] private float patrolMovespeed = 1.5f;
 
     [SerializeField] private string currentState = "";
 
@@ -47,7 +48,7 @@ public class ZombieStateController : Unit
         else
         {
             patrolBehaviour.UpdatePatrolBehaviour();
-            MoveHorizontal(patrolBehaviour.PatrolDirection, movespeed);
+            MoveHorizontal(patrolBehaviour.PatrolDirection, patrolMovespeed);
         }
 
         currentState = State.ToString();

@@ -16,20 +16,34 @@ namespace StoneOfAdventure.Core
         [SerializeField] private Vector3Int boundSize = new Vector3Int(1, 1, 1);
         [SerializeField] private float spawnDelay = 5f;
 
+        [SerializeField] private List<GameObject> units = new List<GameObject>();
+        [SerializeField] private List<float> spawnChance = new List<float>();
+        private Dictionary<GameObject, float> tableOfSpawnEnemies = new Dictionary<GameObject, float>();
+
         private void Start()
         {
             player = FindObjectOfType<PlayerStateController>().gameObject;
             groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
 
+            for (int i = 0; i < units.Count; i++)
+            {
+                UpdateTableOfEnemies(units[i], spawnChance[i]);
+            }
+            Debug.Log(tableOfSpawnEnemies.Count);
+
             InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
+        }
+
+        public void UpdateTableOfEnemies(GameObject unitPref, float spawnChance)
+        {
+            tableOfSpawnEnemies.Add(unitPref, spawnChance);
         }
 
         private void SpawnEnemie()
         {
             Vector3 spawnPosition = ChangeSpawnPosition();
-            Instantiate(enemiePref, spawnPosition, Quaternion.identity);
             GameObject enemie = ChangeEnemie();
-
+            Instantiate(enemie, spawnPosition, Quaternion.identity);
         }
 
         private Vector3 ChangeSpawnPosition()
@@ -46,19 +60,30 @@ namespace StoneOfAdventure.Core
                     Vector3Int tilePositionCheck = groundTilemap.WorldToCell(startCheckPoint + new Vector3(i, j, 0f));
                     if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
                     {
-                        Debug.Log(worldPositionCheck);
                         targetPositions.Add(worldPositionCheck);
                     }
                 }
             }
 
             Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
-            Debug.Log($"Position for spawn = {positionForSpawn}");
             return positionForSpawn;
         }
 
         private GameObject ChangeEnemie()
         {
+            float chance = UnityEngine.Random.Range(0f, 100f);
+            float currentSpawnRange = 0f;
+
+            for (int i = 0; i < units.Count; i++)
+            {
+                currentSpawnRange += spawnChance[i];
+                if (chance <= currentSpawnRange)
+                {
+                    Debug.Log($"{units[i].name} with chance {chance}");
+                    return units[i];
+                }
+            }
+            Debug.LogError("not found enemie pref");
             return null;
         }
     }
