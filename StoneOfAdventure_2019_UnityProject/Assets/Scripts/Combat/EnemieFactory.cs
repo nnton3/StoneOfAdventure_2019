@@ -29,7 +29,6 @@ namespace StoneOfAdventure.Core
             {
                 UpdateTableOfEnemies(units[i], spawnChance[i]);
             }
-            Debug.Log(tableOfSpawnEnemies.Count);
 
             InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
         }
@@ -66,7 +65,8 @@ namespace StoneOfAdventure.Core
             }
 
             Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
-            return positionForSpawn;
+            Vector2 positionForSpawn2d = positionForSpawn;
+            return positionForSpawn2d;
         }
 
         private GameObject ChangeEnemie()
@@ -79,7 +79,6 @@ namespace StoneOfAdventure.Core
                 currentSpawnRange += spawnChance[i];
                 if (chance <= currentSpawnRange)
                 {
-                    Debug.Log($"{units[i].name} with chance {chance}");
                     return units[i];
                 }
             }
