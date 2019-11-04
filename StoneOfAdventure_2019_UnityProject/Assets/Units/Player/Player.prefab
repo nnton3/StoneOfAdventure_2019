@@ -328,6 +328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34e0af3d18a1dd4cb895feeac0bc978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Attack:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   attackCollider: {fileID: 2176587861692747622}
   damage: 22
 --- !u!114 &2889162741772917915
@@ -377,6 +382,7 @@ MonoBehaviour:
   State: {fileID: 0}
   movespeed: 6
   movespeedInTheAir: 5
+  MovespeedScale: 1
   jumpPower: 1675
   verticalMovespeed: 5
   currentState: 

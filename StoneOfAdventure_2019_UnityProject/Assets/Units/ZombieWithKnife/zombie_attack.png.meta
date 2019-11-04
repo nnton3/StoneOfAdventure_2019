@@ -107,8 +107,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -127,8 +127,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,8 +147,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,8 +167,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,8 +187,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,8 +207,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,8 +227,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,8 +247,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,8 +267,8 @@ TextureImporter:
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,18 +283,18 @@ TextureImporter:
       name: zombie_attack_9
       rect:
         serializedVersion: 2
-        x: 726
-        y: 24
-        width: 5
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 801
+        y: 7
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ddf54eecf21f95489f0749ede54bef3
+      spriteID: 3531a57a6f225df4f8e781b329a05741
       vertices: []
       indices: 
       edges: []
@@ -303,18 +303,18 @@ TextureImporter:
       name: zombie_attack_10
       rect:
         serializedVersion: 2
-        x: 801
+        x: 890
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf69a3554fde96418a3a10f5243c480
+      spriteID: 53ec97ceb0c207c42ba222a602d01e4e
       vertices: []
       indices: 
       edges: []
@@ -323,18 +323,18 @@ TextureImporter:
       name: zombie_attack_11
       rect:
         serializedVersion: 2
-        x: 804
-        y: 22
-        width: 6
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 978
+        y: 7
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 955b5466d92eb3b4b954f622eabdbf41
+      spriteID: b74806d50f5b2c644a0690438adb7836
       vertices: []
       indices: 
       edges: []
@@ -343,18 +343,18 @@ TextureImporter:
       name: zombie_attack_12
       rect:
         serializedVersion: 2
-        x: 890
+        x: 1067
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391ef7aba5a2658478dab0749b3644af
+      spriteID: b15fd82ef6d9616449ad54262ace09ea
       vertices: []
       indices: 
       edges: []
@@ -363,58 +363,18 @@ TextureImporter:
       name: zombie_attack_13
       rect:
         serializedVersion: 2
-        x: 978
-        y: 7
-        width: 37
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b280765db89518e4995ffaa9f8646882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_attack_14
-      rect:
-        serializedVersion: 2
-        x: 1067
-        y: 7
-        width: 37
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d804dc425622a3b4cb33072b17e2a666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_attack_15
-      rect:
-        serializedVersion: 2
         x: 1155
         y: 7
         width: 37
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0e71aea4e8786d4b85c5b05bf4d718a
+      spriteID: d9c5ea5ef8eb72746b2b5ce9bdc73fc5
       vertices: []
       indices: 
       edges: []

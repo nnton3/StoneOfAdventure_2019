@@ -102,14 +102,14 @@ TextureImporter:
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8976e59c07e7144419aa101233c39e49
+      spriteID: ceb2d399552a3d64e87372d754080039
       vertices: []
       indices: 
       edges: []
@@ -118,18 +118,18 @@ TextureImporter:
       name: zombie_idle_1
       rect:
         serializedVersion: 2
-        x: 81
+        x: 99
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2917ca7ef182eb4baff0bf73e57f6ba
+      spriteID: 4bb41ad3c6266d74086c2ca988e39cd8
       vertices: []
       indices: 
       edges: []
@@ -138,18 +138,18 @@ TextureImporter:
       name: zombie_idle_2
       rect:
         serializedVersion: 2
-        x: 158
+        x: 195
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29b45f82c8fa8a48ace8b990e1dd17b
+      spriteID: 3ad30f7dc9c9bb34d99cce9e2bdebc25
       vertices: []
       indices: 
       edges: []
@@ -158,18 +158,18 @@ TextureImporter:
       name: zombie_idle_3
       rect:
         serializedVersion: 2
-        x: 236
+        x: 291
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17cd829e4b84c1f4f820da4812f4967b
+      spriteID: 823842103fbdc4f42ba5842b2a1b8d42
       vertices: []
       indices: 
       edges: []
@@ -178,18 +178,18 @@ TextureImporter:
       name: zombie_idle_4
       rect:
         serializedVersion: 2
-        x: 313
+        x: 388
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c65a5029521e6e4b9867636bb788180
+      spriteID: 4726559ec2113764c82559147114a007
       vertices: []
       indices: 
       edges: []
@@ -198,18 +198,18 @@ TextureImporter:
       name: zombie_idle_5
       rect:
         serializedVersion: 2
-        x: 391
+        x: 484
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 478f61c5de560ea49a6b9da0806fa940
+      spriteID: 1680c3c8265251a48b8c39187cb02063
       vertices: []
       indices: 
       edges: []
@@ -218,18 +218,18 @@ TextureImporter:
       name: zombie_idle_6
       rect:
         serializedVersion: 2
-        x: 468
+        x: 580
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d616711729d8e4984d472d7f194081
+      spriteID: 5ee277f46ff3c9447b5deddc780b56d9
       vertices: []
       indices: 
       edges: []
@@ -238,18 +238,18 @@ TextureImporter:
       name: zombie_idle_7
       rect:
         serializedVersion: 2
-        x: 546
+        x: 676
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0b0ed90a43498046bab8389d7dce53b
+      spriteID: 0cd518aec9136da45a22a26399cdb16a
       vertices: []
       indices: 
       edges: []
@@ -258,58 +258,18 @@ TextureImporter:
       name: zombie_idle_8
       rect:
         serializedVersion: 2
-        x: 623
+        x: 772
         y: 1
         width: 17
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b9c0c9eeba29914dab145892d195f0e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_idle_9
-      rect:
-        serializedVersion: 2
-        x: 701
-        y: 1
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8298552f0e711714a9f4a08e18173fbe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie_idle_10
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 1
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59ac080d189f7de4c87ed478ac0fa253
+      spriteID: 0e43e3d89209a8f448ffd91df001d3c1
       vertices: []
       indices: 
       edges: []

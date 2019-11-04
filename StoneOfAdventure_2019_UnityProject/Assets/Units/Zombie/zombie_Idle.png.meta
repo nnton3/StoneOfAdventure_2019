@@ -87,6 +87,61 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -94,8 +149,8 @@ TextureImporter:
       name: zombie_Idle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2
+        x: 1
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -105,7 +160,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2f360d3c20b94949a49dd9a4b099d94
+      spriteID: aa8ab322e48f8d941b41d48007e450e7
       vertices: []
       indices: 
       edges: []
@@ -114,8 +169,8 @@ TextureImporter:
       name: zombie_Idle_1
       rect:
         serializedVersion: 2
-        x: 135
-        y: 2
+        x: 131
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -125,7 +180,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da7d37d5c8933a4a99cc8b97c62e7eb
+      spriteID: 55ad0c323f68827428489dadcf9d660d
       vertices: []
       indices: 
       edges: []
@@ -134,8 +189,8 @@ TextureImporter:
       name: zombie_Idle_2
       rect:
         serializedVersion: 2
-        x: 265
-        y: 2
+        x: 260
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -145,7 +200,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da01f3ecca7792243b021f1b9aa5f4bb
+      spriteID: 517b7bc49c7e99f4b9733e4cc221744a
       vertices: []
       indices: 
       edges: []
@@ -154,8 +209,8 @@ TextureImporter:
       name: zombie_Idle_3
       rect:
         serializedVersion: 2
-        x: 395
-        y: 2
+        x: 390
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -165,7 +220,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fece62e147e6584991dc476d1ac4e74
+      spriteID: d70adf7ebef8d0747b2514f5da3a222b
       vertices: []
       indices: 
       edges: []
@@ -174,8 +229,8 @@ TextureImporter:
       name: zombie_Idle_4
       rect:
         serializedVersion: 2
-        x: 525
-        y: 2
+        x: 519
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -185,7 +240,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51887675f7bab064fa145e6cb3092c9e
+      spriteID: 2689ee8f5ba2e2647882b4a0037291e4
       vertices: []
       indices: 
       edges: []
@@ -194,8 +249,8 @@ TextureImporter:
       name: zombie_Idle_5
       rect:
         serializedVersion: 2
-        x: 655
-        y: 2
+        x: 649
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -205,7 +260,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e7d2963a191e9e4196c3df76bfb7404
+      spriteID: 720696f70e10e14428cb49e2c05de215
       vertices: []
       indices: 
       edges: []
@@ -214,8 +269,8 @@ TextureImporter:
       name: zombie_Idle_6
       rect:
         serializedVersion: 2
-        x: 785
-        y: 2
+        x: 778
+        y: 1
         width: 14
         height: 16
       alignment: 7
@@ -225,7 +280,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222995e33d0c4ca4cadfe98019fc94cf
+      spriteID: 874205cb3c292d54da509ce94f486837
       vertices: []
       indices: 
       edges: []
@@ -233,7 +288,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5d178833c4d22ca4194288db4c391f8e
+    spriteID: be46aa6850015f149b12e1732d182b96
     vertices: []
     indices: 
     edges: []

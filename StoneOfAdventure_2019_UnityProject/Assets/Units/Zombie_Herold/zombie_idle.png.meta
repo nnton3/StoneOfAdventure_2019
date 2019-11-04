@@ -1,16 +1,11 @@
 fileFormatVersion: 2
-guid: e40777f690f1f96409bb6d6765dd956d
+guid: 0d58bda8d67b2c240b5f0cb727fbaf03
 TextureImporter:
   fileIDToRecycleName:
-    21300000: die_0
-    21300002: die_1
-    21300004: die_2
-    21300006: die_3
-    21300008: die_4
-    21300010: die_5
-    21300012: die_6
-    21300014: die_7
-    21300016: die_8
+    21300000: zombie_idle_0
+    21300002: zombie_idle_1
+    21300004: zombie_idle_2
+    21300006: zombie_idle_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -52,8 +47,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -89,165 +84,140 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: die_0
+      name: zombie_idle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 3
-        width: 24
-        height: 33
+        x: 10
+        y: 2
+        width: 21
+        height: 34
       alignment: 9
-      pivot: {x: 0.51, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261913115b0cf964e9b15f4ad3914cb7
+      spriteID: f85342c85eb143e46b7d8870ef9b1ea8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: die_1
+      name: zombie_idle_1
       rect:
         serializedVersion: 2
-        x: 185
-        y: 3
-        width: 24
-        height: 33
+        x: 131
+        y: 2
+        width: 21
+        height: 34
       alignment: 9
-      pivot: {x: 0.51, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4672dde82f6ec4692871a7f46148c8
+      spriteID: c957de08d8451b74398654dd4cdc81c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: die_2
+      name: zombie_idle_2
       rect:
         serializedVersion: 2
-        x: 366
-        y: 3
-        width: 24
-        height: 33
+        x: 253
+        y: 2
+        width: 21
+        height: 34
       alignment: 9
-      pivot: {x: 0.51, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e793781d948945145af0ba884c801ad5
+      spriteID: cb1b1dea245842c4798cb73bb32d7224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: die_3
+      name: zombie_idle_3
       rect:
         serializedVersion: 2
-        x: 546
-        y: 3
-        width: 24
-        height: 33
+        x: 374
+        y: 2
+        width: 21
+        height: 34
       alignment: 9
-      pivot: {x: 0.51, y: 0}
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc71b1d8e9beb0148807f08f1eb45fe8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: die_4
-      rect:
-        serializedVersion: 2
-        x: 727
-        y: 3
-        width: 24
-        height: 33
-      alignment: 9
-      pivot: {x: 0.51, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 798265c3f7004c14b992dd5d04dee668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: die_5
-      rect:
-        serializedVersion: 2
-        x: 907
-        y: 3
-        width: 24
-        height: 33
-      alignment: 9
-      pivot: {x: 0.51, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 549580d6483b7fa468d5fccc1d39c708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: die_6
-      rect:
-        serializedVersion: 2
-        x: 1088
-        y: 3
-        width: 24
-        height: 33
-      alignment: 9
-      pivot: {x: 0.51, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a0c06ede85950a489d12e7452cd4a04
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: die_7
-      rect:
-        serializedVersion: 2
-        x: 1268
-        y: 3
-        width: 24
-        height: 33
-      alignment: 9
-      pivot: {x: 0.51, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6469576a4a99a8c49bb8b37fd1c1d53b
+      spriteID: 2d9c70cce58ac1f43a4623ada8f087a3
       vertices: []
       indices: 
       edges: []
@@ -255,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 64d28bcc5d35e624abd9dfcec625395d
+    spriteID: 4f709c7a403dd7240b8656d4387d9e6e
     vertices: []
     indices: 
     edges: []
