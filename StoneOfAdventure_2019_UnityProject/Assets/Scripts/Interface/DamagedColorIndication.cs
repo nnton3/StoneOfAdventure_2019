@@ -18,7 +18,6 @@ public class DamagedColorIndication : MonoBehaviour
 
     private void SwapColor()
     {
-        Debug.Log("work");
         anim.SetTrigger("damaged");
     }
 }

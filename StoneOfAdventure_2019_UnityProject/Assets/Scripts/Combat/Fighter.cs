@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace StoneOfAdventure.Combat
 {
     public class Fighter : MonoBehaviour
     {
         protected Animator anim;
+        public UnityEvent Attack;
 
         protected virtual void Start()
         {
@@ -13,12 +15,18 @@ namespace StoneOfAdventure.Combat
 
         public virtual void StartAttack()
         {
+            Attack.Invoke();
             anim.SetTrigger("attack");
         }
 
         public virtual void Cancel()
         {
             anim.SetTrigger("disable");
+        }
+
+        private void OnDisable()
+        {
+            Attack.RemoveAllListeners();
         }
     }
 }

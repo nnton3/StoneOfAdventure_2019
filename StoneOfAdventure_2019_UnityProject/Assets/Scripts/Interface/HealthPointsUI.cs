@@ -24,7 +24,6 @@ public class HealthPointsUI : MonoBehaviour
 
     private void FixXScale()
     {
-        Debug.Log("fix");
         thisFlip.CheckDirection((unitFlip.isFacingRight) ? 1f : -1f);
     }
 

@@ -9,8 +9,8 @@ namespace StoneOfAdventure.Combat
 
         public float Periodicity = 1f;  // TODO guard this variables
         public float HealValue = 1f;
-    
-        public void StartHeal()
+
+        private void Start()
         {
             health = GetComponent<Health>();
 
