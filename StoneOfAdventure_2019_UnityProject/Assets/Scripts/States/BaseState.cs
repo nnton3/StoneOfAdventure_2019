@@ -14,4 +14,6 @@ public class BaseState : MonoBehaviour
     public virtual void Skill2() { return; }
     public virtual void Dead() { return; }
     public virtual void Stun(float time) { return; }
+    public virtual void Born() { return; }
+    public virtual void Landed() { return; }
 }

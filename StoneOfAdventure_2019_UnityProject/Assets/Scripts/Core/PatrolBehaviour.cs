@@ -8,11 +8,12 @@ public class PatrolBehaviour : MonoBehaviour
     [SerializeField] private float patrolDelay = 2f;
     [SerializeField] private TileBase groundTile;
     private Flip flip;
+    private GroundTileScanner tileScanner;
 
     private void Start()
     {
         flip = GetComponent<Flip>();
-        groundMap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
+        tileScanner = GetComponent<GroundTileScanner>();
 
         StartCoroutine("PatrolTimer");
     }
@@ -37,17 +38,11 @@ public class PatrolBehaviour : MonoBehaviour
     private float CalculateDirection()
     {
         Vector3 currentDirection = (flip.isFacingRight) ? Vector3.right : Vector3.left;
-        TileBase nextTile = groundMap.GetTile(groundMap.WorldToCell(transform.position + Vector3.down + currentDirection));
-        if (nextTile == groundTile)
+
+        if (tileScanner.UnitOnTheGround())
         {
             return currentDirection.x;
         }
         else return -currentDirection.x;
-    }
-
-    public void Cancel()
-    {
-        StopCoroutine("PatrolTimer");
-        PatrolDirection = 0f;
     }
 }

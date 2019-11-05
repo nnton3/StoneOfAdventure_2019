@@ -5,30 +5,29 @@ using System.Collections;
 
 public class ZombieStateController : Unit
 {
-    private Flip flip;
     private EnemyDetector enemyDetector;
-    private object target;
-    private GameObject player;
+    private GameObject currentTarget;
     private ZombieIdleState idleState;
     private BaseState deathState;
-    private PatrolBehaviour patrolBehaviour;
+    private BaseState inTheAirState;
 
-    [SerializeField] private float attackRange = 1f;
+    private PatrolBehaviour patrolBehaviour;
+    private ChaseBehaviour chaseBehaviour;
+
     [SerializeField] private float movespeed = 3f;
     [SerializeField] private float patrolMovespeed = 1.5f;
-
-    [SerializeField] private string currentState = "";
 
     private void Start()
     {
         enemyDetector = GetComponentInChildren<EnemyDetector>();
-        flip = GetComponent<Flip>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
+        chaseBehaviour = GetComponent<ChaseBehaviour>();
 
         idleState = GetComponent<ZombieIdleState>();
         deathState = GetComponent<ZombieDeathState>();
+        inTheAirState = GetComponent<ZombieInTheAirState>();
 
-        DisableState();
+        State = deathState;
         
         enemyDetector.PlayerDetected.AddListener(() => UpdateTarget());
         enemyDetector.PlayerLost.AddListener(() => UpdateTarget());
@@ -37,56 +36,34 @@ public class ZombieStateController : Unit
     private void Update()
     {
         if (State == deathState) return;
-        if (player)
+        if (State == inTheAirState)
         {
-            if (PlayerInAttackRange())
-            {
-                if (PlayerInFront()) Attack();
-            }
-            MoveHorizontal(CalculateDirection(), movespeed);
+            MoveHorizontal(0f, patrolMovespeed);
+            return;
+        }
+        if (currentTarget)
+        {
+            chaseBehaviour.UpdateChaseBegaviour();
+            MoveHorizontal(chaseBehaviour.CalculateDirection(), movespeed);
         }
         else
         {
             patrolBehaviour.UpdatePatrolBehaviour();
             MoveHorizontal(patrolBehaviour.PatrolDirection, patrolMovespeed);
         }
-
-        currentState = State.ToString();
-    }
-
-    private bool PlayerInFront()
-    {
-        if (flip.isFacingRight && CalculateDirection() == 1f ||
-            !flip.isFacingRight && CalculateDirection() == -1f)
-             return true;
-        else return false;
-    }
-
-    private float CalculateDirection()
-    {
-        if (player)
-        {
-            return Mathf.Sign(player.transform.position.x - transform.position.x);
-        }
-        else return 0f;
-    }
-
-    private bool PlayerInAttackRange()
-    {
-        return Mathf.Abs(transform.position.x - player.transform.position.x) <= attackRange;
     }
 
     public void UpdateTarget()
     {
-        player = enemyDetector.Player;
-        if (player == null) DisableState();
+        currentTarget = enemyDetector.Player;
+        if (currentTarget == null) DisableState();
     }
 
-    private void Attack() { State.Attack(); }
+    public override void Attack() { State.Attack(); }
 
     private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 
-    public override void DisableState() { State = idleState; }
+    public override void DisableState() { Debug.Log("work"); State = idleState; }
 
     public override void Dead()
     {
@@ -94,6 +71,22 @@ public class ZombieStateController : Unit
         enemyDetector.PlayerDetected.RemoveAllListeners();
         enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
+    }
+
+    public override void Fell()
+    {
+        State.Fell();
+    }
+
+    public override void Landed()
+    {
+        if (State == deathState) return;
+        DisableState();
+    }
+
+    public override void Born()
+    {
+        State.Born();
     }
 
     IEnumerator DestroyCorrupse()

@@ -83,7 +83,8 @@ VFXRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,7 +138,7 @@ GameObject:
   - component: {fileID: 4375277717777581652}
   - component: {fileID: 7296050573129445963}
   - component: {fileID: 6394804556579325370}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ZombieHerold
   m_TagString: Enemie
   m_Icon: {fileID: 0}

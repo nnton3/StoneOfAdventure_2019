@@ -47,7 +47,7 @@ namespace StoneOfAdventure.Movement
             if (collision.gameObject.tag == ("Ground"))
             {
                 IsGroundedUpdate(true);
-                unit.DisableState();
+                unit.Landed();
             }
         }
 

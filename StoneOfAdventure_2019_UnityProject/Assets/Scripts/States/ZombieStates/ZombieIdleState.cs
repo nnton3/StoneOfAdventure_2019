@@ -16,6 +16,7 @@ public class ZombieIdleState : BaseState
     private BaseState moveHorizontalState;
     private BaseState deathState;
     private BaseState stunState;
+    private BaseState inTheAirState;
     #endregion
     private void Start()
     {
@@ -29,6 +30,7 @@ public class ZombieIdleState : BaseState
         moveHorizontalState = GetComponent<ZombieHorizontalMoveState>();
         deathState = GetComponent<ZombieDeathState>();
         stunState = GetComponent<ZombieStunState>();
+        inTheAirState = GetComponent<ZombieInTheAirState>();
     }
 
     public override void Attack()
@@ -58,5 +60,10 @@ public class ZombieIdleState : BaseState
     {
         unit.State = stunState;
         stunned.ApplyStun(time);
+    }
+
+    public override void Fell()
+    {
+        unit.State = inTheAirState;
     }
 }

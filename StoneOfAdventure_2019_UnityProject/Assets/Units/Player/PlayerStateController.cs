@@ -66,6 +66,11 @@ public class PlayerStateController : Unit
         State.Jump(jumpPower);
     }
 
+    public override void Landed()
+    {
+        DisableState();
+    }
+
     public override void DisableState()
     {
         State = idleState;

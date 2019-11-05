@@ -12,35 +12,24 @@ namespace StoneOfAdventure.Core
         private GameObject player;
 
         [SerializeField] private TileBase targetTile;
-        [SerializeField] private GameObject enemiePref;
         [SerializeField] private Vector3Int boundSize = new Vector3Int(1, 1, 1);
         [SerializeField] private float spawnDelay = 5f;
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> spawnChance = new List<float>();
-        private Dictionary<GameObject, float> tableOfSpawnEnemies = new Dictionary<GameObject, float>();
 
         private void Start()
         {
             player = FindObjectOfType<PlayerStateController>().gameObject;
             groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
 
-            for (int i = 0; i < units.Count; i++)
-            {
-                UpdateTableOfEnemies(units[i], spawnChance[i]);
-            }
-
             InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
-        }
-
-        public void UpdateTableOfEnemies(GameObject unitPref, float spawnChance)
-        {
-            tableOfSpawnEnemies.Add(unitPref, spawnChance);
         }
 
         private void SpawnEnemie()
         {
             Vector3 spawnPosition = ChangeSpawnPosition();
+            if (spawnPosition == Vector3.zero) return;
             GameObject enemie = ChangeEnemie();
             Instantiate(enemie, spawnPosition, Quaternion.identity);
         }
@@ -56,13 +45,15 @@ namespace StoneOfAdventure.Core
                 for (int j = 1; j < boundSize.y; j++)
                 {
                     Vector3 worldPositionCheck = startCheckPoint + new Vector3(i, j, 0f);
-                    Vector3Int tilePositionCheck = groundTilemap.WorldToCell(startCheckPoint + new Vector3(i, j, 0f));
+                    Vector3Int tilePositionCheck = groundTilemap.WorldToCell(worldPositionCheck);
                     if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
                     {
-                        targetPositions.Add(worldPositionCheck);
+                        targetPositions.Add(tilePositionCheck);
                     }
                 }
             }
+
+            if (targetPositions.Count == 0) return Vector3.zero;
 
             Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
             Vector2 positionForSpawn2d = positionForSpawn;
