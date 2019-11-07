@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_Name
-      value: Zombie Variant
+      value: Zombie Down Variant
       objectReference: {fileID: 0}
     - target: {fileID: 658190849188051328, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
@@ -107,5 +107,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051329, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 0de0f6e614349864fbc78cca32fbc569,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}

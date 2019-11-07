@@ -83,6 +83,16 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1082398901499250090, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 658190849188051330, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -104,20 +114,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: f5c51d72b9151ad4da0f977e997d1804,
         type: 2}
+    - target: {fileID: 4469884353747033339, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: damage
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469884353747033339, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: attackRange
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 658190849188051339, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: healthPoints
       value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082398901499250090, guid: 8dd953698b7982645a400cabe226a846,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}
