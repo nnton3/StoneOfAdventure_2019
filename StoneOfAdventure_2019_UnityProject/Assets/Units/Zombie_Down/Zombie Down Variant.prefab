@@ -82,6 +82,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051331, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e15d682245ea3504e84aee1944c3bb2e,
+        type: 3}
     - target: {fileID: 1082398901499250090, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -95,17 +101,17 @@ PrefabInstance:
     - target: {fileID: 658190849188051330, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.37
+      value: 0.345
       objectReference: {fileID: 0}
     - target: {fileID: 658190849188051330, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.6875
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 658190849188051330, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
+      value: 0.4375
       objectReference: {fileID: 0}
     - target: {fileID: 658190849188051329, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95f84a78cbe398e4bad53cde8e1eff7b
+guid: 075a88d760f412d40930211eac8c4a9a
 TextureImporter:
   fileIDToRecycleName:
     21300000: zombie_die_0
@@ -8,6 +8,7 @@ TextureImporter:
     21300006: zombie_die_3
     21300008: zombie_die_4
     21300010: zombie_die_5
+    21300012: zombie_die_6
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -148,18 +149,18 @@ TextureImporter:
       name: zombie_die_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 14
-        height: 6
+        x: 6
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95002b0a20a8abd4199c94bd17573868
+      spriteID: b4959c6a58103a249a74e4acd806abf7
       vertices: []
       indices: 
       edges: []
@@ -168,18 +169,18 @@ TextureImporter:
       name: zombie_die_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 3
-        width: 14
-        height: 6
+        x: 69
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d1eed7ee71001e43bcfbd2edd1f6aae
+      spriteID: b1251cabf007791459ac133d09c4b578
       vertices: []
       indices: 
       edges: []
@@ -188,18 +189,18 @@ TextureImporter:
       name: zombie_die_2
       rect:
         serializedVersion: 2
-        x: 155
-        y: 3
-        width: 14
-        height: 6
+        x: 132
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe23a245f6989d4ebd7e8a147ff66be
+      spriteID: bf335efaa1e6c9b4180ddb27b9b1cb78
       vertices: []
       indices: 
       edges: []
@@ -208,18 +209,18 @@ TextureImporter:
       name: zombie_die_3
       rect:
         serializedVersion: 2
-        x: 230
-        y: 3
-        width: 14
-        height: 6
+        x: 195
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85959b884361af84b87a72bc66bfe453
+      spriteID: d48f598b06e8c4f4ba8c7af8a4a3a3e8
       vertices: []
       indices: 
       edges: []
@@ -228,18 +229,18 @@ TextureImporter:
       name: zombie_die_4
       rect:
         serializedVersion: 2
-        x: 306
-        y: 3
-        width: 14
-        height: 6
+        x: 258
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d2c44dc12ea75449b57063743344b1c
+      spriteID: 74a31c60044051d4d8767ad8fa6d36ef
       vertices: []
       indices: 
       edges: []
@@ -248,18 +249,38 @@ TextureImporter:
       name: zombie_die_5
       rect:
         serializedVersion: 2
-        x: 382
-        y: 3
-        width: 14
-        height: 6
+        x: 321
+        y: 2
+        width: 9
+        height: 16
       alignment: 9
-      pivot: {x: 0.395, y: 0}
+      pivot: {x: 0.665, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27406f61386943742bf66b56acabb1a8
+      spriteID: b62d102b81fd2ce4985975b9e66e760c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie_die_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 9
+        height: 16
+      alignment: 9
+      pivot: {x: 0.665, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbca5afe73bade54586cccc880289c15
       vertices: []
       indices: 
       edges: []
@@ -267,7 +288,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5820f33fad1d6b34398821879b00ebb0
+    spriteID: 228f14509fa0af94caa80542d73cad2a
     vertices: []
     indices: 
     edges: []
