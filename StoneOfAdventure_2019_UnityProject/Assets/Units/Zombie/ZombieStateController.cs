@@ -34,9 +34,9 @@ public class ZombieStateController : Unit
         inTheAirState = GetComponent<ZombieInTheAirState>();
 
         State = deathState;
-        
-        enemyDetector.PlayerDetected.AddListener(() => UpdateTarget());
-        enemyDetector.PlayerLost.AddListener(() => UpdateTarget());
+
+        enemyDetector.PlayerDetected.AddListener(UpdateTarget);
+        enemyDetector.PlayerLost.AddListener(UpdateTarget);
     }
 
     private void Update()
@@ -62,7 +62,6 @@ public class ZombieStateController : Unit
     public void UpdateTarget()
     {
         currentTarget = enemyDetector.Player;
-        if (currentTarget == null) DisableState();
     }
 
     public override void Attack() { State.Attack(); }
@@ -84,7 +83,6 @@ public class ZombieStateController : Unit
     {
         for (int i = 0; i < reward; i++)
         {
-            Debug.Log("create shard");
             Instantiate(soulShard, transform.position, Quaternion.identity);
         }
     }
@@ -102,6 +100,7 @@ public class ZombieStateController : Unit
 
     public override void Born()
     {
+        
         State.Born();
     }
 
