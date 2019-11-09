@@ -65,7 +65,6 @@ public class ZombieHorizontalMoveState : BaseState
 
     public override void Fell()
     {
-        Debug.Log("fell");
         mover.Cancel();
         unit.State = inTheAirState;
     }

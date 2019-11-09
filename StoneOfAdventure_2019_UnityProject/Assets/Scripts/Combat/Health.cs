@@ -16,6 +16,7 @@ namespace StoneOfAdventure.Combat
         public float HealthPoints => healthPoints;
         private float maxHealthPoints;
         public float MaxHealthPoints => maxHealthPoints;
+        [SerializeField] private bool untouchable = false;
 
         private void Start()
         {
@@ -26,6 +27,8 @@ namespace StoneOfAdventure.Combat
 
         public void ApplyDamage(float damage)
         {
+            if (HealthPoints == 0) return;
+            if (untouchable) return;
             if (IsDead(damage))
             {
                 unit.Dead();
@@ -54,6 +57,11 @@ namespace StoneOfAdventure.Combat
         {
             maxHealthPoints = value;
             MaxHealthUpdated.Invoke();
+        }
+
+        public void SwapUntouchable()
+        {
+            untouchable = !untouchable;
         }
 
         private void OnDisable()

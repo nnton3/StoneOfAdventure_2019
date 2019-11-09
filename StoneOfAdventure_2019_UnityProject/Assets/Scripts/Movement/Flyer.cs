@@ -20,13 +20,13 @@ namespace StoneOfAdventure.Movement
             flip.CheckDirection(direction.x);
             Vector2 moveVector = direction * movespeed;
             rb.velocity = moveVector;
-            anim.SetBool("moveHorizontal", true);
+            if(anim != null) anim.SetBool("moveHorizontal", true);
         }
 
         public void Cancel()
         {
             rb.velocity = Vector2.zero;
-            anim.SetBool("moveHorizontal", false);
+            if (anim != null) anim.SetBool("moveHorizontal", false);
         }
     }
 }

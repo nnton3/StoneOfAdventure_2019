@@ -8,6 +8,7 @@ namespace StoneOfAdventure.Core
 {
     public class EnemieFactory : MonoBehaviour
     {
+        #region Variables
         private Tilemap groundTilemap;
         private GameObject player;
 
@@ -17,6 +18,7 @@ namespace StoneOfAdventure.Core
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> spawnChance = new List<float>();
+        #endregion
 
         private void Start()
         {
@@ -28,10 +30,17 @@ namespace StoneOfAdventure.Core
 
         private void SpawnEnemie()
         {
-            Vector3 spawnPosition = ChangeSpawnPosition();
-            if (spawnPosition == Vector3.zero) return;
-            GameObject enemie = ChangeEnemie();
-            Instantiate(enemie, spawnPosition, Quaternion.identity);
+            for (int i = 0; i < units.Count; i++)
+            {
+                float chance = UnityEngine.Random.Range(0f, 100f);
+
+                if (chance <= spawnChance[i])
+                {
+                    var spawnPosition = ChangeSpawnPosition();
+                    if (spawnPosition == Vector3.zero) return;
+                    Instantiate(units[i], spawnPosition, Quaternion.identity);
+                }
+            }
         }
 
         private Vector3 ChangeSpawnPosition()
@@ -58,23 +67,6 @@ namespace StoneOfAdventure.Core
             Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
             Vector2 positionForSpawn2d = positionForSpawn;
             return positionForSpawn2d;
-        }
-
-        private GameObject ChangeEnemie()
-        {
-            float chance = UnityEngine.Random.Range(0f, 100f);
-            float currentSpawnRange = 0f;
-
-            for (int i = 0; i < units.Count; i++)
-            {
-                currentSpawnRange += spawnChance[i];
-                if (chance <= currentSpawnRange)
-                {
-                    return units[i];
-                }
-            }
-            Debug.LogError("not found enemie pref");
-            return null;
         }
     }
 }

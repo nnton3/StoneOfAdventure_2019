@@ -252,6 +252,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   healthPoints: 60
+  untouchable: 1
 --- !u!114 &658190849188051337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +268,7 @@ MonoBehaviour:
   State: {fileID: 0}
   movespeed: 2.25
   patrolMovespeed: 2.25
+  reward: 3
 --- !u!114 &658190849188051338
 MonoBehaviour:
   m_ObjectHideFlags: 0

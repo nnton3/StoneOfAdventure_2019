@@ -2,9 +2,11 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 using System.Collections;
+using System;
 
 public class ZombieStateController : Unit
 {
+    #region Variables
     private EnemyDetector enemyDetector;
     private GameObject currentTarget;
     private ZombieIdleState idleState;
@@ -13,15 +15,19 @@ public class ZombieStateController : Unit
 
     private PatrolBehaviour patrolBehaviour;
     private ChaseBehaviour chaseBehaviour;
+    private GameObject soulShard;
 
     [SerializeField] private float movespeed = 3f;
     [SerializeField] private float patrolMovespeed = 1.5f;
+    [SerializeField] private int reward = 3;
+    #endregion
 
     private void Start()
     {
         enemyDetector = GetComponentInChildren<EnemyDetector>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
         chaseBehaviour = GetComponent<ChaseBehaviour>();
+        soulShard = Resources.Load<GameObject>("Soul_shard");
 
         idleState = GetComponent<ZombieIdleState>();
         deathState = GetComponent<ZombieDeathState>();
@@ -63,7 +69,7 @@ public class ZombieStateController : Unit
 
     private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
 
-    public override void DisableState() { Debug.Log("work"); State = idleState; }
+    public override void DisableState() { State = idleState; }
 
     public override void Dead()
     {
@@ -71,6 +77,16 @@ public class ZombieStateController : Unit
         enemyDetector.PlayerDetected.RemoveAllListeners();
         enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
+        CreateReward();
+    }
+
+    private void CreateReward()
+    {
+        for (int i = 0; i < reward; i++)
+        {
+            Debug.Log("create shard");
+            Instantiate(soulShard, transform.position, Quaternion.identity);
+        }
     }
 
     public override void Fell()
