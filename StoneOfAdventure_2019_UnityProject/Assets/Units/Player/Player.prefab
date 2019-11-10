@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillArea: {fileID: 326667089476556061}
-  damage: 44
+  damage: 55
   timeOfStun: 3
   coolDown: 8
 --- !u!114 &7226845849540991534
@@ -365,9 +365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ba372577a181d4bbbad160ecdf7a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 22
   movespeed: 22
-  coolDown: 2
+  coolDown: 5
 --- !u!114 &6294659417202341041
 MonoBehaviour:
   m_ObjectHideFlags: 0
