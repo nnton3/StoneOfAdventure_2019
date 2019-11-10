@@ -4,6 +4,7 @@ using StoneOfAdventure.Core;
 
 public class PlayerStateController : Unit
 {
+    #region Variables
     private BaseState idleState;
     [SerializeField] private float movespeed = 5f;
     [SerializeField] private float movespeedInTheAir = 5f;
@@ -12,6 +13,7 @@ public class PlayerStateController : Unit
     [SerializeField] private float verticalMovespeed = 3f;
 
     [SerializeField] private string currentState = "";
+    #endregion
 
     private void Start()
     {
@@ -46,7 +48,7 @@ public class PlayerStateController : Unit
         State.MoveVertical(direction, verticalMovespeed);
     }
 
-    private void Attack()
+    public override void Attack()
     {
         State.Attack();
     }
