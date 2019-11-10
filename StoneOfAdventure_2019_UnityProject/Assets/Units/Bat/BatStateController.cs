@@ -2,7 +2,7 @@
 using StoneOfAdventure.Movement;
 using UnityEngine;
 
-public class BatStateController : Unit
+public class BatStateController : UnitContainsAward
 {
     private GameObject player;
     private Flyer flyer;
@@ -10,16 +10,20 @@ public class BatStateController : Unit
 
     [SerializeField] private float movespeed;
     
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         player = GameObject.FindGameObjectWithTag("Player");
         flyer = GetComponent<Flyer>();
         anim = GetComponent<Animator>();
+
+        transform.position = transform.position + Vector3.left * 20f;
     }
 
     private void FixedUpdate()
     {
-        if (player) Move((player.transform.position - transform.position).normalized);
+        if (player) Move((player.transform.position - transform.position + new Vector3(0f, 0.5f, 0f)).normalized);
     }
 
     private void Move(Vector2 direction)
@@ -32,6 +36,7 @@ public class BatStateController : Unit
         player = null;
         Move(Vector2.zero);
         anim.SetTrigger("dead");
+        CreateReward();
     }
 
     public void DestroyUnit()

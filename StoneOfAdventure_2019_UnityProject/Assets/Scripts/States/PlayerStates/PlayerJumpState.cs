@@ -44,6 +44,7 @@ public class PlayerJumpState : BaseState
 
     public override void Skill2()
     {
+        if (!playerSkill2.CanUseSkill) return;
         unit.State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         playerSkill2.StartUse();

@@ -4,7 +4,7 @@ using StoneOfAdventure.Core;
 using System.Collections;
 using System;
 
-public class ZombieStateController : Unit
+public class ZombieStateController : UnitContainsAward
 {
     #region Variables
     private EnemyDetector enemyDetector;
@@ -15,19 +15,18 @@ public class ZombieStateController : Unit
 
     private PatrolBehaviour patrolBehaviour;
     private ChaseBehaviour chaseBehaviour;
-    private GameObject soulShard;
 
     [SerializeField] private float movespeed = 3f;
     [SerializeField] private float patrolMovespeed = 1.5f;
-    [SerializeField] private int reward = 3;
     #endregion
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         enemyDetector = GetComponentInChildren<EnemyDetector>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
         chaseBehaviour = GetComponent<ChaseBehaviour>();
-        soulShard = Resources.Load<GameObject>("Soul_shard");
 
         idleState = GetComponent<ZombieIdleState>();
         deathState = GetComponent<ZombieDeathState>();
@@ -77,14 +76,6 @@ public class ZombieStateController : Unit
         enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
         CreateReward();
-    }
-
-    private void CreateReward()
-    {
-        for (int i = 0; i < reward; i++)
-        {
-            Instantiate(soulShard, transform.position, Quaternion.identity);
-        }
     }
 
     public override void Fell()

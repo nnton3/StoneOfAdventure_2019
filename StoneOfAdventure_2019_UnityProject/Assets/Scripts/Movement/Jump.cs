@@ -7,6 +7,7 @@ namespace StoneOfAdventure.Movement
     public class Jump : MonoBehaviour
     {
         public bool isGrounded { get; private set; }
+        [SerializeField] private bool inPlatform;
         private Rigidbody2D rb;
         private Unit unit;
         private Animator anim;

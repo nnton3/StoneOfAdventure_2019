@@ -21,7 +21,6 @@ public class PlayerMoveVerticalState : BaseState
 
     public override void Jump(float jumpPower)
     {
-        //if (InPlatform()) return;
         climb.StopVerticalMove();
         unit.State = jumpState;
         jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);

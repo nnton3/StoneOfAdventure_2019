@@ -53,4 +53,14 @@ public class PlayerSkill2 : MonoBehaviour
         unit.DisableState();
         if (!jump.isGrounded) { unit.Fell(); }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.collider.name);
+        if (collision.gameObject.CompareTag("Enemie"))
+        {
+            collision.gameObject.GetComponent<Health>().ApplyDamage(damage);
+            Debug.Log("work");
+        }
+    }
 }

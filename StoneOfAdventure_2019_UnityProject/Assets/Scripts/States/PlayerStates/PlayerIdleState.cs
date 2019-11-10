@@ -68,12 +68,14 @@ public class PlayerIdleState : BaseState
 
     public override void Skill1()
     {
+        if (!playerSkill1.CanUseSkill) return;
         playerSkill1.StartUse();
         unit.State = attackState;
     }
 
     public override void Skill2()
     {
+        if (!playerSkill2.CanUseSkill) return;
         unit.State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
