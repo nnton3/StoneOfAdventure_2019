@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  damage: 1
+  damage: 5
 --- !u!61 &8410564180581215074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,8 +173,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 2a8b79683d1cec84f81a7000a6549ce7, type: 3}
+  m_SortingOrder: 25
+  m_Sprite: {fileID: 21300002, guid: 7198984d63403514eabb001c7cd1c255, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -220,8 +220,8 @@ BoxCollider2D:
   m_Offset: {x: -0.5, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.4375, y: 1.9375}
+    pivot: {x: 0.37, y: 0}
+    oldSize: {x: 1.1875, y: 0.9375}
     newSize: {x: 1.875, y: 0.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -264,7 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: {fileID: 0}
-  movespeed: 2
+  reward: 3
+  movespeed: 3
 --- !u!114 &5529957313187058676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,3 +319,4 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   healthPoints: 10
+  untouchable: 0
