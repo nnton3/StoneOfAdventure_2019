@@ -39,6 +39,11 @@ public class PlayerSkill2 : MonoBehaviour
         canUseSkill = false;
         StartCoroutine("CoolDownTimer");
         anim.SetTrigger("skill2");
+        StartMove();
+    }
+
+    public void StartMove()
+    {
         float direction = (flip.isFacingRight) ? 1f : -1f;
         mover.MoveTo(direction, movespeed);
         playerScill2Collider.SetActive(true);

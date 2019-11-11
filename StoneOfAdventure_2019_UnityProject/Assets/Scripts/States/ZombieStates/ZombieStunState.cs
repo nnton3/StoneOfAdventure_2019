@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using StoneOfAdventure.Core;
 
 public class ZombieStunState : BaseState
 {
     #region Variables
     private Animator anim;
-    private ZombieStateController unit;
+    private Unit unit;
     private Stunned stunned;
 
     private BaseState deathState;
@@ -15,7 +16,7 @@ public class ZombieStunState : BaseState
     private void Start()
     {
         anim = GetComponent<Animator>();
-        unit = GetComponent<ZombieStateController>();
+        unit = GetComponent<Unit>();
         stunned = GetComponent<Stunned>();
 
         deathState = GetComponent<ZombieDeathState>();

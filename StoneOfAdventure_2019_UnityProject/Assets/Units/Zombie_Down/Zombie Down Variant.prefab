@@ -98,6 +98,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 658190849188051330, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -119,5 +124,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 0de0f6e614349864fbc78cca32fbc569,
         type: 2}
+    - target: {fileID: 658190849188051339, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: healthPoints
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}

@@ -778,11 +778,13 @@ MonoBehaviour:
   - {fileID: 5044558562134226988, guid: f87fb2153fff2954bb9d0bd90cbd54ee, type: 3}
   - {fileID: 5529957313187058664, guid: 251101802aca4f8459db13f5d1079271, type: 3}
   - {fileID: 6133069997062176456, guid: 0987281248004b34c8174a3790911d69, type: 3}
+  - {fileID: 3601460222140525370, guid: 0fdf8d88763870246a7ac3d3d8093284, type: 3}
   spawnChance:
   - 20
   - 15
   - 35
   - 30
+  - 50
 --- !u!114 &337770571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,6 +2230,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AssetsPPU: 100
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!4 &553165750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
@@ -11709,7 +11719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1689716164 stripped
 Transform:
@@ -13835,7 +13845,7 @@ PrefabInstance:
     - target: {fileID: 5438147089998035997, guid: 0bacb836c57284b4b893926b7720a626,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5438147089998035997, guid: 0bacb836c57284b4b893926b7720a626,
         type: 3}

@@ -10,7 +10,6 @@ public class PlayerSkill2Collider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
         if (collision.CompareTag("Enemie"))
             collision.GetComponent<Health>().ApplyDamage(skill2Damage);
     }
