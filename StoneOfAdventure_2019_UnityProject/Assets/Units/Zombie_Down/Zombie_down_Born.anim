@@ -118,7 +118,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.6
+  - time: 1.5
     functionName: SwapUntouchable
     data: 
     objectReferenceParameter: {fileID: 0}

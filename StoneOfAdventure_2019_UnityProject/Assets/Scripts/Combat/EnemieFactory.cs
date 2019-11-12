@@ -57,7 +57,7 @@ namespace StoneOfAdventure.Core
                     Vector3Int tilePositionCheck = groundTilemap.WorldToCell(worldPositionCheck);
                     if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
                     {
-                        targetPositions.Add(tilePositionCheck);
+                        targetPositions.Add(tilePositionCheck + Vector3Int.right);
                     }
                 }
             }

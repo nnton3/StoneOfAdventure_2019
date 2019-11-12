@@ -80,7 +80,7 @@ public class ZombieStateController : UnitContainsAward
 
     public override void Fell()
     {
-        State.Fell();
+        // State.Fell();
     }
 
     public override void Landed()
