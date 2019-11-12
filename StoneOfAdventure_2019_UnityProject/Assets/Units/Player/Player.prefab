@@ -366,8 +366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 22
-  movespeed: 30
-  coolDown: 5
+  movespeed: 25
+  coolDown: 0
 --- !u!114 &6294659417202341041
 MonoBehaviour:
   m_ObjectHideFlags: 0

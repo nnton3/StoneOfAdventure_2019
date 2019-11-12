@@ -317,7 +317,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  healthPoints: 44
+  healthPoints: 80
   untouchable: 1
 --- !u!114 &5792545510151547752
 MonoBehaviour:
@@ -357,9 +357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: {fileID: 0}
-  reward: 3
+  reward: 6
   attackRange: 1
-  movespeed: 1.5
+  movespeed: 2.25
   currentState: 
 --- !u!114 &8952970309734705115
 MonoBehaviour:
@@ -515,7 +515,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 1}
+  m_Size: {x: 10, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &7893951552256298687
 MonoBehaviour:
@@ -529,8 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86774d3a9a2f6b0419352abe07887fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healValue: 1
-  periodicity: 1
+  healValue: 2
+  periodicity: 0.2
 --- !u!1001 &4200216003108321560
 PrefabInstance:
   m_ObjectHideFlags: 0
