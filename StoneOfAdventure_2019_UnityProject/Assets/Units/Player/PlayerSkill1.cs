@@ -5,7 +5,6 @@ using StoneOfAdventure.Core;
 
 public class PlayerSkill1 : MonoBehaviour
 {
-    [SerializeField] private AttackCollider skillArea;
     [SerializeField] private float damage;
     [SerializeField] private float timeOfStun;
     [SerializeField] private float coolDown = 2f;
@@ -29,10 +28,11 @@ public class PlayerSkill1 : MonoBehaviour
     // Animation event
     public void Skill1Hit()
     {
-        foreach (var enemie in skillArea.EnemieList)
+        Collider[] enemiesInApplicationArea = Physics.OverlapBox(transform.position + applicationAreaCenter, applicationArea / 2, Quaternion.identity);
+        foreach (var enemie in enemiesInApplicationArea)
         {
             enemie.GetComponent<Unit>().ApplyStun(timeOfStun);
-            enemie.ApplyDamage(damage);
+            enemie.GetComponent<Health>().ApplyDamage(damage);
         }
     }
 
@@ -40,5 +40,17 @@ public class PlayerSkill1 : MonoBehaviour
     {
         yield return new WaitForSeconds(coolDown);
         canUseSkill = true;
+    }
+
+    [SerializeField] private Vector3 applicationAreaCenter;
+    [SerializeField] private Vector3 applicationArea;
+    [SerializeField] private bool applicationAreaVisible;
+    [SerializeField] private LayerMask layerMask;
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        if (applicationAreaVisible)
+            Gizmos.DrawWireCube(transform.position + applicationAreaCenter, applicationArea);
     }
 }

@@ -43,12 +43,12 @@ public class PlayerMoveHorizontalState : BaseState
     {
         fighter.StartAttack();
         mover.Cancel();
-        unit.State = attackState;
+        unit._State = attackState;
     }
 
     public override void Jump(float jumpPower)
     {
-        unit.State = jumpState;
+        unit._State = jumpState;
         jump.ToJump(Vector2.up, jumpPower);
         anim.SetBool("moveHorizontal", false);
     }
@@ -70,14 +70,14 @@ public class PlayerMoveHorizontalState : BaseState
         if (unitCanClimbOnLadder)
         {
             mover.Cancel();
-            unit.State = moveVerticalState;
+            unit._State = moveVerticalState;
         }
     }
 
     public override void Fell()
     {
         mover.Cancel();
-        unit.State = jumpState;
+        unit._State = jumpState;
     }
 
     public override void Skill1()
@@ -85,13 +85,13 @@ public class PlayerMoveHorizontalState : BaseState
         if (!playerSkill1.CanUseSkill) return;
         playerSkill1.StartUse();
         mover.Cancel();
-        unit.State = attackState;
+        unit._State = attackState;
     }
 
     public override void Skill2()
     {
         if (!playerSkill2.CanUseSkill) return;
-        unit.State = skill2State;
+        unit._State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
         playerSkill2.StartUse();

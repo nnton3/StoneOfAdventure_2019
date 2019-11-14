@@ -35,16 +35,16 @@ public class ZombieHeroldStateController : UnitContainsAward
         patrolBehaviour.UpdatePatrolBehaviour();
 
         MoveHorizontal(patrolBehaviour.PatrolDirection, movespeed);
-        currentState = State.ToString();
+        currentState = _State.ToString();
     }
 
-    private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
+    private void MoveHorizontal(float direction, float movespeed) { _State.MoveHorizontal(direction, movespeed); }
 
-    public override void DisableState() { State = idleState; }
+    public override void DisableState() { _State = idleState; }
 
     public override void Dead()
     {
-        State.Dead();
+        _State.Dead();
         alliesDetector.enabled = false;
         StartCoroutine("DestroyCorrupse");
         GetComponentInChildren<VisualEffect>().enabled = false;
@@ -58,6 +58,6 @@ public class ZombieHeroldStateController : UnitContainsAward
 
     public override void ApplyStun(float timeOfStun)
     {
-        State.Stun(timeOfStun);
+        _State.Stun(timeOfStun);
     }
 }

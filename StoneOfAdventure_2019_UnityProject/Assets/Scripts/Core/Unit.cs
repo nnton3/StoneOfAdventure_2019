@@ -4,7 +4,7 @@ namespace StoneOfAdventure.Core
 {
     public class Unit : MonoBehaviour
     {
-        public BaseState State;
+        public BaseState _State;
 
         public virtual void Attack() { return; }
         public virtual void DisableState() { return; }

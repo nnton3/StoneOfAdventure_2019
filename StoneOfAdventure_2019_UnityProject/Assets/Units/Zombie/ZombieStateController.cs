@@ -32,7 +32,7 @@ public class ZombieStateController : UnitContainsAward
         deathState = GetComponent<ZombieDeathState>();
         inTheAirState = GetComponent<ZombieInTheAirState>();
 
-        State = deathState;
+        _State = deathState;
 
         enemyDetector.PlayerDetected.AddListener(UpdateTarget);
         enemyDetector.PlayerLost.AddListener(UpdateTarget);
@@ -40,8 +40,8 @@ public class ZombieStateController : UnitContainsAward
 
     private void Update()
     {
-        if (State == deathState) return;
-        if (State == inTheAirState)
+        if (_State == deathState) return;
+        if (_State == inTheAirState)
         {
             MoveHorizontal(0f, patrolMovespeed);
             return;
@@ -63,15 +63,15 @@ public class ZombieStateController : UnitContainsAward
         currentTarget = enemyDetector.Player;
     }
 
-    public override void Attack() { State.Attack(); }
+    public override void Attack() { _State.Attack(); }
 
-    private void MoveHorizontal(float direction, float movespeed) { State.MoveHorizontal(direction, movespeed); }
+    private void MoveHorizontal(float direction, float movespeed) { _State.MoveHorizontal(direction, movespeed); }
 
-    public override void DisableState() { State = idleState; }
+    public override void DisableState() { _State = idleState; }
 
     public override void Dead()
     {
-        State.Dead();
+        _State.Dead();
         enemyDetector.PlayerDetected.RemoveAllListeners();
         enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
@@ -85,14 +85,14 @@ public class ZombieStateController : UnitContainsAward
 
     public override void Landed()
     {
-        if (State == deathState) return;
+        if (_State == deathState) return;
         DisableState();
     }
 
     public override void Born()
     {
         
-        State.Born();
+        _State.Born();
     }
 
     IEnumerator DestroyCorrupse()
@@ -103,6 +103,6 @@ public class ZombieStateController : UnitContainsAward
 
     public override void ApplyStun(float timeOfStun)
     {
-        State.Stun(timeOfStun);
+        _State.Stun(timeOfStun);
     }
 }

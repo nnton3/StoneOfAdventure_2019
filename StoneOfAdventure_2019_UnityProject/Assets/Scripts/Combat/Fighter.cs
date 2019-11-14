@@ -6,7 +6,7 @@ namespace StoneOfAdventure.Combat
     public class Fighter : MonoBehaviour
     {
         protected Animator anim;
-        public UnityEvent Attack;
+        [HideInInspector] public UnityEvent Attack;
 
         protected virtual void Start()
         {

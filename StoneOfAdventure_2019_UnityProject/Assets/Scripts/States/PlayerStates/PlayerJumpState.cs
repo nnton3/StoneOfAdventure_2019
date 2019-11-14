@@ -38,14 +38,14 @@ public class PlayerJumpState : BaseState
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
         if (unitCanClimbOnLadder)
         {
-            unit.State = moveVerticalState;
+            unit._State = moveVerticalState;
         }
     }
 
     public override void Skill2()
     {
         if (!playerSkill2.CanUseSkill) return;
-        unit.State = skill2State;
+        unit._State = skill2State;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         playerSkill2.StartUse();
     }

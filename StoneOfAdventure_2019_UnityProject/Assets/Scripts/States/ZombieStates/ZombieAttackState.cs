@@ -29,18 +29,18 @@ public class ZombieAttackState : BaseState
     public override void Dead()
     {
         anim.SetTrigger("dead");
-        unit.State = deathState;
+        unit._State = deathState;
     }
 
     public override void Stun(float time)
     {
         fighter.Cancel();
-        unit.State = stunState;
+        unit._State = stunState;
         stunned.ApplyStun(time);
     }
 
     public override void Fell()
     {
-        unit.State = inTheAirState;
+        unit._State = inTheAirState;
     }
 }

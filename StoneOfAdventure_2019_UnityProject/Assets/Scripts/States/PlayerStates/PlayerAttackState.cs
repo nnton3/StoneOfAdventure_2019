@@ -12,5 +12,5 @@ public class PlayerAttackState : BaseState
         jumpState = GetComponent<PlayerJumpState>();
     }
 
-    public override void Fell() { unit.State = jumpState; }
+    public override void Fell() { unit._State = jumpState; }
 }

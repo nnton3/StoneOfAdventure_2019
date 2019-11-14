@@ -35,7 +35,7 @@ public class ZombieIdleState : BaseState
 
     public override void Attack()
     {
-        unit.State = attackState;
+        unit._State = attackState;
         fighter.StartAttack();
     }
 
@@ -47,23 +47,23 @@ public class ZombieIdleState : BaseState
             mover.Cancel();
             return;
         }
-        unit.State = moveHorizontalState;
+        unit._State = moveHorizontalState;
     }
 
     public override void Dead()
     {
         anim.SetTrigger("dead");
-        unit.State = deathState;
+        unit._State = deathState;
     }
 
     public override void Stun(float time)
     {
-        unit.State = stunState;
+        unit._State = stunState;
         stunned.ApplyStun(time);
     }
 
     public override void Fell()
     {
-        unit.State = inTheAirState;
+        unit._State = inTheAirState;
     }
 }

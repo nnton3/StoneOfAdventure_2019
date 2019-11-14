@@ -27,11 +27,11 @@ public class ZombieStunState : BaseState
     {
         anim.SetTrigger("dead");
         stunned.Cancel();
-        unit.State = deathState;
+        unit._State = deathState;
     }
 
     public override void Fell()
     {
-        unit.State = inTheAirState;
+        unit._State = inTheAirState;
     }
 }
