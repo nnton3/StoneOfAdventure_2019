@@ -26,12 +26,6 @@ public class PlayerMoveVerticalState : BaseState
         jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
     }
 
-    [SerializeField] private Tilemap platformMap;
-    private bool InPlatform()
-    {
-        return platformMap.GetTile(platformMap.WorldToCell(transform.position + Vector3.up)) != null;
-    }
-
     private float jumpDirection;
     public override void MoveHorizontal(float direction, float movespeed) { jumpDirection = direction; }
 

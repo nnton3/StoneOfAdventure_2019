@@ -2,6 +2,7 @@
 using UnityEngine;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
+using StoneOfAdventure.Combat;
 
 public class PlayerStateController : Unit
 {
@@ -11,22 +12,33 @@ public class PlayerStateController : Unit
     [SerializeField] private float movespeedInTheAir = 5f;
     public float MovespeedScale = 1f;
     [SerializeField] private float jumpPower = 800f;
+    [SerializeField] private float jumpPowerScaleOnLadder = 1f;
     [SerializeField] private float verticalMovespeed = 3f;
+    private float jumpDirection;
 
     private Mover mover;
+    private Fighter fighter;
     private Climb climb;
-    [SerializeField] private string currentState = "";
-    #endregion
+    private Jump jump;
+    private PlayerSkill1 playerSkill1;
+    private PlayerSkill2 playerSkill2;
+    private Rigidbody2D rb;
+    private Animator anim;
 
     private enum State { Idle, MoveHorizontal, MoveVertical, InTheAir, Attack, Skill2 }
     private State playerState = State.Idle;
+    #endregion
 
     private void Start()
     {
-        _State = GetComponent<PlayerIdleState>();
-        idleState = GetComponent<PlayerIdleState>();
         mover = GetComponent<Mover>();
+        fighter = GetComponent<Fighter>();
         climb = GetComponent<Climb>();
+        jump = GetComponent<Jump>();
+        playerSkill1 = GetComponent<PlayerSkill1>();
+        playerSkill2 = GetComponent<PlayerSkill2>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -37,59 +49,166 @@ public class PlayerStateController : Unit
         if (Input.GetAxisRaw("Fire2") != 0f) Skill1();
         if (Input.GetAxisRaw("Fire3") != 0f) Skill2();
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
-
-        currentState = base._State.ToString();
     }
 
     #region Events
-    private void Idle()
-    {
-        base._State.Idle();
-    }
-
     private void MoveHorizontal(float direction)
     {
-        base._State.MoveHorizontal(direction, (base._State == GetComponent<PlayerJumpState>()) ? movespeedInTheAir : (movespeed * MovespeedScale));
+        switch (playerState)
+        {
+            case State.Idle:
+                if (direction != 0f) StateMoveHorizontal();
+                break;
+            case State.MoveHorizontal:
+                if (direction == 0f) StateIdle();
+                else mover.MoveTo(direction, movespeed * MovespeedScale);
+                break;
+            case State.MoveVertical:
+                jumpDirection = direction;
+                break;
+            case State.InTheAir:
+                mover.MoveInAirTo(direction, movespeedInTheAir);
+                return;
+        }
     }
 
     private void MoveVertical(float direction)
     {
-        base._State.MoveVertical(direction, verticalMovespeed);
+        bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
+        switch (playerState)
+        {
+            case State.Idle:
+                if (unitCanClimbOnLadder)
+                {
+                    StateMoveVertical();
+                }
+                break;
+            case State.MoveHorizontal:
+                if (unitCanClimbOnLadder)
+                {
+                    mover.Cancel();
+                    StateMoveVertical();
+                }
+                break;
+            case State.MoveVertical:
+                climb.TryToClimb(direction, verticalMovespeed);
+                break;
+            case State.InTheAir:
+                if (unitCanClimbOnLadder)
+                {
+                    StateMoveVertical();
+                }
+                break;
+        }
     }
 
     public override void Attack()
     {
-        base._State.Attack();
+        switch (playerState)
+        {
+            case State.Idle:
+                fighter.StartAttack();
+                StateAttack();
+                break;
+            case State.MoveHorizontal:
+                fighter.StartAttack();
+                mover.Cancel();
+                StateAttack();
+                break;
+        }
     }
 
     private void Skill1()
     {
-        base._State.Skill1();
+        switch (playerState)
+        {
+            case State.Idle:
+                if (!playerSkill1.CanUseSkill) return;
+                playerSkill1.StartUse();
+                StateAttack();
+                break;
+            case State.MoveHorizontal:
+                if (!playerSkill1.CanUseSkill) return;
+                playerSkill1.StartUse();
+                mover.Cancel();
+                StateAttack();
+                break;
+        }
     }
 
     private void Skill2()
     {
-        base._State.Skill2();
+        switch (playerState)
+        {
+            case State.Idle:
+                if (!playerSkill2.CanUseSkill) return;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+                playerSkill2.StartUse();
+                StateSkill2();
+                break;
+            case State.MoveHorizontal:
+                mover.Cancel();
+                if (!playerSkill2.CanUseSkill) return;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+                playerSkill2.StartUse();
+                StateSkill2();
+                break;
+            case State.InTheAir:
+                if (!playerSkill2.CanUseSkill) return;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+                playerSkill2.StartUse();
+                StateSkill2();
+                break;
+        }
     }
 
     private void Jump()
     {
-        base._State.Jump(jumpPower);
+        switch(playerState)
+        {
+            case State.Idle:
+                jump.ToJump(Vector2.up, jumpPower);
+                StateInTheAir();
+                break;
+            case State.MoveHorizontal:
+                jump.ToJump(Vector2.up, jumpPower);
+                anim.SetBool("moveHorizontal", false);
+                StateInTheAir();
+                break;
+            case State.MoveVertical:
+                climb.StopVerticalMove();
+                jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
+                break;
+        }
     }
 
     public override void Landed()
     {
-        DisableState();
+        StateIdle();
     }
 
     public override void DisableState()
     {
-        base._State = idleState;
+        StateIdle();
     }
 
     public override void Fell()
     {
-        base._State.Fell();
+        switch (playerState)
+        {
+            case State.Idle:
+                StateInTheAir();
+                break;
+            case State.MoveHorizontal:
+                mover.Cancel();
+                StateInTheAir();
+                break;
+            case State.Attack:
+                StateInTheAir();
+                break;
+        }
     }
     #endregion
 
@@ -107,33 +226,11 @@ public class PlayerStateController : Unit
 
     private void StateMoveHorizontal()
     {
-        if (playerState == State.Idle)
-        {
-            SetState(State.MoveHorizontal);
-        }
+        SetState(State.MoveHorizontal);
     }
 
-    private void StateMoveVertical(float direction)
+    private void StateMoveVertical()
     {
-        bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
-
-        switch (playerState)
-        {
-            case State.Idle:
-                if (!unitCanClimbOnLadder) return;
-                break;
-            case State.MoveHorizontal:
-                if (!unitCanClimbOnLadder) return;
-                mover.Cancel();
-                break;
-            case State.InTheAir:
-                if (!unitCanClimbOnLadder) return;
-                break;
-            case State.Attack:
-                return;
-            case State.Skill2:
-                return;
-        }
         SetState(State.MoveVertical);
     }
 
@@ -155,26 +252,6 @@ public class PlayerStateController : Unit
 
     private void SetState(State value)
     {
-        switch (playerState)
-        {
-            case State.Idle:
-                playerState = value;
-                break;
-            case State.MoveHorizontal:
-                playerState = value;
-                break;
-            case State.MoveVertical:
-                playerState = value;
-                break;
-            case State.InTheAir:
-                playerState = value;
-                break;
-            case State.Attack:
-                playerState = value;
-                break;
-            case State.Skill2:
-                playerState = value;
-                break;
-        }
+        playerState = value;
     }
 }
