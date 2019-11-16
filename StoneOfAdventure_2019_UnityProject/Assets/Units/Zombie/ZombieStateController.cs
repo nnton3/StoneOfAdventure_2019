@@ -3,15 +3,17 @@ using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 using System.Collections;
 using System;
+using StoneOfAdventure.Movement;
 
 public class ZombieStateController : UnitContainsAward
 {
     #region Variables
     private EnemyDetector enemyDetector;
     private GameObject currentTarget;
-    private ZombieIdleState idleState;
-    private BaseState deathState;
-    private BaseState inTheAirState;
+    private Mover mover;
+    private Fighter fighter;
+    private Animator anim;
+    private Stunned stunned;
 
     private PatrolBehaviour patrolBehaviour;
     private ChaseBehaviour chaseBehaviour;
@@ -24,15 +26,15 @@ public class ZombieStateController : UnitContainsAward
     {
         base.Start();
 
+        currentState = State.Death;
+
         enemyDetector = GetComponentInChildren<EnemyDetector>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
         chaseBehaviour = GetComponent<ChaseBehaviour>();
-
-        idleState = GetComponent<ZombieIdleState>();
-        deathState = GetComponent<ZombieDeathState>();
-        inTheAirState = GetComponent<ZombieInTheAirState>();
-
-        _State = deathState;
+        mover = GetComponent<Mover>();
+        fighter = GetComponent<Fighter>();
+        anim = GetComponent<Animator>();
+        stunned = GetComponent<Stunned>();
 
         enemyDetector.PlayerDetected.AddListener(UpdateTarget);
         enemyDetector.PlayerLost.AddListener(UpdateTarget);
@@ -40,8 +42,8 @@ public class ZombieStateController : UnitContainsAward
 
     private void Update()
     {
-        if (_State == deathState) return;
-        if (_State == inTheAirState)
+        if (currentState == State.Death) return;
+        if (currentState == State.InTheAir)
         {
             MoveHorizontal(0f, patrolMovespeed);
             return;
@@ -63,37 +65,107 @@ public class ZombieStateController : UnitContainsAward
         currentTarget = enemyDetector.Player;
     }
 
-    public override void Attack() { _State.Attack(); }
+    #region Events
+    private void MoveHorizontal(float direction, float movespeed)
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                if (direction != 0f) StateMoveHorizontal();
+                break;
+            case State.MoveHorizontal:
+                if (direction == 0f) StateIdle();
+                else mover.MoveTo(direction, movespeed);
+                break;
+            case State.InTheAir:
+                mover.MoveInAirTo(direction, movespeed);
+                break;
+        }
+    }
 
-    private void MoveHorizontal(float direction, float movespeed) { _State.MoveHorizontal(direction, movespeed); }
+    public override void Attack()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                StateAttack();
+                fighter.StartAttack();
+                break;
+        }
+    }
 
-    public override void DisableState() { _State = idleState; }
+    public override void DisableState() => StateIdle();
 
     public override void Dead()
     {
-        _State.Dead();
+        switch (currentState)
+        {
+            case State.Idle:
+                anim.SetTrigger("dead");
+                StateDeath();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                anim.SetTrigger("dead");
+                StateDeath();
+                break;
+            case State.InTheAir:
+                mover.CancelMove();
+                anim.SetTrigger("dead");
+                StateDeath();
+                break;
+            case State.Attack:
+                fighter.CancelAttack();
+                anim.SetTrigger("dead");
+                StateDeath();
+                break;
+            case State.Stun:
+                anim.SetTrigger("dead");
+                StateDeath();
+                break;
+        }
+
         enemyDetector.PlayerDetected.RemoveAllListeners();
         enemyDetector.PlayerLost.RemoveAllListeners();
         StartCoroutine("DestroyCorrupse");
         CreateReward();
     }
 
-    public override void Fell()
-    {
-        // State.Fell();
-    }
-
     public override void Landed()
     {
-        if (_State == deathState) return;
+        if (currentState == State.Death) return;
         DisableState();
     }
 
     public override void Born()
     {
-        
-        _State.Born();
+        if (currentState == State.Death) DisableState();
     }
+
+    public override void ApplyStun(float timeOfStun)
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                stunned.ApplyStun(timeOfStun);
+                StateStun();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                stunned.ApplyStun(timeOfStun);
+                StateStun();
+                break;
+            case State.Attack:
+                fighter.CancelAttack();
+                stunned.ApplyStun(timeOfStun);
+                StateStun();
+                break;
+        }
+    }
+    #endregion
 
     IEnumerator DestroyCorrupse()
     {
@@ -101,8 +173,37 @@ public class ZombieStateController : UnitContainsAward
         Destroy(gameObject);
     }
 
-    public override void ApplyStun(float timeOfStun)
+    #region StateTransitions
+    private void StateIdle()
     {
-        _State.Stun(timeOfStun);
+        if (currentState == State.MoveHorizontal) mover.CancelMove();
+        SetState(State.Idle);
+    }
+
+    private void StateMoveHorizontal()
+    {
+        SetState(State.MoveHorizontal);
+    }
+
+    private void StateAttack()
+    {
+        SetState(State.Attack);
+    }
+
+    private void StateDeath()
+    {
+        SetState(State.Death);
+    }
+
+    private void StateStun()
+    {
+        SetState(State.Stun);
+    }
+
+    #endregion
+
+    private void SetState(State value)
+    {
+        currentState = value;
     }
 }

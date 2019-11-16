@@ -59,7 +59,7 @@ public class PlayerSkill2 : MonoBehaviour
     {
         playerScill2Collider.SetActive(false);
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        mover.Cancel();
+        mover.CancelMove();
         unit.DisableState();
         if (!jump.isGrounded) { unit.Fell(); }
     }

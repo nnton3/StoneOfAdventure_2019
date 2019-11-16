@@ -6,11 +6,13 @@ namespace StoneOfAdventure.Combat
     public class Fighter : MonoBehaviour
     {
         protected Animator anim;
+        protected Flip flip;
         [HideInInspector] public UnityEvent Attack;
 
         protected virtual void Start()
         {
             anim = GetComponent<Animator>();
+            flip = GetComponent<Flip>();
         }
 
         public virtual void StartAttack()
@@ -19,7 +21,7 @@ namespace StoneOfAdventure.Combat
             anim.SetTrigger("attack");
         }
 
-        public virtual void Cancel()
+        public virtual void CancelAttack()
         {
             anim.SetTrigger("disable");
         }

@@ -18,11 +18,11 @@ namespace StoneOfAdventure.Combat
 
         private void OnTriggerExit2D(Collider2D enemie)
         {
-            if (enemie.CompareTag("Player")) { Cancel(); }
+            if (enemie.CompareTag("Player")) { CancelAttack(); }
         }
         
         private void Hit() { playerHealth.ApplyDamage(damage); }
 
-        public override void Cancel() { CancelInvoke("Hit"); }
+        public override void CancelAttack() { CancelInvoke("Hit"); }
     }
 }

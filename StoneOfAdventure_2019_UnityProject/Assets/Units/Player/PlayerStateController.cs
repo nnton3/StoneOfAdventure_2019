@@ -7,7 +7,6 @@ using StoneOfAdventure.Combat;
 public class PlayerStateController : Unit
 {
     #region Variables
-    private BaseState idleState;
     [SerializeField] private float movespeed = 5f;
     [SerializeField] private float movespeedInTheAir = 5f;
     public float MovespeedScale = 1f;
@@ -24,9 +23,6 @@ public class PlayerStateController : Unit
     private PlayerSkill2 playerSkill2;
     private Rigidbody2D rb;
     private Animator anim;
-
-    private enum State { Idle, MoveHorizontal, MoveVertical, InTheAir, Attack, Skill2 }
-    private State playerState = State.Idle;
     #endregion
 
     private void Start()
@@ -52,9 +48,9 @@ public class PlayerStateController : Unit
     }
 
     #region Events
-    private void MoveHorizontal(float direction)
+    public override void MoveHorizontal(float direction)
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 if (direction != 0f) StateMoveHorizontal();
@@ -72,10 +68,10 @@ public class PlayerStateController : Unit
         }
     }
 
-    private void MoveVertical(float direction)
+    public override void MoveVertical(float direction)
     {
         bool unitCanClimbOnLadder = (direction != 0f && !climb.LadderEnd(direction) && climb.CanClimb);
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 if (unitCanClimbOnLadder)
@@ -86,7 +82,7 @@ public class PlayerStateController : Unit
             case State.MoveHorizontal:
                 if (unitCanClimbOnLadder)
                 {
-                    mover.Cancel();
+                    mover.CancelMove();
                     StateMoveVertical();
                 }
                 break;
@@ -104,7 +100,7 @@ public class PlayerStateController : Unit
 
     public override void Attack()
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 fighter.StartAttack();
@@ -112,15 +108,15 @@ public class PlayerStateController : Unit
                 break;
             case State.MoveHorizontal:
                 fighter.StartAttack();
-                mover.Cancel();
+                mover.CancelMove();
                 StateAttack();
                 break;
         }
     }
 
-    private void Skill1()
+    public override void Skill1()
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 if (!playerSkill1.CanUseSkill) return;
@@ -130,15 +126,15 @@ public class PlayerStateController : Unit
             case State.MoveHorizontal:
                 if (!playerSkill1.CanUseSkill) return;
                 playerSkill1.StartUse();
-                mover.Cancel();
+                mover.CancelMove();
                 StateAttack();
                 break;
         }
     }
 
-    private void Skill2()
+    public override void Skill2()
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 if (!playerSkill2.CanUseSkill) return;
@@ -148,7 +144,7 @@ public class PlayerStateController : Unit
                 StateSkill2();
                 break;
             case State.MoveHorizontal:
-                mover.Cancel();
+                mover.CancelMove();
                 if (!playerSkill2.CanUseSkill) return;
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
                 transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
@@ -164,9 +160,9 @@ public class PlayerStateController : Unit
         }
     }
 
-    private void Jump()
+    public override void Jump()
     {
-        switch(playerState)
+        switch (currentState)
         {
             case State.Idle:
                 jump.ToJump(Vector2.up, jumpPower);
@@ -196,13 +192,13 @@ public class PlayerStateController : Unit
 
     public override void Fell()
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.Idle:
                 StateInTheAir();
                 break;
             case State.MoveHorizontal:
-                mover.Cancel();
+                mover.CancelMove();
                 StateInTheAir();
                 break;
             case State.Attack:
@@ -215,10 +211,10 @@ public class PlayerStateController : Unit
     #region StateTransitions
     private void StateIdle()
     {
-        switch (playerState)
+        switch (currentState)
         {
             case State.MoveHorizontal:
-                mover.Cancel();
+                mover.CancelMove();
                 break;
         }
         SetState(State.Idle);
@@ -252,6 +248,6 @@ public class PlayerStateController : Unit
 
     private void SetState(State value)
     {
-        playerState = value;
+        currentState = value;
     }
 }

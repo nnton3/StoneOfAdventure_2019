@@ -23,7 +23,7 @@ namespace StoneOfAdventure.Movement
             if(anim != null) anim.SetBool("moveHorizontal", true);
         }
 
-        public void Cancel()
+        public void CancelFly()
         {
             rb.velocity = Vector2.zero;
             if (anim != null) anim.SetBool("moveHorizontal", false);

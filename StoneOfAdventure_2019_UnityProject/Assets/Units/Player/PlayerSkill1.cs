@@ -11,11 +11,13 @@ public class PlayerSkill1 : MonoBehaviour
 
     private bool canUseSkill = true;
     public bool CanUseSkill => canUseSkill;
+    private Flip flip;
     private Animator anim;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        flip = GetComponent<Flip>();
     }
 
     public void StartUse()
@@ -28,7 +30,13 @@ public class PlayerSkill1 : MonoBehaviour
     // Animation event
     public void Skill1Hit()
     {
-        Collider[] enemiesInApplicationArea = Physics.OverlapBox(transform.position + applicationAreaCenter, applicationArea / 2, Quaternion.identity);
+        Vector2 centerInRelationUnitDirection =
+                transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
+        Collider2D[] enemiesInApplicationArea = Physics2D.OverlapBoxAll(
+                        centerInRelationUnitDirection,
+                        applicationArea,
+                        0f,
+                        layerMask);
         foreach (var enemie in enemiesInApplicationArea)
         {
             enemie.GetComponent<Unit>().ApplyStun(timeOfStun);

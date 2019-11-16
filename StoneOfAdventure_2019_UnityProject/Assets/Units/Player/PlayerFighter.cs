@@ -5,7 +5,6 @@ namespace StoneOfAdventure.Combat
 {
     public class PlayerFighter : Fighter
     {
-        private Vector3 relativePosition;
         [SerializeField] private float damage;
         private float damageScale = 1f;
         private float currentAttackSpeed = 1f;
@@ -23,13 +22,19 @@ namespace StoneOfAdventure.Combat
 
         private void ResetDamageScale() { damageScale = 1f; }
 
-        internal void Hit()
+        // Animation event
+        public void Hit()
         {
             float currentDamage = damage * damageScale;
-            Collider[] enemiesInApplicationArea = Physics.OverlapBox(transform.position + applicationAreaCenter, applicationArea / 2, Quaternion.identity);
+            Vector2 centerInRelationUnitDirection =
+                transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
+            Collider2D[] enemiesInApplicationArea = Physics2D.OverlapBoxAll(
+                centerInRelationUnitDirection,
+                applicationArea,
+                0f,
+                layerMask);
             foreach (var enemie in enemiesInApplicationArea)
             {
-                Debug.Log(enemie.name);
                 enemie.GetComponent<Health>().ApplyDamage(currentDamage);
             }
             ResetDamageScale();

@@ -5,16 +5,9 @@ using UnityEngine;
 
 public class ZombieFighter : Fighter
 {
-    private Flip flip;
     [SerializeField] private float attackRange;
     [SerializeField] private int attackedLayer;
     [SerializeField] private float damage;
-
-    protected override void Start()
-    {
-        base.Start();
-        flip = GetComponent<Flip>();
-    }
 
     // Animation event
     public void Hit()

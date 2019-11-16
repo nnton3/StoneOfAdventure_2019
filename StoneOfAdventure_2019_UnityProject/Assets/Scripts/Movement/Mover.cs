@@ -34,7 +34,7 @@ namespace StoneOfAdventure.Movement
             rb.AddForce(horizontalMove, ForceMode2D.Force);
         }
 
-        public void Cancel()
+        public void CancelMove()
         {
             rb.velocity = Vector2.zero;
             anim.SetBool("moveHorizontal", false);

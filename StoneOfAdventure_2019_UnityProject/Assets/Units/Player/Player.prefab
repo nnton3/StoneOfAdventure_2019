@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4603871013170009232}
   - component: {fileID: 5276332428803179151}
   - component: {fileID: 2559205245791168891}
+  - component: {fileID: 5790436647658446409}
   - component: {fileID: 7226845849540991534}
   - component: {fileID: 6294659417202341041}
   - component: {fileID: 4221212495678884504}
@@ -233,13 +234,34 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  damage: 100
+  damage: 10
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
   applicationArea: {x: 3, y: 1, z: 1}
   applicationAreaVisible: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+--- !u!114 &5790436647658446409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa760de64262fb3439465580796f85ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  timeOfStun: 2
+  coolDown: 2
+  applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
+  applicationArea: {x: 3, y: 1, z: 1}
+  applicationAreaVisible: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &7226845849540991534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26996a8e5c5b43146b7b7a5cc307cb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _State: {fileID: 0}
   movespeed: 6
   movespeedInTheAir: 5
   MovespeedScale: 1
