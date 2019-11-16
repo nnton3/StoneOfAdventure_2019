@@ -11,6 +11,8 @@ namespace StoneOfAdventure.Movement
         protected Rigidbody2D rb;
         protected Animator anim;
         protected Flip flip;
+        private float currentMovespeedScale = 1f;
+        public float CurrentMovespeedScale => currentMovespeedScale;
 
         protected virtual void Start()
         {
@@ -22,7 +24,7 @@ namespace StoneOfAdventure.Movement
         internal virtual void MoveTo(float direction, float movespeed)
         {
             flip.CheckDirection(direction);
-            Vector2 horizontalMove = Vector2.right * direction * movespeed;
+            Vector2 horizontalMove = Vector2.right * direction * movespeed * currentMovespeedScale;
             rb.velocity = horizontalMove;
             anim.SetBool("moveHorizontal", true);
         }
@@ -30,8 +32,15 @@ namespace StoneOfAdventure.Movement
         internal void MoveInAirTo(float direction, float movespeed)
         {
             flip.CheckDirection(direction);
-            Vector2 horizontalMove = new Vector2(direction * movespeed, 0f);
+            Vector2 horizontalMove = new Vector2(direction * movespeed * currentMovespeedScale, 0f);
             rb.AddForce(horizontalMove, ForceMode2D.Force);
+        }
+
+        public void ModifyMovespeed(float addedMovespeedInPercent)
+        {
+            Debug.Log("work");
+            currentMovespeedScale += addedMovespeedInPercent;
+            anim.SetFloat("currentMovespeed", currentMovespeedScale);
         }
 
         public void CancelMove()

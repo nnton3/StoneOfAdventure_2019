@@ -8,6 +8,8 @@ namespace StoneOfAdventure.Combat
         protected Animator anim;
         protected Flip flip;
         [HideInInspector] public UnityEvent Attack;
+        private float currentAttackSpeed = 1f;
+        public float CurrentAttackSpeed => currentAttackSpeed;
 
         protected virtual void Start()
         {
@@ -24,6 +26,12 @@ namespace StoneOfAdventure.Combat
         public virtual void CancelAttack()
         {
             anim.SetTrigger("disable");
+        }
+
+        public void ModifyAttackSpeed(float addedAttackspeedInPercent)
+        {
+            currentAttackSpeed += addedAttackspeedInPercent;
+            anim.SetFloat("currentAttackspeed", currentAttackSpeed);
         }
 
         private void OnDisable()

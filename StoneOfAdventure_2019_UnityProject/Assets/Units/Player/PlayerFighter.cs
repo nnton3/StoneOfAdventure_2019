@@ -7,13 +7,7 @@ namespace StoneOfAdventure.Combat
     {
         [SerializeField] private float damage;
         private float damageScale = 1f;
-        private float currentAttackSpeed = 1f;
-
-        public void ModifyAttackSpeed(float addedAttackspeedInPercent)
-        {
-            currentAttackSpeed += addedAttackspeedInPercent;
-            anim.SetFloat("currentAttackSpeed", currentAttackSpeed);
-        }
+        
 
         public void SetDamageScaleForNexAttack(float _damageScale)
         {

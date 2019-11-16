@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using StoneOfAdventure.Movement;
 
 public class MovespeedUpper_artifact : Artifact
 {
@@ -7,7 +7,7 @@ public class MovespeedUpper_artifact : Artifact
 
     public void AddMovespeed()
     {
-        player.GetComponent<PlayerStateController>().MovespeedScale += addedMovespeedInPercent;
+        player.GetComponent<Mover>().ModifyMovespeed(addedMovespeedInPercent);
         Destroy(gameObject);
     }
 }

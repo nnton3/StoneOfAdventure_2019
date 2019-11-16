@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ZombieHerold_attackspeed
+  m_Controller: {fileID: 9100000, guid: ee8a024ac1c663e41a0a7853e91f97a7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 09310c2df1b985d42bf3e1a20be746b4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1444bd2b1fc71d145b7c451620a8f711, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 00c9fac481d01ca4bb1ceb0ec3e75e3a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7ccd35121d6fa7848a360cc417f19bb8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bb3a185dce4662b41b504b5027d79101, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f50071d8a903e6d469090b536faa3ee1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1b3a82d338eee3c4d8b3e970be5aba81, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 23147d25385201f4fb61fb74f59e771f, type: 2}

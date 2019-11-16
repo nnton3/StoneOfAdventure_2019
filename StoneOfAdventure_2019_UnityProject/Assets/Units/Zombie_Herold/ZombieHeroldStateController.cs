@@ -12,7 +12,6 @@ public class ZombieHeroldStateController : UnitContainsAward
     private EnemyDetector enemyDetector;
     private object target;
     private GameObject player;
-    private ZombieBuffer alliesDetector;
     private PatrolBehaviour patrolBehaviour;
     private Mover mover;
     private Fighter fighter;
@@ -27,7 +26,6 @@ public class ZombieHeroldStateController : UnitContainsAward
     {
         base.Start();
 
-        alliesDetector = GetComponentInChildren<ZombieBuffer>();
         flip = GetComponent<Flip>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
         mover = GetComponent<Mover>();
