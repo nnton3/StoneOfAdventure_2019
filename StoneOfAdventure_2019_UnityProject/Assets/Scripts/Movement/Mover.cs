@@ -38,7 +38,6 @@ namespace StoneOfAdventure.Movement
 
         public void ModifyMovespeed(float addedMovespeedInPercent)
         {
-            Debug.Log("work");
             currentMovespeedScale += addedMovespeedInPercent;
             anim.SetFloat("currentMovespeed", currentMovespeedScale);
         }

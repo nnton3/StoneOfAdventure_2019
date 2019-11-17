@@ -7,7 +7,7 @@ namespace StoneOfAdventure.Core
         protected enum State { Idle, MoveHorizontal, MoveVertical, InTheAir, Attack, Skill2, Death,
             Stun
         }
-        protected State currentState = State.Idle;
+        [SerializeField] protected State currentState = State.Idle;
 
         public virtual void Attack() { return; }
         public virtual void Skill1() { return; }

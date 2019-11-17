@@ -13,7 +13,7 @@ public class DamagedColorIndication : MonoBehaviour
         health = GetComponent<Health>();
         anim = GetComponent<Animator>();
 
-        health.HPUpdated.AddListener(SwapColor);
+        health.HPDecreased.AddListener(SwapColor);
     }
 
     private void SwapColor()

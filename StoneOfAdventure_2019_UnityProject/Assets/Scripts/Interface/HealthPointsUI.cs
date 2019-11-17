@@ -19,7 +19,7 @@ public class HealthPointsUI : MonoBehaviour
 
         unitFlip.Flipped.AddListener(FixXScale);
         lastHealthSave = health.HealthPoints;
-        health.HPUpdated.AddListener(CalculateHealthDifference);
+        health.HPDecreased.AddListener(CalculateHealthDifference);
     }
 
     private void FixXScale()
@@ -29,16 +29,21 @@ public class HealthPointsUI : MonoBehaviour
 
     private void CalculateHealthDifference()
     {
-        if (lastHealthSave - health.HealthPoints != 0f) CreateDamagePointsUI($"{health.HealthPoints - lastHealthSave}");
+        var healthDifference = lastHealthSave - health.HealthPoints;
+        if (healthDifference == 0f) return;
+        if (healthDifference > 0) CreatePointsUI($"{healthDifference}", Color.red);
+        if (healthDifference < 0) CreatePointsUI($"{healthDifference}", Color.green);
         lastHealthSave = health.HealthPoints;
     }
 
     [SerializeField] private GameObject pointsUI;
-    private void CreateDamagePointsUI(string text)
+    private void CreatePointsUI(string text, Color pointsColor)
     {
         GameObject currentInstance = Instantiate(pointsUI, Vector3.zero, Quaternion.identity, transform);
         currentInstance.transform.localPosition = Vector3.zero;
-        currentInstance.GetComponent<Text>().text = text;
+        var textComponent = currentInstance.GetComponent<Text>();
+        textComponent.text = text;
+        textComponent.color = pointsColor;
         currentInstance.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 3f, ForceMode2D.Impulse);
      }
 }

@@ -20,7 +20,6 @@ public class CriticalDamage_AttackModifier : MonoBehaviour
         float chance = Random.Range(0f, 100f);
         if (chance <= CriticalChance)
         {
-            Debug.Log("work");
             playerFighter.SetDamageScaleForNexAttack(DamageScale);
         }
     }

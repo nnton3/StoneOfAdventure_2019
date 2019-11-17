@@ -9,7 +9,8 @@ namespace StoneOfAdventure.Combat
     {
         private Unit unit;
 
-        [HideInInspector] public UnityEvent HPUpdated;
+        [HideInInspector] public UnityEvent HPDecreased;
+        [HideInInspector] public UnityEvent HPIncreased;
         [HideInInspector] public UnityEvent MaxHealthUpdated;
 
         [SerializeField] private float healthPoints = 100f;
@@ -33,12 +34,12 @@ namespace StoneOfAdventure.Combat
             {
                 unit.Dead();
                 healthPoints = 0f;
-                HPUpdated.Invoke();
+                HPDecreased.Invoke();
             }
             else
             {
                 healthPoints -= damage;
-                HPUpdated.Invoke();
+                HPDecreased.Invoke();
             }
         }
 
@@ -50,7 +51,7 @@ namespace StoneOfAdventure.Combat
         public void Heal(float healValue)
         {
             if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
-            HPUpdated.Invoke();
+            HPIncreased.Invoke();
         }
 
         public void UpdateMaxHealthPoints(float value)
@@ -66,7 +67,8 @@ namespace StoneOfAdventure.Combat
 
         private void OnDisable()
         {
-            HPUpdated.RemoveAllListeners();
+            HPDecreased.RemoveAllListeners();
+            HPIncreased.RemoveAllListeners();
             MaxHealthUpdated.RemoveAllListeners();
         }
     }

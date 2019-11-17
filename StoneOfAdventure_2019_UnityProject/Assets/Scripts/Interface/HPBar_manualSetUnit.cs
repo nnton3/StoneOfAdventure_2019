@@ -15,7 +15,9 @@ namespace StoneOfAdventure.UI
             health = unit.GetComponent<Health>();
 
             health.MaxHealthUpdated.AddListener(UpdateHPBar);
-            health.HPUpdated.AddListener(UpdateHPBar);
+            health.HPDecreased.AddListener(UpdateHPBar);
+            health.HPIncreased.AddListener(UpdateHPBar);
+            UpdateHPBar();
         }
     }
 }

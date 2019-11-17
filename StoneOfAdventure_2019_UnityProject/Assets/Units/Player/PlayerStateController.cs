@@ -3,6 +3,7 @@ using UnityEngine;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using StoneOfAdventure.Combat;
+using UnityEngine.Events;
 
 public class PlayerStateController : Unit
 {
@@ -22,6 +23,9 @@ public class PlayerStateController : Unit
     private PlayerSkill2 playerSkill2;
     private Rigidbody2D rb;
     private Animator anim;
+
+    [HideInInspector] public UnityEvent StartWalk;
+    [HideInInspector] public UnityEvent StopWalk;
     #endregion
 
     private void Start()
@@ -74,25 +78,18 @@ public class PlayerStateController : Unit
         {
             case State.Idle:
                 if (unitCanClimbOnLadder)
-                {
                     StateMoveVertical();
-                }
                 break;
             case State.MoveHorizontal:
                 if (unitCanClimbOnLadder)
-                {
-                    mover.CancelMove();
                     StateMoveVertical();
-                }
                 break;
             case State.MoveVertical:
                 climb.TryToClimb(direction, verticalMovespeed);
                 break;
             case State.InTheAir:
                 if (unitCanClimbOnLadder)
-                {
                     StateMoveVertical();
-                }
                 break;
         }
     }
@@ -107,7 +104,6 @@ public class PlayerStateController : Unit
                 break;
             case State.MoveHorizontal:
                 fighter.StartAttack();
-                mover.CancelMove();
                 StateAttack();
                 break;
         }
@@ -118,16 +114,18 @@ public class PlayerStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                if (!playerSkill1.CanUseSkill) return;
-                playerSkill1.StartUse();
-                StateAttack();
+                TryToStartSkill1();
                 break;
             case State.MoveHorizontal:
-                if (!playerSkill1.CanUseSkill) return;
-                playerSkill1.StartUse();
-                mover.CancelMove();
-                StateAttack();
+                TryToStartSkill1();
                 break;
+        }
+
+        void TryToStartSkill1()
+        {
+            if (!playerSkill1.CanUseSkill) return;
+            playerSkill1.StartUse();
+            StateAttack();
         }
     }
 
@@ -136,26 +134,23 @@ public class PlayerStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                if (!playerSkill2.CanUseSkill) return;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
-                transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
-                playerSkill2.StartUse();
-                StateSkill2();
+                TryToStartScill2();
                 break;
             case State.MoveHorizontal:
-                mover.CancelMove();
-                if (!playerSkill2.CanUseSkill) return;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
-                transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
-                playerSkill2.StartUse();
-                StateSkill2();
+                TryToStartScill2();
                 break;
             case State.InTheAir:
-                if (!playerSkill2.CanUseSkill) return;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
-                playerSkill2.StartUse();
-                StateSkill2();
+                TryToStartScill2();
                 break;
+        }
+
+        void TryToStartScill2()
+        {
+            if (!playerSkill2.CanUseSkill) return;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+            playerSkill2.StartUse();
+            StateSkill2();
         }
     }
 
@@ -175,6 +170,7 @@ public class PlayerStateController : Unit
             case State.MoveVertical:
                 climb.StopVerticalMove();
                 jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
+                StateInTheAir();
                 break;
         }
     }
@@ -210,37 +206,41 @@ public class PlayerStateController : Unit
     #region StateTransitions
     private void StateIdle()
     {
-        switch (currentState)
+        if (currentState == State.MoveHorizontal)
         {
-            case State.MoveHorizontal:
-                mover.CancelMove();
-                break;
+            StopWalk.Invoke();
+            mover.CancelMove();
         }
         SetState(State.Idle);
     }
 
     private void StateMoveHorizontal()
     {
+        StartWalk.Invoke();
         SetState(State.MoveHorizontal);
     }
 
     private void StateMoveVertical()
     {
+        if (currentState == State.MoveHorizontal) mover.CancelMove();
         SetState(State.MoveVertical);
     }
 
     private void StateInTheAir()
     {
+        if (currentState == State.MoveHorizontal) StopWalk.Invoke();
         SetState(State.InTheAir);
     }
 
     private void StateAttack()
     {
+        if (currentState == State.MoveHorizontal) mover.CancelMove();
         SetState(State.Attack);
     }
 
     private void StateSkill2()
     {
+        if (currentState == State.MoveHorizontal) mover.CancelMove();
         SetState(State.Skill2);
     }
     #endregion
@@ -248,5 +248,11 @@ public class PlayerStateController : Unit
     private void SetState(State value)
     {
         currentState = value;
+    }
+
+    private void OnDisable()
+    {
+        StartWalk.RemoveAllListeners();
+        StopWalk.RemoveAllListeners();
     }
 }
