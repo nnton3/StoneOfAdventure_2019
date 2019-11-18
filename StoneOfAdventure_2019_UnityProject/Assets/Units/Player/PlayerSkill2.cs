@@ -4,15 +4,12 @@ using System.Collections;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 
-public class PlayerSkill2 : MonoBehaviour
+public class PlayerSkill2 : SkillBase
 {
     #region Vatiables
     [SerializeField] private float damage;
     [SerializeField] private float movespeed = 10f;
-    [SerializeField] private float coolDown = 2f;
 
-    private bool canUseSkill = true;
-    public bool CanUseSkill => canUseSkill;
     private Animator anim;
     private Rigidbody2D rb;
     private PlayerStateController unit;
@@ -34,10 +31,9 @@ public class PlayerSkill2 : MonoBehaviour
         playerScill2Collider.SetActive(false);
     }
 
-    public void StartUse()
+    public override void StartUse()
     {
-        canUseSkill = false;
-        StartCoroutine("CoolDownTimer");
+        base.StartUse();
         anim.SetTrigger("skill2");
         StartMove();
     }
@@ -47,12 +43,6 @@ public class PlayerSkill2 : MonoBehaviour
         float direction = (flip.isFacingRight) ? 1f : -1f;
         mover.MoveTo(direction, movespeed);
         playerScill2Collider.SetActive(true);
-    }
-
-    private IEnumerator CoolDownTimer()
-    {
-        yield return new WaitForSeconds(coolDown);
-        canUseSkill = true;
     }
 
     public void Skill2End()

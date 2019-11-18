@@ -3,14 +3,11 @@ using System.Collections;
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 
-public class PlayerSkill1 : MonoBehaviour
+public class PlayerSkill1 : SkillBase
 {
     [SerializeField] private float damage;
     [SerializeField] private float timeOfStun;
-    [SerializeField] private float coolDown = 2f;
-
-    private bool canUseSkill = true;
-    public bool CanUseSkill => canUseSkill;
+   
     private Flip flip;
     private Animator anim;
 
@@ -20,10 +17,9 @@ public class PlayerSkill1 : MonoBehaviour
         flip = GetComponent<Flip>();
     }
 
-    public void StartUse()
+    public override void StartUse()
     {
-        canUseSkill = false;
-        StartCoroutine("CoolDownTimer");
+        base.StartUse();
         anim.SetTrigger("skill1");
     }
 
@@ -44,12 +40,7 @@ public class PlayerSkill1 : MonoBehaviour
         }
     }
 
-    private IEnumerator CoolDownTimer()
-    {
-        yield return new WaitForSeconds(coolDown);
-        canUseSkill = true;
-    }
-
+    #region Application area params
     [SerializeField] private Vector3 applicationAreaCenter;
     [SerializeField] private Vector3 applicationArea;
     [SerializeField] private bool applicationAreaVisible;
@@ -61,4 +52,5 @@ public class PlayerSkill1 : MonoBehaviour
         if (applicationAreaVisible)
             Gizmos.DrawWireCube(transform.position + applicationAreaCenter, applicationArea);
     }
+    #endregion
 }

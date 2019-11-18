@@ -21,6 +21,7 @@ public class PlayerStateController : Unit
     private Jump jump;
     private PlayerSkill1 playerSkill1;
     private PlayerSkill2 playerSkill2;
+    private PlayerUltimateSkill ultimateSkill;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -36,6 +37,7 @@ public class PlayerStateController : Unit
         jump = GetComponent<Jump>();
         playerSkill1 = GetComponent<PlayerSkill1>();
         playerSkill2 = GetComponent<PlayerSkill2>();
+        ultimateSkill = GetComponent<PlayerUltimateSkill>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -48,6 +50,7 @@ public class PlayerStateController : Unit
         if (Input.GetAxisRaw("Fire2") != 0f) Skill1();
         if (Input.GetAxisRaw("Fire3") != 0f) Skill2();
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
+        if (Input.GetAxisRaw("UltimateSkill") != 0f) UltimateSkill();
     }
 
     #region Events
@@ -152,6 +155,11 @@ public class PlayerStateController : Unit
             playerSkill2.StartUse();
             StateSkill2();
         }
+    }
+
+    public override void UltimateSkill()
+    {
+        if (ultimateSkill.CanUseSkill) ultimateSkill.StartUse();
     }
 
     public override void Jump()

@@ -9,12 +9,8 @@ namespace StoneOfAdventure.Core
     public class EnemieFactory : MonoBehaviour
     {
         #region Variables
-        private Tilemap groundTilemap;
-        private GameObject player;
-
-        [SerializeField] private TileBase targetTile;
-        [SerializeField] private Vector3Int boundSize = new Vector3Int(1, 1, 1);
         [SerializeField] private float spawnDelay = 5f;
+        private GoundTileFinder tileFinder;
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> spawnChance = new List<float>();
@@ -22,8 +18,7 @@ namespace StoneOfAdventure.Core
 
         private void Start()
         {
-            player = FindObjectOfType<PlayerStateController>().gameObject;
-            groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
+            tileFinder = GetComponent<GoundTileFinder>();
 
             InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
         }
@@ -45,22 +40,7 @@ namespace StoneOfAdventure.Core
 
         private Vector3 ChangeSpawnPosition()
         {
-            List<Vector3> targetPositions = new List<Vector3>();
-
-            Vector3 startCheckPoint = player.transform.position - (Vector3)boundSize / 2;
-
-            for (int i = 1; i < boundSize.x; i++)
-            {
-                for (int j = 1; j < boundSize.y; j++)
-                {
-                    Vector3 worldPositionCheck = startCheckPoint + new Vector3(i, j, 0f);
-                    Vector3Int tilePositionCheck = groundTilemap.WorldToCell(worldPositionCheck);
-                    if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
-                    {
-                        targetPositions.Add(tilePositionCheck + Vector3Int.right);
-                    }
-                }
-            }
+            List<Vector3> targetPositions = tileFinder.FindValidPositions();
 
             if (targetPositions.Count == 0) return Vector3.zero;
 
@@ -68,5 +48,6 @@ namespace StoneOfAdventure.Core
             Vector2 positionForSpawn2d = positionForSpawn;
             return positionForSpawn2d;
         }
+
     }
 }

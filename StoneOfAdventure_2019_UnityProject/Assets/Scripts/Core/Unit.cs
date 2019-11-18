@@ -12,6 +12,7 @@ namespace StoneOfAdventure.Core
         public virtual void Attack() { return; }
         public virtual void Skill1() { return; }
         public virtual void Skill2() { return; }
+        public virtual void UltimateSkill() { return; }
         public virtual void MoveHorizontal(float direction) { return; }
         public virtual void MoveVertical(float direction) { return; }
         public virtual void DisableState() { return; }

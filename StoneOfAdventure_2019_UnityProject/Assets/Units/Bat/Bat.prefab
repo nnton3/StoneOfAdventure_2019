@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 5529957313187058676}
   - component: {fileID: 5529957313187058673}
   - component: {fileID: 2075140156964113833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bat
   m_TagString: Enemie
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8b9feec3859304792cbd025d5154fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: {fileID: 0}
+  currentState: 0
   reward: 3
   movespeed: 3
 --- !u!114 &5529957313187058676
@@ -308,7 +308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411a4310b2d093c488c51f9acb4933fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPUpdated:
+  HPDecreased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HPIncreased:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
