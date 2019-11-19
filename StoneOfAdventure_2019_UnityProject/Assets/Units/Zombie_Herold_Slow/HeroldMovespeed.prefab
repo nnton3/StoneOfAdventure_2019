@@ -91,12 +91,27 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.3125
       objectReference: {fileID: 0}
+    - target: {fileID: 8220842231279998147, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220842231279998147, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.125
+      objectReference: {fileID: 0}
     - target: {fileID: 6496166060016153163, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: f05612aaf48ebd74da5a033ba82a2a83,
         type: 2}
+    - target: {fileID: 8386581729649869635, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -112,11 +127,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8386581729649869635, guid: a8f909f40d1a64447ac616323d12e580,
+    - target: {fileID: 7764232676359479527, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Asset
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 7ebcce8bedaec3048ba47a08779d6def,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 4528975703017943934, guid: a8f909f40d1a64447ac616323d12e580, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8f909f40d1a64447ac616323d12e580, type: 3}

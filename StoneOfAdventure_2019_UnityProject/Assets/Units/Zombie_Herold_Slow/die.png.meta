@@ -234,15 +234,15 @@ TextureImporter:
         x: 727
         y: 3
         width: 24
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9bc9cc6510016e4d8b3b0f0b00c534f
+      spriteID: 6d92de44f1686b642bb7d0fa26f41fa5
       vertices: []
       indices: 
       edges: []
@@ -251,18 +251,18 @@ TextureImporter:
       name: die_5
       rect:
         serializedVersion: 2
-        x: 727
-        y: 18
+        x: 907
+        y: 3
         width: 24
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 863cd5e6cd0759246adb546f8cea1e94
+      spriteID: f2fc4c5f5fe1ea24b9a05efdb0b4287a
       vertices: []
       indices: 
       edges: []
@@ -271,18 +271,18 @@ TextureImporter:
       name: die_6
       rect:
         serializedVersion: 2
-        x: 907
+        x: 1088
         y: 3
-        width: 385
+        width: 24
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ab312b160d37742ad9b89f08fd4af7
+      spriteID: ab498de5865e63343b88e68d8f797af1
       vertices: []
       indices: 
       edges: []
@@ -291,38 +291,18 @@ TextureImporter:
       name: die_7
       rect:
         serializedVersion: 2
-        x: 911
+        x: 1268
         y: 3
-        width: 10
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7895d5a45f7c5a04a8197d780e78e6d8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: die_8
-      rect:
-        serializedVersion: 2
-        x: 919
-        y: 26
-        width: 5
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d235d1e3fb471841accefbe129e2562
+      spriteID: deda807f551d69149af07411e846d3f1
       vertices: []
       indices: 
       edges: []

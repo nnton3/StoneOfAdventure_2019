@@ -17,6 +17,15 @@ TextureImporter:
     21300024: born_12
     21300026: born_13
     21300028: born_14
+    21300030: born_15
+    21300032: born_16
+    21300034: born_17
+    21300036: born_18
+    21300038: born_19
+    21300040: born_20
+    21300042: born_21
+    21300044: born_22
+    21300046: born_23
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -159,16 +168,16 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 3
-        width: 297
+        width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08ad2d5eed925244b86cd2bf895398cd
+      spriteID: 5f1e59c9732e8c646920dd25a44c0e08
       vertices: []
       indices: 
       edges: []
@@ -177,18 +186,18 @@ TextureImporter:
       name: born_1
       rect:
         serializedVersion: 2
-        x: 334
+        x: 59
         y: 3
-        width: 242
+        width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aaa5922981cf664989bb544664216a5
+      spriteID: fbb69aa00084a8142b5fb9e62bc071a1
       vertices: []
       indices: 
       edges: []
@@ -197,18 +206,18 @@ TextureImporter:
       name: born_2
       rect:
         serializedVersion: 2
-        x: 609
+        x: 114
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537dd2246c2632b42b7cae21027b2731
+      spriteID: 498bf913deb605a4fae12693abd1a524
       vertices: []
       indices: 
       edges: []
@@ -217,18 +226,18 @@ TextureImporter:
       name: born_3
       rect:
         serializedVersion: 2
-        x: 665
+        x: 169
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aa3e93a5710e214daddef2a50b91f8e
+      spriteID: 1b1ed12f15d4aba4eae9b2164963e1bc
       vertices: []
       indices: 
       edges: []
@@ -237,18 +246,18 @@ TextureImporter:
       name: born_4
       rect:
         serializedVersion: 2
-        x: 720
+        x: 224
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fcbcbb91810f5e419e1faf9f81651d3
+      spriteID: 88f04f2d58a081a418a5b1d57593bdd2
       vertices: []
       indices: 
       edges: []
@@ -257,18 +266,18 @@ TextureImporter:
       name: born_5
       rect:
         serializedVersion: 2
-        x: 775
+        x: 279
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11b0d6073f5baa641a05a8dff244558a
+      spriteID: ee8b926fb626d854d887c7ef5d44d1f9
       vertices: []
       indices: 
       edges: []
@@ -277,18 +286,18 @@ TextureImporter:
       name: born_6
       rect:
         serializedVersion: 2
-        x: 830
+        x: 334
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee9df29e9a0afd4dbb4b081de143e76
+      spriteID: a1eff9bc01d2bef428c85bd648c4d7fd
       vertices: []
       indices: 
       edges: []
@@ -297,18 +306,18 @@ TextureImporter:
       name: born_7
       rect:
         serializedVersion: 2
-        x: 885
+        x: 389
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0185e5b6a47928419294230e2cb2582
+      spriteID: 9753e8dd25da1c94e9eee7f48f8fc8f9
       vertices: []
       indices: 
       edges: []
@@ -317,18 +326,18 @@ TextureImporter:
       name: born_8
       rect:
         serializedVersion: 2
-        x: 940
+        x: 444
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 960a47504e4da2943afce4a1bdee4e18
+      spriteID: 990520f10f6604c4596c908d8cc84c01
       vertices: []
       indices: 
       edges: []
@@ -337,18 +346,18 @@ TextureImporter:
       name: born_9
       rect:
         serializedVersion: 2
-        x: 995
+        x: 499
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc71818390b8bbe4b9f35a039f31862e
+      spriteID: e0e00edc64637474f9a33132e3ad7685
       vertices: []
       indices: 
       edges: []
@@ -357,18 +366,18 @@ TextureImporter:
       name: born_10
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 554
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50504c293687c4549be98b7493395b83
+      spriteID: ee93c61a695a43a4fba9aea27e25a68a
       vertices: []
       indices: 
       edges: []
@@ -377,18 +386,18 @@ TextureImporter:
       name: born_11
       rect:
         serializedVersion: 2
-        x: 1105
+        x: 609
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b829ec911a53948a001fb8c88e9e69
+      spriteID: 8382fc2f1a653f1469e0318e915e8065
       vertices: []
       indices: 
       edges: []
@@ -397,18 +406,18 @@ TextureImporter:
       name: born_12
       rect:
         serializedVersion: 2
-        x: 1160
+        x: 665
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35cbc06148f5d12458f50e853a93b864
+      spriteID: 410dd6e7df1b96f458d80743ffd56a41
       vertices: []
       indices: 
       edges: []
@@ -417,18 +426,18 @@ TextureImporter:
       name: born_13
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 720
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f0d5b5f9041b84bb3ded6bf624715a
+      spriteID: d4a886bdfed939943994a5d6a524ab2c
       vertices: []
       indices: 
       edges: []
@@ -437,18 +446,198 @@ TextureImporter:
       name: born_14
       rect:
         serializedVersion: 2
-        x: 1270
+        x: 775
         y: 3
         width: 22
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e43856295ed0a94f814259955ec7887
+      spriteID: 77b0944fa6a647e41909575cd2addc9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_15
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9667bd68b14990e478f66105acd68f8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_16
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92697cb05cf5f2b48a81616d96f8959f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_17
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c169fc400a8b2ed43b968606b3635f96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_18
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc94926a64c41b44ca67987224128f9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_19
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716007a2f0db74843906ebf31e816cb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_20
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ecafaca2425e84e9c84a1f3aefa4d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_21
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a19cbc4e7e77d947bd00be480dcad53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_22
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d83232f410f17d4195d773df4aa3194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: born_23
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 3
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.365, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb2a81cff73b0744ab391dd84cfee39
       vertices: []
       indices: 
       edges: []
