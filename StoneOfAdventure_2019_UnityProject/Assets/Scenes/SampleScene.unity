@@ -861,7 +861,7 @@ MonoBehaviour:
   spawnChance:
   - 15
   - 12
-  - 30
+  - 100
   - 25
   - 0
 --- !u!114 &337770571

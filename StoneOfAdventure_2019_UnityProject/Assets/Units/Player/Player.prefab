@@ -236,8 +236,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  damage: 10
-  applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
+  damage: 12
+  applicationAreaCenter: {x: 1.25, y: 0.5, z: 0}
   applicationArea: {x: 3, y: 1, z: 1}
   applicationAreaVisible: 1
   layerMask:
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa760de64262fb3439465580796f85ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
+  coolDown: 5
   damage: 50
   timeOfStun: 2
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a48927dd338344c839c6210fb0fd36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
+  coolDown: 20
   playerIllusionPref: {fileID: 1006271429048145953, guid: 838a55cb5287ab648a70c3f1606c4d68,
     type: 3}
 --- !u!114 &6294659417202341041

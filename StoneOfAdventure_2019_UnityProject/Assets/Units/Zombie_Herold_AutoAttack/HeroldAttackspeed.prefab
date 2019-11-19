@@ -103,7 +103,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8386581729649869635}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 75988515d7ef5d94689b4c31dbdbdda8, type: 3}
+  m_Asset: {fileID: 0}
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
@@ -269,10 +269,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 2.25
       objectReference: {fileID: 0}
+    - target: {fileID: 2480325433300431647, guid: 0fdf8d88763870246a7ac3d3d8093284,
+        type: 3}
+      propertyPath: m_Asset
+      value: 
+      objectReference: {fileID: 8926484042661614526, guid: 6432bc5dfddf0cc47bdd6a637cda6b6a,
+        type: 3}
     - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
