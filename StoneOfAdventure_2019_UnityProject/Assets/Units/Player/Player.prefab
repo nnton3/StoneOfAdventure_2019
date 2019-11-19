@@ -20,9 +20,11 @@ GameObject:
   - component: {fileID: 2559205245791168891}
   - component: {fileID: 5790436647658446409}
   - component: {fileID: 7226845849540991534}
+  - component: {fileID: 713472708721060686}
   - component: {fileID: 6294659417202341041}
   - component: {fileID: 4221212495678884504}
   - component: {fileID: 4085254988495093279}
+  - component: {fileID: 883296961756211521}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -253,9 +255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa760de64262fb3439465580796f85ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coolDown: 2
   damage: 50
   timeOfStun: 2
-  coolDown: 2
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
   applicationArea: {x: 3, y: 1, z: 1}
   applicationAreaVisible: 0
@@ -274,9 +276,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ba372577a181d4bbbad160ecdf7a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coolDown: 0
   damage: 24
   movespeed: 25
-  coolDown: 0
+--- !u!114 &713472708721060686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a48927dd338344c839c6210fb0fd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coolDown: 2
+  playerIllusionPref: {fileID: 1006271429048145953, guid: 838a55cb5287ab648a70c3f1606c4d68,
+    type: 3}
 --- !u!114 &6294659417202341041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,12 +306,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26996a8e5c5b43146b7b7a5cc307cb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   movespeed: 6
   movespeedInTheAir: 5
-  MovespeedScale: 1
   jumpPower: 1675
   jumpPowerScaleOnLadder: 1
   verticalMovespeed: 5
+  StartWalk:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  StopWalk:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &4221212495678884504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +334,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411a4310b2d093c488c51f9acb4933fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPUpdated:
+  HPDecreased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HPIncreased:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -331,8 +363,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7145b12982ce14dba32dd8a1148228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Periodicity: 1
   HealValue: 1
+  temporaryRegen: 0
+--- !u!114 &883296961756211521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520417983458046496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8855fa06666ebc4aa79c88f84944a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundSize: {x: 10, y: 5, z: 1}
 --- !u!1 &4352065608948265188
 GameObject:
   m_ObjectHideFlags: 0

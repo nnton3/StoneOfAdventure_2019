@@ -10,7 +10,7 @@ namespace StoneOfAdventure.Core
     {
         #region Variables
         [SerializeField] private float spawnDelay = 5f;
-        private GoundTileFinder tileFinder;
+        private GroundTileFinder tileFinder;
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> spawnChance = new List<float>();
@@ -18,7 +18,7 @@ namespace StoneOfAdventure.Core
 
         private void Start()
         {
-            tileFinder = GetComponent<GoundTileFinder>();
+            tileFinder = GetComponent<GroundTileFinder>();
 
             InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
         }

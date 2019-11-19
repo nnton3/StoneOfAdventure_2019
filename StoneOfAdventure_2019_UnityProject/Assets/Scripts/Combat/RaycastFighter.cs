@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombieFighter : Fighter
+public class RaycastFighter : Fighter
 {
     [SerializeField] private float attackRange;
     [SerializeField] private int attackedLayer;
     [SerializeField] private float damage;
+    [SerializeField] private string targetTag = "Player";
 
     // Animation event
     public void Hit()
@@ -18,9 +19,10 @@ public class ZombieFighter : Fighter
 
         foreach (var collider in hit)
         {
-            if (collider.transform.CompareTag("Player"))
+            if (collider.transform.CompareTag(targetTag))
             {
-                collider.transform.GetComponent<IDamaged>().ApplyDamage(damage);
+                collider.transform.GetComponent<Health>().ApplyDamage(damage);
+                return;
             }
         }
     }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 
-public class GoundTileFinder : MonoBehaviour
+public class GroundTileFinder : MonoBehaviour
 {
     private Tilemap groundTilemap;
     private GameObject player;
@@ -20,7 +20,7 @@ public class GoundTileFinder : MonoBehaviour
 
     public List<Vector3> FindValidPositions()
     {
-        List<Vector3> targetPositions = new List<Vector3>();
+        List<Vector3> groundTIlesPosition = new List<Vector3>();
 
         Vector3 startCheckPoint = player.transform.position - (Vector3)boundSize / 2;
 
@@ -32,12 +32,12 @@ public class GoundTileFinder : MonoBehaviour
                 Vector3Int tilePositionCheck = groundTilemap.WorldToCell(worldPositionCheck);
                 if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
                 {
-                    targetPositions.Add(tilePositionCheck + Vector3Int.right);
+                    groundTIlesPosition.Add(tilePositionCheck + Vector3Int.right);
                 }
             }
         }
 
-        return targetPositions;
+        return groundTIlesPosition;
     }
 
 }
