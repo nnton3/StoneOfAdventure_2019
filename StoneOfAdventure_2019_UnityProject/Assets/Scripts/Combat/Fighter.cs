@@ -3,6 +3,8 @@ using UnityEngine.Events;
 
 namespace StoneOfAdventure.Combat
 {
+    [RequireComponent(typeof(Flip))]
+    [RequireComponent(typeof(Animator))]
     public class Fighter : MonoBehaviour
     {
         protected Animator anim;

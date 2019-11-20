@@ -277,7 +277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 0
-  damage: 24
   movespeed: 25
 --- !u!114 &713472708721060686
 MonoBehaviour:
@@ -470,4 +469,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b4b71060ea6b44d9fc56d49e46b0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill2Damage: 10
+  skill2Damage: 18

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 88492991966241607}
   - component: {fileID: 1004980745981693978}
   - component: {fileID: 4528975703017943934}
+  - component: {fileID: 7186989153440729188}
   - component: {fileID: 7764232676359479527}
   - component: {fileID: 6834172690288666823}
   m_Layer: 0
@@ -95,6 +96,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeedGain: 2
+--- !u!114 &7186989153440729188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386581729649869635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc373f2ea17f274a831047c3a3ab437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movespeedGain: 0.5
 --- !u!2083052967 &7764232676359479527
 VisualEffect:
   m_ObjectHideFlags: 0

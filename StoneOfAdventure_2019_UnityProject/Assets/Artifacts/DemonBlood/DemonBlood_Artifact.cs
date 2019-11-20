@@ -11,9 +11,7 @@ public class DemonBlood_Artifact : Artifact
     public void AddDemonBlood()
     {
         DemonBlood_HealthModifier demonBlood = player.AddComponent<DemonBlood_HealthModifier>();
-        demonBlood.maxStucsValue = maxStucsValue;
-        demonBlood.effectTime = effectTime;
-        demonBlood.healPerSecPerStuc = healPerSecPerStuc;
+        demonBlood.Initialize(maxStucsValue, effectTime, healPerSecPerStuc);
         Destroy(gameObject);
     }
 }

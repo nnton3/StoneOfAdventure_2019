@@ -7,11 +7,17 @@ public class SphereOfEnergy_AttackModifier : MonoBehaviour
     #region Variables
     private PlayerFighter playerFighter;
     private PlayerStateController playerController;
-    public float targetTimeOnFeet = 2f;
-    public float bonusDamageInPercent = 1.5f;
+    private float targetTimeOnFeet = 2f;
+    private float bonusDamageInPercent = 1.5f;
     [SerializeField] private float currentTimeOnFeet = 0f;
     [SerializeField] private float minInterval = 0.2f;
     #endregion
+
+    public void Initialize(float _targetTimeOnFeet, float _bonusDamageInPercent)
+    {
+        targetTimeOnFeet = _targetTimeOnFeet;
+        bonusDamageInPercent = _bonusDamageInPercent;
+    }
 
     private void Start()
     {

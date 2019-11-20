@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class RaycastFighter : Fighter
 {
+    #region
     [SerializeField] private float attackRange;
     [SerializeField] private int attackedLayer;
     [SerializeField] private float damage;
     [SerializeField] private string targetTag = "Player";
+
+    private delegate void AdditionalModifiers(GameObject target);
+    private AdditionalModifiers applyModifiers;
+    #endregion
 
     // Animation event
     public void Hit()

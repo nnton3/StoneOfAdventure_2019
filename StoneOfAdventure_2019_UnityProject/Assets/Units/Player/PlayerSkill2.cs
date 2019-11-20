@@ -7,7 +7,6 @@ using StoneOfAdventure.Movement;
 public class PlayerSkill2 : SkillBase
 {
     #region Vatiables
-    [SerializeField] private float damage;
     [SerializeField] private float movespeed = 10f;
 
     private Animator anim;
