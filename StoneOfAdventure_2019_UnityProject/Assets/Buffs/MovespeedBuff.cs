@@ -12,7 +12,7 @@ public class MovespeedBuff : MonoBehaviour
         if (collision.CompareTag("Enemie"))
         {
             var currentMover = collision.GetComponent<Mover>();
-            if (currentMover) currentMover.ModifyMovespeed(movespeedGain);
+            if (currentMover) currentMover.ModifyMovespeedScale(movespeedGain);
         }
     }
 
@@ -24,7 +24,7 @@ public class MovespeedBuff : MonoBehaviour
             if (!currentMover) return;
             if (currentMover.CurrentMovespeedScale - movespeedGain < 1f) return;
 
-            currentMover.ModifyMovespeed(-movespeedGain);
+            currentMover.ModifyMovespeedScale(-movespeedGain);
         }
     }
 }

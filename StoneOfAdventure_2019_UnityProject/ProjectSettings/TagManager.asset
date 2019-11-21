@@ -10,6 +10,7 @@ TagManager:
   - UpperStopper
   - Enemie
   - Platform
+  - PatrolTile
   layers:
   - Default
   - TransparentFX

@@ -3,11 +3,12 @@ using StoneOfAdventure.Movement;
 
 public class MovespeedUpper_artifact : Artifact
 {
-    [SerializeField][Range(0f, 1f)] private float addedMovespeedInPercent;
+    [SerializeField] private float addedMovespeedInPercent;
 
     public void AddMovespeed()
     {
-        player.GetComponent<Mover>().ModifyMovespeed(addedMovespeedInPercent);
+        var playerMover = player.GetComponent<Mover>();
+        playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
         Destroy(gameObject);
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections;
 using StoneOfAdventure.Combat;
 
-public class SphereOfEnergy_AttackModifier : MonoBehaviour
+public class SphereOfEnergy_damageModifier : MonoBehaviour
 {
     #region Variables
     private Fighter fighter;

@@ -75,10 +75,10 @@ public class ZombieStateController : UnitContainsAward
                 break;
             case State.MoveHorizontal:
                 if (direction == 0f) StateIdle();
-                else mover.MoveTo(direction, movespeed);
+                else mover.MoveTo(direction);
                 break;
             case State.InTheAir:
-                mover.MoveInAirTo(direction, movespeed);
+                mover.MoveInAirTo(direction);
                 break;
         }
     }
@@ -104,34 +104,34 @@ public class ZombieStateController : UnitContainsAward
         switch (currentState)
         {
             case State.Idle:
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransormToCorrupse();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransormToCorrupse();
                 break;
             case State.InTheAir:
                 mover.CancelMove();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransormToCorrupse();
                 break;
             case State.Attack:
                 fighter.CancelAttack();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransormToCorrupse();
                 break;
             case State.Stun:
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransormToCorrupse();
                 break;
         }
 
-        enemyDetector.PlayerDetected.RemoveAllListeners();
-        enemyDetector.PlayerLost.RemoveAllListeners();
-        StartCoroutine("DestroyCorrupse");
-        CreateReward();
+        void TransormToCorrupse()
+        {
+            anim.SetTrigger("dead");
+            StateDeath();
+            enemyDetector.PlayerDetected.RemoveAllListeners();
+            enemyDetector.PlayerLost.RemoveAllListeners();
+            StartCoroutine("DestroyCorrupse");
+            CreateReward();
+        }
     }
 
     public override void Landed()
@@ -169,7 +169,7 @@ public class ZombieStateController : UnitContainsAward
 
     IEnumerator DestroyCorrupse()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 

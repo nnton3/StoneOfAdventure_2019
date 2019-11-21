@@ -8,7 +8,7 @@ public class CriticalDamage_Artifact : Artifact
 
     public void AddCriicalDamage()
     {
-        var ciriticalDamage = player.AddComponent<CriticalDamage_AttackModifier>();
+        var ciriticalDamage = player.AddComponent<CriticalDamage_damageModifier>();
         ciriticalDamage.Initialize(damageScale, criticalChance);
         Destroy(gameObject);
     }

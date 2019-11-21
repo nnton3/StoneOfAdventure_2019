@@ -23,7 +23,7 @@ public class BatStateController : UnitContainsAward
 
     private void FixedUpdate()
     {
-        if (player) Move((player.transform.position - transform.position + new Vector3(0f, 0.5f, 0f)).normalized);
+        if (player) Move((player.transform.position - transform.position).normalized);
     }
 
     private void Move(Vector2 direction)

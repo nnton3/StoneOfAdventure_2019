@@ -15,7 +15,7 @@ public class GroundTileFinder : MonoBehaviour
     {
         player = FindObjectOfType<PlayerStateController>().gameObject;
         groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
-        targetTile = (TileBase) Resources.Load("2");
+        targetTile = Resources.Load<TileBase>("2");
     }
 
     public List<Vector3> FindValidPositions()

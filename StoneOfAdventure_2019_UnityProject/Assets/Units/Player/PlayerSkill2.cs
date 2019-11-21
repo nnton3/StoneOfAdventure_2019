@@ -40,7 +40,7 @@ public class PlayerSkill2 : SkillBase
     public void StartMove()
     {
         float direction = (flip.isFacingRight) ? 1f : -1f;
-        mover.MoveTo(direction, movespeed);
+        mover.MoveTo(direction);
         playerScill2Collider.SetActive(true);
     }
 

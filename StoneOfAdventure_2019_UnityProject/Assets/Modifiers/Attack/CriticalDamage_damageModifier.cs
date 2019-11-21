@@ -2,7 +2,7 @@
 using System.Collections;
 using StoneOfAdventure.Combat;
 
-public class CriticalDamage_AttackModifier : MonoBehaviour
+public class CriticalDamage_damageModifier : MonoBehaviour
 {
     private Fighter fighter;
     private float addedDamageInPercent = 0.5f;

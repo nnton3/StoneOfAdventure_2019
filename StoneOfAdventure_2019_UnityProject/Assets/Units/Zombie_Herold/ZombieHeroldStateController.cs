@@ -53,10 +53,10 @@ public class ZombieHeroldStateController : UnitContainsAward
                 break;
             case State.MoveHorizontal:
                 if (direction == 0f) StateIdle();
-                else mover.MoveTo(direction, movespeed);
+                else mover.MoveTo(direction);
                 break;
             case State.InTheAir:
-                mover.MoveInAirTo(direction, movespeed);
+                mover.MoveInAirTo(direction);
                 break;
         }
     }

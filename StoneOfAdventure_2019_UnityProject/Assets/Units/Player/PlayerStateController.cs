@@ -8,8 +8,6 @@ using UnityEngine.Events;
 public class PlayerStateController : Unit
 {
     #region Variables
-    [SerializeField] private float movespeed = 5f;
-    [SerializeField] private float movespeedInTheAir = 5f;
     [SerializeField] private float jumpPower = 800f;
     [SerializeField] private float jumpPowerScaleOnLadder = 1f;
     [SerializeField] private float verticalMovespeed = 3f;
@@ -63,13 +61,13 @@ public class PlayerStateController : Unit
                 break;
             case State.MoveHorizontal:
                 if (direction == 0f) StateIdle();
-                else mover.MoveTo(direction, movespeed);
+                else mover.MoveTo(direction);
                 break;
             case State.MoveVertical:
                 jumpDirection = direction;
                 break;
             case State.InTheAir:
-                mover.MoveInAirTo(direction, movespeedInTheAir);
+                mover.MoveInAirTo(direction);
                 return;
         }
     }
