@@ -5,7 +5,7 @@ using StoneOfAdventure.Combat;
 public class SphereOfEnergy_AttackModifier : MonoBehaviour
 {
     #region Variables
-    private PlayerFighter playerFighter;
+    private Fighter fighter;
     private PlayerStateController playerController;
     private float targetTimeOnFeet = 2f;
     private float bonusDamageInPercent = 1.5f;
@@ -21,12 +21,12 @@ public class SphereOfEnergy_AttackModifier : MonoBehaviour
 
     private void Start()
     {
-        playerFighter = GetComponent<PlayerFighter>();
+        fighter = GetComponent<PlayerFighter>();
         playerController = GetComponent<PlayerStateController>();
 
         playerController.StartWalk.AddListener(StartOnFeetTimer);
         playerController.StopWalk.AddListener(StopOnFeetTimer);
-        playerFighter.Attack.AddListener(CalculateDamageScale);
+        fighter.AddModifierOfDamage(CalculateAddedDamage);
     }
 
     private void StartOnFeetTimer()
@@ -44,12 +44,12 @@ public class SphereOfEnergy_AttackModifier : MonoBehaviour
         currentTimeOnFeet += minInterval;
     }
 
-    private void CalculateDamageScale()
+    private void CalculateAddedDamage(ref float damage)
     {
         if (currentTimeOnFeet >= targetTimeOnFeet)
         {
-            playerFighter.SetDamageScaleForNexAttack(bonusDamageInPercent);
             currentTimeOnFeet = 0f;
+            damage += fighter.BaseDamage * bonusDamageInPercent;
         }
     }
 }

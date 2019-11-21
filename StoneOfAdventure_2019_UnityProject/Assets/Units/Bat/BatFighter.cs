@@ -5,7 +5,6 @@ namespace StoneOfAdventure.Combat
     public class BatFighter : Fighter
     {
         private Health playerHealth;
-        [SerializeField] private float damage = 1f;
 
         private void OnTriggerEnter2D(Collider2D enemie)
         {
@@ -21,7 +20,7 @@ namespace StoneOfAdventure.Combat
             if (enemie.CompareTag("Player")) { CancelAttack(); }
         }
         
-        private void Hit() { playerHealth.ApplyDamage(damage); }
+        private void Hit() { playerHealth.ApplyDamage(baseDamage); }
 
         public override void CancelAttack() { CancelInvoke("Hit"); }
     }

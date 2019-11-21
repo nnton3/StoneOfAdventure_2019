@@ -5,10 +5,8 @@ namespace StoneOfAdventure.Combat
 {
     public class PlayerFighter : Fighter
     {
-        [SerializeField] private float damage;
         private float damageScale = 1f;
         
-
         public void SetDamageScaleForNexAttack(float _damageScale)
         {
             if (_damageScale > 0f) damageScale = _damageScale;
@@ -19,7 +17,8 @@ namespace StoneOfAdventure.Combat
         // Animation event
         public void Hit()
         {
-            float currentDamage = damage * damageScale;
+            float currentDamage = baseDamage;
+            applyModifiersOnDamage?.Invoke(ref currentDamage);
             Vector2 centerInRelationUnitDirection =
                 transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
             Collider2D[] enemiesInApplicationArea = Physics2D.OverlapBoxAll(

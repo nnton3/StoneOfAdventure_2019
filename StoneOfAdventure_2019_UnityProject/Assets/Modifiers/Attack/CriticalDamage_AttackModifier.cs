@@ -4,29 +4,29 @@ using StoneOfAdventure.Combat;
 
 public class CriticalDamage_AttackModifier : MonoBehaviour
 {
-    private PlayerFighter playerFighter;
-    private float damageScale = 1.5f;
+    private Fighter fighter;
+    private float addedDamageInPercent = 0.5f;
     private float criticalChance = 50f;
 
     public void Initialize(float _damageScale, float _criticalChance)
     {
-        damageScale = _damageScale;
+        addedDamageInPercent = _damageScale;
         criticalChance = _criticalChance;
     }
 
     private void Start()
     {
-        playerFighter = GetComponent<PlayerFighter>();
+        fighter = GetComponent<Fighter>();
 
-        playerFighter.Attack.AddListener(CalculateDamageScale);
+        fighter.AddModifierOfDamage(CalculateDamageScale);
     }
 
-    private void CalculateDamageScale()
+    private void CalculateDamageScale(ref float damage)
     {
         float chance = Random.Range(0f, 100f);
         if (chance <= criticalChance)
         {
-            playerFighter.SetDamageScaleForNexAttack(damageScale);
+            damage += fighter.BaseDamage * addedDamageInPercent;
         }
     }
 }

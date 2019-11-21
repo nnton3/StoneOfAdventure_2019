@@ -7,11 +7,22 @@ namespace StoneOfAdventure.Combat
     [RequireComponent(typeof(Animator))]
     public class Fighter : MonoBehaviour
     {
+        #region Variables
         protected Animator anim;
         protected Flip flip;
         [HideInInspector] public UnityEvent Attack;
         private float currentAttackSpeed = 1f;
         public float CurrentAttackSpeed => currentAttackSpeed;
+
+        [SerializeField] protected float baseDamage;
+        public float BaseDamage => baseDamage;
+
+        // The impact of the attack modifiers
+        public delegate void EffectsOnTarget(GameObject target);
+        protected EffectsOnTarget applyEffectsOnTarget;
+        public delegate void ModifiersOfDamage(ref float damage);
+        protected ModifiersOfDamage applyModifiersOnDamage;
+        #endregion
 
         protected virtual void Start()
         {
@@ -34,6 +45,16 @@ namespace StoneOfAdventure.Combat
         {
             currentAttackSpeed += addedAttackspeedInPercent;
             anim.SetFloat("currentAttackspeed", currentAttackSpeed);
+        }
+
+        public void AddEffectOfAttack(EffectsOnTarget effect)
+        {
+            applyEffectsOnTarget += effect;
+        }
+
+        public void AddModifierOfDamage(ModifiersOfDamage modifier)
+        {
+            applyModifiersOnDamage += modifier;
         }
 
         private void OnDisable()

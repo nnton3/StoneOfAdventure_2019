@@ -8,11 +8,7 @@ public class RaycastFighter : Fighter
     #region
     [SerializeField] private float attackRange;
     [SerializeField] private int attackedLayer;
-    [SerializeField] private float damage;
     [SerializeField] private string targetTag = "Player";
-
-    private delegate void AdditionalModifiers(GameObject target);
-    private AdditionalModifiers applyModifiers;
     #endregion
 
     // Animation event
@@ -26,7 +22,7 @@ public class RaycastFighter : Fighter
         {
             if (collider.transform.CompareTag(targetTag))
             {
-                collider.transform.GetComponent<Health>().ApplyDamage(damage);
+                collider.transform.GetComponent<Health>().ApplyDamage(baseDamage);
                 return;
             }
         }

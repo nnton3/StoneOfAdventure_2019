@@ -203,9 +203,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  baseDamage: 10
   attackRange: 1
   attackedLayer: 8
-  damage: 10
+  targetTag: Player
 --- !u!114 &658190849188051343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411a4310b2d093c488c51f9acb4933fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPUpdated:
+  HPDecreased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HPIncreased:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -260,6 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de02acc7acc0f24a917d89cfbade9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   reward: 3
   movespeed: 2.25
   patrolMovespeed: 2.25
