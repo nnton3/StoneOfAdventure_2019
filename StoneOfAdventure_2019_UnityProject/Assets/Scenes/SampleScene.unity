@@ -1096,6 +1096,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AssetsPPU: 100
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1001 &538492869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5551,7 +5559,7 @@ Tilemap:
       - {fileID: 21300002, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300004, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300006, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -10323,12 +10331,17 @@ PrefabInstance:
     - target: {fileID: 2559205245791168891, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: applicationAreaVisible
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: applicationAreaVisible
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427074520926705902, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: movespeedInTheAir
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}

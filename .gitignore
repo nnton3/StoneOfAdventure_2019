@@ -37,3 +37,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+StoneOfAdventure_2019_UnityProject/Assets/Cinemachine/CinemachineExamples.unitypackage.meta
+StoneOfAdventure_2019_UnityProject/Assets/Cinemachine/Timeline/LegacyTimelineAPI.unitypackage.meta
