@@ -21,7 +21,6 @@ public class MovespeedBuff : BaseBuff
 
     public override void ApplyBuff()
     {
-        Debug.Log(mover == null);
         mover.ModifyMovespeedScale(movespeedGain);
     }
 

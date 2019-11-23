@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using StoneOfAdventure.Core;
+using StoneOfAdventure.Combat;
 
 public class BuffArea : MonoBehaviour
 {
@@ -13,7 +15,10 @@ public class BuffArea : MonoBehaviour
         }
     }
 
-    protected virtual void AddBuffs(Collider2D collision) { }
+    protected virtual void AddBuffs(Collider2D collision)
+    {
+        //collision.gameObject.;
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {

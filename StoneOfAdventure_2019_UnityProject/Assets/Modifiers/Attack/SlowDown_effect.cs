@@ -17,7 +17,8 @@ public class SlowDown_effect : MonoBehaviour
 
     private void SlowDown(GameObject target)
     {
-        var targetMover = target.GetComponent<Mover>();
-        targetMover.ModifyMovespeedScale(slowInPercent);
+        var movespeedDebuff = target.AddComponent<MovespeedBuff>();
+        movespeedDebuff.Initialize(slowInPercent);
+
     }
 }

@@ -20,7 +20,7 @@ public class GreenHerold_buffArea : BuffArea
 
     private void ApplyAttackspeedBuff(GameObject target)
     {
-        if (!target.GetComponent<Fighter>()) { Debug.Log("No fighter"); return; }
+        if (!target.GetComponent<Fighter>()) return;
 
         var attackspeedBuff = target.AddComponent<AttackspeedBuff>();
         appliedBuffs.Add(attackspeedBuff);
@@ -29,7 +29,7 @@ public class GreenHerold_buffArea : BuffArea
 
     private void ApplyMovespeedBuff(GameObject target)
     {
-        if (!target.GetComponent<Mover>()) { Debug.Log("No mover"); return; }
+        if (!target.GetComponent<Mover>()) return;
 
         var movespeedBuff = target.AddComponent<MovespeedBuff>();
         appliedBuffs.Add(movespeedBuff);
@@ -41,6 +41,7 @@ public class GreenHerold_buffArea : BuffArea
         foreach (var buff in appliedBuffs)
         {
             buff.RemoveBuff();
+            appliedBuffs.Remove(buff);
         }
     }
 }
