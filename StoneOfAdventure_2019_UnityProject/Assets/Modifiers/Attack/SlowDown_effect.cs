@@ -1,24 +1,45 @@
 ﻿using StoneOfAdventure.Combat;
-using StoneOfAdventure.Movement;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SlowDown_effect : MonoBehaviour
+public class SlowDown_effect : BaseBuff
 {
     private Fighter fighter;
-    [SerializeField] private float slowInPercent = 0.5f;
-    [SerializeField] private float actionTime = 3f;
+    private float slowInPercent = 0.5f;
+    private float actionTime = 3f;
 
     private void Start()
     {
+        fighter = GetComponent<Fighter>();
+
         fighter.AddEffectOfAttack(SlowDown);
+    }
+
+    public void Initialize(float _slowInPercent, float _actionTime)
+    {
+        slowInPercent = _slowInPercent;
+        actionTime = _actionTime;
     }
 
     private void SlowDown(GameObject target)
     {
-        var movespeedDebuff = target.AddComponent<MovespeedBuff>();
-        movespeedDebuff.Initialize(slowInPercent);
+        var debuff = target.GetComponent<MovespeedDebuff>();
+        if (!debuff)
+        {
+            var addedMovespeedDebuff = target.AddComponent<MovespeedDebuff>();
+            addedMovespeedDebuff.Initialize(slowInPercent, actionTime);
+            addedMovespeedDebuff.ApplyBuff();
+        }
+        else
+        {
+            Debug.Log(debuff == null);
+            debuff.ApplyBuff();
+        }
+    }
 
+    public override void RemoveBuff()
+    {
+        Debug.Log("remove attack effect");
+        fighter.RemoveEffectOfAttack(SlowDown);
+        Destroy(this);
     }
 }

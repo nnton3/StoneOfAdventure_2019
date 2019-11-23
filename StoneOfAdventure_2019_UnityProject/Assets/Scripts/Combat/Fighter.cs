@@ -52,6 +52,11 @@ namespace StoneOfAdventure.Combat
             applyEffectsOnTarget += effect;
         }
 
+        public void RemoveEffectOfAttack(EffectsOnTarget effect)
+        {
+            applyEffectsOnTarget -= effect;
+        }
+
         public void AddModifierOfDamage(ModifiersOfDamage modifier)
         {
             applyDamageModifiers += modifier;
