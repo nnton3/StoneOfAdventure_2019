@@ -27,5 +27,6 @@ public class MovespeedBuff : BaseBuff
     public override void RemoveBuff()
     {
         mover.ModifyMovespeedScale(-movespeedGain);
+        Destroy(this);
     }
 }

@@ -20,11 +20,13 @@ public class RaycastFighter : Fighter
 
         foreach (var collider in hit)
         {
-            if (collider.transform.CompareTag(targetTag))
+            var target = collider.transform;
+            if (target.CompareTag(targetTag))
             {
                 var currentDamage = baseDamage;
                 applyDamageModifiers?.Invoke(ref currentDamage);
-                collider.transform.GetComponent<Health>().ApplyDamage(currentDamage);
+                target.GetComponent<Health>().ApplyDamage(currentDamage);
+                applyEffectsOnTarget?.Invoke(target.gameObject);
                 return;
             }
         }

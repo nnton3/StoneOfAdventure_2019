@@ -29,6 +29,7 @@ namespace StoneOfAdventure.Combat
             foreach (var enemie in enemiesInApplicationArea)
             {
                 enemie.GetComponent<Health>().ApplyDamage(currentDamage);
+                applyEffectsOnTarget?.Invoke(enemie.gameObject);
             }
             ResetDamageScale();
         }

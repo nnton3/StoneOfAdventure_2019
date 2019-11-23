@@ -2,31 +2,44 @@
 using System.Collections;
 using StoneOfAdventure.Movement;
 
-public class MovespeedDebuff : MonoBehaviour
+public class MovespeedDebuff : BaseBuff
 {
     [SerializeField] private int stucsValue;
-    [SerializeField] private float slowDownValueAStuc = 0.1f;
-    [SerializeField] private float stucLifeTime = 3f;
+    private float slowDownValueAStuc = 0.1f;
+    private float stucLifeTime = 3f;
     private Mover mover;
 
-    private void Start()
+    private void Awake()
     {
         mover = GetComponent<Mover>();
     }
 
-    private void UpdateDebuff()
+    public void Initialize(float _slowDownValueAStuc, float _stucLifeTime)
     {
-        mover.ModifyMovespeedScale(stucsValue * slowDownValueAStuc);
+        slowDownValueAStuc = _slowDownValueAStuc;
+        stucLifeTime = _stucLifeTime;
     }
 
-    public void SetStucValue(int addedStucNumber)
+    public override void ApplyBuff()
     {
-        stucsValue += addedStucNumber;
+        StopCoroutine("DebuffLifeTime");
+        if ((mover.CurrentMovespeedScale - slowDownValueAStuc) > 0.1f)
+        {
+            stucsValue++;
+            mover.ModifyMovespeedScale(slowDownValueAStuc * -1f);
+        }
+        StartCoroutine("DebuffLifeTime");
     }
 
     private IEnumerator DebuffLifeTime()
     {
         yield return new WaitForSeconds(stucLifeTime);
-        
+        RemoveBuff();
+    }
+
+    public override void RemoveBuff()
+    {
+        mover.ModifyMovespeedScale(stucsValue * slowDownValueAStuc);
+        Destroy(this);
     }
 }
