@@ -18,7 +18,7 @@ namespace StoneOfAdventure.Combat
         public void Hit()
         {
             float currentDamage = baseDamage;
-            applyModifiersOnDamage?.Invoke(ref currentDamage);
+            applyDamageModifiers?.Invoke(ref currentDamage);
             Vector2 centerInRelationUnitDirection =
                 transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
             Collider2D[] enemiesInApplicationArea = Physics2D.OverlapBoxAll(

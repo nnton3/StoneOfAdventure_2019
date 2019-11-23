@@ -21,7 +21,7 @@ namespace StoneOfAdventure.Combat
         public delegate void EffectsOnTarget(GameObject target);
         protected EffectsOnTarget applyEffectsOnTarget;
         public delegate void ModifiersOfDamage(ref float damage);
-        protected ModifiersOfDamage applyModifiersOnDamage;
+        protected ModifiersOfDamage applyDamageModifiers;
         #endregion
 
         protected virtual void Start()
@@ -54,7 +54,7 @@ namespace StoneOfAdventure.Combat
 
         public void AddModifierOfDamage(ModifiersOfDamage modifier)
         {
-            applyModifiersOnDamage += modifier;
+            applyDamageModifiers += modifier;
         }
 
         private void OnDisable()

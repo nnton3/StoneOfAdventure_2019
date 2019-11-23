@@ -22,7 +22,9 @@ public class RaycastFighter : Fighter
         {
             if (collider.transform.CompareTag(targetTag))
             {
-                collider.transform.GetComponent<Health>().ApplyDamage(baseDamage);
+                var currentDamage = baseDamage;
+                applyDamageModifiers?.Invoke(ref currentDamage);
+                collider.transform.GetComponent<Health>().ApplyDamage(currentDamage);
                 return;
             }
         }

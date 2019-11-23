@@ -1,28 +1,31 @@
-﻿using StoneOfAdventure.Combat;
+﻿using System;
+using StoneOfAdventure.Combat;
 using UnityEngine;
 
-public class AttackspeedBuff : MonoBehaviour
+public class AttackspeedBuff : BaseBuff
 {
-    [SerializeField] private float attackspeedGain = 0.5f;
+    private float attackspeedGain = 0.5f;
+    private Fighter fighter;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    internal void Initialize(float attackspeedGainInPercent)
     {
-        if (collision.CompareTag("Enemie"))
-        {
-            var currentFighter = collision.GetComponent<Fighter>();
-            if (currentFighter) currentFighter.ModifyAttackSpeed(attackspeedGain);
-        }
+        attackspeedGain = attackspeedGainInPercent;
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void Awake()
     {
-        if (collision.CompareTag("Enemie"))
-        {
-            var currentFighter = collision.GetComponent<Fighter>();
-            if (!currentFighter) return;
-            if (currentFighter.CurrentAttackSpeed - attackspeedGain < 1f) return;
+        fighter = GetComponent<Fighter>();
+        ApplyBuff();
+    }
 
-            currentFighter.ModifyAttackSpeed(-attackspeedGain);
-        }
+    public override void ApplyBuff()
+    {
+        fighter.ModifyAttackSpeed(attackspeedGain);
+    }
+
+    public override void RemoveBuff()
+    {
+        fighter.ModifyAttackSpeed(-attackspeedGain);
+        Destroy(this);
     }
 }

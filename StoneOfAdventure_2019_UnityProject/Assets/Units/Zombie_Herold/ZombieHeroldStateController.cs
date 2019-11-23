@@ -145,7 +145,7 @@ public class ZombieHeroldStateController : UnitContainsAward
 
     IEnumerator DestroyCorrupse()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 
