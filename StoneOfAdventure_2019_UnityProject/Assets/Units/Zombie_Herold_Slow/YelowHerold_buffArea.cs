@@ -28,7 +28,9 @@ public class YelowHerold_buffArea : BuffArea
 
     protected override void RemoveBuffs(Collider2D collision)
     {
-        buffedUnits[collision.gameObject].RemoveBuff();
-        buffedUnits.Remove(collision.gameObject);
+        var target = collision.gameObject;
+        if (target != null) buffedUnits[target].RemoveBuff();
+
+        buffedUnits.Remove(target);
     }
 }

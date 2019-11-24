@@ -9,8 +9,10 @@ namespace StoneOfAdventure.Core
     public class EnemieFactory : MonoBehaviour
     {
         #region Variables
-        [SerializeField] private float spawnDelay = 5f;
+        [SerializeField] private float baseSpawnDelay = 5f;
+        [SerializeField] private float baseComplexity = 1f;
         private GroundTileFinder tileFinder;
+        private float startTime = 0f;
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> spawnChance = new List<float>();
@@ -19,8 +21,15 @@ namespace StoneOfAdventure.Core
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
+            startTime = Time.time;
+            InvokeRepeating("SpawnEnemie", baseSpawnDelay, CalculateSpawnDelay());
+        }
 
-            InvokeRepeating("SpawnEnemie", 1f, spawnDelay);
+        private float CalculateSpawnDelay()
+        {
+            var currentSpawnDelay = baseSpawnDelay - baseComplexity * (Time.time - startTime);
+            if (currentSpawnDelay < 1f) return 1f;
+            return currentSpawnDelay;
         }
 
         private void SpawnEnemie()
@@ -48,6 +57,5 @@ namespace StoneOfAdventure.Core
             Vector2 positionForSpawn2d = positionForSpawn;
             return positionForSpawn2d;
         }
-
     }
 }
