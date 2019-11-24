@@ -35,6 +35,14 @@ namespace StoneOfAdventure.Movement
             anim.SetBool("moveHorizontal", true);
         }
 
+        public void MoveTo(float direction, float _movespeed)
+        {
+            flip.CheckDirection(direction);
+            Vector2 horizontalMove = Vector2.right * direction * _movespeed * currentMovespeedScale;
+            rb.velocity = horizontalMove;
+            anim.SetBool("moveHorizontal", true);
+        }
+
         internal void MoveInAirTo(float direction)
         {
             flip.CheckDirection(direction);

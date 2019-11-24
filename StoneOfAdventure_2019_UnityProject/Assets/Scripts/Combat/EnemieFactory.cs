@@ -10,7 +10,7 @@ namespace StoneOfAdventure.Core
     {
         #region Variables
         [SerializeField] private float baseSpawnDelay = 5f;
-        [SerializeField] private float baseComplexity = 1f;
+        [SerializeField] private float baseComplexity = 0.02f;
         private GroundTileFinder tileFinder;
         private float startTime = 0f;
 
