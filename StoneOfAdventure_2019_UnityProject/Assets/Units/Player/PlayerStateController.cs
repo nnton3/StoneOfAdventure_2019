@@ -199,7 +199,7 @@ public class PlayerStateController : Unit
                 StateInTheAir();
                 break;
             case State.MoveHorizontal:
-                mover.CancelMove();
+                anim.SetBool("moveHorizontal", false);
                 StateInTheAir();
                 break;
             case State.Attack:
