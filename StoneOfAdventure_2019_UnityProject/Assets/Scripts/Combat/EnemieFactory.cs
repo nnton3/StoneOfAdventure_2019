@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
@@ -22,13 +21,21 @@ namespace StoneOfAdventure.Core
         {
             tileFinder = GetComponent<GroundTileFinder>();
             startTime = Time.time;
-            InvokeRepeating("SpawnEnemie", baseSpawnDelay, CalculateSpawnDelay());
+            StartCoroutine("SpawnEmmiter");
         }
+
+        private IEnumerator SpawnEmmiter()
+        {
+            yield return new WaitForSeconds(CalculateSpawnDelay());
+            SpawnEnemie();
+            StartCoroutine("SpawnEmmiter");
+        } 
 
         private float CalculateSpawnDelay()
         {
             var currentSpawnDelay = baseSpawnDelay - baseComplexity * (Time.time - startTime);
             if (currentSpawnDelay < 1f) return 1f;
+            if (currentSpawnDelay > baseSpawnDelay) return baseSpawnDelay;
             return currentSpawnDelay;
         }
 
@@ -36,7 +43,7 @@ namespace StoneOfAdventure.Core
         {
             for (int i = 0; i < units.Count; i++)
             {
-                float chance = UnityEngine.Random.Range(0f, 100f);
+                float chance = Random.Range(0f, 100f);
 
                 if (chance <= spawnChance[i])
                 {
