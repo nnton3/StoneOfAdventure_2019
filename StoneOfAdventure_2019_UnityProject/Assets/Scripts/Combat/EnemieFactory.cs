@@ -9,33 +9,38 @@ namespace StoneOfAdventure.Core
     {
         #region Variables
         [SerializeField] private float baseSpawnDelay = 5f;
-        [SerializeField] private float baseComplexity = 0.02f;
+        [SerializeField] private float minSpawnDelay = 1f;
         private GroundTileFinder tileFinder;
-        private float startTime = 0f;
+        [SerializeField] private int totalTickNumber = 40;
+        private int currentTickNumber = 0;
+        private float spawnDelayStep = 0f;
 
         [SerializeField] private List<GameObject> units = new List<GameObject>();
-        [SerializeField] private List<float> spawnChance = new List<float>();
+        [SerializeField] private List<float> baseSpawnChance = new List<float>();
+        [SerializeField] private List<float> endSpawnChance = new List<float>();
+        private float spawnChanceIncreaseStep = 0f;
         #endregion
 
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
-            startTime = Time.time;
             StartCoroutine("SpawnEmmiter");
+            spawnDelayStep = (baseSpawnDelay - minSpawnDelay) / totalTickNumber; 
         }
 
         private IEnumerator SpawnEmmiter()
         {
             yield return new WaitForSeconds(CalculateSpawnDelay());
             SpawnEnemie();
+            currentTickNumber++;
             StartCoroutine("SpawnEmmiter");
         } 
 
         private float CalculateSpawnDelay()
         {
-            var currentSpawnDelay = baseSpawnDelay - baseComplexity * (Time.time - startTime);
-            if (currentSpawnDelay < 1f) return 1f;
-            if (currentSpawnDelay > baseSpawnDelay) return baseSpawnDelay;
+            var currentSpawnDelay = baseSpawnDelay - currentTickNumber * spawnDelayStep;
+            if (currentTickNumber == totalTickNumber) return minSpawnDelay;
+            Debug.Log($"Текущая длительность тика равна = {currentSpawnDelay}");
             return currentSpawnDelay;
         }
 
@@ -44,8 +49,17 @@ namespace StoneOfAdventure.Core
             for (int i = 0; i < units.Count; i++)
             {
                 float chance = Random.Range(0f, 100f);
+                var currentChance = 0f;
 
-                if (chance <= spawnChance[i])
+                if (currentTickNumber == totalTickNumber) currentChance = endSpawnChance[i];
+                else
+                {
+                spawnChanceIncreaseStep = (endSpawnChance[i] - baseSpawnChance[i]) / totalTickNumber;
+                currentChance = baseSpawnChance[i] + 
+                     currentTickNumber * spawnChanceIncreaseStep;
+                }
+                Debug.Log($"Текущий шанс появления = {currentChance}");
+                if (chance <= currentChance)
                 {
                     var spawnPosition = ChangeSpawnPosition();
                     if (spawnPosition == Vector3.zero) return;
