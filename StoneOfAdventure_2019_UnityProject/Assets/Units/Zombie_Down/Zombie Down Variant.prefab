@@ -119,6 +119,11 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 658190850852845413, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 658190850852845408, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_Size.x

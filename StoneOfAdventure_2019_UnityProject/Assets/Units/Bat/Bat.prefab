@@ -50,7 +50,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  damage: 5
+  baseDamage: 5
 --- !u!61 &8410564180581215074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   reward: 3
-  movespeed: 3
+  movespeed: 5
 --- !u!114 &5529957313187058676
 MonoBehaviour:
   m_ObjectHideFlags: 0

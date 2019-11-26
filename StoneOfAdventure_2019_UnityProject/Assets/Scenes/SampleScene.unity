@@ -1018,7 +1018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0040687, y: 1.5124476, z: -10}
+  m_LocalPosition: {x: 15.995931, y: 2.4024477, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249327434}
@@ -8143,7 +8143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174947471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.26, y: 1.6404154, z: -10}
+  m_LocalPosition: {x: 15.74, y: 2.5304155, z: -10}
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children:
   - {fileID: 1111827863}
@@ -10377,12 +10377,12 @@ PrefabInstance:
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.26
+      value: 15.74
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
@@ -10429,6 +10429,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8427074520926705902, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: movespeedInTheAir
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427074520926705902, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseMovespeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2559205245791168891, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: applicationAreaVisible
@@ -10438,11 +10448,6 @@ PrefabInstance:
         type: 3}
       propertyPath: applicationAreaVisible
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8427074520926705902, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: movespeedInTheAir
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}
