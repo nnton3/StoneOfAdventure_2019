@@ -187,9 +187,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  baseDamage: 12
   attackRange: 3
   attackedLayer: 9
-  damage: 20
   targetTag: Enemie
 --- !u!114 &228399660500572478
 MonoBehaviour:

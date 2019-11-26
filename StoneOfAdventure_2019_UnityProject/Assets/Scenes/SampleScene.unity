@@ -874,10 +874,19 @@ MonoBehaviour:
   totalTickNumber: 40
   units:
   - {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
+  - {fileID: 6133069997062176456, guid: 0987281248004b34c8174a3790911d69, type: 3}
+  - {fileID: 5529957313187058664, guid: 251101802aca4f8459db13f5d1079271, type: 3}
+  - {fileID: 5044558562134226988, guid: f87fb2153fff2954bb9d0bd90cbd54ee, type: 3}
   baseSpawnChance:
-  - 20
+  - 50
+  - 50
+  - 50
+  - 50
   endSpawnChance:
-  - 60
+  - 50
+  - 50
+  - 50
+  - 50
 --- !u!114 &337770571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,9 +1001,9 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 70
+  field of view: 40
   orthographic: 0
-  orthographic size: 7
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1018,7 +1027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.995931, y: 2.4024477, z: -10}
+  m_LocalPosition: {x: 0.25593123, y: -0.12796783, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249327434}
@@ -5491,7 +5500,7 @@ Tilemap:
       - {fileID: 21300002, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300004, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300006, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
