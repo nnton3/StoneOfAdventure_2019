@@ -34,13 +34,12 @@ namespace StoneOfAdventure.Combat
             {
                 unit.Dead();
                 healthPoints = 0f;
-                HPDecreased.Invoke();
             }
             else
             {
                 healthPoints -= damage;
-                HPDecreased.Invoke();
             }
+            HPDecreased.Invoke();
         }
 
         private bool IsDead(float damage)

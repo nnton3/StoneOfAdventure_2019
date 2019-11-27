@@ -183,6 +183,7 @@ public class PlayerStateController : Unit
 
     public override void Landed()
     {
+        if (currentState == State.InTheAir) anim.SetTrigger("landed");
         StateIdle();
     }
 

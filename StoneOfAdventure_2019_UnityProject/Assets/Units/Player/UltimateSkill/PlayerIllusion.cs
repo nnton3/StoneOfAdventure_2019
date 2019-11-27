@@ -6,6 +6,7 @@ public class PlayerIllusion : MonoBehaviour
 {
     [SerializeField] private Vector3 applicationArea;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private float lifeTime;
 
     private Flip flip;
     private Fighter fighter;
@@ -19,6 +20,8 @@ public class PlayerIllusion : MonoBehaviour
         flip = GetComponent<Flip>();
         fighter = GetComponent<Fighter>();
         animator = GetComponent<Animator>();
+
+        StartCoroutine("LifeTimer");
     }
 
     private void FixedUpdate()
@@ -44,5 +47,16 @@ public class PlayerIllusion : MonoBehaviour
     public void IdleState()
     {
         illusionState = IllusionStates.Idle;
+    }
+
+    IEnumerator LifeTimer()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        animator.SetTrigger("die");
+    }
+
+    public void DestroyIllusion()
+    {
+        Destroy(gameObject);
     }
 }

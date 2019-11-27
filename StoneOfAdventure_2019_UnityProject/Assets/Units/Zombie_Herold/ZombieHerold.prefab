@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 2480325433300431647}
   - component: {fileID: 2480325433300431632}
   - component: {fileID: 2480325433300431633}
+  - component: {fileID: 3179045564382475969}
+  - component: {fileID: 150799733201243321}
+  - component: {fileID: 4030882865492558137}
   m_Layer: 0
   m_Name: HealthBuff
   m_TagString: Untagged
@@ -115,6 +118,69 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+--- !u!114 &3179045564382475969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2480325433300431635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d724344821ef63b44834704d7b6940fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualEffect: {fileID: 5140971154920193625, guid: 749c89805f3db0b4c83ede3733a5fabc,
+    type: 3}
+  healValue: 1
+  periodicity: 1
+--- !u!61 &150799733201243321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2480325433300431635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.27, y: -1.166}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &4030882865492558137
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2480325433300431635}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &3601460222140525370
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +201,6 @@ GameObject:
   - component: {fileID: 1336416322108989253}
   - component: {fileID: 6394804556579325370}
   - component: {fileID: 1815551816791317082}
-  - component: {fileID: 5031599640959132103}
   m_Layer: 9
   m_Name: ZombieHerold
   m_TagString: Enemie
@@ -390,26 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21f7ea3fc552aa448efbee5e68effef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5031599640959132103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3601460222140525370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86774d3a9a2f6b0419352abe07887fef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healValue: 1
-  periodicity: 1
-  applicationAreaCenter: {x: 0, y: 0.5, z: 0}
-  applicationArea: {x: 4, y: 1, z: 1}
-  applicationAreaVisible: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1001 &4200216003108321560
 PrefabInstance:
   m_ObjectHideFlags: 0

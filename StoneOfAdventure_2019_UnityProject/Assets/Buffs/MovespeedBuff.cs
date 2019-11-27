@@ -16,12 +16,12 @@ public class MovespeedBuff : BaseBuff
     private void Awake()
     {
         mover = GetComponent<Mover>();
-        ApplyBuff();
     }
 
     public override void ApplyBuff()
     {
         mover.ModifyMovespeedScale(movespeedGain);
+        base.ApplyBuff();
     }
 
     public override void RemoveBuff()

@@ -15,7 +15,6 @@ public class AttackspeedBuff : BaseBuff
     private void Awake()
     {
         fighter = GetComponent<Fighter>();
-        ApplyBuff();
     }
 
     public override void ApplyBuff()

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b83eb8f8610e0a43b64891e9d560064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualEffect: {fileID: 1172383965547177429, guid: 50764a7330b1db442906268d7d2e2f72,
+    type: 3}
   slowInPercent: 0.2
   actionTime: 3
 --- !u!1001 &6954452593763331794
@@ -81,6 +83,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8220842231279998146, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
       propertyPath: m_Sprite
@@ -119,26 +141,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8926484042661614526, guid: be6ecca9ee599fa4db3ad1abd35267a3,
         type: 3}
-    - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8386581729649869635, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
       propertyPath: m_Layer

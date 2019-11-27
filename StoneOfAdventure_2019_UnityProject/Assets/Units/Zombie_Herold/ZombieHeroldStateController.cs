@@ -82,32 +82,34 @@ public class ZombieHeroldStateController : UnitContainsAward
         switch (currentState)
         {
             case State.Idle:
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransitionToCorrupse();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransitionToCorrupse();
                 break;
             case State.InTheAir:
                 mover.CancelMove();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransitionToCorrupse();
                 break;
             case State.Attack:
                 fighter.CancelAttack();
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransitionToCorrupse();
                 break;
             case State.Stun:
-                anim.SetTrigger("dead");
-                StateDeath();
+                TransitionToCorrupse();
                 break;
         }
 
-        StartCoroutine("DestroyCorrupse");
-        CreateReward();
+        void TransitionToCorrupse()
+        {
+            anim.SetTrigger("dead");
+            StateDeath();
+            GetComponentInChildren<VisualEffect>().Stop();
+            GetComponentInChildren<BuffArea>().RemoveAllBuffs();
+            StartCoroutine("DestroyCorrupse");
+            CreateReward();
+        }
     }
 
     public override void Landed()
