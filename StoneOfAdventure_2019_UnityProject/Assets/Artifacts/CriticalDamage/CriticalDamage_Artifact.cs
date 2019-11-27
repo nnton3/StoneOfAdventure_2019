@@ -10,6 +10,7 @@ public class CriticalDamage_Artifact : Artifact
     {
         var ciriticalDamage = player.AddComponent<CriticalDamage_damageModifier>();
         ciriticalDamage.Initialize(damageScale, criticalChance);
+        AddArtifactOnCanvas();
         Destroy(gameObject);
     }
 }

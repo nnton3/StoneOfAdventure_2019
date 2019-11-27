@@ -10,6 +10,7 @@ public class SphereOfEnergy_Artifact : Artifact
     {
         SphereOfEnergy_damageModifier ciriticalDamage = player.AddComponent<SphereOfEnergy_damageModifier>();
         ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
+        AddArtifactOnCanvas();
         Destroy(gameObject);
     }
 }
