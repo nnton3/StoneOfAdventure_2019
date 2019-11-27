@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8b22799bad7b6418e6581eed3c09ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackspeedGainInPercent: 0.5
-  movespeedGainInPercent: 0.5
+  attackspeedGainInPercent: 0.2
+  movespeedGainInPercent: 0.3
 --- !u!1001 &4894489795886841852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,6 +155,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 01265ab7316d3a74c99d8ccd3bcd2d0d,
         type: 2}
+    - target: {fileID: 5792545510151547752, guid: 0fdf8d88763870246a7ac3d3d8093284,
+        type: 3}
+      propertyPath: baseMovespeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6983678032245984251, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_AnchoredPosition.x

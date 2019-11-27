@@ -303,7 +303,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411a4310b2d093c488c51f9acb4933fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPUpdated:
+  HPDecreased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HPIncreased:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -327,6 +332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbabf8469da0cd40b7d354aa76dbaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseMovespeed: 2.5
+  movespeedInTheAir: 5
 --- !u!114 &6127476304878788472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104c8476d29dc8d4580621af9bee0b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   reward: 6
   attackRange: 1
   movespeed: 3
@@ -382,7 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21f7ea3fc552aa448efbee5e68effef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundTile: {fileID: 11400000, guid: 5eece359f1848404b9f8e6cbc6d4a042, type: 2}
 --- !u!114 &5031599640959132103
 MonoBehaviour:
   m_ObjectHideFlags: 0
