@@ -31,9 +31,13 @@ public class SlowDown_effect : BaseBuff
         }
         else
         {
-            Debug.Log(debuff == null);
             debuff.ApplyBuff();
         }
+    }
+
+    public override void ApplyBuff()
+    {
+        base.ApplyBuff();
     }
 
     public override void RemoveBuff()
