@@ -9,6 +9,7 @@ public class MovespeedUpper_artifact : Artifact
     {
         var playerMover = player.GetComponent<Mover>();
         playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
+        AddArtifactOnCanvas();
         Destroy(gameObject);
     }
 }

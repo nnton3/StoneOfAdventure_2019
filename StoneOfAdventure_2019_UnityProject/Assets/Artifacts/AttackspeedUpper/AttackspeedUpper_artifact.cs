@@ -17,6 +17,7 @@ public class AttackspeedUpper_artifact : Artifact
     public void AddAttackspeed()
     {
         playerFighter.ModifyAttackSpeed(addedAttackspeedInPercent);
+        AddArtifactOnCanvas();
         Destroy(gameObject);
     }
 }

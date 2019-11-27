@@ -10,6 +10,7 @@ public class HealthRegen_artifact : Artifact
     {
         HealthRegen healthRegen = player.GetComponent<HealthRegen>();
         healthRegen.HealValue = healValue;
+        AddArtifactOnCanvas();
         Destroy(gameObject);
     }
 }

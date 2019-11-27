@@ -17,7 +17,7 @@ public class CriticalDamage_damageModifier : MonoBehaviour
     private void Start()
     {
         fighter = GetComponent<Fighter>();
-
+        
         fighter.AddModifierOfDamage(CalculateDamageScale);
     }
 
