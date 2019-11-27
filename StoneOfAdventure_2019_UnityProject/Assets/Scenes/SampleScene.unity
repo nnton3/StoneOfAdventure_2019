@@ -793,8 +793,8 @@ MonoBehaviour:
   baseSpawnChance:
   - 30
   - 38
+  - 35
   - 22
-  - 30
   - 10
   - 10
   - 10
