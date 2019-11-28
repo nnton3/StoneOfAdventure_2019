@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualEffect: {fileID: 5140971154920193625, guid: 749c89805f3db0b4c83ede3733a5fabc,
     type: 3}
-  healValue: 1
+  healValue: 4
   periodicity: 1
 --- !u!61 &150799733201243321
 BoxCollider2D:
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  reward: 6
+  reward: 8
   attackRange: 1
   movespeed: 3
 --- !u!114 &6394804556579325370
@@ -530,12 +530,12 @@ PrefabInstance:
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.469
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.47
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}

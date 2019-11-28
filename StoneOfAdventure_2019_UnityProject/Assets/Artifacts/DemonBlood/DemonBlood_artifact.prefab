@@ -162,9 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5733d7bfa2ee9ee49afbda92148d62a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStucsValue: 3
+  maxStucsValue: 5
   effectTime: 5
-  healPerSecPerStuc: 2
+  healPerSecPerStuc: 1
 --- !u!1001 &4173127567009883405
 PrefabInstance:
   m_ObjectHideFlags: 0
