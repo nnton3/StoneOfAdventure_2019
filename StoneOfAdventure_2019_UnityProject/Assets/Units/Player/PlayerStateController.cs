@@ -206,6 +206,9 @@ public class PlayerStateController : Unit
             case State.Attack:
                 StateInTheAir();
                 break;
+            case State.Skill2:
+                StateInTheAir();
+                break;
         }
     }
     #endregion
@@ -213,16 +216,19 @@ public class PlayerStateController : Unit
     #region StateTransitions
     private void StateIdle()
     {
-        if (currentState == State.MoveHorizontal)
+        switch (currentState)
         {
-            StopWalk.Invoke();
-            mover.CancelMove();
+            case State.MoveHorizontal:
+                StopWalk.Invoke();
+                mover.CancelMove();
+                break;
         }
         SetState(State.Idle);
     }
 
     private void StateMoveHorizontal()
     {
+        if (currentState == State.InTheAir) anim.ResetTrigger("landed");
         StartWalk.Invoke();
         SetState(State.MoveHorizontal);
     }
@@ -235,7 +241,16 @@ public class PlayerStateController : Unit
 
     private void StateInTheAir()
     {
-        if (currentState == State.MoveHorizontal) StopWalk.Invoke();
+        switch (currentState)
+        {
+            case State.MoveHorizontal:
+                anim.SetTrigger("jump");
+                StopWalk.Invoke();
+                break;
+            case State.Skill2:
+                anim.SetTrigger("jump");
+                break;
+        }
         SetState(State.InTheAir);
     }
 
