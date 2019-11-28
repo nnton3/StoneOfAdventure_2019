@@ -34,9 +34,9 @@ public class PlayerSkill2 : SkillBase
     {
         base.StartUse();
         anim.SetTrigger("skill2");
-        StartMove();
     }
 
+    // Animation event
     public void StartMove()
     {
         float direction = (flip.isFacingRight) ? 1f : -1f;
@@ -44,12 +44,17 @@ public class PlayerSkill2 : SkillBase
         playerScill2Collider.SetActive(true);
     }
 
+    // Animation event
     public void Skill2End()
     {
         playerScill2Collider.SetActive(false);
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         mover.CancelMove();
+        if (!jump.isGrounded)
+        {
+            unit.Fell();
+            return;
+        }
         unit.DisableState();
-        if (!jump.isGrounded) { unit.Fell(); }
     }
 }
