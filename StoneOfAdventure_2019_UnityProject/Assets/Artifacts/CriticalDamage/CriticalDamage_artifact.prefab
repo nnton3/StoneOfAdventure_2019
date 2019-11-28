@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6078435cc513e44db10e3e29b97a06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  criticalChance: 50
-  damageScale: 1.5
+  criticalChance: 12
+  damageScale: 2
 --- !u!1001 &5609961320886379989
 PrefabInstance:
   m_ObjectHideFlags: 0
