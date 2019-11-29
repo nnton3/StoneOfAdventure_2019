@@ -53,7 +53,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HealthBath
+  m_Name: HealthBuff
   m_Graph: {fileID: 114350483966674976}
   m_ShaderSources:
   - compute: 1
