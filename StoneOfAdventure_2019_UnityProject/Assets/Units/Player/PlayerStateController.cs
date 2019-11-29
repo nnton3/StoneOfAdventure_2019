@@ -148,10 +148,10 @@ public class PlayerStateController : Unit
         void TryToStartScill2()
         {
             if (!playerSkill2.CanUseSkill) return;
+            StateSkill2();
             rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
             playerSkill2.StartUse();
-            StateSkill2();
         }
     }
 
@@ -207,6 +207,7 @@ public class PlayerStateController : Unit
                 StateInTheAir();
                 break;
             case State.Skill2:
+                if (!(rb.constraints == RigidbodyConstraints2D.FreezeRotation)) return;
                 StateInTheAir();
                 break;
         }
