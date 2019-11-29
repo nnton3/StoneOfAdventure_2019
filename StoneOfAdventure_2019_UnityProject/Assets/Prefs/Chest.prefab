@@ -94,10 +94,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6053c8ef53ad9034bb2bd062ec07fa19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 50
+  price: 60
   artifactList:
   - {fileID: 5622249330947774985, guid: fc0db13e48b5fa4418764337df9dbc40, type: 3}
   - {fileID: 8007720152722476586, guid: 9c4a596b58d7a3d4c851210de71b1173, type: 3}
+  - {fileID: 4449557665590569239, guid: cb5e5a50b78d9b944bf4261d3aee1a33, type: 3}
+  - {fileID: 7817645331754166194, guid: 42ff5042914e443488a0f2727270a9b4, type: 3}
+  - {fileID: 8705216893909326726, guid: bc628fe5aa2856946ad60cb97ec56e81, type: 3}
+  - {fileID: 376464270646256237, guid: 6dcab8b0f372d484fa81ca6240c15043, type: 3}
 --- !u!95 &8684340141229720054
 Animator:
   serializedVersion: 3
