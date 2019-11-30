@@ -5,7 +5,6 @@ using StoneOfAdventure.Core;
 
 public class PlayerSkill1 : SkillBase
 {
-    [SerializeField] private int damage;
     [SerializeField] private float timeOfStun;
    
     private Flip flip;
@@ -36,7 +35,7 @@ public class PlayerSkill1 : SkillBase
         foreach (var enemie in enemiesInApplicationArea)
         {
             enemie.GetComponent<Unit>().ApplyStun(timeOfStun);
-            enemie.GetComponent<Health>().ApplyDamage(damage);
+            enemie.GetComponent<Health>().ApplyDamage(baseDamage);
         }
     }
 

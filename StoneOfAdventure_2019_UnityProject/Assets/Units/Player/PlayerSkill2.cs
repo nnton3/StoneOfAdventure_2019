@@ -33,6 +33,7 @@ public class PlayerSkill2 : SkillBase
     public override void StartUse()
     {
         base.StartUse();
+        playerScill2Collider.GetComponent<PlayerSkill2Collider>().skill2Damage = baseDamage;
         anim.SetTrigger("skill2");
     }
 

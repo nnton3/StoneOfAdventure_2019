@@ -4,7 +4,7 @@ using StoneOfAdventure.Combat;
 
 public class PlayerSkill2Collider : MonoBehaviour
 {
-    [SerializeField] private int skill2Damage = 5;
+    [HideInInspector] public int skill2Damage = 5;
 
     private void Start() { }
 

@@ -8,6 +8,7 @@ namespace Assets.Scripts.Core
 {
     public class PlayerLevelObserver : MonoBehaviour
     {
+        #region Variables
         [SerializeField] private int baseExpirienceNeedToLevelUp = 100;
         public int MaxExperience => baseExpirienceNeedToLevelUp;
         [SerializeField] private float damageGetForLevel = 0.1f;
@@ -19,6 +20,7 @@ namespace Assets.Scripts.Core
         private int currentExperienceValue = 0;
         public int CurrentExperience => currentExperienceValue;
         private GameObject player;
+        #endregion
 
         private void Start()
         {
@@ -42,6 +44,11 @@ namespace Assets.Scripts.Core
             playerHealth.UpdateMaxHealthPoints(healthGetForLevel);
             playerHealth.Heal(playerHealth.MaxHealthPoints - playerHealth.HealthPoints);
             player.GetComponent<Fighter>().IncreaseBaseDamage(damageGetForLevel);
+            var skills = player.GetComponents<SkillBase>();
+            foreach (var skill in skills)
+            {
+                skill.IncreaseBaseDamage(damageGetForLevel);
+            }
             baseExpirienceNeedToLevelUp += (int)(increaseLevelUpExperience * baseExpirienceNeedToLevelUp);
             UpdateMaxExperience?.Invoke();
         }
