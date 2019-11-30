@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HealthRegen_artifact : Artifact
 {
-    [SerializeField] private float healValue;
+    [SerializeField] private int healValue;
     Health Health;
 
     public void AddRegen()

@@ -7,7 +7,7 @@ namespace StoneOfAdventure.Combat
     {
         private Health health;
 
-        public float HealValue = 1f;
+        public int HealValue = 1;
         [SerializeField] private float temporaryRegen;
         private float temporaryRegenTime = 1f;
 
@@ -20,7 +20,7 @@ namespace StoneOfAdventure.Combat
 
         private void Heal()
         {
-            health.Heal(1f);
+            health.Heal(1);
         }
 
         public void SetTemporaryRegen(float _temporaryRegen, float actionTime)

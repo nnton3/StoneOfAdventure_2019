@@ -5,7 +5,7 @@ using StoneOfAdventure.Combat;
 
 public class RedHerold_buffArea : BuffArea
 {
-    [SerializeField] private float healValue = 1f;
+    [SerializeField] private int healValue = 1;
     [SerializeField] private float periodicity = 1f;
 
     protected override void AddBuffs(GameObject target)

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RaycastFighter : Fighter
 {
-    #region
+    #region Variables
     [SerializeField] private float attackRange;
     [SerializeField] private int attackedLayer;
     [SerializeField] private string targetTag = "Player";

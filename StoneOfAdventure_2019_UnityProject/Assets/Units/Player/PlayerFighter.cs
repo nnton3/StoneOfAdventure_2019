@@ -4,20 +4,11 @@ using System;
 namespace StoneOfAdventure.Combat
 {
     public class PlayerFighter : Fighter
-    {
-        private float damageScale = 1f;
-        
-        public void SetDamageScaleForNexAttack(float _damageScale)
-        {
-            if (_damageScale > 0f) damageScale = _damageScale;
-        }
-
-        private void ResetDamageScale() { damageScale = 1f; }
-
+    {        
         // Animation event
         public void Hit()
         {
-            float currentDamage = baseDamage;
+            var currentDamage = baseDamage;
             applyDamageModifiers?.Invoke(ref currentDamage);
             Vector2 centerInRelationUnitDirection =
                 transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
@@ -31,7 +22,6 @@ namespace StoneOfAdventure.Combat
                 enemie.GetComponent<Health>().ApplyDamage(currentDamage);
                 applyEffectsOnTarget?.Invoke(enemie.gameObject);
             }
-            ResetDamageScale();
         }
 
         [SerializeField] private Vector3 applicationAreaCenter;
