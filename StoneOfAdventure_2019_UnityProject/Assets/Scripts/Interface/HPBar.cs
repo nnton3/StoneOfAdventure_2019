@@ -21,7 +21,7 @@ namespace StoneOfAdventure.UI
             UpdateHPBar();
         }
 
-        protected void UpdateHPBar()
+        protected virtual void UpdateHPBar()
         {
             hpBar.maxValue = health.MaxHealthPoints;
             hpBar.value = health.HealthPoints;

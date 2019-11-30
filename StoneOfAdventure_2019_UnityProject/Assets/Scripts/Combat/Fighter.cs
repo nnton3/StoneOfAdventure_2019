@@ -14,13 +14,13 @@ namespace StoneOfAdventure.Combat
         private float currentAttackSpeed = 1f;
         public float CurrentAttackSpeed => currentAttackSpeed;
 
-        [SerializeField] protected float baseDamage;
-        public float BaseDamage => baseDamage;
+        [SerializeField] protected int baseDamage;
+        public int BaseDamage => baseDamage;
 
         // The impact of the attack modifiers
         public delegate void EffectsOnTarget(GameObject target);
         protected EffectsOnTarget applyEffectsOnTarget;
-        public delegate void ModifiersOfDamage(ref float damage);
+        public delegate void ModifiersOfDamage(ref int damage);
         protected ModifiersOfDamage applyDamageModifiers;
         #endregion
 
@@ -60,6 +60,11 @@ namespace StoneOfAdventure.Combat
         public void AddModifierOfDamage(ModifiersOfDamage modifier)
         {
             applyDamageModifiers += modifier;
+        }
+
+        public void IncreaseBaseDamage(float increaseValue)
+        {
+            baseDamage += (int)(baseDamage * increaseValue);
         }
 
         private void OnDisable()

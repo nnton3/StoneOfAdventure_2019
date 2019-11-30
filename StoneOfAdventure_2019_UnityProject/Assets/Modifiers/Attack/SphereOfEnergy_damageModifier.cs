@@ -44,12 +44,12 @@ public class SphereOfEnergy_damageModifier : MonoBehaviour
         currentTimeOnFeet += minInterval;
     }
 
-    private void CalculateAddedDamage(ref float damage)
+    private void CalculateAddedDamage(ref int damage)
     {
         if (currentTimeOnFeet >= targetTimeOnFeet)
         {
             currentTimeOnFeet = 0f;
-            damage += fighter.BaseDamage * bonusDamageInPercent;
+            damage += (int)(fighter.BaseDamage * bonusDamageInPercent);
         }
     }
 }

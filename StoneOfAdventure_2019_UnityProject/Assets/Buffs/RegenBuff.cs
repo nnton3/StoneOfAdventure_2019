@@ -4,12 +4,12 @@ using StoneOfAdventure.Combat;
 
 public class RegenBuff : BaseBuff
 {
-    [SerializeField] private float healValue = 1f;
+    [SerializeField] private int healValue = 1;
     [SerializeField] private float periodicity = 1f;
 
     private Health health;
 
-    public void Initialize(float _healValue, float _periodicity)
+    public void Initialize(int _healValue, float _periodicity)
     {
         healValue = _healValue;
         periodicity = _periodicity;

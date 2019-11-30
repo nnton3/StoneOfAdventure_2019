@@ -5,7 +5,7 @@ using StoneOfAdventure.Core;
 
 public class PlayerSkill1 : SkillBase
 {
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
     [SerializeField] private float timeOfStun;
    
     private Flip flip;

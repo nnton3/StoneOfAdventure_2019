@@ -21,12 +21,12 @@ public class CriticalDamage_damageModifier : MonoBehaviour
         fighter.AddModifierOfDamage(CalculateDamageScale);
     }
 
-    private void CalculateDamageScale(ref float damage)
+    private void CalculateDamageScale(ref int damage)
     {
         float chance = Random.Range(0f, 100f);
         if (chance <= criticalChance)
         {
-            damage += fighter.BaseDamage * addedDamageInPercent;
+            damage += (int)(fighter.BaseDamage * addedDamageInPercent);
         }
     }
 }
