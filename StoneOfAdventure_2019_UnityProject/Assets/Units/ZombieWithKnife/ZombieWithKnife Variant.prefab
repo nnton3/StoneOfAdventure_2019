@@ -129,6 +129,11 @@ PrefabInstance:
       propertyPath: reward
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: experience
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 658190850852845408, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_Size.x

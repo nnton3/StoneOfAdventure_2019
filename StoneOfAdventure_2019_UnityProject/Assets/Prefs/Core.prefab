@@ -1054,7 +1054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9146637608729146950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.995931, y: 2.4024477, z: -10}
+  m_LocalPosition: {x: -0.68999994, y: 0.48041534, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9146637608463278448}
@@ -1260,9 +1260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fabbd33a55c07c47ac9adf4f6cb90d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 8
+  baseSpawnDelay: 10
   minSpawnDelay: 1
-  totalTickNumber: 100
+  totalTickNumber: 150
   units:
   - {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
   - {fileID: 6133069997062176456, guid: 0987281248004b34c8174a3790911d69, type: 3}
@@ -1329,10 +1329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583585de933871f4abe01f439858d88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseExpirienceNeedToLevelUp: 10
-  damageGetForLevel: 0.1
-  healthGetForLevel: 0.1
-  increaseLevelUpExperience: 0.1
+  baseExpirienceNeedToLevelUp: 50
+  damageGetForLevel: 0.2
+  healthGetForLevel: 0.15
+  increaseLevelUpExperience: 0.5
   UpdateCurrentExperience:
     m_PersistentCalls:
       m_Calls: []
@@ -1644,12 +1644,12 @@ PrefabInstance:
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.995931
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0020322
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
@@ -1695,6 +1695,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 713472708721060686, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}

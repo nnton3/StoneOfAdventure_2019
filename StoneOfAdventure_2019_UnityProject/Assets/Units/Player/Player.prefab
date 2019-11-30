@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 8
-  damage: 50
+  damage: 48
   timeOfStun: 2
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
   applicationArea: {x: 3, y: 1, z: 1}
@@ -348,7 +348,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  healthPoints: 160
+  healthPoints: 100
   untouchable: 0
 --- !u!114 &4085254988495093279
 MonoBehaviour:
