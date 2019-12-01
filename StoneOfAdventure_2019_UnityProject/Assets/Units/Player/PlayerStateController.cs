@@ -249,7 +249,7 @@ public class PlayerStateController : Unit
                 StopWalk.Invoke();
                 break;
             case State.Skill2:
-                anim.SetTrigger("jump");
+                anim.SetTrigger("skill2end");
                 break;
         }
         SetState(State.InTheAir);

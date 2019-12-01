@@ -265,6 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   reward: 1
+  experience: 1
   movespeed: 5
 --- !u!114 &5529957313187058676
 MonoBehaviour:

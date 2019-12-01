@@ -270,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   reward: 3
+  experience: 3
   movespeed: 2.25
   patrolMovespeed: 2.25
 --- !u!114 &7913249878129167813
@@ -446,11 +447,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 658190849188051328}
     m_Modifications:
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_Name
-      value: HPBar
-      objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,10 +552,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_Name
+      value: HPBar
+      objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631240, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018956296930, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631241, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
