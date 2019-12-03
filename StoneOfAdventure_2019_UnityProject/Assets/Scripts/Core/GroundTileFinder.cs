@@ -40,4 +40,13 @@ public class GroundTileFinder : MonoBehaviour
         return groundTIlesPosition;
     }
 
+    public Vector3 PositionIsValid(Vector3 position)
+    {
+        Vector3Int tilePositionCheck = groundTilemap.WorldToCell(position + Vector3.down);
+        if (groundTilemap.GetTile(tilePositionCheck) == targetTile)
+        {
+            return tilePositionCheck + Vector3.up;
+        }
+        return Vector3.zero;
+    }
 }

@@ -157,7 +157,22 @@ public class PlayerStateController : Unit
 
     public override void UltimateSkill()
     {
-        if (ultimateSkill.CanUseSkill) ultimateSkill.StartUse();
+        switch (currentState)
+        {
+            case State.Idle:
+                TryToStartUltimate();
+                break;
+            case State.MoveHorizontal:
+                TryToStartUltimate();
+                break;
+        }
+
+        void TryToStartUltimate()
+        {
+            if (!ultimateSkill.CanUseSkill) return;
+            ultimateSkill.StartUse();
+            StateAttack();
+        }
     }
 
     public override void Jump()
