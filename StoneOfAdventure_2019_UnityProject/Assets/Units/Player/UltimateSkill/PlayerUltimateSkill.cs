@@ -8,30 +8,37 @@ public class PlayerUltimateSkill : SkillBase
     #region Variables
     [SerializeField] private GameObject playerIllusionPref;
     private GroundTileFinder tileFinder; 
-    [SerializeField] private readonly int IllusionsNumber = 3;
+    private readonly int IllusionsNumber = 2;
+    [SerializeField] private float positionIsertRelativePlayer = 2f;
+    private Animator anim;
     #endregion
 
     private void Start()
     {
         tileFinder = GetComponent<GroundTileFinder>();
+        anim = GetComponent<Animator>();
     }
 
     public override void StartUse()
     {
         base.StartUse();
-        InstanceIllusions();
+        anim.SetTrigger("ultimateSkill");
     }
 
-    private void InstanceIllusions()
+    private void InstanceIllusion(Vector3 position)
     {
-        var validTiles = tileFinder.FindValidPositions();
-
         for (int i = 0; i < IllusionsNumber; i++)
         {
-            if (validTiles.Count == 0) return;
-            var instancePosition = validTiles[Random.Range(0, validTiles.Count - 1)] + Vector3.up;
-            validTiles.Remove(instancePosition);
-            Instantiate(playerIllusionPref, instancePosition, Quaternion.identity);
+            if (position == Vector3.zero) return;
+            Instantiate(playerIllusionPref, position, Quaternion.identity);
         }
+    }
+
+    public void CreateIllusion()
+    {
+        var validTile = tileFinder.PositionIsValid(transform.position + Vector3.right * positionIsertRelativePlayer);
+        InstanceIllusion(validTile);
+        validTile = tileFinder.PositionIsValid(transform.position - Vector3.right * positionIsertRelativePlayer);
+        InstanceIllusion(validTile);
     }
 }
