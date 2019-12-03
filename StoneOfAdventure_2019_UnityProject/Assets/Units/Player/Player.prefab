@@ -258,7 +258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 8
-  damage: 48
+  baseDamage: 10
+  SkillUsed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   timeOfStun: 2
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
   applicationArea: {x: 3, y: 1, z: 1}
@@ -279,7 +284,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 4
-  movespeed: 25
+  baseDamage: 10
+  SkillUsed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  movespeed: 32
 --- !u!114 &713472708721060686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +304,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 20
+  baseDamage: 10
+  SkillUsed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   playerIllusionPref: {fileID: 1006271429048145953, guid: 838a55cb5287ab648a70c3f1606c4d68,
     type: 3}
 --- !u!114 &6294659417202341041
