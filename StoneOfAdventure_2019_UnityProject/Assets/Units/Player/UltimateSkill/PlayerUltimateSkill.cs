@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
+using StoneOfAdventure.Combat;
 
 public class PlayerUltimateSkill : SkillBase
 {
@@ -30,7 +31,8 @@ public class PlayerUltimateSkill : SkillBase
         for (int i = 0; i < IllusionsNumber; i++)
         {
             if (position == Vector3.zero) return;
-            Instantiate(playerIllusionPref, position, Quaternion.identity);
+            var illusionPref = Instantiate(playerIllusionPref, position, Quaternion.identity);
+            illusionPref.GetComponent<Fighter>().SetNewBaseDamageValue(GetComponent<Fighter>().BaseDamage);
         }
     }
 

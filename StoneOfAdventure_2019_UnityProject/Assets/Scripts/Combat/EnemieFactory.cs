@@ -38,8 +38,8 @@ namespace StoneOfAdventure.Core
 
         private float CalculateSpawnDelay()
         {
+            if (currentTickNumber >= totalTickNumber) return minSpawnDelay;
             var currentSpawnDelay = baseSpawnDelay - currentTickNumber * spawnDelayStep;
-            if (currentTickNumber == totalTickNumber) return minSpawnDelay;
             Debug.Log($"Текущая длительность тика равна = {currentSpawnDelay}");
             return currentSpawnDelay;
         }
