@@ -62,9 +62,14 @@ namespace StoneOfAdventure.Combat
             applyDamageModifiers += modifier;
         }
 
-        public void IncreaseBaseDamage(float increaseValue)
+        public void IncreaseBaseDamage(float percent)
         {
-            baseDamage += (int)(baseDamage * increaseValue);
+            baseDamage += (int)(baseDamage * percent);
+        }
+
+        public void SetNewBaseDamageValue(int value)
+        {
+            baseDamage = value;
         }
 
         private void OnDisable()
