@@ -206,4 +206,4 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 512
-  lifeTime: 5
+  lifeTime: 7

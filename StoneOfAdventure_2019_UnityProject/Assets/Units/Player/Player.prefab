@@ -312,6 +312,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   playerIllusionPref: {fileID: 1006271429048145953, guid: 838a55cb5287ab648a70c3f1606c4d68,
     type: 3}
+  positionIsertRelativePlayer: 2
 --- !u!114 &6294659417202341041
 MonoBehaviour:
   m_ObjectHideFlags: 0
