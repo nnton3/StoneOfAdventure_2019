@@ -51,7 +51,7 @@ namespace Assets.Scripts.Core
             }
             baseExpirienceNeedToLevelUp += (int)(increaseLevelUpExperience * baseExpirienceNeedToLevelUp);
             UpdateMaxExperience?.Invoke();
-            Instantiate(Resources.Load("LevelUp"), player.transform);
+            Instantiate(Resources.Load("LevelUp"), player.transform.position, Quaternion.identity);
         }
     }
 }

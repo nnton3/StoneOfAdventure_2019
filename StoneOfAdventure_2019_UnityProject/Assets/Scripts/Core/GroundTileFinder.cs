@@ -20,6 +20,14 @@ public class GroundTileFinder : MonoBehaviour
 
     public List<Vector3> FindValidPositions()
     {
+        if (groundTilemap == null)
+        {
+            groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
+            if (groundTilemap == null)
+            {
+                return new List<Vector3>();
+            }
+        }
         List<Vector3> groundTIlesPosition = new List<Vector3>();
 
         Vector3 startCheckPoint = player.transform.position - (Vector3)boundSize / 2;
