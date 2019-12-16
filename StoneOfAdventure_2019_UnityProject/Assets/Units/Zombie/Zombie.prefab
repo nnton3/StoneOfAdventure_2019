@@ -205,7 +205,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  baseDamage: 10
+  baseDamage: 9
   attackRange: 1
   attackedLayer: 8
   targetTag: Player
@@ -254,7 +254,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  healthPoints: 80
+  healthPoints: 120
   untouchable: 1
 --- !u!114 &658190849188051337
 MonoBehaviour:
@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  reward: 3
-  experience: 3
+  reward: 5
+  experience: 5
   movespeed: 2.25
   patrolMovespeed: 2.25
 --- !u!114 &7913249878129167813
