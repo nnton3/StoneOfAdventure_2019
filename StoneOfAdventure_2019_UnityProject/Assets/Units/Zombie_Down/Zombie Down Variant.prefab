@@ -124,10 +124,15 @@ PrefabInstance:
       propertyPath: attackRange
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4469884353747033339, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: baseDamage
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 658190849188051339, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: healthPoints
-      value: 60
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 658190850852845413, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
@@ -148,6 +153,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: movespeed
+      value: 3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: patrolMovespeed
+      value: 3.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}
