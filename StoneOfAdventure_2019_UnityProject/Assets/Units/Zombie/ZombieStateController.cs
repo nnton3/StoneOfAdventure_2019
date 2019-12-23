@@ -167,12 +167,6 @@ public class ZombieStateController : UnitContainsAward
     }
     #endregion
 
-    IEnumerator DestroyCorrupse()
-    {
-        yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
-    }
-
     #region StateTransitions
     private void StateIdle()
     {
@@ -201,6 +195,12 @@ public class ZombieStateController : UnitContainsAward
     }
 
     #endregion
+
+    IEnumerator DestroyCorrupse()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+    }
 
     private void SetState(State value)
     {
