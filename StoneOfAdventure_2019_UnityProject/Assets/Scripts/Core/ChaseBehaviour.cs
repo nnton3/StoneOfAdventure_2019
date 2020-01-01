@@ -6,10 +6,10 @@ public class ChaseBehaviour : MonoBehaviour
 {
     [SerializeField] private float attackRange = 1f;
 
-    private Unit unit;
+    protected Unit unit;
     private Flip flip;
     private GroundTileScanner tileScanner;
-    private GameObject player;
+    protected GameObject player;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class ChaseBehaviour : MonoBehaviour
         player = FindObjectOfType<PlayerStateController>().gameObject;
     }
 
-    public void UpdateChaseBegaviour()
+    public virtual void UpdateChaseBehaviour()
     {
         if (PlayerInAttackRange())
         {
@@ -27,7 +27,7 @@ public class ChaseBehaviour : MonoBehaviour
         }
     }
 
-    private bool PlayerInFront()
+    protected bool PlayerInFront()
     {
         if (flip.isFacingRight && CalculateDirection() == 1f ||
             !flip.isFacingRight && CalculateDirection() == -1f)

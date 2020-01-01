@@ -115,14 +115,14 @@ public class PlayerStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                TryToStartSkill1();
+                TryToUseSkill();
                 break;
             case State.MoveHorizontal:
-                TryToStartSkill1();
+                TryToUseSkill();
                 break;
         }
 
-        void TryToStartSkill1()
+        void TryToUseSkill()
         {
             if (!playerSkill1.CanUseSkill) return;
             playerSkill1.StartUse();
@@ -135,17 +135,17 @@ public class PlayerStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                TryToStartScill2();
+                TryToUseSkill();
                 break;
             case State.MoveHorizontal:
-                TryToStartScill2();
+                TryToUseSkill();
                 break;
             case State.InTheAir:
-                TryToStartScill2();
+                TryToUseSkill();
                 break;
         }
 
-        void TryToStartScill2()
+        void TryToUseSkill()
         {
             if (!playerSkill2.CanUseSkill) return;
             StateSkill2();
