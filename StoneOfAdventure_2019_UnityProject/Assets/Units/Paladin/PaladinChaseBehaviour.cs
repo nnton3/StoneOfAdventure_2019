@@ -12,6 +12,14 @@ public class PaladinChaseBehaviour : ChaseBehaviour
     private PaladinSkill2 skill2;
     #endregion
 
+    protected override void Start()
+    {
+        base.Start();
+
+        skill1 = GetComponent<PaladinSkill1>();
+        skill2 = GetComponent<PaladinSkill2>();
+    }
+
     public override void UpdateChaseBehaviour()
     {
         if (CanAttackInMelee())
@@ -29,15 +37,16 @@ public class PaladinChaseBehaviour : ChaseBehaviour
             }
         }
 
-        if (skill2.CanUseSkill)
-        {
-            unit.Skill2();
-            return;
-        }
+        //if (skill2.CanUseSkill)
+        //{
+        //    unit.Skill2();
+        //    return;
+        //}
     }
 
     private bool CanAttackInRange()
     {
+        Debug.Log("check range attack distance");
         return (transform.position.x - player.transform.position.x) <= rangeAttackDistance;
     }
 

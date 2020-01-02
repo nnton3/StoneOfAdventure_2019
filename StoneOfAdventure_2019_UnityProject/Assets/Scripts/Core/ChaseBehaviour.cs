@@ -11,7 +11,7 @@ public class ChaseBehaviour : MonoBehaviour
     private GroundTileScanner tileScanner;
     protected GameObject player;
 
-    private void Start()
+    protected virtual void Start()
     {
         unit = GetComponent<Unit>();
         flip = GetComponent<Flip>();
