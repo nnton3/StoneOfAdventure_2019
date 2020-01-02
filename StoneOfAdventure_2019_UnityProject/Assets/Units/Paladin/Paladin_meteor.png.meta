@@ -17,6 +17,7 @@ TextureImporter:
     21300024: Paladin_meteor_12
     21300026: Paladin_meteor_13
     21300028: Paladin_meteor_14
+    21300030: Paladin_meteor_15
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -157,18 +158,18 @@ TextureImporter:
       name: Paladin_meteor_0
       rect:
         serializedVersion: 2
-        x: 1465
+        x: 0
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50872dbb6e4baac4c988ddce4d35237b
+      spriteID: bafb966b31abbb84588ec44c28ad632c
       vertices: []
       indices: 
       edges: []
@@ -177,18 +178,18 @@ TextureImporter:
       name: Paladin_meteor_1
       rect:
         serializedVersion: 2
-        x: 1360
+        x: 98
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8db9a4df77c66345a157917fc339ab2
+      spriteID: b7c706fff1a90c84c922505f09ed6983
       vertices: []
       indices: 
       edges: []
@@ -197,18 +198,18 @@ TextureImporter:
       name: Paladin_meteor_2
       rect:
         serializedVersion: 2
-        x: 1256
+        x: 195
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82ed2b84035bde41a6923c45955d57d
+      spriteID: afa7e8e390555f74eb963303d6e76c82
       vertices: []
       indices: 
       edges: []
@@ -217,18 +218,18 @@ TextureImporter:
       name: Paladin_meteor_3
       rect:
         serializedVersion: 2
-        x: 1151
+        x: 293
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167d01845111d66419ea612254dbb7a3
+      spriteID: f05d1fc7e0dae204692a6de453bb5d5f
       vertices: []
       indices: 
       edges: []
@@ -237,18 +238,18 @@ TextureImporter:
       name: Paladin_meteor_4
       rect:
         serializedVersion: 2
-        x: 1046
+        x: 391
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e357330339040343ad6ff50cc9f3fb0
+      spriteID: 391a1f62d54ce1b4f8cbae73952e8eed
       vertices: []
       indices: 
       edges: []
@@ -257,18 +258,18 @@ TextureImporter:
       name: Paladin_meteor_5
       rect:
         serializedVersion: 2
-        x: 942
+        x: 488
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ddaedfaa4bf31d4f89bc8cc7d7e7320
+      spriteID: 90b22dbe6a49f53498eb6826e6e46151
       vertices: []
       indices: 
       edges: []
@@ -277,18 +278,18 @@ TextureImporter:
       name: Paladin_meteor_6
       rect:
         serializedVersion: 2
-        x: 837
+        x: 586
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3aab4af9de742478ad251a3a515940
+      spriteID: a1bcb669541c85b42a8dd0451d7781b4
       vertices: []
       indices: 
       edges: []
@@ -297,18 +298,18 @@ TextureImporter:
       name: Paladin_meteor_7
       rect:
         serializedVersion: 2
-        x: 733
+        x: 684
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc96e6563585a814787d234148e3a4d7
+      spriteID: e25e847ce586d8a429c6c612d0c3c718
       vertices: []
       indices: 
       edges: []
@@ -317,18 +318,18 @@ TextureImporter:
       name: Paladin_meteor_8
       rect:
         serializedVersion: 2
-        x: 628
+        x: 781
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29b9893ae537fe439471b346a26eea2
+      spriteID: 1dfb2596dea8b04428764bef87f47d15
       vertices: []
       indices: 
       edges: []
@@ -337,18 +338,18 @@ TextureImporter:
       name: Paladin_meteor_9
       rect:
         serializedVersion: 2
-        x: 523
+        x: 879
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c187a46449129045aba87e73d1d8fd9
+      spriteID: 96af87a04e948dd4f9ca39027279c068
       vertices: []
       indices: 
       edges: []
@@ -357,18 +358,18 @@ TextureImporter:
       name: Paladin_meteor_10
       rect:
         serializedVersion: 2
-        x: 419
+        x: 977
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9ea895f6bf66a41911b6c3dbb28a22
+      spriteID: d2beafb916567ce429ccb6624cdc78fb
       vertices: []
       indices: 
       edges: []
@@ -377,18 +378,18 @@ TextureImporter:
       name: Paladin_meteor_11
       rect:
         serializedVersion: 2
-        x: 314
+        x: 1074
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3b4a644efd5b1a449301f5e1b8c97de
+      spriteID: 06d2535d9bb9afb439b4ab59e8a07085
       vertices: []
       indices: 
       edges: []
@@ -397,18 +398,18 @@ TextureImporter:
       name: Paladin_meteor_12
       rect:
         serializedVersion: 2
-        x: 209
+        x: 1172
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5418315ab121d94393f3a84abafecc9
+      spriteID: dea128e8a0dff544c81e1b1fd62dd2bb
       vertices: []
       indices: 
       edges: []
@@ -417,18 +418,18 @@ TextureImporter:
       name: Paladin_meteor_13
       rect:
         serializedVersion: 2
-        x: 105
+        x: 1270
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb3ab95087b45bc43804e2e9b9cbe319
+      spriteID: 92ed1f2c6626f6d46af2794c88246b81
       vertices: []
       indices: 
       edges: []
@@ -437,18 +438,38 @@ TextureImporter:
       name: Paladin_meteor_14
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1367
         y: 0
         width: 35
         height: 26
-      alignment: 9
-      pivot: {x: 0.415, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d22ae4e638f38a4a92e0032f6432235
+      spriteID: c73efa58089b2cd4f99565686b6dd5ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_meteor_15
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 0
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b70b3dd799e104cb3b8aebb390436c
       vertices: []
       indices: 
       edges: []
