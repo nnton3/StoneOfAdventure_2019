@@ -17,9 +17,6 @@ public class ZombieStateController : UnitContainsAward
 
     private PatrolBehaviour patrolBehaviour;
     private ChaseBehaviour chaseBehaviour;
-
-    [SerializeField] private float movespeed = 3f;
-    [SerializeField] private float patrolMovespeed = 1.5f;
     #endregion
 
     protected override void Start()
@@ -45,18 +42,18 @@ public class ZombieStateController : UnitContainsAward
         if (currentState == State.Death) return;
         if (currentState == State.InTheAir)
         {
-            MoveHorizontal(0f, patrolMovespeed);
+            MoveHorizontal(0f);
             return;
         }
         if (currentTarget)
         {
-            chaseBehaviour.UpdateChaseBegaviour();
-            MoveHorizontal(chaseBehaviour.CalculateDirection(), movespeed);
+            chaseBehaviour.UpdateChaseBehaviour();
+            MoveHorizontal(chaseBehaviour.CalculateDirection());
         }
         else
         {
             patrolBehaviour.UpdatePatrolBehaviour();
-            MoveHorizontal(patrolBehaviour.PatrolDirection, patrolMovespeed);
+            MoveHorizontal(patrolBehaviour.PatrolDirection);
         }
     }
 
@@ -66,7 +63,7 @@ public class ZombieStateController : UnitContainsAward
     }
 
     #region Events
-    private void MoveHorizontal(float direction, float movespeed)
+    public override void MoveHorizontal(float direction)
     {
         switch (currentState)
         {

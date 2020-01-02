@@ -11,6 +11,12 @@ namespace StoneOfAdventure.Combat
 
         [HideInInspector] public UnityEvent HPDecreased;
         [HideInInspector] public UnityEvent HPIncreased;
+
+        internal void ApplyDamage(object damage)
+        {
+            throw new NotImplementedException();
+        }
+
         [HideInInspector] public UnityEvent MaxHealthUpdated;
 
         [SerializeField] private int healthPoints = 100;

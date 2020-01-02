@@ -11,7 +11,7 @@ public class SkillBase : MonoBehaviour
     private bool canUseSkill = true;
     public bool CanUseSkill => canUseSkill;
 
-    public UnityEvent SkillUsed;
+    [HideInInspector] public UnityEvent SkillUsed;
 
     public virtual void StartUse()
     {

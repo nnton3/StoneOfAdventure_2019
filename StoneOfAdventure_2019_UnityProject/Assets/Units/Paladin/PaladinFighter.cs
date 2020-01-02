@@ -5,40 +5,21 @@ using System;
 
 namespace StoneOfAdventure.Combat
 {
-    public class PaladinFighter : Fighter
+    public class PaladinFighter : RaycastFighter
     {
-        private Transform player;
-
-        [SerializeField] private float meleeRange;
+        private Rigidbody2D rb;
 
         protected override void Start()
         {
             base.Start();
-            player = FindObjectOfType<PaladinStateController>().transform;
+            rb = GetComponent<Rigidbody2D>();
         }
 
-        public override void StartAttack()
+        // Animation event
+        public void AddImpulse(int power)
         {
-            if (TargetInMelee()) StartMeleeAttack();
-
-            StartRangeAttack();
-        }
-
-        private void StartRangeAttack()
-        {
-            Attack?.Invoke();
-            anim.SetTrigger("rangeAttack");
-        }
-
-        private void StartMeleeAttack()
-        {
-            Attack?.Invoke();
-            anim.SetTrigger("meleeAttack");
-        }
-
-        private bool TargetInMelee()
-        {
-            return (player.position.x - transform.position.x) <= meleeRange;
+            var dir = (flip.isFacingRight) ? 1 : -1;
+            rb.AddForce(Vector2.right * dir * power, ForceMode2D.Impulse);
         }
     }
 }
