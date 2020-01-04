@@ -20,12 +20,14 @@ namespace StoneOfAdventure.Movement
         public float CurrentMovespeedScale => currentMovespeedScale;
         #endregion
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
+            flip = GetComponent<Flip>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
-            flip = GetComponent<Flip>();
         }
+
+        protected virtual void Start() { }
 
         internal virtual void MoveTo(float direction)
         {
