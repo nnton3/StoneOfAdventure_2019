@@ -37,21 +37,21 @@ public class PaladinChaseBehaviour : ChaseBehaviour
             }
         }
 
-        //if (skill2.CanUseSkill)
-        //{
-        //    unit.Skill2();
-        //    return;
-        //}
+        if (skill2.CanUseSkill)
+        {
+            unit.Skill2();
+            return;
+        }
     }
 
     private bool CanAttackInRange()
     {
         Debug.Log("check range attack distance");
-        return (transform.position.x - player.transform.position.x) <= rangeAttackDistance;
+        return Mathf.Abs(transform.position.x - player.transform.position.x) <= rangeAttackDistance;
     }
 
     private bool CanAttackInMelee()
     {
-        return (transform.position.x - player.transform.position.x) <= meleeAttackDistance;
+        return Mathf.Abs(transform.position.x - player.transform.position.x) <= meleeAttackDistance;
     }
 }
