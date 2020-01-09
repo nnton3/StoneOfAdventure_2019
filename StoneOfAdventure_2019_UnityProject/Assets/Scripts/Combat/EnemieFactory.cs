@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Tilemaps;
 
 namespace StoneOfAdventure.Core
 {
@@ -10,22 +9,26 @@ namespace StoneOfAdventure.Core
         #region Variables
         [SerializeField] private float baseSpawnDelay = 5f;
         [SerializeField] private float minSpawnDelay = 1f;
-        private GroundTileFinder tileFinder;
-        [SerializeField] private int totalTickNumber = 40;
-        private int currentTickNumber = 0;
-        private float spawnDelayStep = 0f;
-
         [SerializeField] private List<GameObject> units = new List<GameObject>();
         [SerializeField] private List<float> baseSpawnChance = new List<float>();
         [SerializeField] private List<float> endSpawnChance = new List<float>();
+        [SerializeField] private int totalTickNumber = 40;
+
+        private GroundTileFinder tileFinder;
+        private int currentTickNumber = 0;
+        private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
         #endregion
 
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
-            StartCoroutine("SpawnEmmiter");
             spawnDelayStep = (baseSpawnDelay - minSpawnDelay) / totalTickNumber; 
+        }
+
+        public void StopSpawn()
+        {
+            StopCoroutine("SpawnEmmiter");
         }
 
         private IEnumerator SpawnEmmiter()
