@@ -12,6 +12,7 @@ public class SoulShard : MonoBehaviour
     private bool moveStarted;
     private Flyer flyer;
     private Treasury treasury;
+    private LocationPointsStorage locationPoints;
     [SerializeField] private float impulsePower = 1f;
     [SerializeField] private float movespeed = 3f;
     #endregion
@@ -22,6 +23,7 @@ public class SoulShard : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         flyer = GetComponent<Flyer>();
         treasury = GameObject.FindObjectOfType<Treasury>();
+        locationPoints = FindObjectOfType<LocationPointsStorage>();
 
         Vector2 impulseDirection = (new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(0f, 1f))).normalized;
         rb.AddForce(impulseDirection * impulsePower, ForceMode2D.Impulse);
@@ -55,6 +57,7 @@ public class SoulShard : MonoBehaviour
     private void PlayerGetReward()
     {
         treasury.Refill(1);
+        locationPoints.AddPoints(1);
         Destroy(gameObject);
     }
 }
