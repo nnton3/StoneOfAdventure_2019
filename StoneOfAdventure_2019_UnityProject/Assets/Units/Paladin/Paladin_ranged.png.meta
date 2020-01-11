@@ -25,6 +25,29 @@ TextureImporter:
     21300040: Paladin_ranged_20
     21300042: Paladin_ranged_21
     21300044: Paladin_ranged_22
+    21300046: Paladin_ranged_23
+    21300048: Paladin_ranged_24
+    21300050: Paladin_ranged_25
+    21300052: Paladin_ranged_26
+    21300054: Paladin_ranged_27
+    21300056: Paladin_ranged_28
+    21300058: Paladin_ranged_29
+    21300060: Paladin_ranged_30
+    21300062: Paladin_ranged_31
+    21300064: Paladin_ranged_32
+    21300066: Paladin_ranged_33
+    21300068: Paladin_ranged_34
+    21300070: Paladin_ranged_35
+    21300072: Paladin_ranged_36
+    21300074: Paladin_ranged_37
+    21300076: Paladin_ranged_38
+    21300078: Paladin_ranged_39
+    21300080: Paladin_ranged_40
+    21300082: Paladin_ranged_41
+    21300084: Paladin_ranged_42
+    21300086: Paladin_ranged_43
+    21300088: Paladin_ranged_44
+    21300090: Paladin_ranged_45
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -167,16 +190,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76738d5f70d0653468e05e0e88fce519
+      spriteID: 64c7e1e09a077e6499ae313799108fef
       vertices: []
       indices: 
       edges: []
@@ -185,18 +208,18 @@ TextureImporter:
       name: Paladin_ranged_1
       rect:
         serializedVersion: 2
-        x: 153
+        x: 129
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63e4e2c01d10a7749909fef2c6ee4d29
+      spriteID: 5926d827e356d5a4fb0ee8c2e1ab00fc
       vertices: []
       indices: 
       edges: []
@@ -205,18 +228,18 @@ TextureImporter:
       name: Paladin_ranged_2
       rect:
         serializedVersion: 2
-        x: 305
+        x: 257
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805a48e1dab3a484dabc69dd005da615
+      spriteID: c0ea56d78882b2044b2868a3f5190a87
       vertices: []
       indices: 
       edges: []
@@ -225,18 +248,18 @@ TextureImporter:
       name: Paladin_ranged_3
       rect:
         serializedVersion: 2
-        x: 458
+        x: 386
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b70fc641628a5e48ab3ae5b00e64dbe
+      spriteID: a6e17d3b141b20647ad9d622ad906052
       vertices: []
       indices: 
       edges: []
@@ -245,18 +268,18 @@ TextureImporter:
       name: Paladin_ranged_4
       rect:
         serializedVersion: 2
-        x: 611
+        x: 514
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e77b2b3c5da8d4041bf0f01be4d16646
+      spriteID: fdf345cc934be0c4fb022d6ced7560f3
       vertices: []
       indices: 
       edges: []
@@ -265,18 +288,18 @@ TextureImporter:
       name: Paladin_ranged_5
       rect:
         serializedVersion: 2
-        x: 763
+        x: 643
         y: 0
-        width: 142
+        width: 20
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3c3780cc437e014c88b9123c7b40469
+      spriteID: 94e236badbf34bf47bbb1d797e8f5f18
       vertices: []
       indices: 
       edges: []
@@ -285,18 +308,18 @@ TextureImporter:
       name: Paladin_ranged_6
       rect:
         serializedVersion: 2
-        x: 916
+        x: 656
         y: 0
-        width: 142
+        width: 27
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 861248fb5c6c9c24da1da9a054c9da4a
+      spriteID: ff659884688ef704d9d7cf099d408fd2
       vertices: []
       indices: 
       edges: []
@@ -305,18 +328,18 @@ TextureImporter:
       name: Paladin_ranged_7
       rect:
         serializedVersion: 2
-        x: 1068
+        x: 771
         y: 0
-        width: 142
+        width: 20
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c69df086ef2c3a43867db260afb044a
+      spriteID: 4f43444a068a1d043a52fc75f3f65b32
       vertices: []
       indices: 
       edges: []
@@ -325,18 +348,18 @@ TextureImporter:
       name: Paladin_ranged_8
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 0
-        width: 142
-        height: 34
+        x: 792
+        y: 19
+        width: 19
+        height: 15
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9dd510caf2f38f47ab477e732bd5b76
+      spriteID: cbb7fc3a04ba3a047bbfbacb55afe4a5
       vertices: []
       indices: 
       edges: []
@@ -345,18 +368,18 @@ TextureImporter:
       name: Paladin_ranged_9
       rect:
         serializedVersion: 2
-        x: 1374
+        x: 900
         y: 0
-        width: 142
+        width: 20
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b269d4add817cee43bf90a70f1b04b86
+      spriteID: 46f35be99975cd145a0005f708b98f6a
       vertices: []
       indices: 
       edges: []
@@ -365,18 +388,18 @@ TextureImporter:
       name: Paladin_ranged_10
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 0
-        width: 142
-        height: 34
+        x: 922
+        y: 20
+        width: 18
+        height: 14
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ed9fe3cfa776e4abf0fbaafc4f9b4a
+      spriteID: 563588926eb46b740b608ea26148d7c5
       vertices: []
       indices: 
       edges: []
@@ -385,18 +408,18 @@ TextureImporter:
       name: Paladin_ranged_11
       rect:
         serializedVersion: 2
-        x: 1679
-        y: 0
-        width: 142
-        height: 34
+        x: 1028
+        y: 16
+        width: 20
+        height: 18
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eca2b59c6a086264fa4b3355ec89a85d
+      spriteID: bf647dc165104d7478d4a408b203b14e
       vertices: []
       indices: 
       edges: []
@@ -405,18 +428,18 @@ TextureImporter:
       name: Paladin_ranged_12
       rect:
         serializedVersion: 2
-        x: 1832
-        y: 0
-        width: 142
-        height: 34
+        x: 1050
+        y: 20
+        width: 18
+        height: 14
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58942e47943ac47478825978d253c662
+      spriteID: c60e93c2555c501489694c8d4507533c
       vertices: []
       indices: 
       edges: []
@@ -425,18 +448,18 @@ TextureImporter:
       name: Paladin_ranged_13
       rect:
         serializedVersion: 2
-        x: 1984
+        x: 1157
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d56dac141efbb0499011d14c804e0b6
+      spriteID: deec7f6041528c3408050c87bbf5cc26
       vertices: []
       indices: 
       edges: []
@@ -445,18 +468,18 @@ TextureImporter:
       name: Paladin_ranged_14
       rect:
         serializedVersion: 2
-        x: 2137
-        y: 0
-        width: 142
-        height: 34
+        x: 1180
+        y: 21
+        width: 17
+        height: 13
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84581d830a1e3354cb21e6c52ac73a35
+      spriteID: ca35d81f95677f54f9925b2374db1818
       vertices: []
       indices: 
       edges: []
@@ -465,18 +488,18 @@ TextureImporter:
       name: Paladin_ranged_15
       rect:
         serializedVersion: 2
-        x: 2290
+        x: 1285
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35a5d623dfac17c419466e94b759f812
+      spriteID: c12189ea1ca63f94cb42465d11037a2e
       vertices: []
       indices: 
       edges: []
@@ -485,18 +508,18 @@ TextureImporter:
       name: Paladin_ranged_16
       rect:
         serializedVersion: 2
-        x: 2442
+        x: 1414
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26969aa09f8c14498b358b2fd6a2651
+      spriteID: 364809e834d516440b7ddb19973c1d52
       vertices: []
       indices: 
       edges: []
@@ -505,18 +528,18 @@ TextureImporter:
       name: Paladin_ranged_17
       rect:
         serializedVersion: 2
-        x: 2595
+        x: 1542
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e6bb3e392abc134f82fcb6dbe1bb51f
+      spriteID: 4ecc74411d2d5a142a94356b872c8a82
       vertices: []
       indices: 
       edges: []
@@ -525,18 +548,18 @@ TextureImporter:
       name: Paladin_ranged_18
       rect:
         serializedVersion: 2
-        x: 2747
+        x: 1671
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8ac1d015ea4b0545867e6aea0902d1e
+      spriteID: 87e90c37e3c80d24b9d3034779f31a43
       vertices: []
       indices: 
       edges: []
@@ -545,18 +568,18 @@ TextureImporter:
       name: Paladin_ranged_19
       rect:
         serializedVersion: 2
-        x: 2900
+        x: 1799
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 429ae29318188104aa4aad7909735ae0
+      spriteID: 5b230514cfe76424ebee6a801f71341b
       vertices: []
       indices: 
       edges: []
@@ -565,18 +588,18 @@ TextureImporter:
       name: Paladin_ranged_20
       rect:
         serializedVersion: 2
-        x: 3053
+        x: 1928
         y: 0
-        width: 142
+        width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22fa5197b2b6ec4ab5b98cf919fdb71
+      spriteID: 909640d01c6e8f74086b80c01e3d422e
       vertices: []
       indices: 
       edges: []
@@ -585,18 +608,18 @@ TextureImporter:
       name: Paladin_ranged_21
       rect:
         serializedVersion: 2
-        x: 3205
+        x: 2056
         y: 0
-        width: 142
+        width: 26
         height: 34
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4605c0491edf92a4c9eaa54b2f416787
+      spriteID: 89a9f052c2f64e048ba57cb6820aaf4f
       vertices: []
       indices: 
       edges: []
@@ -605,18 +628,478 @@ TextureImporter:
       name: Paladin_ranged_22
       rect:
         serializedVersion: 2
-        x: 3358
-        y: 0
-        width: 142
-        height: 34
+        x: 2085
+        y: 15
+        width: 11
+        height: 19
       alignment: 9
-      pivot: {x: 0.145, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b079e0c2ce14842b24222df7ea7281
+      spriteID: f002ca41c00246c459f8e3c94ee87e42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_23
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 0
+        width: 25
+        height: 34
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b5eed855cb724eb8c2be8beb0e5ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_24
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 25
+        width: 13
+        height: 6
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fd3f3a872596a4887eba09f976a4d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_25
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 16
+        width: 10
+        height: 18
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f78f686215c6846a99b5829d68f6d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_26
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 26
+        width: 26
+        height: 8
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b65ea3c7c3d121439c9dd5b2d440bb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_27
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 17
+        width: 9
+        height: 17
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8d0d69f1d276944b1357afff4e8754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_28
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 27
+        width: 24
+        height: 7
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1876c1f404dfdde499c5a066dd7ea16e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_29
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 18
+        width: 8
+        height: 16
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597113d25e0aa5847911ecfbfd47ca24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_30
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 28
+        width: 23
+        height: 6
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897d561a30bbed4ebfb0d07f7e48012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_31
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 0
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afc2f2bcb59e1246bfa31c23412c65e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_32
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 0
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87999debdc539db4cac73bfc1fcfe7e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_33
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 0
+        width: 40
+        height: 34
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637ae3e6448a8be43937ebd8dcf99920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_34
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 27
+        height: 20
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53354f70e65a2245a400d77264f74f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_35
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 0
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc541a661380b8409fc16a7749f8837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_36
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 0
+        width: 40
+        height: 18
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf640bdd9fffe734cbb8acd8b7c8cbaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_37
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 0
+        width: 29
+        height: 22
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011938ecc9c955d4fa05783e6989fb93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_38
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 11
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68607080278ebb44ba98220d5193ef3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_39
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 0
+        width: 9
+        height: 19
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618e29ee981b2de4aa8a399365abdef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_40
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 0
+        width: 29
+        height: 22
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5562b68d1f16d194c95f5b7b47eefe9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_41
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 0
+        width: 8
+        height: 18
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1e5e169166b6d47b8aa9eac2c13477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_42
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 7
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c1db6880651bc4b844f298ba3dd6fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_43
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 0
+        width: 15
+        height: 10
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fc22c08cc37ce43855a6a3fe34bf7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_44
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 0
+        width: 14
+        height: 9
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29e188385dd5e74c8f2b5490c6533df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_ranged_45
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 0
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.525, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c4fd6fa99433849b328c8f7d4aaaf5
       vertices: []
       indices: 
       edges: []
