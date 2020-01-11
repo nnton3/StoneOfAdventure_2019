@@ -1,23 +1,21 @@
 fileFormatVersion: 2
-guid: 445201835364cdf40ae2cd47b3610b1f
+guid: 1b9748f324195b04682b6d672cf10423
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Paladin_meteor_0
-    21300002: Paladin_meteor_1
-    21300004: Paladin_meteor_2
-    21300006: Paladin_meteor_3
-    21300008: Paladin_meteor_4
-    21300010: Paladin_meteor_5
-    21300012: Paladin_meteor_6
-    21300014: Paladin_meteor_7
-    21300016: Paladin_meteor_8
-    21300018: Paladin_meteor_9
-    21300020: Paladin_meteor_10
-    21300022: Paladin_meteor_11
-    21300024: Paladin_meteor_12
-    21300026: Paladin_meteor_13
-    21300028: Paladin_meteor_14
-    21300030: Paladin_meteor_15
+    21300000: FistJump_0
+    21300002: FistJump_1
+    21300004: FistJump_2
+    21300006: FistJump_3
+    21300008: FistJump_4
+    21300010: FistJump_5
+    21300012: FistJump_6
+    21300014: FistJump_7
+    21300016: FistJump_8
+    21300018: FistJump_9
+    21300020: FistJump_10
+    21300022: FistJump_11
+    21300024: FistJump_12
+    21300026: FistJump_13
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -155,321 +153,281 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Paladin_meteor_0
+      name: FistJump_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafb966b31abbb84588ec44c28ad632c
+      spriteID: bd4e49d7532f2564298ce24163adb3ed
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_1
+      name: FistJump_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 41
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c706fff1a90c84c922505f09ed6983
+      spriteID: 9d43dcaab7b506d4f8b484436e5eb991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_2
+      name: FistJump_2
       rect:
         serializedVersion: 2
-        x: 195
+        x: 82
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afa7e8e390555f74eb963303d6e76c82
+      spriteID: f4e5271cedb53c648b7064d73f84ce4c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_3
+      name: FistJump_3
       rect:
         serializedVersion: 2
-        x: 293
+        x: 123
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05d1fc7e0dae204692a6de453bb5d5f
+      spriteID: f530a12c53ce65d42a6a9ecac6bb21ea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_4
+      name: FistJump_4
       rect:
         serializedVersion: 2
-        x: 391
+        x: 164
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391a1f62d54ce1b4f8cbae73952e8eed
+      spriteID: 191a686c0b80c7b4684b4ef55c50bf28
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_5
+      name: FistJump_5
       rect:
         serializedVersion: 2
-        x: 488
+        x: 205
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b22dbe6a49f53498eb6826e6e46151
+      spriteID: dd9496a38e2c4894a868aba54d50154c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_6
+      name: FistJump_6
       rect:
         serializedVersion: 2
-        x: 586
+        x: 246
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1bcb669541c85b42a8dd0451d7781b4
+      spriteID: 3e82346efc02899479ab4507db1ba8a8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_7
+      name: FistJump_7
       rect:
         serializedVersion: 2
-        x: 684
+        x: 287
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e25e847ce586d8a429c6c612d0c3c718
+      spriteID: 4742325e5b0b39c479f718c738cb1b34
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_8
+      name: FistJump_8
       rect:
         serializedVersion: 2
-        x: 781
+        x: 328
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dfb2596dea8b04428764bef87f47d15
+      spriteID: c3520093b8e8f6b45bb0505a7d656428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_9
+      name: FistJump_9
       rect:
         serializedVersion: 2
-        x: 879
+        x: 369
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96af87a04e948dd4f9ca39027279c068
+      spriteID: 770f821b39976fc4486f8d5f909bb152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_10
+      name: FistJump_10
       rect:
         serializedVersion: 2
-        x: 977
+        x: 410
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2beafb916567ce429ccb6624cdc78fb
+      spriteID: bdf5bfc6706830d4cb6833195cedfea7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_11
+      name: FistJump_11
       rect:
         serializedVersion: 2
-        x: 1074
+        x: 451
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d2535d9bb9afb439b4ab59e8a07085
+      spriteID: b96d84826f6255c46b091e7c3411948c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_12
+      name: FistJump_12
       rect:
         serializedVersion: 2
-        x: 1172
+        x: 492
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea128e8a0dff544c81e1b1fd62dd2bb
+      spriteID: 6641ed096c31026459858fd0afc9da8b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_13
+      name: FistJump_13
       rect:
         serializedVersion: 2
-        x: 1270
+        x: 533
         y: 0
-        width: 35
-        height: 26
+        width: 41
+        height: 155
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.512, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92ed1f2c6626f6d46af2794c88246b81
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_14
-      rect:
-        serializedVersion: 2
-        x: 1367
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c73efa58089b2cd4f99565686b6dd5ba
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_15
-      rect:
-        serializedVersion: 2
-        x: 1465
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5b70b3dd799e104cb3b8aebb390436c
+      spriteID: c032fa19705fd0749aaad8f420cc46b9
       vertices: []
       indices: 
       edges: []
@@ -477,7 +435,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: efd005a135c8d47479f2d9234e73a696
+    spriteID: 893d9c5c5e9926842aef47d4ad2866b9
     vertices: []
     indices: 
     edges: []

@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 445201835364cdf40ae2cd47b3610b1f
+guid: fed7ebb46f5cbb143b74f79ab4d4d557
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Paladin_meteor_0
-    21300002: Paladin_meteor_1
-    21300004: Paladin_meteor_2
-    21300006: Paladin_meteor_3
-    21300008: Paladin_meteor_4
-    21300010: Paladin_meteor_5
-    21300012: Paladin_meteor_6
-    21300014: Paladin_meteor_7
-    21300016: Paladin_meteor_8
-    21300018: Paladin_meteor_9
-    21300020: Paladin_meteor_10
-    21300022: Paladin_meteor_11
-    21300024: Paladin_meteor_12
-    21300026: Paladin_meteor_13
-    21300028: Paladin_meteor_14
-    21300030: Paladin_meteor_15
+    21300000: HammerFall_0
+    21300002: HammerFall_1
+    21300004: HammerFall_2
+    21300006: HammerFall_3
+    21300008: HammerFall_4
+    21300010: HammerFall_5
+    21300012: HammerFall_6
+    21300014: HammerFall_7
+    21300016: HammerFall_8
+    21300018: HammerFall_9
+    21300020: HammerFall_10
+    21300022: HammerFall_11
+    21300024: HammerFall_12
+    21300026: HammerFall_13
+    21300028: HammerFall_14
+    21300030: HammerFall_15
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -76,7 +76,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -87,7 +87,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -98,7 +98,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -109,7 +109,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: tvOS
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -120,7 +120,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -131,7 +131,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -142,7 +142,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -155,321 +155,321 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Paladin_meteor_0
+      name: HammerFall_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafb966b31abbb84588ec44c28ad632c
+      spriteID: 53c251cd92b721441956e47c1ee55c3b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_1
+      name: HammerFall_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 253
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c706fff1a90c84c922505f09ed6983
+      spriteID: 83a6a91cc9636d948b1e274af31b1681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_2
+      name: HammerFall_2
       rect:
         serializedVersion: 2
-        x: 195
+        x: 506
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afa7e8e390555f74eb963303d6e76c82
+      spriteID: 584a457caf29dc84c92a1dcfa2485e35
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_3
+      name: HammerFall_3
       rect:
         serializedVersion: 2
-        x: 293
+        x: 759
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05d1fc7e0dae204692a6de453bb5d5f
+      spriteID: fa5b380743389814aa10352e6bcbf1f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_4
+      name: HammerFall_4
       rect:
         serializedVersion: 2
-        x: 391
+        x: 1012
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391a1f62d54ce1b4f8cbae73952e8eed
+      spriteID: 9c3bba47022dc064494c82b78347a710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_5
+      name: HammerFall_5
       rect:
         serializedVersion: 2
-        x: 488
+        x: 1265
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b22dbe6a49f53498eb6826e6e46151
+      spriteID: c7a48102b04380344a6bced6e1d9f3d8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_6
+      name: HammerFall_6
       rect:
         serializedVersion: 2
-        x: 586
+        x: 1518
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1bcb669541c85b42a8dd0451d7781b4
+      spriteID: 38b96d7500e1ae2468184cad3d50da73
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_7
+      name: HammerFall_7
       rect:
         serializedVersion: 2
-        x: 684
+        x: 1771
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e25e847ce586d8a429c6c612d0c3c718
+      spriteID: f1370e3eb163c1142b7e5c92d12c336a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_8
+      name: HammerFall_8
       rect:
         serializedVersion: 2
-        x: 781
+        x: 2024
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dfb2596dea8b04428764bef87f47d15
+      spriteID: 4b8ed860d7de2404b9e2b9e150c3d1c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_9
+      name: HammerFall_9
       rect:
         serializedVersion: 2
-        x: 879
+        x: 2277
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96af87a04e948dd4f9ca39027279c068
+      spriteID: 532679033848f6d4da3406db2bf251c8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_10
+      name: HammerFall_10
       rect:
         serializedVersion: 2
-        x: 977
+        x: 2530
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2beafb916567ce429ccb6624cdc78fb
+      spriteID: e9638f676cb3da7498763ab79d5a2dd9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_11
+      name: HammerFall_11
       rect:
         serializedVersion: 2
-        x: 1074
+        x: 2783
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d2535d9bb9afb439b4ab59e8a07085
+      spriteID: 9edf6d27ec8ab5741af0a749dbd1e159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_12
+      name: HammerFall_12
       rect:
         serializedVersion: 2
-        x: 1172
+        x: 3036
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea128e8a0dff544c81e1b1fd62dd2bb
+      spriteID: dad237d4f1a96a746a2cb559e8eaa789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_13
+      name: HammerFall_13
       rect:
         serializedVersion: 2
-        x: 1270
+        x: 3289
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92ed1f2c6626f6d46af2794c88246b81
+      spriteID: e732b40b9b0fe844bb2d99488f84cc6b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_14
+      name: HammerFall_14
       rect:
         serializedVersion: 2
-        x: 1367
+        x: 3542
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73efa58089b2cd4f99565686b6dd5ba
+      spriteID: dc4d1a39c801e354e88d4d9fc2e6c1e7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_15
+      name: HammerFall_15
       rect:
         serializedVersion: 2
-        x: 1465
+        x: 3795
         y: 0
-        width: 35
-        height: 26
+        width: 253
+        height: 178
       alignment: 9
-      pivot: {x: 0.605, y: 0}
+      pivot: {x: 0.494, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5b70b3dd799e104cb3b8aebb390436c
+      spriteID: 0ad848c7e65cd514587faefb1c2ee16a
       vertices: []
       indices: 
       edges: []
@@ -477,7 +477,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: efd005a135c8d47479f2d9234e73a696
+    spriteID: 93fac4064059bac47baa46f818d1f21d
     vertices: []
     indices: 
     edges: []

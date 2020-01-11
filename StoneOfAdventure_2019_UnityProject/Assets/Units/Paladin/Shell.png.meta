@@ -1,23 +1,16 @@
 fileFormatVersion: 2
-guid: 445201835364cdf40ae2cd47b3610b1f
+guid: 5c8e120735b58af45be60cfff3949fff
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Paladin_meteor_0
-    21300002: Paladin_meteor_1
-    21300004: Paladin_meteor_2
-    21300006: Paladin_meteor_3
-    21300008: Paladin_meteor_4
-    21300010: Paladin_meteor_5
-    21300012: Paladin_meteor_6
-    21300014: Paladin_meteor_7
-    21300016: Paladin_meteor_8
-    21300018: Paladin_meteor_9
-    21300020: Paladin_meteor_10
-    21300022: Paladin_meteor_11
-    21300024: Paladin_meteor_12
-    21300026: Paladin_meteor_13
-    21300028: Paladin_meteor_14
-    21300030: Paladin_meteor_15
+    21300000: Shell_0
+    21300002: Shell_1
+    21300004: Shell_2
+    21300006: Shell_3
+    21300008: Shell_4
+    21300010: Shell_5
+    21300012: Shell_6
+    21300014: Shell_7
+    21300016: Shell_8
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -155,321 +148,181 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Paladin_meteor_0
+      name: Shell_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086b671bc3fbe464ab78e7a9ae292cda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea985b66beacfa4ca9a397c31396644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e57ecbbaf77594abb29c48b4345c61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7e158c6f8fab14aabcb2dab42ee358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_6
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8e179c568ffa74ba9deab6b7a0a2db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_7
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0ef09a9b971ec4db47eeb027aa9eea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_8
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 0
+        width: 108
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2fdbe77c0a78f4b932266111b19a1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shell_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
+        width: 108
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafb966b31abbb84588ec44c28ad632c
+      spriteID: 50f6aaddc810e1043bee229e87e601ee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_meteor_1
+      name: Shell_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 149
         y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
+        width: 108
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c706fff1a90c84c922505f09ed6983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_2
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afa7e8e390555f74eb963303d6e76c82
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_3
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f05d1fc7e0dae204692a6de453bb5d5f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_4
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 391a1f62d54ce1b4f8cbae73952e8eed
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_5
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90b22dbe6a49f53498eb6826e6e46151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_6
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1bcb669541c85b42a8dd0451d7781b4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_7
-      rect:
-        serializedVersion: 2
-        x: 684
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e25e847ce586d8a429c6c612d0c3c718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_8
-      rect:
-        serializedVersion: 2
-        x: 781
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dfb2596dea8b04428764bef87f47d15
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_9
-      rect:
-        serializedVersion: 2
-        x: 879
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96af87a04e948dd4f9ca39027279c068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_10
-      rect:
-        serializedVersion: 2
-        x: 977
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2beafb916567ce429ccb6624cdc78fb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_11
-      rect:
-        serializedVersion: 2
-        x: 1074
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06d2535d9bb9afb439b4ab59e8a07085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_12
-      rect:
-        serializedVersion: 2
-        x: 1172
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dea128e8a0dff544c81e1b1fd62dd2bb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_13
-      rect:
-        serializedVersion: 2
-        x: 1270
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92ed1f2c6626f6d46af2794c88246b81
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_14
-      rect:
-        serializedVersion: 2
-        x: 1367
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c73efa58089b2cd4f99565686b6dd5ba
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_meteor_15
-      rect:
-        serializedVersion: 2
-        x: 1465
-        y: 0
-        width: 35
-        height: 26
-      alignment: 9
-      pivot: {x: 0.605, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5b70b3dd799e104cb3b8aebb390436c
+      spriteID: 7f0eaaee6ae886e42889d582883ea115
       vertices: []
       indices: 
       edges: []
@@ -477,7 +330,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: efd005a135c8d47479f2d9234e73a696
+    spriteID: ef0174842201eae49bc834d8c15af529
     vertices: []
     indices: 
     edges: []
