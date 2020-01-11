@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace StoneOfAdventure.Core
 {
@@ -8,32 +9,33 @@ namespace StoneOfAdventure.Core
     {
         [SerializeField] private int activatedSceneNumber;
         [SerializeField] private bool loadBossFight;
-        [HideInInspector] public UnityEvent TransitionToBossFight;
 
+        private LocationPointsStorage pointsStorage;
         private ProgressSaver progressSaver;
+        private GameObject button;
 
         private void Start()
         {
             progressSaver = FindObjectOfType<ProgressSaver>();
+            pointsStorage = FindObjectOfType<LocationPointsStorage>();
+            button = GetComponentInChildren<Button>().gameObject;
 
-            AddTransitionListener();
-        }
+            button.SetActive(false);
 
-        private void AddTransitionListener()
-        {
-            var enemieSpawner = FindObjectOfType<EnemieFactory>();
-            if (enemieSpawner != null)
-            {
-                TransitionToBossFight.AddListener(enemieSpawner.StopSpawn);
-            }
+            pointsStorage.LocationCompleted.AddListener(Activate);
         }
 
         public void SwapScene()
         {
-            if (loadBossFight) TransitionToBossFight?.Invoke();
-
             SceneManager.LoadScene(activatedSceneNumber);
             progressSaver.InstanceNecessaryPrefs();
+
+            pointsStorage.ResetPointValue();
+        }
+
+        public void Activate()
+        {
+            button.gameObject.SetActive(true);
         }
     }
 }

@@ -18,12 +18,19 @@ namespace StoneOfAdventure.Core
         private int currentTickNumber = 0;
         private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
+        private LocationPointsStorage pointsStorage;
         #endregion
 
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
-            spawnDelayStep = (baseSpawnDelay - minSpawnDelay) / totalTickNumber; 
+            pointsStorage = FindObjectOfType<LocationPointsStorage>();
+
+            pointsStorage.LocationCompleted.AddListener(StopSpawn);
+
+            spawnDelayStep = (baseSpawnDelay - minSpawnDelay) / totalTickNumber;
+
+            StartCoroutine("SpawnEmmiter");
         }
 
         public void StopSpawn()
