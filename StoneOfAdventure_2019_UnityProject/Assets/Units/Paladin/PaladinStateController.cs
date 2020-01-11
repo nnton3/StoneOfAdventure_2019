@@ -87,6 +87,27 @@ public class PaladinStateController : Unit
         }
     }
 
+    public override void Skill2()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                TryToUseSkill();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                TryToUseSkill();
+                break;
+        }
+
+        void TryToUseSkill()
+        {
+            if (!skill2.CanUseSkill) return;
+            skill2.StartUse();
+            StateAttack();
+        }
+    }
+
     public override void DisableState()
     {
         SetState(State.Idle);

@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 2
-  baseDamage: 10
+  baseDamage: 0
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -286,13 +286,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af2b914dd56ed844804dd82affb46a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
-  baseDamage: 10
+  coolDown: 4
+  baseDamage: 0
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  meteorPref: {fileID: 6875252187653699468, guid: aaaff7eaf789ee54ea852f0252b3c92e,
+    type: 3}
 --- !u!114 &3187409030780022549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,4 +335,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRange: 1
   meleeAttackDistance: 1
-  rangeAttackDistance: 3
+  rangeAttackDistance: 7

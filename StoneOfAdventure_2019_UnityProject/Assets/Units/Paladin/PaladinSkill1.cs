@@ -25,9 +25,12 @@ public class PaladinSkill1 : SkillBase
     }
 
     // Animation event
-    public void CreatePatrons()
+    public void InstancePatrons()
     {
-        var patron = Instantiate(patronPref, transform.position, Quaternion.identity);
+        var instancePosition = new Vector3( transform.position.x,
+                                            transform.position.y + 0.5f, 
+                                            transform.position.z);
+        var patron = Instantiate(patronPref, instancePosition, Quaternion.identity);
         patron.GetComponent<Mover>().MoveTo(fireDirection);
     }
 }
