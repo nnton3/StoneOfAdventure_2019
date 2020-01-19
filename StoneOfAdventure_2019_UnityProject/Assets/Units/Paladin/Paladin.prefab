@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26387aa5c2b35d4ca6a38c2f7d21216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
+  coolDown: 5
   baseDamage: 0
   SkillUsed:
     m_PersistentCalls:
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af2b914dd56ed844804dd82affb46a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 4
+  coolDown: 10
   baseDamage: 0
   SkillUsed:
     m_PersistentCalls:
@@ -341,7 +341,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  slowInPercent: 50
+  slowInPercent: 0.5
   actionTime: 3
 --- !u!114 &3187409030780022549
 MonoBehaviour:
