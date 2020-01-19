@@ -15,6 +15,8 @@ public class PaladinStateController : Unit
     private ChaseBehaviour chaseBehaviour;
     private PaladinSkill1 skill1;
     private PaladinSkill2 skill2;
+    private PaladinSkill3 skill3;
+    private PaladinSkill4 skill4;
     #endregion
 
     private void Start()
@@ -25,6 +27,8 @@ public class PaladinStateController : Unit
         chaseBehaviour = GetComponent<ChaseBehaviour>();
         skill1 = GetComponent<PaladinSkill1>();
         skill2 = GetComponent<PaladinSkill2>();
+        skill3 = GetComponent<PaladinSkill3>();
+        skill4 = GetComponent<PaladinSkill4>();
     }
 
     private void Update()
@@ -104,6 +108,48 @@ public class PaladinStateController : Unit
         {
             if (!skill2.CanUseSkill) return;
             skill2.StartUse();
+            StateAttack();
+        }
+    }
+
+    public void Skill3()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                TryToUseSkill();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                TryToUseSkill();
+                break;
+        }
+
+        void TryToUseSkill()
+        {
+            if (!skill3.CanUseSkill) return;
+            skill3.StartUse();
+            StateAttack();
+        }
+    }
+
+    public void Skill4()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                TryToUseSkill();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                TryToUseSkill();
+                break;
+        }
+
+        void TryToUseSkill()
+        {
+            if (!skill4.CanUseSkill) return;
+            skill4.StartUse();
             StateAttack();
         }
     }
