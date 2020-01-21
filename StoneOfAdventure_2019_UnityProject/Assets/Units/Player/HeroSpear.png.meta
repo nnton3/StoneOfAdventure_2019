@@ -1,0 +1,2023 @@
+fileFormatVersion: 2
+guid: 7648582b5995e904babec9e489408320
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HeroSpear_0
+    21300002: HeroSpear_1
+    21300004: HeroSpear_2
+    21300006: HeroSpear_3
+    21300008: HeroSpear_4
+    21300010: HeroSpear_5
+    21300012: HeroSpear_6
+    21300014: HeroSpear_7
+    21300016: HeroSpear_8
+    21300018: HeroSpear_9
+    21300020: HeroSpear_10
+    21300022: HeroSpear_11
+    21300024: HeroSpear_12
+    21300026: HeroSpear_13
+    21300028: HeroSpear_14
+    21300030: HeroSpear_15
+    21300032: HeroSpear_16
+    21300034: HeroSpear_17
+    21300036: HeroSpear_18
+    21300038: HeroSpear_19
+    21300040: HeroSpear_20
+    21300042: HeroSpear_21
+    21300044: HeroSpear_22
+    21300046: HeroSpear_23
+    21300048: HeroSpear_24
+    21300050: HeroSpear_25
+    21300052: HeroSpear_26
+    21300054: HeroSpear_27
+    21300056: HeroSpear_28
+    21300058: HeroSpear_29
+    21300060: HeroSpear_30
+    21300062: HeroSpear_31
+    21300064: HeroSpear_32
+    21300066: HeroSpear_33
+    21300068: HeroSpear_34
+    21300070: HeroSpear_35
+    21300072: HeroSpear_36
+    21300074: HeroSpear_37
+    21300076: HeroSpear_38
+    21300078: HeroSpear_39
+    21300080: HeroSpear_40
+    21300082: HeroSpear_41
+    21300084: HeroSpear_42
+    21300086: HeroSpear_43
+    21300088: HeroSpear_44
+    21300090: HeroSpear_45
+    21300092: HeroSpear_46
+    21300094: HeroSpear_47
+    21300096: HeroSpear_48
+    21300098: HeroSpear_49
+    21300100: HeroSpear_50
+    21300102: HeroSpear_51
+    21300104: HeroSpear_52
+    21300106: HeroSpear_53
+    21300108: HeroSpear_54
+    21300110: HeroSpear_55
+    21300112: HeroSpear_56
+    21300114: HeroSpear_57
+    21300116: HeroSpear_58
+    21300118: HeroSpear_59
+    21300120: HeroSpear_60
+    21300122: HeroSpear_61
+    21300124: HeroSpear_62
+    21300126: HeroSpear_63
+    21300128: HeroSpear_64
+    21300130: HeroSpear_65
+    21300132: HeroSpear_66
+    21300134: HeroSpear_67
+    21300136: HeroSpear_68
+    21300138: HeroSpear_69
+    21300140: HeroSpear_70
+    21300142: HeroSpear_71
+    21300144: HeroSpear_72
+    21300146: HeroSpear_73
+    21300148: HeroSpear_74
+    21300150: HeroSpear_75
+    21300152: HeroSpear_76
+    21300154: HeroSpear_77
+    21300156: HeroSpear_78
+    21300158: HeroSpear_79
+    21300160: HeroSpear_80
+    21300162: HeroSpear_81
+    21300164: HeroSpear_82
+    21300166: HeroSpear_83
+    21300168: HeroSpear_84
+    21300170: HeroSpear_85
+    21300172: HeroSpear_86
+    21300174: HeroSpear_87
+    21300176: HeroSpear_88
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeroSpear_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3b280da04ea564c841a0fea10e61ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdbca2b3fbc17443b24b176736f9dbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e290af6747ba641815c1b56fd0d8a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dd423d1ff055649be819a557571bbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305944e5c1e64754ea5c1b4a9d687b3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06872cd11b3c0b4c896367f79123910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09bdf798f4e2734b90b1b1ff5b4589e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de793ab3a23e14b459741023a706bb6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_8
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848cbaa0058b4014cadca5f2e0501796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3be8973a021dc94aaea932000e3b4e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04fecb84a8f4ae4d8d6bbad7e592ed8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_11
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96381da0277329c46b2dc576b8a0026b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_12
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d652d711f3580a4cb493c248bc33eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_13
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 164
+        width: 33
+        height: 15
+      alignment: 9
+      pivot: {x: 0.37878788, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e0e38f441ff8443953095b9b3b7416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce8f317280e43d41b6d7baf4cb7994e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbe8c29cec801e4f8ea4f961288091b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1695233376e498647a5c7ea5659ad2a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d0074a75235cf4baaf04eed1cffad6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_18
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25c87c2e813d87449de7daf68dbe873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cde1789de175ee498e3486dfa4f7a5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_20
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1348eb800cb9d4c903e47fbfa5e30a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_21
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fdadbda2bbcc24ea227be90a95c065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_22
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deb9e0e5dda8fe4f800333d891e2b36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 150
+        width: 30
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc786add12b564945899b2b7d890950b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76808659c68dc57468b489797f3e9c6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_25
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfeb8672637796640b577fb1e6413245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_26
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd47578d7265a4d4e8aac685e7f407d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fca83aa003cde4c86882d9deddb573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_28
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92525b4ad1bd7488c3a92d6a6cb1bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_29
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e804f98b56ba5d146bd8955b4e71185c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_30
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f41545085cd6245aa10c42598d55e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_31
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7e0375272f07847b9280c738d98570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_32
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 137
+        width: 109
+        height: 13
+      alignment: 9
+      pivot: {x: 0.60091746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9553469be73a0af4b8f1bb2e0f25075d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1def096228a7b47a779032206c1f16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_34
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91153903e00aade46a69f89ebb8146e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_35
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12627172bcedfe47bb01d00a5c04b8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_36
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10d098384b3b6d4390f76454f69d405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_37
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5c44d044a18fd49aa8aacaf39786f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_38
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b15e64b855585478b97ddae24420db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_39
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f45ea284f543a44ab4b7dc610c98c5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_40
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2bf9155f389fa48892b2cbde754bab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_41
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9e727cd949cc34e9ddd5a09eec1d7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_42
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606dfeb2bfabab149bb92816090369e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_43
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98d33a22f1174e4ca02241ceb2cc18e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_44
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 105
+        width: 173
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4479769, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ec5e6b02e08a745a4607e950425501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b0e7ef535bf91449bc178965bca9cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_46
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cae50fbdd314840a30bb6c660ddd72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_47
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f32a9c706770fb41b941b22d6a8face
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_48
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f4d9be852647489e2653eb2cbf71c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_49
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8ddf512b645d74db68e9ec2993b875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_50
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c9dfc946e5c5e4b8f9e6efd8d984f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_51
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e0f64f539a693478281b867af60fb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_52
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c879709c229180d418b67ad3b2999ad8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_53
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1504ced770326614cb75a1844ef568ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_54
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd576b3337f3a8542a97b5946f846bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_55
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2221a42ff97641c47bde31c3d1b9b217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_56
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1955efe4d7d4f0c4ba165b5169711a62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_57
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed97c4004d0356f4795f40a49d27ac4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_58
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d137a95566db484a962e282253be1a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_59
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 61
+        width: 71
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44366196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817516cf1a28bff45938861249e5b344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f122b3019d9b44ca89b359206902ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_61
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759a49cfe121984bb041e9b67d6f6b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_62
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80cd87ec218c2b498cd7e849b927697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_63
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441fa33636fbdd049857427d389a6141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_64
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c883cd0f5d32067478c6bc81d1dadffc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_65
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d012c7350183946b2999bfe442b6e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_66
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d109f6093131cf948b55acdb7f372f4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_67
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045bca603d2adee4bb67b34664791da0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_68
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6764a0e170373e746a44ee3b187e7531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_69
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 45
+        width: 57
+        height: 16
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f045170c3b9ff30469e53f3706b3f801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6cee427586f364b99162ba32be6840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_71
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb71a37ce8ca7ef408295d84cda061a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_72
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7b2abdd96906a4db90b4cf0fa805f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_73
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562d576bc77232a4ebf7e074afe186de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_74
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94172f20acbe454c9f7af8ddbd35465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 31
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.29310346, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b928ba12174d80459a24eb49584e2ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 26
+        height: 13
+      alignment: 9
+      pivot: {x: 0.21153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262fbc665dc017140a2226808872f18b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_77
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 18
+        width: 26
+        height: 13
+      alignment: 9
+      pivot: {x: 0.21153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92969543f7c92ba47a74e0ec2c9643c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_78
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 18
+        width: 26
+        height: 13
+      alignment: 9
+      pivot: {x: 0.21153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dc1a20c48417e4197fa1e34c9d7104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_79
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 18
+        width: 26
+        height: 13
+      alignment: 9
+      pivot: {x: 0.21153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c0906ce258e9148b8972ff885a3093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_80
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 18
+        width: 26
+        height: 13
+      alignment: 9
+      pivot: {x: 0.21153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac31051dfb424c4094047fc03db1fd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bfb969e240b744b89eb2c6c089a43d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_82
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa5bc3dea018f4e84b87e61c8b0f68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_83
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299d44b990597cf4db05b687ec5eecd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_84
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc04ae4ca7693ff4a800e3317ee85024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_85
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca97712927212749bf83113e1f8e054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_86
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad9ee32d6372864fbaa0de924463ba6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_87
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a319a4229de6aa945aff000a96819e7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroSpear_88
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 9
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abf83f2a34d3e744b8d582f938aac42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 906fd9b1402a8004dae1525bc9b1186c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
