@@ -158,16 +158,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa681f506b2a10449aee66b4f06b6737
+      spriteID: df5d310bf6303354bad1e1d812630fff
       vertices: []
       indices: 
       edges: []
@@ -176,18 +176,18 @@ TextureImporter:
       name: Paladin_walk_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 25
         y: 0
-        width: 24
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73d6e866d6e0b4458c9a88d9db53eec
+      spriteID: 07a37683393395442b7bcaa0718c17b4
       vertices: []
       indices: 
       edges: []
@@ -196,18 +196,18 @@ TextureImporter:
       name: Paladin_walk_2
       rect:
         serializedVersion: 2
-        x: 51
+        x: 50
         y: 0
         width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0843877962571a47a0cb0c1d9392a49
+      spriteID: 170593b60ecef4747b5b1f4b6491e5fa
       vertices: []
       indices: 
       edges: []
@@ -216,18 +216,18 @@ TextureImporter:
       name: Paladin_walk_3
       rect:
         serializedVersion: 2
-        x: 78
+        x: 75
         y: 0
-        width: 23
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bde14f3d34eabe747991449ab6b5bc8f
+      spriteID: 21d794e337c5a834c967cd54b8cb2f15
       vertices: []
       indices: 
       edges: []
@@ -238,16 +238,16 @@ TextureImporter:
         serializedVersion: 2
         x: 100
         y: 0
-        width: 26
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c002ee34d29a624aa324a224be92dbd
+      spriteID: 35b64d40662521b4589cabbf824d8844
       vertices: []
       indices: 
       edges: []
@@ -256,18 +256,18 @@ TextureImporter:
       name: Paladin_walk_5
       rect:
         serializedVersion: 2
-        x: 128
+        x: 125
         y: 0
-        width: 23
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20536a20fab8bc349a81078b65641c44
+      spriteID: 6c8745cfdb3c1e84bbbd8fd39a1fed92
       vertices: []
       indices: 
       edges: []
@@ -276,18 +276,18 @@ TextureImporter:
       name: Paladin_walk_6
       rect:
         serializedVersion: 2
-        x: 152
+        x: 150
         y: 0
-        width: 24
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4c5144e32b0cf469ffe1552a1ac6a5
+      spriteID: 770335e83b30be34cb9551392deb7088
       vertices: []
       indices: 
       edges: []
@@ -296,18 +296,18 @@ TextureImporter:
       name: Paladin_walk_7
       rect:
         serializedVersion: 2
-        x: 176
+        x: 175
         y: 0
         width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15f383e9079f6cc4f9963c3f87297ae3
+      spriteID: 320446ad7584e19479ab4952d5f65901
       vertices: []
       indices: 
       edges: []
@@ -316,18 +316,18 @@ TextureImporter:
       name: Paladin_walk_8
       rect:
         serializedVersion: 2
-        x: 203
+        x: 200
         y: 0
-        width: 23
+        width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b750eccf618034290d17d0dd62e134
+      spriteID: a78b2c9161de3ed47ba334d042d5a13f
       vertices: []
       indices: 
       edges: []
@@ -341,13 +341,13 @@ TextureImporter:
         width: 25
         height: 22
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.52, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f57e9b86aaa2244d97fef0d576e0983
+      spriteID: 201057c91748f4b4fb730bdfdee7e7d0
       vertices: []
       indices: 
       edges: []
