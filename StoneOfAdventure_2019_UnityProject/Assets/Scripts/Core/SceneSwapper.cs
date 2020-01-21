@@ -7,35 +7,29 @@ namespace StoneOfAdventure.Core
 {
     public class SceneSwapper : MonoBehaviour
     {
+        #region Variables
         [SerializeField] private int activatedSceneNumber;
         [SerializeField] private bool loadBossFight;
 
         private LocationPointsStorage pointsStorage;
         private ProgressSaver progressSaver;
-        private GameObject button;
+        private Transform player;
+        #endregion
 
         private void Start()
         {
+            player = FindObjectOfType<PlayerStateController>().transform;
             progressSaver = FindObjectOfType<ProgressSaver>();
             pointsStorage = FindObjectOfType<LocationPointsStorage>();
-            button = GetComponentInChildren<Button>().gameObject;
-
-            button.SetActive(false);
-
-            pointsStorage.LocationCompleted.AddListener(Activate);
         }
 
         public void SwapScene()
         {
             SceneManager.LoadScene(activatedSceneNumber);
             progressSaver.InstanceNecessaryPrefs();
+            player.transform.position = Vector3.zero;
 
             pointsStorage.ResetPointValue();
-        }
-
-        public void Activate()
-        {
-            button.gameObject.SetActive(true);
         }
     }
 }
