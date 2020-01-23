@@ -430,7 +430,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 29
   m_Sprite: {fileID: 21300000, guid: b325a13e94f3bac4199e75b91fa98449, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2605,7 +2605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9146637608729146950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.32, y: -4.5995846, z: -10}
+  m_LocalPosition: {x: 0, y: 1.4004154, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9146637608463278448}
@@ -3202,6 +3202,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9146637608893494899}
     m_Modifications:
+    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 713472708721060686, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046496, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_Name
@@ -3261,21 +3276,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 713472708721060686, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df114cc1da34c114b981af620e5b6e52, type: 3}
