@@ -22,6 +22,7 @@ public class PlayerStateController : Unit
     private PlayerUltimateSkill ultimateSkill;
     private Rigidbody2D rb;
     private Animator anim;
+    private NextLevelBtn nextLevelBtn;
 
     [HideInInspector] public UnityEvent StartWalk;
     [HideInInspector] public UnityEvent StopWalk;
@@ -38,6 +39,9 @@ public class PlayerStateController : Unit
         ultimateSkill = GetComponent<PlayerUltimateSkill>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        nextLevelBtn = FindObjectOfType<NextLevelBtn>();
+
+        nextLevelBtn.PlayerStartNextLevel.AddListener(PlayerStartNextLvl);
     }
 
     private void Update()
@@ -226,6 +230,12 @@ public class PlayerStateController : Unit
                 StateInTheAir();
                 break;
         }
+    }
+
+    private void PlayerStartNextLvl()
+    {
+        anim.SetTrigger("startNextLvl");
+        StateAttack();
     }
     #endregion
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class NextLevelBtn : MonoBehaviour
 {
     private Button btn;
-    private LoadScreen loadScreen;
+    private TransitionAnimStarter loadScreen;
     private LocationPointsStorage storage;
 
     [HideInInspector] public UnityEvent PlayerStartNextLevel;
@@ -13,7 +13,7 @@ public class NextLevelBtn : MonoBehaviour
     void Start()
     {
         btn = GetComponent<Button>();
-        loadScreen = FindObjectOfType<LoadScreen>();
+        loadScreen = FindObjectOfType<TransitionAnimStarter>();
         storage = FindObjectOfType<LocationPointsStorage>();
 
         btn.onClick.AddListener(() => PlayerStartNextLevel?.Invoke());
