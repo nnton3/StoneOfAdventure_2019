@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadScreen : MonoBehaviour
+public class TransitionAnimStarter : MonoBehaviour
 {
     #region Variables
     private Animator anim;

@@ -8,7 +8,7 @@ public class SphereOfEnergy_Artifact : Artifact
 
     public void AddGainPower()
     {
-        SphereOfEnergy_damageModifier ciriticalDamage = player.AddComponent<SphereOfEnergy_damageModifier>();
+        var ciriticalDamage = player.AddComponent<SphereOfEnergy_damageModifier>();
         ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
         AddArtifactOnCanvas();
         Destroy(gameObject);

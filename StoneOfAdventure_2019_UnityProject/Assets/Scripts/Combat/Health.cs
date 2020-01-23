@@ -7,23 +7,38 @@ namespace StoneOfAdventure.Combat
 {
     public class Health : MonoBehaviour, IDamaged
     {
+        #region Variables
         private Unit unit;
 
         [HideInInspector] public UnityEvent HPDecreased;
         [HideInInspector] public UnityEvent HPIncreased;
-
-        internal void ApplyDamage(object damage)
-        {
-            throw new NotImplementedException();
-        }
-
         [HideInInspector] public UnityEvent MaxHealthUpdated;
 
         [SerializeField] private int healthPoints = 100;
         public int HealthPoints => healthPoints;
         private int maxHealthPoints;
         public int MaxHealthPoints => maxHealthPoints;
+
+        private float blockChance;
+        public float BlockChance {
+            get => blockChance;
+            set
+            {
+                if (value >= 0 && value <= 1f)
+                    blockChance = value;
+            }
+        }
+        private float dodgeChance;
+        public float DodgeChance { get => dodgeChance; set
+            {
+                if (value >= 0 && value <= 1f)
+                    dodgeChance = value;
+            }
+        }
+        private bool oneTimeBlock = false;
+
         [SerializeField] private bool untouchable = false;
+        #endregion
 
         private void Start()
         {
@@ -34,8 +49,17 @@ namespace StoneOfAdventure.Combat
 
         public void ApplyDamage(int damage)
         {
+            if (oneTimeBlock) { oneTimeBlock = false; return; }
             if (HealthPoints == 0) return;
             if (untouchable) return;
+            if (dodgeChance != 0f)
+            {
+                if (CheckYourChance(dodgeChance)) return;
+            }
+            if (blockChance != 0f)
+            {
+                if (CheckYourChance(blockChance)) return;
+            }
             if (IsDead(damage))
             {
                 unit.Dead();
@@ -48,6 +72,12 @@ namespace StoneOfAdventure.Combat
             HPDecreased.Invoke();
         }
 
+        private bool CheckYourChance(float value)
+        {
+            var chance = UnityEngine.Random.Range(0, 1);
+            return chance < value;
+        }
+        
         private bool IsDead(float damage)
         {
             return HealthPoints <= damage;
@@ -75,6 +105,8 @@ namespace StoneOfAdventure.Combat
         {
             untouchable = !untouchable;
         }
+
+        public void BlockNextDamage() { oneTimeBlock = true; }
 
         private void OnDisable()
         {
