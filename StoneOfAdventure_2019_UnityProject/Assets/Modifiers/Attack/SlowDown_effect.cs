@@ -42,7 +42,6 @@ public class SlowDown_effect : BaseBuff
 
     public override void RemoveBuff()
     {
-        Debug.Log("remove attack effect");
         fighter.RemoveEffectOfAttack(SlowDown);
         Destroy(this);
     }

@@ -50,7 +50,6 @@ namespace StoneOfAdventure.Core
         {
             if (currentTickNumber >= totalTickNumber) return minSpawnDelay;
             var currentSpawnDelay = baseSpawnDelay - currentTickNumber * spawnDelayStep;
-            Debug.Log($"Текущая длительность тика равна = {currentSpawnDelay}");
             return currentSpawnDelay;
         }
 
@@ -68,7 +67,6 @@ namespace StoneOfAdventure.Core
                 currentChance = baseSpawnChance[i] + 
                      currentTickNumber * spawnChanceIncreaseStep;
                 }
-                Debug.Log($"Текущий шанс появления = {currentChance}");
                 if (chance <= currentChance)
                 {
                     var spawnPosition = ChangeSpawnPosition();
