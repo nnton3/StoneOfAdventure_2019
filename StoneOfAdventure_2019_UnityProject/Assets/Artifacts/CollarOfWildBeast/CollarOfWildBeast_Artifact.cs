@@ -14,7 +14,7 @@ public class CollarOfWildBeast_Artifact : Artifact
         playerHealth = player.GetComponent<Health>();
     }
 
-    public void AddAttackspeed()
+    public void AddDodgeChance()
     {
         playerHealth.DodgeChance = newDodgeChance;
         AddArtifactOnCanvas();

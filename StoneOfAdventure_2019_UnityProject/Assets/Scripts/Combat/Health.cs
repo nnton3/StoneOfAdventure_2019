@@ -85,6 +85,7 @@ namespace StoneOfAdventure.Combat
 
         public void Heal(int healValue)
         {
+            Debug.Log($"{gameObject.name} heal on {healValue}");
             if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
             HPIncreased.Invoke();
         }
