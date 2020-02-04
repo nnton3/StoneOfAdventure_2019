@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Panda;
 
 public class PaladinStateController : Unit
 {
@@ -54,6 +55,7 @@ public class PaladinStateController : Unit
         }
     }
 
+    [Task]
     public override void Attack()
     {
         switch (currentState)
@@ -68,6 +70,7 @@ public class PaladinStateController : Unit
                 fighter.StartAttack();
                 break;
         }
+        Task.current.Succeed();
     }
 
     public override void Skill1()
