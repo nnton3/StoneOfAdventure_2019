@@ -1,0 +1,4 @@
+tree("Root")
+	sequence
+		Attack
+		Wait(5.0)
