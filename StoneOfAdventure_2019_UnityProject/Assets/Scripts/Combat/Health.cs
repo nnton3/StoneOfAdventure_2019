@@ -13,29 +13,13 @@ namespace StoneOfAdventure.Combat
         [HideInInspector] public UnityEvent HPDecreased;
         [HideInInspector] public UnityEvent HPIncreased;
         [HideInInspector] public UnityEvent MaxHealthUpdated;
+        public delegate void ModifiersOfInputDamage(ref int damage);
+        private ModifiersOfInputDamage applyModifiersOfInputDamage;
 
         [SerializeField] private int healthPoints = 100;
         public int HealthPoints => healthPoints;
         private int maxHealthPoints;
         public int MaxHealthPoints => maxHealthPoints;
-
-        private float blockChance;
-        public float BlockChance {
-            get => blockChance;
-            set
-            {
-                if (value >= 0 && value <= 1f)
-                    blockChance = value;
-            }
-        }
-        private float dodgeChance;
-        public float DodgeChance { get => dodgeChance; set
-            {
-                if (value >= 0 && value <= 1f)
-                    dodgeChance = value;
-            }
-        }
-        private bool oneTimeBlock = false;
 
         [SerializeField] private bool untouchable = false;
         #endregion
@@ -49,25 +33,20 @@ namespace StoneOfAdventure.Combat
 
         public void ApplyDamage(int damage)
         {
-            if (oneTimeBlock) { oneTimeBlock = false; return; }
             if (HealthPoints == 0) return;
             if (untouchable) return;
-            if (dodgeChance != 0f)
-            {
-                if (CheckYourChance(dodgeChance)) return;
-            }
-            if (blockChance != 0f)
-            {
-                if (CheckYourChance(blockChance)) return;
-            }
-            if (IsDead(damage))
+
+            var currentDamage = damage;
+            applyModifiersOfInputDamage?.Invoke(ref currentDamage);
+
+            if (IsDead(currentDamage))
             {
                 unit.Dead();
                 healthPoints = 0;
             }
             else
             {
-                healthPoints -= damage;
+                healthPoints -= currentDamage;
             }
             HPDecreased.Invoke();
         }
@@ -90,12 +69,20 @@ namespace StoneOfAdventure.Combat
             HPIncreased.Invoke();
         }
 
+        /// <summary>
+        /// Задать новое значение максимального количества очков здоровья
+        /// </summary>
+        /// <param name="newValue"></param>
         public void UpdateMaxHealthPoints(int newValue)
         {
             maxHealthPoints = newValue;
             MaxHealthUpdated.Invoke();
         }
 
+        /// <summary>
+        /// Изменение значения максимального запаса здоровья в процентах
+        /// </summary>
+        /// <param name="increaseCurrentValue">На сколько процентов увеличить максимальное количество здоровья</param>
         public void UpdateMaxHealthPoints(float increaseCurrentValue)
         {
             maxHealthPoints += (int)(maxHealthPoints * increaseCurrentValue);
@@ -107,7 +94,10 @@ namespace StoneOfAdventure.Combat
             untouchable = !untouchable;
         }
 
-        public void BlockNextDamage() { oneTimeBlock = true; }
+        public void AddModifierOfInputDamage(ModifiersOfInputDamage modifier)
+        {
+            applyModifiersOfInputDamage += modifier;
+        }
 
         private void OnDisable()
         {

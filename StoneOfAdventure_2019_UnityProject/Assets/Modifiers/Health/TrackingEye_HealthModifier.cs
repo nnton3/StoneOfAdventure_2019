@@ -7,9 +7,9 @@ public class TrackingEye_HealthModifier : MonoBehaviour
 {
     #region Variables
     private int attackNumberBlocked = 3;
-    private Health health;
     private int numerator;
     #endregion
+
     public void Initialize(int attackNumberBlocked)
     {
         this.attackNumberBlocked = attackNumberBlocked;
@@ -17,17 +17,15 @@ public class TrackingEye_HealthModifier : MonoBehaviour
 
     private void Start()
     {
-        health = GetComponent<Health>();
-
-        health.HPDecreased.AddListener(TryToBlockNextAttack);
+        GetComponent<Health>().AddModifierOfInputDamage(TryToBlockNextAttack);
     }
 
-    private void TryToBlockNextAttack()
+    private void TryToBlockNextAttack(ref int damage)
     {
         numerator++;
         if (numerator == attackNumberBlocked)
         {
-            health.BlockNextDamage();
+            damage = 0;
             numerator = 0;
         }
     }
