@@ -284,11 +284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7463853720178268120}
     - target: {fileID: 1576652410369917015, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddBatFang
+      value: AddHealthPoints
       objectReference: {fileID: 0}
     - target: {fileID: 8987095034938486397, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}

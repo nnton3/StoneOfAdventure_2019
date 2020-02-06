@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5020567791219013692
+--- !u!1 &7796024575021751110
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3782903269757282320}
-  - component: {fileID: 5283352216312025330}
-  - component: {fileID: 2369459892507420918}
-  - component: {fileID: 9139849768681524733}
-  - component: {fileID: 7016486315164722745}
-  - component: {fileID: 2055692532065158192}
+  - component: {fileID: 2153348162868775786}
+  - component: {fileID: 6975957199097852808}
+  - component: {fileID: 684454724429400972}
+  - component: {fileID: 6290099543609552519}
+  - component: {fileID: 5242816572372485443}
+  - component: {fileID: 7601883094275879996}
   m_Layer: 0
-  m_Name: IronPlate_artifact
+  m_Name: SkullOfDecay_artifact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3782903269757282320
+--- !u!4 &2153348162868775786
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.2, y: -6, z: 0.37352052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7007589334889357936}
+  - {fileID: 5233848635747598602}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5283352216312025330
+--- !u!212 &6975957199097852808
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,13 +84,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2369459892507420918
+--- !u!61 &684454724429400972
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -110,14 +110,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &9139849768681524733
+--- !u!50 &6290099543609552519
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -131,14 +131,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &7016486315164722745
+--- !u!95 &5242816572372485443
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 663d4c419b151684aa608fd53589948e, type: 2}
@@ -150,25 +150,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2055692532065158192
+--- !u!114 &7601883094275879996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5020567791219013692}
+  m_GameObject: {fileID: 7796024575021751110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ee1fad190dd7b40a8b16bd45cde9c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 853cfad95ed4a6e44ad0c874221900ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageResistance: 2
---- !u!1001 &7709456754108140118
+  damageInPercent: 0.015
+  lifesteal: 0.25
+  periodicity: 1
+--- !u!1001 &4855116620161968428
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3782903269757282320}
+    m_TransformParent: {fileID: 2153348162868775786}
     m_Modifications:
     - target: {fileID: 8664921046108547581, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
@@ -284,11 +286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2055692532065158192}
+      objectReference: {fileID: 7601883094275879996}
     - target: {fileID: 1576652410369917015, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddIronPlate
+      value: AddSkullOfDecay
       objectReference: {fileID: 0}
     - target: {fileID: 8987095034938486397, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
@@ -299,13 +301,13 @@ PrefabInstance:
     - target: {fileID: 8987095034938486397, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
       propertyPath: m_Text
-      value: Iron Plate
+      value: Skull Of Decay
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1ebe0f31cefed4ba807de1b2115754, type: 3}
---- !u!224 &7007589334889357936 stripped
+--- !u!224 &5233848635747598602 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 847392842899744806, guid: cd1ebe0f31cefed4ba807de1b2115754,
     type: 3}
-  m_PrefabInstance: {fileID: 7709456754108140118}
+  m_PrefabInstance: {fileID: 4855116620161968428}
   m_PrefabAsset: {fileID: 0}
