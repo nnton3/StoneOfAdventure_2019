@@ -1,18 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using StoneOfAdventure.Combat;
 using UnityEngine;
 
-public class SaveEffortBoots_Artifact : MonoBehaviour
+namespace StoneOfAdventure.Artifacts
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SaveEffortBoots_Artifact : Artifact
     {
-        
-    }
+        [SerializeField] private float buffTime = 10f;
+        [SerializeField] private float timeToApply = 5f;
+        [SerializeField] [Range(0f, 1f)] private float movespeedGain = 1f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void AddSaveEffortBoots()
+        {
+            var buff = player.AddComponent<SaveEffortBoots_buff>();
+            buff.Initialize(buffTime, timeToApply, movespeedGain);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }
