@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
 
-public class MovespeedUpper_artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] private float addedMovespeedInPercent;
-
-    public void AddMovespeed()
+    public class MovespeedUpper_artifact : Artifact
     {
-        var playerMover = player.GetComponent<Mover>();
-        playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] private float addedMovespeedInPercent;
+
+        public void AddMovespeed()
+        {
+            var playerMover = player.GetComponent<Mover>();
+            playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
-
-public class SkullOfDecay_Artifact : Artifact
+using StoneOfAdventure.Combat;
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField][Range(0f,1f)] private float damageInPercent = 0.015f;
-    [SerializeField][Range(0f, 1f)] private float lifesteal = 0.25f;
-    [SerializeField] private float periodicity = 1f;
-
-    public void AddSkullOfDecay()
+    public class SkullOfDecay_Artifact : Artifact
     {
-        var ciriticalDamage = player.AddComponent<SkullOfDecay_buff>();
-        ciriticalDamage.Initialize(damageInPercent, lifesteal, periodicity);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] [Range(0f, 1f)] private float damageInPercent = 0.015f;
+        [SerializeField] [Range(0f, 1f)] private float lifesteal = 0.25f;
+        [SerializeField] private float periodicity = 1f;
+
+        public void AddSkullOfDecay()
+        {
+            var ciriticalDamage = player.AddComponent<SkullOfDecay_buff>();
+            ciriticalDamage.Initialize(damageInPercent, lifesteal, periodicity);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

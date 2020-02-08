@@ -1,48 +1,50 @@
-﻿using StoneOfAdventure.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SlowDown_effect : BaseBuff
+namespace StoneOfAdventure.Combat
 {
-    private Fighter fighter;
-    private float slowInPercent = 0.5f;
-    private float actionTime = 3f;
-
-    private void Start()
+    public class SlowDown_effect : BaseBuff
     {
-        fighter = GetComponent<Fighter>();
+        private Fighter fighter;
+        private float slowInPercent = 0.5f;
+        private float actionTime = 3f;
 
-        fighter.AddEffectOfAttack(SlowDown);
-    }
-
-    public void Initialize(float _slowInPercent, float _actionTime)
-    {
-        slowInPercent = _slowInPercent;
-        actionTime = _actionTime;
-    }
-
-    private void SlowDown(GameObject target)
-    {
-        var debuff = target.GetComponent<MovespeedDebuff>();
-        if (!debuff)
+        private void Start()
         {
-            var addedMovespeedDebuff = target.AddComponent<MovespeedDebuff>();
-            addedMovespeedDebuff.Initialize(slowInPercent, actionTime);
-            addedMovespeedDebuff.ApplyBuff();
+            fighter = GetComponent<Fighter>();
+
+            fighter.AddEffectOfAttack(SlowDown);
         }
-        else
+
+        public void Initialize(float _slowInPercent, float _actionTime)
         {
-            debuff.ApplyBuff();
+            slowInPercent = _slowInPercent;
+            actionTime = _actionTime;
         }
-    }
 
-    public override void ApplyBuff()
-    {
-        base.ApplyBuff();
-    }
+        private void SlowDown(GameObject target)
+        {
+            var debuff = target.GetComponent<MovespeedDebuff>();
+            if (!debuff)
+            {
+                var addedMovespeedDebuff = target.AddComponent<MovespeedDebuff>();
+                addedMovespeedDebuff.Initialize(slowInPercent, actionTime);
+                addedMovespeedDebuff.ApplyBuff();
+            }
+            else
+            {
+                debuff.ApplyBuff();
+            }
+        }
 
-    public override void RemoveBuff()
-    {
-        fighter.RemoveEffectOfAttack(SlowDown);
-        Destroy(this);
+        public override void ApplyBuff()
+        {
+            base.ApplyBuff();
+        }
+
+        public override void RemoveBuff()
+        {
+            fighter.RemoveEffectOfAttack(SlowDown);
+            Destroy(this);
+        }
     }
 }

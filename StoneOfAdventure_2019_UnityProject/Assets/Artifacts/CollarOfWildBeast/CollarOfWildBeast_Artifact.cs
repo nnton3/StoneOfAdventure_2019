@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using StoneOfAdventure.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CollarOfWildBeast_Artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] [Range(0f, 1f)] private float newDodgeChance;
-
-    public void AddDodgeChance()
+    public class CollarOfWildBeast_Artifact : Artifact
     {
-        var dodgeChance = player.AddComponent<DodgeChance>();
-        dodgeChance.Initialize(newDodgeChance);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] [Range(0f, 1f)] private float newDodgeChance;
+
+        public void AddDodgeChance()
+        {
+            var dodgeChance = player.AddComponent<DodgeChance>();
+            dodgeChance.Initialize(newDodgeChance);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

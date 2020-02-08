@@ -1,22 +1,25 @@
 ﻿using StoneOfAdventure.Combat;
 using UnityEngine;
 
-public class HeartOfBull_Artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] [Range(0f, 1f)] private float addedHealthPoints;
-
-    private Health playerHealth;
-
-    protected override void Start()
+    public class HeartOfBull_Artifact : Artifact
     {
-        base.Start();
-        playerHealth = player.GetComponent<Health>();
-    }
+        [SerializeField] [Range(0f, 1f)] private float addedHealthPoints;
 
-    public void AddHealthPoints()
-    {
-        playerHealth.UpdateMaxHealthPoints(addedHealthPoints);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        private Health playerHealth;
+
+        protected override void Start()
+        {
+            base.Start();
+            playerHealth = player.GetComponent<Health>();
+        }
+
+        public void AddHealthPoints()
+        {
+            playerHealth.UpdateMaxHealthPoints(addedHealthPoints);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

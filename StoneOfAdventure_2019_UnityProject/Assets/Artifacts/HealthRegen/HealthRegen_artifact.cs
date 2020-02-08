@@ -1,16 +1,19 @@
 ﻿using StoneOfAdventure.Combat;
 using UnityEngine;
 
-public class HealthRegen_artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] private int healValue;
-    Health Health;
-
-    public void AddRegen()
+    public class HealthRegen_artifact : Artifact
     {
-        HealthRegen healthRegen = player.GetComponent<HealthRegen>();
-        healthRegen.HealValue = healValue;
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] private int healValue;
+        Health Health;
+
+        public void AddRegen()
+        {
+            HealthRegen healthRegen = player.GetComponent<HealthRegen>();
+            healthRegen.HealValue = healValue;
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }
