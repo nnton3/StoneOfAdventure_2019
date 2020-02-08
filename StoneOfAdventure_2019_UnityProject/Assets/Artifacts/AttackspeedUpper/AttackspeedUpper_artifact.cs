@@ -1,23 +1,25 @@
 ﻿using UnityEngine;
-using System.Collections;
 using StoneOfAdventure.Combat;
 
-public class AttackspeedUpper_artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField][Range(0f, 1f)] private float addedAttackspeedInPercent;
-
-    private Fighter playerFighter;
-
-    protected override void Start()
+    public class AttackspeedUpper_artifact : Artifact
     {
-        base.Start();
-        playerFighter = player.GetComponent<Fighter>();
-    }
+        [SerializeField][Range(0f, 1f)] private float addedAttackspeedInPercent;
 
-    public void AddAttackspeed()
-    {
-        playerFighter.ModifyAttackSpeed(addedAttackspeedInPercent);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        private Fighter playerFighter;
+
+        protected override void Start()
+        {
+            base.Start();
+            playerFighter = player.GetComponent<Fighter>();
+        }
+
+        public void AddAttackspeed()
+        {
+            playerFighter.ModifyAttackSpeed(addedAttackspeedInPercent);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

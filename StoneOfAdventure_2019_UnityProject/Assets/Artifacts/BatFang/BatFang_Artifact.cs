@@ -1,16 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using StoneOfAdventure.Combat;
 
-public class BatFang_Artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] private float lifestealInPercent = 0.02f;
-
-    public void AddBatFang()
+    public class BatFang_Artifact : Artifact
     {
-        var lifesteal = player.AddComponent<BatFang_attackEffect>();
-        lifesteal.Initialize(lifestealInPercent);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] private float lifestealInPercent = 0.02f;
+
+        public void AddBatFang()
+        {
+            var lifesteal = player.AddComponent<BatFang_attackEffect>();
+            lifesteal.Initialize(lifestealInPercent);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }

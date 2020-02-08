@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 
-public class IronPlate_Artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] private float damageResistance = 2f;
-
-    public void AddIronPlate()
+    public class IronPlate_Artifact : Artifact
     {
-        var damageResist = player.AddComponent<DamageResistance>();
-        damageResist.Initialize(damageResistance);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] private float damageResistance = 2f;
+
+        public void AddIronPlate()
+        {
+            var damageResist = player.AddComponent<DamageResistance>();
+            damageResist.Initialize(damageResistance);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }
