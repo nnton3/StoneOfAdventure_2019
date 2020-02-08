@@ -1,3 +1,48 @@
 tree("Root")
+	tree("Battle")
+	
+tree("Battle")
+	parallel
+		repeat mute tree("Range")
+		repeat mute tree("Melee")
+
+tree("Range")
+	while CompareAttackNumber(3)
+		sequence
+			JumpInRange
+			Wait(1.1)
+			Curse
+			Wait(1.0)
+			RangeAttack
+			Wait(2.0)
+			Meteor
+			Wait(1.1)
+			JumpInMelee
+			Wait(1.1)
+			ResetAttackEnumerator
+
+tree("Melee")
+	while not CompareAttackNumber(3)
+		parallel
+			repeat mute tree("IfInMelee")
+			repeat mute tree("IfNotInMelee")
+
+tree("IfInMelee")
+	while CanAttackInMelee
+		tree("MeleeAlgorithm")
+	
+tree("IfNotInMelee")
+	while not CanAttackInMelee
+		GoInMelee
+
+tree("MeleeAlgorithm")
 	sequence
-		Wait(5.0)
+		random
+			sequence
+				Melee1
+				Wait(1.1)
+			sequence
+				Melee2
+				Wait(1.1)
+		Melee3
+		Wait(2.5)
