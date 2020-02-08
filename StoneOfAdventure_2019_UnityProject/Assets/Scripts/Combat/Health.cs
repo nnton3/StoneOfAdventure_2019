@@ -48,7 +48,7 @@ namespace StoneOfAdventure.Combat
             {
                 healthPoints -= currentDamage;
             }
-            HPDecreased.Invoke();
+            HPDecreased?.Invoke();
         }
 
         private bool CheckYourChance(float value)
