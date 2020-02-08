@@ -1,32 +1,33 @@
 ﻿using UnityEngine;
-using System.Collections;
-using StoneOfAdventure.Combat;
 
-public class CriticalDamage_damageModifier : MonoBehaviour
+namespace StoneOfAdventure.Combat
 {
-    private Fighter fighter;
-    private float addedDamageInPercent = 0.5f;
-    private float criticalChance = 50f;
-
-    public void Initialize(float _damageScale, float _criticalChance)
+    public class CriticalDamage_damageModifier : MonoBehaviour
     {
-        addedDamageInPercent = _damageScale;
-        criticalChance = _criticalChance;
-    }
+        private Fighter fighter;
+        private float addedDamageInPercent = 0.5f;
+        private float criticalChance = 50f;
 
-    private void Start()
-    {
-        fighter = GetComponent<Fighter>();
-        
-        fighter.AddModifierOfDamage(CalculateDamageScale);
-    }
-
-    private void CalculateDamageScale(ref int damage)
-    {
-        float chance = Random.Range(0f, 100f);
-        if (chance <= criticalChance)
+        public void Initialize(float _damageScale, float _criticalChance)
         {
-            damage += (int)(fighter.BaseDamage * addedDamageInPercent);
+            addedDamageInPercent = _damageScale;
+            criticalChance = _criticalChance;
+        }
+
+        private void Start()
+        {
+            fighter = GetComponent<Fighter>();
+
+            fighter.AddModifierOfDamage(CalculateDamageScale);
+        }
+
+        private void CalculateDamageScale(ref int damage)
+        {
+            float chance = Random.Range(0f, 100f);
+            if (chance <= criticalChance)
+            {
+                damage += (int)(fighter.BaseDamage * addedDamageInPercent);
+            }
         }
     }
 }

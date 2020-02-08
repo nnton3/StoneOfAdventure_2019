@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 8570296056180897558}
   - component: {fileID: 3187409030780022549}
   - component: {fileID: 2939564307757151083}
-  - component: {fileID: 3054238102780784722}
+  - component: {fileID: 4479600613558345276}
   m_Layer: 9
   m_Name: Paladin
   m_TagString: Enemie
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  meleeAttackDistance: 1
 --- !u!114 &8154560071557589789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMovespeed: 5
   movespeedInTheAir: 5
---- !u!114 &3054238102780784722
+--- !u!114 &4479600613558345276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,9 +379,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3187409030780022548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf7ab3a68f4ad184cb08d0fa20fe03b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 17e43e7170fb45b4b81dcd16d0ff55d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
-  meleeAttackDistance: 1
-  rangeAttackDistance: 7
+  scripts:
+  - {fileID: 4900000, guid: e7a4ac1d04741e14096420c06a4258f3, type: 3}
+  autoReset: 1
+  tickOn: 0
+  sourceInfos:
+  - isFoldout: 1
+    breakPoints: 
+    breakPointStatuses: 
+    collapsedLines: 
+    btScript: 

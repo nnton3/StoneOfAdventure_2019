@@ -1,33 +1,35 @@
-﻿using StoneOfAdventure.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BatFang_attackEffect : MonoBehaviour
+namespace StoneOfAdventure.Combat
 {
-    #region Variables
-    private float lifestealInPersent = 0f;
-    private Fighter fighter;
-    private Health health;
-    #endregion
-
-    public void Initialize(float lifestealInPersent)
+    public class BatFang_attackEffect : MonoBehaviour
     {
-        this.lifestealInPersent = lifestealInPersent;
-    }
+        #region Variables
+        private float lifestealInPersent = 0f;
+        private Fighter fighter;
+        private Health health;
+        #endregion
 
-    private void Start()
-    {
-        fighter = GetComponent<Fighter>();
-        health = GetComponent<Health>();
+        public void Initialize(float lifestealInPersent)
+        {
+            this.lifestealInPersent = lifestealInPersent;
+        }
 
-        fighter.AddEffectOfAttack(ApplyLifesteal);
-    }
+        private void Start()
+        {
+            fighter = GetComponent<Fighter>();
+            health = GetComponent<Health>();
 
-    private void ApplyLifesteal(GameObject target)
-    {
-        Debug.Log("Lifestealed");
-        var targetHealth = target.GetComponent<Health>();
-        var lifestealedHP = (int)(targetHealth.HealthPoints * lifestealInPersent);
-        targetHealth.ApplyDamage(lifestealedHP);
-        health.Heal(lifestealedHP);
+            fighter.AddEffectOfAttack(ApplyLifesteal);
+        }
+
+        private void ApplyLifesteal(GameObject target)
+        {
+            Debug.Log("Lifestealed");
+            var targetHealth = target.GetComponent<Health>();
+            var lifestealedHP = (int)(targetHealth.HealthPoints * lifestealInPersent);
+            targetHealth.ApplyDamage(lifestealedHP);
+            health.Heal(lifestealedHP);
+        }
     }
 }

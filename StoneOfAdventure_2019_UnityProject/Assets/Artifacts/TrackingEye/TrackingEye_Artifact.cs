@@ -2,15 +2,18 @@
 using StoneOfAdventure.Combat;
 using UnityEngine;
 
-public class TrackingEye_Artifact : Artifact
+namespace StoneOfAdventure.Artifacts
 {
-    [SerializeField] private int attackBlockedNumber = 9;
-
-    public void AddTrackingEye()
+    public class TrackingEye_Artifact : Artifact
     {
-        var ciriticalDamage = player.AddComponent<TrackingEye_HealthModifier>();
-        ciriticalDamage.Initialize(attackBlockedNumber);
-        AddArtifactOnCanvas();
-        Destroy(gameObject);
+        [SerializeField] private int attackBlockedNumber = 9;
+
+        public void AddTrackingEye()
+        {
+            var ciriticalDamage = player.AddComponent<TrackingEye_HealthModifier>();
+            ciriticalDamage.Initialize(attackBlockedNumber);
+            AddArtifactOnCanvas();
+            Destroy(gameObject);
+        }
     }
 }
