@@ -6,6 +6,11 @@ using UnityEngine;
 public class PaladinSkill3 : SkillBase
 {
     #region Variables
+    [SerializeField] private Vector3 rightBound;
+    [SerializeField] private Vector3 leftBound;
+    private bool teleportInRange = false;
+    public bool TeleportInRange { get => teleportInRange; set => teleportInRange = value; }
+
     private Animator anim;
     private Transform target;
     #endregion
@@ -18,14 +23,19 @@ public class PaladinSkill3 : SkillBase
 
     public override void StartUse()
     {
-        base.StartUse();
+        //base.StartUse();
 
         anim.SetTrigger("jump");
     }
 
     public void Teleport()
     {
-        var targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        Vector3 targetPosition;
+        if (teleportInRange)
+            targetPosition = (Vector3.Distance(target.position, rightBound) > Vector3.Distance(target.position, leftBound)) ? rightBound : leftBound;
+        else
+            targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
+
         transform.position = targetPosition;
     }
 
@@ -49,6 +59,7 @@ public class PaladinSkill3 : SkillBase
     [SerializeField] private Vector3 applicationArea;
     [SerializeField] private bool applicationAreaVisible;
     [SerializeField] private LayerMask layerMask;
+
 
     void OnDrawGizmos()
     {
