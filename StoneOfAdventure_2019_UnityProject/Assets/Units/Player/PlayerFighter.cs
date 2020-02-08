@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
-using System;
+using UnityEngine.Events;
 
 namespace StoneOfAdventure.Combat
 {
     public class PlayerFighter : Fighter
-    {        
+    {
+        [HideInInspector] public UnityEvent ApplyDamage;
+
         // Animation event
         public void Hit()
         {
@@ -21,6 +23,7 @@ namespace StoneOfAdventure.Combat
             {
                 enemie.GetComponent<Health>().ApplyDamage(currentDamage);
                 applyEffectsOnTarget?.Invoke(enemie.gameObject);
+                ApplyDamage?.Invoke();
             }
         }
 
