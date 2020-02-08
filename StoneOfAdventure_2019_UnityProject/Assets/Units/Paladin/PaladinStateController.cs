@@ -16,6 +16,7 @@ public class PaladinStateController : Unit
     private PaladinSkill2 skill2;
     private PaladinSkill3 skill3;
     private PaladinSkill4 skill4;
+    private int attackNumber = 0;
     #endregion
 
     private void Start()
@@ -55,14 +56,20 @@ public class PaladinStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                StateAttack();
-                fighter.StartAttack();
+                UseAttack();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                StateAttack();
-                fighter.StartAttack();
+                UseAttack();
                 break;
+        }
+
+        void UseAttack()
+        {
+            StateAttack();
+            attackNumber++;
+            fighter.StartAttack();
+            Task.current.Succeed();
         }
     }
 
@@ -72,14 +79,20 @@ public class PaladinStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                StateAttack();
-                fighter.StartMelee2();
+                UseAttack();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                StateAttack();
-                fighter.StartMelee2();
+                UseAttack();
                 break;
+        }
+
+        void UseAttack()
+        {
+            StateAttack();
+            attackNumber++;
+            fighter.StartMelee2();
+            Task.current.Succeed();
         }
     }
 
@@ -89,14 +102,20 @@ public class PaladinStateController : Unit
         switch (currentState)
         {
             case State.Idle:
-                StateAttack();
-                fighter.StartMelee3();
+                UseAttack();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                StateAttack();
-                fighter.StartMelee3();
+                UseAttack();
                 break;
+        }
+
+        void UseAttack()
+        {
+            StateAttack();
+            attackNumber++;
+            fighter.StartMelee3();
+            Task.current.Succeed();
         }
     }
 
@@ -116,9 +135,10 @@ public class PaladinStateController : Unit
 
         void TryToUseSkill()
         {
-            if (!skill1.CanUseSkill) return;
+            //if (!skill1.CanUseSkill) return;
             skill1.StartUse();
             StateAttack();
+            Task.current.Succeed();
         }
     }
 
@@ -138,14 +158,15 @@ public class PaladinStateController : Unit
 
         void TryToUseSkill()
         {
-            if (!skill2.CanUseSkill) return;
+            //if (!skill2.CanUseSkill) return;
             skill2.StartUse();
             StateAttack();
+            Task.current.Succeed();
         }
     }
 
     [Task]
-    public void FireJump()
+    public void JumpInMelee()
     {
         switch (currentState)
         {
@@ -160,9 +181,35 @@ public class PaladinStateController : Unit
 
         void TryToUseSkill()
         {
-            if (!skill3.CanUseSkill) return;
+            //if (!skill3.CanUseSkill) return;
+            skill3.TeleportInRange = false;
             skill3.StartUse();
             StateAttack();
+            Task.current.Succeed();
+        }
+    }
+
+    [Task]
+    public void JumpInRange()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                TryToUseSkill();
+                break;
+            case State.MoveHorizontal:
+                mover.CancelMove();
+                TryToUseSkill();
+                break;
+        }
+
+        void TryToUseSkill()
+        {
+            //if (!skill3.CanUseSkill) return;
+            skill3.TeleportInRange = true;
+            skill3.StartUse();
+            StateAttack();
+            Task.current.Succeed();
         }
     }
 
@@ -185,6 +232,7 @@ public class PaladinStateController : Unit
             if (!skill4.CanUseSkill) return;
             skill4.StartUse();
             StateAttack();
+            Task.current.Succeed();
         }
     }
 
@@ -193,7 +241,9 @@ public class PaladinStateController : Unit
         SetState(State.Idle);
     }
 
-    public void SucceedTask()
+    // Animation event
+    [Task]
+    public void EndAttack()
     {
         Task.current.Succeed();
     }
@@ -239,5 +289,18 @@ public class PaladinStateController : Unit
     public float CalculateDirection()
     {
         return Mathf.Sign(player.transform.position.x - transform.position.x);
+    }
+
+    [Task]
+    public bool CompareAttackNumber(int attackNumber)
+    {
+        return this.attackNumber >= attackNumber;
+    }
+
+    [Task]
+    public void ResetAttackEnumerator()
+    {
+        attackNumber = 0;
+        Task.current.Succeed();
     }
 }
