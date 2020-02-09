@@ -1,33 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Chest : MonoBehaviour
+namespace StoneOfAdventure.Core
 {
-    private Treasury treasury;
-    [SerializeField] private int price = 10;
-    [SerializeField] private List<Artifact> artifactList = new List<Artifact>();
-    private GameObject chestUI;
-    private Animator anim;
-
-    private void Start()
+    public class Chest : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-        treasury = FindObjectOfType<Treasury>();
-        chestUI = GetComponentInChildren<Canvas>().gameObject;
-    }
+        private Treasury treasury;
+        [SerializeField] private int price = 10;
+        private GameObject chestUI;
+        private Animator anim;
+        private StoneOfAdventure.UI.ArtifactSelector artifactSelector;
 
-    // Animation event
-    public void TryOpenChest()
-    {
-        if (price > treasury.CurrentSoulsPoints) return;
-        anim.SetTrigger("use");
-    }
+        private void Start()
+        {
+            anim = GetComponent<Animator>();
+            treasury = FindObjectOfType<Treasury>();
+            chestUI = GetComponentInChildren<Canvas>().gameObject;
+            artifactSelector = FindObjectOfType<StoneOfAdventure.UI.ArtifactSelector>();
+        }
 
-    public void GiveReward()
-    {
-        treasury.Spend(price);
-        Instantiate(artifactList[Random.Range(0, artifactList.Count)], transform.position, Quaternion.identity);
-        Destroy(chestUI);
+        // Animation event
+        public void TryOpenChest()
+        {
+            if (price > treasury.CurrentSoulsPoints) return;
+            anim.SetTrigger("use");
+        }
+
+        public void GiveReward()
+        {
+            artifactSelector.EnableArtifactSelector();
+        }
     }
 }
