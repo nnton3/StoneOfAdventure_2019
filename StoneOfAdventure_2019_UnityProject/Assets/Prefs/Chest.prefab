@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5438147089998035997}
   - component: {fileID: 6825026598629614930}
-  - component: {fileID: 304855872535873018}
   - component: {fileID: 8684340141229720054}
+  - component: {fileID: 304855872535873018}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -82,6 +82,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8684340141229720054
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900051935074013849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36ec73b74b700ff4ea14f9172637c767, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &304855872535873018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,25 +121,6 @@ MonoBehaviour:
   - {fileID: 7817645331754166194, guid: 42ff5042914e443488a0f2727270a9b4, type: 3}
   - {fileID: 8705216893909326726, guid: bc628fe5aa2856946ad60cb97ec56e81, type: 3}
   - {fileID: 376464270646256237, guid: 6dcab8b0f372d484fa81ca6240c15043, type: 3}
---- !u!95 &8684340141229720054
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900051935074013849}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36ec73b74b700ff4ea14f9172637c767, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4623744529936245929
 PrefabInstance:
   m_ObjectHideFlags: 0
