@@ -10,7 +10,8 @@ namespace StoneOfAdventure.Combat
         #region Variables
         protected Animator anim;
         protected Flip flip;
-        [HideInInspector] public UnityEvent Attack;
+        [HideInInspector] public UnityEvent UseAttack;
+        [HideInInspector] public UnityEvent DamageApplied;
         private float currentAttackSpeed = 1f;
         public float CurrentAttackSpeed => currentAttackSpeed;
 
@@ -32,7 +33,7 @@ namespace StoneOfAdventure.Combat
 
         public virtual void StartAttack()
         {
-            Attack.Invoke();
+            UseAttack.Invoke();
             anim.SetTrigger("attack");
         }
 
@@ -74,7 +75,7 @@ namespace StoneOfAdventure.Combat
 
         private void OnDisable()
         {
-            Attack.RemoveAllListeners();
+            UseAttack.RemoveAllListeners();
         }
     }
 }

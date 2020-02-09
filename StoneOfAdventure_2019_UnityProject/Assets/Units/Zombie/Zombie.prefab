@@ -200,15 +200,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f6ca4cf6246aa549ba26431f2955bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack:
+  UseAttack:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  DamageApplied:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   baseDamage: 9
   attackRange: 1
-  attackedLayer: 8
-  targetTag: Player
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &658190849188051343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,8 +277,6 @@ MonoBehaviour:
   currentState: 0
   reward: 5
   experience: 5
-  movespeed: 2.25
-  patrolMovespeed: 2.25
 --- !u!114 &7913249878129167813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,6 +451,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 658190849188051328}
     m_Modifications:
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_Name
+      value: HPBar
+      objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,11 +560,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_Name
-      value: HPBar
       objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631240, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
