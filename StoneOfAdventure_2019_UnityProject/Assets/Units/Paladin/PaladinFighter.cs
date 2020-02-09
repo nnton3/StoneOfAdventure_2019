@@ -24,13 +24,13 @@ namespace StoneOfAdventure.Combat
 
         public void StartMelee2()
         {
-            Attack.Invoke();
+            UseAttack.Invoke();
             anim.SetTrigger("melee2");
         }
 
         public void StartMelee3()
         {
-            Attack.Invoke();
+            UseAttack.Invoke();
             anim.SetTrigger("melee3");
         }
     }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8427074520926705902}
   - component: {fileID: 4603871013170009232}
   - component: {fileID: 5276332428803179151}
-  - component: {fileID: 2559205245791168891}
+  - component: {fileID: 3824255337682141441}
   - component: {fileID: 5790436647658446409}
   - component: {fileID: 7226845849540991534}
   - component: {fileID: 713472708721060686}
@@ -221,7 +221,7 @@ MonoBehaviour:
   onLadder: 0
   canClimbDown: 1
   canClimbUp: 1
---- !u!114 &2559205245791168891
+--- !u!114 &3824255337682141441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,18 +230,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3520417983458046496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34e0af3d18a1dd4cb895feeac0bc978, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f6ca4cf6246aa549ba26431f2955bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack:
+  UseAttack:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  baseDamage: 12
-  applicationAreaCenter: {x: 1.25, y: 0.5, z: 0}
-  applicationArea: {x: 3, y: 1, z: 1}
-  applicationAreaVisible: 1
+  DamageApplied:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  baseDamage: 10
+  attackRange: 2
+  attackedLayer: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 512
