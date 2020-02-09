@@ -7,16 +7,22 @@ public class SkillBase : MonoBehaviour
     [SerializeField] private float coolDown = 2f;
     public float CoolDown => coolDown;
     [SerializeField] protected int baseDamage = 10;
+    private float lastTimeUse;
 
     private bool canUseSkill = true;
     public bool CanUseSkill => canUseSkill;
 
     [HideInInspector] public UnityEvent SkillUsed;
 
+    private void Update()
+    {
+        if (!canUseSkill) UpdateCoolDown();
+    }
+
     public virtual void StartUse()
     {
+        lastTimeUse = 0f;
         canUseSkill = false;
-        StartCoroutine("CoolDownTimer");
         SkillUsed.Invoke();
     }
 
@@ -24,10 +30,15 @@ public class SkillBase : MonoBehaviour
     {
         baseDamage += (int)(baseDamage * increaseDamage);
     }
-
-    private IEnumerator CoolDownTimer()
+    
+    private void UpdateCoolDown()
     {
-        yield return new WaitForSeconds(coolDown);
-        canUseSkill = true;
+        lastTimeUse += Time.deltaTime;
+        if (lastTimeUse >= coolDown) canUseSkill = true;
+    }
+
+    public void ReduceCoolDown(float value)
+    {
+        lastTimeUse += value;
     }
 }
