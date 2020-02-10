@@ -5,7 +5,7 @@ public class RingOfDetermination_buff : MonoBehaviour
 {
     #region Variables
     private Health health;
-    private PlayerFighter fighter;
+    private Fighter fighter;
 
     private int sixtyPercentHeal;
     private int fourtyPercentHeal;
@@ -22,14 +22,14 @@ public class RingOfDetermination_buff : MonoBehaviour
     private void Start()
     {
         health = GetComponent<Health>();
-        fighter = GetComponent<PlayerFighter>();
-        fighter.ApplyDamage.AddListener(TryToHeal);
+        fighter = GetComponent<Fighter>();
+        fighter.DamageApplied.AddListener(TryToHeal);
     }
 
     private void TryToHeal()
     {
         var currentHealthInPercent = health.HealthPoints / (health.MaxHealthPoints / 100);
-        Debug.Log($"currentHealthInPercent = {currentHealthInPercent}");
+
         if (currentHealthInPercent < 60f && currentHealthInPercent >= 40f)
             health.Heal(sixtyPercentHeal);
 

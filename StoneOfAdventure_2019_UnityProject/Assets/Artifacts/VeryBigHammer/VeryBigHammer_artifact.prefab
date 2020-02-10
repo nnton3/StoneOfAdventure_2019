@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &819047851869262368
+--- !u!1 &7226792529916775457
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8831248927041602060}
-  - component: {fileID: 550363542941580014}
-  - component: {fileID: 7931814585292948202}
-  - component: {fileID: 3469513959384836065}
-  - component: {fileID: 3435935629511150629}
-  - component: {fileID: 9159701404323358433}
+  - component: {fileID: 1556424891086494733}
+  - component: {fileID: 7544697689390163183}
+  - component: {fileID: 73211522887851243}
+  - component: {fileID: 6859367862968023520}
+  - component: {fileID: 4663912180520505892}
+  - component: {fileID: 1789117645601693117}
   m_Layer: 0
-  m_Name: BatFang_artifact
+  m_Name: VeryBigHammer_artifact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8831248927041602060
+--- !u!4 &1556424891086494733
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3444832875037575276}
+  - {fileID: 4673028963200128621}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &550363542941580014
+--- !u!212 &7544697689390163183
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,13 +84,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7931814585292948202
+--- !u!61 &73211522887851243
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -110,14 +110,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &3469513959384836065
+--- !u!50 &6859367862968023520
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -131,14 +131,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &3435935629511150629
+--- !u!95 &4663912180520505892
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 663d4c419b151684aa608fd53589948e, type: 2}
@@ -150,25 +150,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9159701404323358433
+--- !u!114 &1789117645601693117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819047851869262368}
+  m_GameObject: {fileID: 7226792529916775457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dca74697b02aa74bb189a4af1c4a3d7, type: 3}
+  m_Script: {fileID: 11500000, guid: b5b80aaebea838c44853efcd6607f1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifestealInPercent: 0.02
---- !u!1001 &2597462572396224586
+  chance: 0.5
+  timeInStun: 2
+  damage: 20
+--- !u!1001 &5412029707855642187
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8831248927041602060}
+    m_TransformParent: {fileID: 1556424891086494733}
     m_Modifications:
     - target: {fileID: 8664921046108547581, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
@@ -284,11 +286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9159701404323358433}
+      objectReference: {fileID: 1789117645601693117}
     - target: {fileID: 1576652410369917015, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddBatFang
+      value: AddVeryBigHammer
       objectReference: {fileID: 0}
     - target: {fileID: 8987095034938486397, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
@@ -299,13 +301,13 @@ PrefabInstance:
     - target: {fileID: 8987095034938486397, guid: cd1ebe0f31cefed4ba807de1b2115754,
         type: 3}
       propertyPath: m_Text
-      value: Bat Fang
+      value: Very BigHammer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1ebe0f31cefed4ba807de1b2115754, type: 3}
---- !u!224 &3444832875037575276 stripped
+--- !u!224 &4673028963200128621 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 847392842899744806, guid: cd1ebe0f31cefed4ba807de1b2115754,
     type: 3}
-  m_PrefabInstance: {fileID: 2597462572396224586}
+  m_PrefabInstance: {fileID: 5412029707855642187}
   m_PrefabAsset: {fileID: 0}

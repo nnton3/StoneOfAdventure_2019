@@ -21,7 +21,7 @@ namespace StoneOfAdventure.Combat
 
         private void Start()
         {
-            fighter = GetComponent<PlayerFighter>();
+            fighter = GetComponent<AOE_Fighter>();
             playerController = GetComponent<PlayerStateController>();
 
             playerController.StartWalk.AddListener(StartOnFeetTimer);
