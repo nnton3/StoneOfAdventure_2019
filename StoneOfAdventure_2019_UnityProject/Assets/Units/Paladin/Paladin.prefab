@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 4479600613558345276}
   m_Layer: 9
   m_Name: Paladin
-  m_TagString: Enemie
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,15 +190,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c24d2985b70ad3b409034369ab04c8ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack:
+  UseAttack:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  DamageApplied:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   baseDamage: 0
   attackRange: 0
-  attackedLayer: 0
-  targetTag: Player
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1541032545726750035
 MonoBehaviour:
   m_ObjectHideFlags: 0
