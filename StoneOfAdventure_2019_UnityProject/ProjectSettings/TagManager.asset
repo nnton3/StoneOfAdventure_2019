@@ -11,6 +11,7 @@ TagManager:
   - Enemie
   - Platform
   - PatrolTile
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using UnityEngine;
 using Panda;
+using StoneOfAdventure.UI;
 
 public class PaladinStateController : Unit
 {
@@ -28,6 +29,8 @@ public class PaladinStateController : Unit
         skill2 = GetComponent<PaladinSkill2>();
         skill3 = GetComponent<PaladinSkill3>();
         skill4 = GetComponent<PaladinSkill4>();
+
+        GameObject.Find("BossHealth").GetComponent<HPBar_manualSetUnit>().Initialize(gameObject);
     }
 
     private void Update()

@@ -12,13 +12,6 @@ public class LocationPointsStorage : MonoBehaviour
     [HideInInspector] public UnityEvent LocationPointsUpdated;
     [HideInInspector] public UnityEvent LocationCompleted;
 
-    private EnemieFactory enemieFactory;
-
-    private void Start()
-    {
-        enemieFactory = FindObjectOfType<EnemieFactory>();
-    }
-
     public void AddPoints(int value)
     {
         if (value == 0) return;

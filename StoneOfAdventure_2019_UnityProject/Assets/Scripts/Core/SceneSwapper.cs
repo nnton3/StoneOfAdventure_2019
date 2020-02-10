@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace StoneOfAdventure.Core
 {
@@ -12,8 +10,10 @@ namespace StoneOfAdventure.Core
         [SerializeField] private bool loadBossFight;
 
         private LocationPointsStorage pointsStorage;
+        private LocationPointsBar pointsBar;
         private ProgressSaver progressSaver;
         private Transform player;
+        [SerializeField] private GameObject bossHP_Bar;
         #endregion
 
         private void Start()
@@ -21,6 +21,7 @@ namespace StoneOfAdventure.Core
             player = FindObjectOfType<PlayerStateController>().transform;
             progressSaver = FindObjectOfType<ProgressSaver>();
             pointsStorage = FindObjectOfType<LocationPointsStorage>();
+            pointsBar = FindObjectOfType<LocationPointsBar>();
         }
 
         public void SwapScene()
@@ -30,6 +31,8 @@ namespace StoneOfAdventure.Core
             player.transform.position = Vector3.zero;
 
             pointsStorage.ResetPointValue();
+            pointsBar.SetActive(false);
+            bossHP_Bar.SetActive(true);
         }
     }
 }
