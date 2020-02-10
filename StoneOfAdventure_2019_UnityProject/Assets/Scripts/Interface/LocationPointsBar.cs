@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class LocationPointsBar : MonoBehaviour
 {
@@ -21,5 +22,10 @@ public class LocationPointsBar : MonoBehaviour
     private void UpdateLocationPointsUI()
     {
         slider.value = pointsStorage.LocationPointsValue;
+    }
+
+    internal void SetActive(bool v)
+    {
+        gameObject.SetActive(v);
     }
 }

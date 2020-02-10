@@ -12,8 +12,13 @@ namespace StoneOfAdventure.UI
         protected override void Start()
         {
             if (unit == null) return;
+            Initialize(unit);
+        }
+
+        public void Initialize(GameObject target)
+        {
             hpBar = GetComponent<Slider>();
-            health = unit.GetComponent<Health>();
+            health = target.GetComponent<Health>();
             HPValueText = GetComponentInChildren<Text>();
 
             health.MaxHealthUpdated.AddListener(UpdateHPBar);
