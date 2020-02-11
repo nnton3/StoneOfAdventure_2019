@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] [Range(0f, 1f)] private float lifesteal = 0.25f;
         [SerializeField] private float periodicity = 1f;
 
-        public void AddSkullOfDecay()
+        public override void AddEffect()
         {
             var ciriticalDamage = player.AddComponent<SkullOfDecay_buff>();
             ciriticalDamage.Initialize(damageInPercent, lifesteal, periodicity);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

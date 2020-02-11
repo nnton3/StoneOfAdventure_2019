@@ -1,22 +1,33 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
-public class Artifact : MonoBehaviour
+namespace StoneOfAdventure.Artifacts
 {
-    protected GameObject player;
-    private GameObject artifactUI;
+    public class Artifact : MonoBehaviour
+    {
+        protected GameObject player;
+        private GameObject artifactUI;
+        private Animator anim;
+        public UnityEvent ArtifactSelected;
 
-    protected virtual void Start()
-    {
-        player = FindObjectOfType<PlayerStateController>().gameObject;
-        artifactUI = GameObject.Find("BuffsGroup");
-    }
-    
-    protected void AddArtifactOnCanvas()
-    {
-        var uiInstance = Instantiate(new GameObject(), artifactUI.transform);
-        var image = uiInstance.AddComponent<Image>();
-        image.sprite = GetComponent<SpriteRenderer>().sprite;
+        protected virtual void Start()
+        {
+            Debug.Log($"anim = null? {anim == null}");
+            player = FindObjectOfType<PlayerStateController>().gameObject;
+        }
+
+        public virtual void AddEffect()
+        {
+            ArtifactSelected?.Invoke();
+        }
+
+        public void Hide()
+        {
+            Debug.Log("work");
+            Debug.Log(anim == null);
+            anim = GetComponent<Animator>();
+            anim.SetTrigger("action");
+            Debug.Log("not work");
+        }
     }
 }

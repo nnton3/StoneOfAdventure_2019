@@ -9,12 +9,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private float timeToApply = 5f;
         [SerializeField] [Range(0f, 1f)] private float movespeedGain = 1f;
 
-        public void AddSaveEffortBoots()
+        public override void AddEffect()
         {
             var buff = player.AddComponent<SaveEffortBoots_buff>();
             buff.Initialize(buffTime, timeToApply, movespeedGain);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }
