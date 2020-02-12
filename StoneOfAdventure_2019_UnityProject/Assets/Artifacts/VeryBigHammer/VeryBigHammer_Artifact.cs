@@ -9,12 +9,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private float timeInStun = 2f;
         [SerializeField] private int damage = 20;
 
-        public void AddVeryBigHammer()
+        public override void AddEffect()
         {
             var buff = player.AddComponent<VeryBigHammer_attackModifier>();
             buff.Initialize(chance, timeInStun, damage);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

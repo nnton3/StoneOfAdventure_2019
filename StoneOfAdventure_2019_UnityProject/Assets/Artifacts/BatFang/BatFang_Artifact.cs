@@ -7,12 +7,10 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] private float lifestealInPercent = 0.02f;
 
-        public void AddBatFang()
+        public override void AddEffect()
         {
             var lifesteal = player.AddComponent<BatFang_attackEffect>();
             lifesteal.Initialize(lifestealInPercent);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

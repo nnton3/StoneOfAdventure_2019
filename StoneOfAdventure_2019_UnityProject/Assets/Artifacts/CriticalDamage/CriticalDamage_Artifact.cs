@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private float criticalChance = 50f;
         [SerializeField] private float damageScale = 1.5f;
 
-        public void AddCriicalDamage()
+        public override void AddEffect()
         {
             var ciriticalDamage = player.AddComponent<CriticalDamage_damageModifier>();
             ciriticalDamage.Initialize(damageScale, criticalChance);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

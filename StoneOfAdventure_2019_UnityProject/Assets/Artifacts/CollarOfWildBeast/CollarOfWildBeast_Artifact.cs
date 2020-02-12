@@ -6,12 +6,10 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] [Range(0f, 1f)] private float newDodgeChance;
 
-        public void AddDodgeChance()
+        public override void AddEffect()
         {
             var dodgeChance = player.AddComponent<DodgeChance>();
             dodgeChance.Initialize(newDodgeChance);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }
