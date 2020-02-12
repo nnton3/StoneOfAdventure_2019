@@ -9410,5 +9410,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2050065993077340214, guid: 7ef7f8647186fae43bbdbfcad4c5eeac,
         type: 3}
+    - target: {fileID: 7653707427932911510, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653707427932911510, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065c7cead172c14a84a48437c4e01cb, type: 3}

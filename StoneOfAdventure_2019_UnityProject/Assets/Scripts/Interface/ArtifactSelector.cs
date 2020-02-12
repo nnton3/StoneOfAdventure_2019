@@ -9,7 +9,7 @@ namespace StoneOfAdventure.UI
     public class ArtifactSelector : MonoBehaviour
     {
         [SerializeField] private GameObject[] artifacts;
-        private List<GameObject> selectedArtifacts;
+        [SerializeField] private List<GameObject> selectedArtifacts;
         private Animator anim;
         [SerializeField] private GameObject bck;
 
@@ -29,12 +29,14 @@ namespace StoneOfAdventure.UI
             for (int i = 0; i < prefs.Count; i++)
             {
                 var artifact = Instantiate(prefs[i], bck.transform);
-                artifact.GetComponent<Button>().onClick.AddListener(() => 
-                {
-                    selectedArtifacts.Remove(artifact);
-                    StartCoroutine("Hide");
-                });
+                selectedArtifacts[i] = artifact;
             }
+        }
+
+        public void CloseArtifactSelector(GameObject selectedArtifact)
+        {
+            selectedArtifacts.Remove(selectedArtifact);
+            StartCoroutine("Hide");
         }
 
         IEnumerator Hide()
@@ -45,6 +47,11 @@ namespace StoneOfAdventure.UI
             }
             yield return new WaitForSeconds(1f);
             anim.SetTrigger("action");
+            yield return new WaitForSeconds(1f);
+            foreach (var art in GetComponentsInChildren<Artifact>())
+            {
+                Destroy(art.gameObject);
+            }
         }
 
         private List<GameObject> SelectArtifacts()

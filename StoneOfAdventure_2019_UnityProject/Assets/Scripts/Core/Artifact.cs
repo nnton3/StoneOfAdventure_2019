@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using StoneOfAdventure.UI;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace StoneOfAdventure.Artifacts
@@ -12,8 +13,8 @@ namespace StoneOfAdventure.Artifacts
 
         protected virtual void Start()
         {
-            Debug.Log($"anim = null? {anim == null}");
             player = FindObjectOfType<PlayerStateController>().gameObject;
+            ArtifactSelected.AddListener(() => GetComponentInParent<ArtifactSelector>().CloseArtifactSelector(gameObject));
         }
 
         public virtual void AddEffect()
@@ -23,11 +24,9 @@ namespace StoneOfAdventure.Artifacts
 
         public void Hide()
         {
-            Debug.Log("work");
-            Debug.Log(anim == null);
             anim = GetComponent<Animator>();
+            Debug.Log($"{gameObject.name} on x = {transform.position.x}");
             anim.SetTrigger("action");
-            Debug.Log("not work");
         }
     }
 }
