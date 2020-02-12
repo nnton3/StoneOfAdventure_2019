@@ -9,17 +9,22 @@ public class PaladinSkill1 : SkillBase
     private Animator anim;
     [SerializeField] private GameObject patronPref;
     private float fireDirection = 1f;
+    private Transform target;
     #endregion
 
     private void Start()
     {
         flip = GetComponent<Flip>();
         anim = GetComponent<Animator>();
+        target = FindObjectOfType<PlayerStateController>().transform;
     }
 
     public override void StartUse()
     {
         base.StartUse();
+        if ((target.transform.position.x > transform.position.x && !flip.isFacingRight) ||
+            (target.transform.position.x < transform.position.x && flip.isFacingRight))
+            flip.FlipObject();
         fireDirection = (flip.isFacingRight) ? 1f : -1f;
         anim.SetTrigger("rangeAttack");
     }

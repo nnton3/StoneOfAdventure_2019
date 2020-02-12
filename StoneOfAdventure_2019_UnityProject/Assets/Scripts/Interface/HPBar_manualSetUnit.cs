@@ -30,6 +30,8 @@ namespace StoneOfAdventure.UI
         protected override void UpdateHPBar()
         {
             base.UpdateHPBar();
+            Debug.Log($"HPValueText = {HPValueText == null}");
+            Debug.Log($" health = {health == null}");
             HPValueText.text = $"{health.HealthPoints}/{health.MaxHealthPoints}";
         }
     }

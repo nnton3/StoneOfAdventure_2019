@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PaladinSkill4 : SkillBase
 {
@@ -8,12 +6,14 @@ public class PaladinSkill4 : SkillBase
     [SerializeField] private float slowInPercent;
     [SerializeField] private float actionTime;
     private Animator anim;
+    private Flip flip;
     private GameObject target;
     #endregion
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        flip = GetComponent<Flip>();
         target = FindObjectOfType<PlayerStateController>().gameObject;
     }
 
@@ -21,6 +21,9 @@ public class PaladinSkill4 : SkillBase
     {
         base.StartUse();
 
+        if ((target.transform.position.x > transform.position.x && !flip.isFacingRight) ||
+                    (target.transform.position.x < transform.position.x && flip.isFacingRight))
+            flip.FlipObject();
         anim.SetTrigger("curse");
     }
 
