@@ -10,11 +10,12 @@ public class DestroyTimer : MonoBehaviour
     {
         if (timeToDestroy != 0f)
             StartTimer();
+        else
+            timeToDestroy = eventTimer;
     }
 
     public void StartTimer()
     {
-        timeToDestroy = eventTimer;
         StartCoroutine("Timer");
     }
 

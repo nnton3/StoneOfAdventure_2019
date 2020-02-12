@@ -9420,5 +9420,10 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8873797739833855045, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: baseDamage
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065c7cead172c14a84a48437c4e01cb, type: 3}
