@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 4313226232216482328}
   - component: {fileID: 1673716301332543146}
   - component: {fileID: 6758470565036189880}
-  - component: {fileID: 285502462568950152}
   - component: {fileID: 1541032545726750035}
+  - component: {fileID: 3627798410833376297}
   - component: {fileID: 8154560071557589789}
   - component: {fileID: 4635301240385497739}
   - component: {fileID: 8331345431977898282}
@@ -178,7 +178,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &285502462568950152
+--- !u!114 &1541032545726750035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3187409030780022548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8a6a3d05db40049936207ec8677671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  meleeAttackDistance: 1
+--- !u!114 &3627798410833376297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,24 +215,15 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   baseDamage: 0
-  attackRange: 0
+  applicationAreaCenter: {x: 1, y: 1, z: 0}
+  applicationArea: {x: 2, y: 2, z: 1}
+  applicationAreaVisible: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
---- !u!114 &1541032545726750035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3187409030780022548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8a6a3d05db40049936207ec8677671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  meleeAttackDistance: 1
+    m_Bits: 256
+  damageMelee1: 10
+  damageMelee2: 20
+  damageMelee3: 30
 --- !u!114 &8154560071557589789
 MonoBehaviour:
   m_ObjectHideFlags: 0
