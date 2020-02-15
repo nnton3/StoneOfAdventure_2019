@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private float effectTime = 3f;
         [SerializeField] private float healPerSecPerStuc = 4f;
 
-        public void AddDemonBlood()
+        public override void AddEffect()
         {
-            DemonBlood_HealthModifier demonBlood = player.AddComponent<DemonBlood_HealthModifier>();
+            var demonBlood = player.AddComponent<DemonBlood_HealthModifier>();
             demonBlood.Initialize(maxStucsValue, effectTime, healPerSecPerStuc);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

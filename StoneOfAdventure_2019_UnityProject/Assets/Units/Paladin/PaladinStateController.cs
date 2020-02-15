@@ -30,7 +30,9 @@ public class PaladinStateController : Unit
         skill3 = GetComponent<PaladinSkill3>();
         skill4 = GetComponent<PaladinSkill4>();
 
-        GameObject.Find("BossHealth").GetComponent<HPBar_manualSetUnit>().Initialize(gameObject);
+        var bh = GameObject.Find("BossHealth").GetComponent<HPBar_manualSetUnit>();
+        bh.Initialize(gameObject);
+        Debug.Log(bh == null);
     }
 
     private void Update()

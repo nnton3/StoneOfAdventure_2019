@@ -15,11 +15,9 @@ namespace StoneOfAdventure.Artifacts
             playerHealth = player.GetComponent<Health>();
         }
 
-        public void AddHealthPoints()
+        public override void AddEffect()
         {
             playerHealth.UpdateMaxHealthPoints(addedHealthPoints);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

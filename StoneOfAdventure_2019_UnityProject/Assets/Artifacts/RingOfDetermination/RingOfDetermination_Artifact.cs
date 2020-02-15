@@ -8,12 +8,11 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private int fourtyPercentHeal = 8;
         [SerializeField] private int twetyPercentHeal = 10;
 
-        public void AddRingOfDetermination()
+        public override void AddEffect()
         {
+            base.AddEffect();
             var buff = player.AddComponent<RingOfDetermination_buff>();
             buff.Initialize(sixtyPercentHeal, fourtyPercentHeal, twetyPercentHeal);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

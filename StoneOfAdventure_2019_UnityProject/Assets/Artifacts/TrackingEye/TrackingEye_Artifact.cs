@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] private int attackBlockedNumber = 9;
 
-        public void AddTrackingEye()
+        public override void AddEffect()
         {
             var ciriticalDamage = player.AddComponent<TrackingEye_HealthModifier>();
             ciriticalDamage.Initialize(attackBlockedNumber);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

@@ -6,12 +6,10 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] private float damageResistance = 2f;
 
-        public void AddIronPlate()
+        public override void AddEffect()
         {
             var damageResist = player.AddComponent<DamageResistance>();
             damageResist.Initialize(damageResistance);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }
