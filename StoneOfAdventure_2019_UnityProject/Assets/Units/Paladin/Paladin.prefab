@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  meleeAttackDistance: 1
+  meleeAttackDistance: 2
 --- !u!114 &3627798410833376297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,8 +221,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
-  damageMelee1: 10
-  damageMelee2: 20
+  damageMelee1: 30
+  damageMelee2: 30
   damageMelee3: 30
 --- !u!114 &8154560071557589789
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   healthPoints: 100
-  untouchable: 0
+  untouchable: 1
 --- !u!114 &4635301240385497739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 10
-  baseDamage: 0
+  baseDamage: 30
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -328,8 +328,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  rightBound: {x: 0, y: 0, z: 0}
-  leftBound: {x: 0, y: 0, z: 0}
+  rightBound: {x: 12, y: 0, z: 0}
+  leftBound: {x: -12, y: 0, z: 0}
   applicationAreaCenter: {x: 0, y: 1.5, z: 0}
   applicationArea: {x: 3, y: 3, z: 0}
   applicationAreaVisible: 0
@@ -349,14 +349,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 5
-  baseDamage: 10
+  baseDamage: 0
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  slowInPercent: 0.5
-  actionTime: 3
+  slowInPercent: 0.75
+  actionTime: 2.7
 --- !u!114 &3187409030780022549
 MonoBehaviour:
   m_ObjectHideFlags: 0
