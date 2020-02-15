@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private int healValue;
         Health Health;
 
-        public void AddRegen()
+        public override void AddEffect()
         {
-            HealthRegen healthRegen = player.GetComponent<HealthRegen>();
+            var healthRegen = player.GetComponent<HealthRegen>();
             healthRegen.HealValue = healValue;
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

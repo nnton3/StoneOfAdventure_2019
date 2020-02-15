@@ -15,11 +15,9 @@ namespace StoneOfAdventure.Artifacts
             playerFighter = player.GetComponent<Fighter>();
         }
 
-        public void AddAttackspeed()
+        public override void AddEffect()
         {
             playerFighter.ModifyAttackSpeed(addedAttackspeedInPercent);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

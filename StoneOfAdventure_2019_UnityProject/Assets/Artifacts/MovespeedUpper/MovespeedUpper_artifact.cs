@@ -7,12 +7,10 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] private float addedMovespeedInPercent;
 
-        public void AddMovespeed()
+        public override void AddEffect()
         {
             var playerMover = player.GetComponent<Mover>();
             playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }

@@ -8,12 +8,10 @@ namespace StoneOfAdventure.Artifacts
         [SerializeField] private float targetTimeOnFeet = 2f;
         [SerializeField] private float bonusDamageInPercent = 1.5f;
 
-        public void AddGainPower()
+        public override void AddEffect()
         {
             var ciriticalDamage = player.AddComponent<SphereOfEnergy_damageModifier>();
             ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
-            AddArtifactOnCanvas();
-            Destroy(gameObject);
         }
     }
 }
