@@ -243,9 +243,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  baseDamage: 10
-  attackRange: 2
-  attackedLayer: 0
+  baseDamage: 18
+  attackRange: 2.25
   layerMask:
     serializedVersion: 2
     m_Bits: 512
@@ -262,7 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 8
-  baseDamage: 10
+  baseDamage: 42
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -270,8 +269,8 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   timeOfStun: 2
   applicationAreaCenter: {x: 1.5, y: 0.5, z: 0}
-  applicationArea: {x: 3, y: 1, z: 1}
-  applicationAreaVisible: 0
+  applicationArea: {x: 2.25, y: 1, z: 1}
+  applicationAreaVisible: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 512
@@ -288,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 4
-  baseDamage: 10
+  baseDamage: 24
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -308,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 20
-  baseDamage: 10
+  baseDamage: 18
   SkillUsed:
     m_PersistentCalls:
       m_Calls: []
