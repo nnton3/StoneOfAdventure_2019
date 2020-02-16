@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class NextLevelBtn : MonoBehaviour
 {
     private Button btn;
+    private GameObject child;
     private TransitionAnimStarter loadScreen;
     private LocationPointsStorage storage;
 
@@ -16,19 +17,26 @@ public class NextLevelBtn : MonoBehaviour
         loadScreen = FindObjectOfType<TransitionAnimStarter>();
         storage = FindObjectOfType<LocationPointsStorage>();
 
-        btn.onClick.AddListener(() => PlayerStartNextLevel?.Invoke());
-        btn.enabled = false;
+        btn.onClick.AddListener(() =>
+        {
+            PlayerStartNextLevel?.Invoke();
+            DisableBtn();
+        });
         storage.LocationCompleted.AddListener(EnableBtn);
+        child = transform.GetChild(0).gameObject;
+        DisableBtn();
     }
 
     private void EnableBtn()
     {
-        btn.enabled = true;
+        child.SetActive(true);
+        btn.interactable = true;
     }
 
     private void DisableBtn()
     {
-        btn.enabled = false;
+        child.SetActive(false);
+        btn.interactable = false;
     }
 
     private void OnDisable()

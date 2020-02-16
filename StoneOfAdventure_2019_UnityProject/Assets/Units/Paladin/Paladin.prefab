@@ -252,7 +252,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   healthPoints: 100
-  untouchable: 1
+  untouchable: 0
 --- !u!114 &4635301240385497739
 MonoBehaviour:
   m_ObjectHideFlags: 0

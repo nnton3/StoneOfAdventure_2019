@@ -14,7 +14,7 @@ public class PaladinSkill2 : SkillBase
     {
         anim = GetComponent<Animator>();
         flip = GetComponent<Flip>();
-        target = FindObjectOfType<PlayerStateController>().transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public override void StartUse()
@@ -29,6 +29,6 @@ public class PaladinSkill2 : SkillBase
     // Animation event
     public void InstanceMeteor()
     {
-        Instantiate(meteorPref, target.position, Quaternion.identity);
+        Instantiate(meteorPref, new Vector3(target.position.x, 0f, 0f), Quaternion.identity);
     }
 }

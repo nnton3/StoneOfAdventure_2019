@@ -13,11 +13,13 @@ public class PaladinStateController : Unit
     private Transform player;
     private PaladinFighter fighter;
     private Mover mover;
+    private Flip flip;
     private PaladinSkill1 skill1;
     private PaladinSkill2 skill2;
     private PaladinSkill3 skill3;
     private PaladinSkill4 skill4;
     private int attackNumber = 0;
+    private bool isDead = false;
     #endregion
 
     private void Start()
@@ -25,6 +27,7 @@ public class PaladinStateController : Unit
         player = FindObjectOfType<PlayerStateController>().transform;
         fighter = GetComponent<PaladinFighter>();
         mover = GetComponent<Mover>();
+        flip = GetComponent<Flip>();
         skill1 = GetComponent<PaladinSkill1>();
         skill2 = GetComponent<PaladinSkill2>();
         skill3 = GetComponent<PaladinSkill3>();
@@ -32,7 +35,6 @@ public class PaladinStateController : Unit
 
         var bh = GameObject.Find("BossHealth").GetComponent<HPBar_manualSetUnit>();
         bh.Initialize(gameObject);
-        Debug.Log(bh == null);
     }
 
     private void Update()
@@ -241,6 +243,17 @@ public class PaladinStateController : Unit
         }
     }
 
+    [Task]
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
+    public override void Dead()
+    {
+        isDead = true;
+    }
+
     public override void DisableState()
     {
         SetState(State.Idle);
@@ -294,6 +307,14 @@ public class PaladinStateController : Unit
     public float CalculateDirection()
     {
         return Mathf.Sign(player.transform.position.x - transform.position.x);
+    }
+
+    [Task]
+    public void LookOnTarget()
+    {
+        var direction = CalculateDirection();
+        if ((direction < 0f && flip.isFacingRight) || (direction > 0f && !flip.isFacingRight)) flip.FlipObject();
+        Task.current.Succeed();
     }
 
     [Task]

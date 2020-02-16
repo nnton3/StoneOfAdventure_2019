@@ -1,7 +1,4 @@
-﻿using StoneOfAdventure.Combat;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StoneOfAdventure.Combat
 {
@@ -21,6 +18,7 @@ namespace StoneOfAdventure.Combat
             
             if (hit)
             {
+                Debug.Log("hit");
                 var target = hit.transform.gameObject;
                 var currentDamage = baseDamage;
                 applyDamageModifiers?.Invoke(ref currentDamage);

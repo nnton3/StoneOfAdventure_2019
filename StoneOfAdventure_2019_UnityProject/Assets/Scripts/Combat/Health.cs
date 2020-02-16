@@ -13,6 +13,7 @@ namespace StoneOfAdventure.Combat
         [HideInInspector] public UnityEvent HPDecreased;
         [HideInInspector] public UnityEvent HPIncreased;
         [HideInInspector] public UnityEvent MaxHealthUpdated;
+        [HideInInspector] public UnityEvent Dead;
         public delegate void ModifiersOfInputDamage(ref int damage);
         private ModifiersOfInputDamage applyModifiersOfInputDamage;
 
