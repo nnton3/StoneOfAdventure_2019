@@ -23,7 +23,6 @@ public class MovespeedDebuff : BaseBuff
     public override void ApplyBuff()
     {
         StopCoroutine("DebuffLifeTime");
-        Debug.Log($"mover.CurrentMovespeedScale - slowDownValueAStuc = {mover.CurrentMovespeedScale - slowDownValueAStuc}");
         if ((mover.CurrentMovespeedScale - slowDownValueAStuc) > 0.1f)
         {
             stucsValue++;

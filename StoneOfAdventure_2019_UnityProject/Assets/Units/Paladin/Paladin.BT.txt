@@ -1,5 +1,6 @@
 tree("Root")
-	tree("Battle")
+	while not IsDead
+		tree("Battle")
 	
 tree("Battle")
 	parallel
@@ -39,10 +40,13 @@ tree("MeleeAlgorithm")
 	sequence
 		random
 			sequence
+				LookOnTarget
 				Melee1
 				Wait(1.1)
 			sequence
+				LookOnTarget
 				Melee2
 				Wait(1.1)
+		LookOnTarget
 		Melee3
 		Wait(2.5)
