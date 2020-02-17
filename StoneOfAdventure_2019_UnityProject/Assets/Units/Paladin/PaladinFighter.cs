@@ -9,8 +9,27 @@ namespace StoneOfAdventure.Combat
     {
         private Rigidbody2D rb;
         [SerializeField] private int damageMelee1;
+
+        [Header("MELEE ATTACK 2 SETTINGS")]
         [SerializeField] private int damageMelee2;
+        [SerializeField] private Vector3 melee2AreaCenter;
+        [SerializeField] private Vector3 melee2Area;
+        [SerializeField] private bool melee2AreaVisible;
+
+        [Header("MELEE ATTACK 3 SETTINGS")]
         [SerializeField] private int damageMelee3;
+        [SerializeField] private Vector3 melee3AreaCenter;
+        [SerializeField] private Vector3 melee3Area;
+        [SerializeField] private bool melee3AreaVisible;
+
+        protected override void OnDrawGizmos()
+        {
+            base.OnDrawGizmos();
+            if (melee2AreaVisible)
+                Gizmos.DrawWireCube(transform.position + melee2AreaCenter, melee2Area);
+            if (melee3AreaVisible)
+                Gizmos.DrawWireCube(transform.position + melee3AreaCenter, melee3Area);
+        }
 
         protected override void Start()
         {

@@ -18,7 +18,6 @@ namespace StoneOfAdventure.Combat
             
             if (hit)
             {
-                Debug.Log("hit");
                 var target = hit.transform.gameObject;
                 var currentDamage = baseDamage;
                 applyDamageModifiers?.Invoke(ref currentDamage);

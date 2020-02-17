@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 namespace StoneOfAdventure.Core
@@ -22,17 +23,23 @@ namespace StoneOfAdventure.Core
             progressSaver = FindObjectOfType<ProgressSaver>();
             pointsStorage = FindObjectOfType<LocationPointsStorage>();
             pointsBar = FindObjectOfType<LocationPointsBar>();
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
         public void SwapScene()
         {
             SceneManager.LoadScene(activatedSceneNumber);
-            progressSaver.InstanceNecessaryPrefs();
-            player.transform.position = Vector3.zero;
-
+            
             pointsStorage.ResetPointValue();
             pointsBar.SetActive(false);
             bossHP_Bar.SetActive(true);
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            progressSaver.InstanceNecessaryPrefs();
+            player.transform.position = Vector3.zero;
         }
     }
 }
