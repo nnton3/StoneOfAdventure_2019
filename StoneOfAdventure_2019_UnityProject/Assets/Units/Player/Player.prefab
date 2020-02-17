@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbabf8469da0cd40b7d354aa76dbaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMovespeed: 5
+  baseMovespeed: 4
   movespeedInTheAir: 5
 --- !u!114 &4603871013170009232
 MonoBehaviour:
@@ -365,6 +365,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   MaxHealthUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Dead:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
