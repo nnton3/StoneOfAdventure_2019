@@ -223,7 +223,13 @@ MonoBehaviour:
     m_Bits: 256
   damageMelee1: 30
   damageMelee2: 30
+  melee2AreaCenter: {x: 1, y: 1, z: 0}
+  melee2Area: {x: 2, y: 2, z: 1}
+  melee2AreaVisible: 0
   damageMelee3: 30
+  melee3AreaCenter: {x: 1, y: 1, z: 0}
+  melee3Area: {x: 2, y: 2, z: 1}
+  melee3AreaVisible: 0
 --- !u!114 &8154560071557589789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +253,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   MaxHealthUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Dead:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

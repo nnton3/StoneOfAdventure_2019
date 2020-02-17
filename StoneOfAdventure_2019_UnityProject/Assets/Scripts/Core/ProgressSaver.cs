@@ -20,6 +20,7 @@ namespace StoneOfAdventure.Core
         public void InstanceNecessaryPrefs()
         {
             var followCameraInstance = Instantiate(followCamera, Vector3.zero, Quaternion.identity);
+            Debug.Log($"cam = null? {followCameraInstance == null} \n current scene is {UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}");
             followCameraInstance.GetComponent<Cinemachine.CinemachineVirtualCamera>().m_Follow = player;
         }
     }

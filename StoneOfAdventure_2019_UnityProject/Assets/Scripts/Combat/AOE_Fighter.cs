@@ -30,7 +30,7 @@ namespace StoneOfAdventure.Combat
         [SerializeField] private bool applicationAreaVisible;
         [SerializeField] private LayerMask layerMask;
 
-        void OnDrawGizmos()
+        protected virtual void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
             if (applicationAreaVisible)
