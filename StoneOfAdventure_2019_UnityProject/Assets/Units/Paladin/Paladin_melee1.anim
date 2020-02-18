@@ -124,7 +124,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.59090906
-    functionName: Melee1
+    functionName: MeleeAttack1Hit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

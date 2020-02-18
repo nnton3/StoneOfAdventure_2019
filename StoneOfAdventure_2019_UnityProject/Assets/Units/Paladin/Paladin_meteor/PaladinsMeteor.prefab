@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e88093c3a3d07746b1c80fa4834d7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 20
   applicationAreaCenter: {x: 0, y: 1, z: 0}
   applicationArea: {x: 2, y: 2, z: 1}
   applicationAreaVisible: 1
