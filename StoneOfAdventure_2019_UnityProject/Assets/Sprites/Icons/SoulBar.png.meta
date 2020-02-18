@@ -6,6 +6,9 @@ TextureImporter:
       \u0434\u0443\u0448_0"
     21300002: "\u0438\u043A\u043E\u043D\u043A\u0430 \u043F\u043E\u043B\u043E\u0441\u0430
       \u0434\u0443\u0448_1"
+    21300004: SoulBar_0
+    21300006: SoulBar_1
+    21300008: SoulBar_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -143,43 +146,61 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0438\u043A\u043E\u043D\u043A\u0430 \u043F\u043E\u043B\u043E\u0441\u0430
-        \u0434\u0443\u0448_0"
+      name: SoulBar_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 30
-        width: 143
-        height: 5
+        x: 21
+        y: 52
+        width: 161
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad07c75e3f4f044ab4704bc4de8d58b
+      spriteID: 09ea771b6000c3f40a92e150d6a554ab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0438\u043A\u043E\u043D\u043A\u0430 \u043F\u043E\u043B\u043E\u0441\u0430
-        \u0434\u0443\u0448_1"
+      name: SoulBar_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 161
-        height: 28
+        x: 32
+        y: 39
+        width: 143
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2da437b7fa272b42b7609ef24fb2f4f
+      spriteID: 5a0194c8c631a354393ae7e6ac1f7dbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoulBar_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 151
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4511d479c75694785ec12a2e28f4ed
       vertices: []
       indices: 
       edges: []

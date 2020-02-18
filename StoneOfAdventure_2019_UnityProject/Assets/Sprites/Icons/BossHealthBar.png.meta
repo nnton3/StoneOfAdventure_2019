@@ -4,6 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: BossHealthBar_0
     21300002: BossHealthBar_1
+    21300004: BossHealthBar_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -144,18 +145,18 @@ TextureImporter:
       name: BossHealthBar_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 43
-        width: 266
-        height: 5
+        x: 26
+        y: 35
+        width: 284
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f87e2d62875427d40ab6d57b7dd0cfb0
+      spriteID: 7db2815aa31f10b4d8fad3dbbb1b721b
       vertices: []
       indices: 
       edges: []
@@ -164,18 +165,38 @@ TextureImporter:
       name: BossHealthBar_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 7
-        width: 284
-        height: 28
+        x: 27
+        y: 3
+        width: 274
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5bed2a1084c75f449f6dda368f922ab
+      spriteID: 6522d6bf6b3ffb94f9725ce57716f0d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossHealthBar_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 23
+        width: 266
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cc1518f0dd9b242801eb4dc73069c5
       vertices: []
       indices: 
       edges: []
