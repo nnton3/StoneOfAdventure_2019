@@ -108,7 +108,6 @@ namespace StoneOfAdventure.Combat
                 applyEffectsOnTarget?.Invoke(player.gameObject);
                 DamageApplied?.Invoke();
             }
-            Debug.Log($"player is null? {player == null}");
         }
     }
 }
