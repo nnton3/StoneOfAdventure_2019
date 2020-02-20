@@ -20,6 +20,7 @@ public class PaladinStateController : Unit
     private PaladinSkill4 skill4;
     private int attackNumber = 0;
     private bool isDead = false;
+    private Animator anim;
     #endregion
 
     private void Start()
@@ -28,6 +29,7 @@ public class PaladinStateController : Unit
         fighter = GetComponent<PaladinFighter>();
         mover = GetComponent<Mover>();
         flip = GetComponent<Flip>();
+        anim = GetComponent<Animator>();
         skill1 = GetComponent<PaladinSkill1>();
         skill2 = GetComponent<PaladinSkill2>();
         skill3 = GetComponent<PaladinSkill3>();
@@ -252,6 +254,8 @@ public class PaladinStateController : Unit
     public override void Dead()
     {
         isDead = true;
+        anim.SetTrigger("dead");
+        FindObjectOfType<EndGameWindow>().EnableEndScreen();
     }
 
     public override void DisableState()
