@@ -2,6 +2,7 @@
 using System.Collections;
 using StoneOfAdventure.Combat;
 using System;
+using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Combat
 {
@@ -46,6 +47,8 @@ namespace StoneOfAdventure.Combat
         {
             base.Start();
             rb = GetComponent<Rigidbody2D>();
+
+            AddEffectOfAttack(StunEffect);
         }
 
         // Animation event
@@ -108,6 +111,11 @@ namespace StoneOfAdventure.Combat
                 applyEffectsOnTarget?.Invoke(player.gameObject);
                 DamageApplied?.Invoke();
             }
+        }
+
+        private void StunEffect(GameObject player)
+        {
+            player.GetComponent<Unit>().ApplyStun(0f);
         }
     }
 }

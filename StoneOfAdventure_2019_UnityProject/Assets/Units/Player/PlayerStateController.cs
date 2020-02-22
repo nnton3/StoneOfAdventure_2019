@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using StoneOfAdventure.Combat;
@@ -206,6 +205,12 @@ public class PlayerStateController : Unit
         StateIdle();
     }
 
+    public override void ApplyStun(float time)
+    {
+        anim.SetTrigger("stun");
+        StateStun();
+    }
+
     public override void DisableState()
     {
         StateIdle();
@@ -290,6 +295,12 @@ public class PlayerStateController : Unit
     {
         if (currentState == State.MoveHorizontal) mover.CancelMove();
         SetState(State.Skill2);
+    }
+
+    private void StateStun()
+    {
+        if (currentState == State.MoveHorizontal) mover.CancelMove();
+        SetState(State.Stun);
     }
     #endregion
 

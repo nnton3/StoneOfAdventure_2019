@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using Assets.Scripts.Core;
 
 namespace StoneOfAdventure.Core
@@ -26,5 +25,7 @@ namespace StoneOfAdventure.Core
                 Instantiate(soulShard, transform.position, Quaternion.identity);
             }
         }
+
+        
     }
 }

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
+using System;
 
 public class GroundTileFinder : MonoBehaviour
 {
@@ -14,8 +15,14 @@ public class GroundTileFinder : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<PlayerStateController>().gameObject;
-        groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
         targetTile = Resources.Load<TileBase>("2");
+        FindGroundTiles(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+        SceneManager.sceneLoaded += FindGroundTiles;
+    }
+
+    private void FindGroundTiles(Scene arg0, LoadSceneMode arg1)
+    {
+        groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
     }
 
     public List<Vector3> FindValidPositions()

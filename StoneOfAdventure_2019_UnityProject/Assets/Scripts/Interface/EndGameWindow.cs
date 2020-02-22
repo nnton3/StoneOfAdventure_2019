@@ -9,7 +9,6 @@ namespace StoneOfAdventure.UI
 
         public void EnableEndScreen()
         {
-            Debug.Log((endGameWindow == null) + " it's work");
             endGameWindow.SetActive(true);
         }
 
@@ -21,6 +20,7 @@ namespace StoneOfAdventure.UI
         public void ResetGame()
         {
             DisableEndScreen();
+            Destroy(GameObject.Find("Core"));
             SceneManager.LoadScene(0);
         }
 
