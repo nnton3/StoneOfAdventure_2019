@@ -41,5 +41,10 @@ namespace StoneOfAdventure.Core
             progressSaver.InstanceNecessaryPrefs();
             player.transform.position = Vector3.zero;
         }
+
+        private void OnDestroy()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
     }
 }

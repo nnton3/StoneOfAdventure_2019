@@ -16,7 +16,6 @@ public class ZombieHeroldStateController : UnitContainsAward
     private Mover mover;
     private Fighter fighter;
     private Animator anim;
-    private Stunned stunned;
 
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float movespeed = 3f;
@@ -31,7 +30,6 @@ public class ZombieHeroldStateController : UnitContainsAward
         mover = GetComponent<Mover>();
         fighter = GetComponent<Fighter>();
         anim = GetComponent<Animator>();
-        stunned = GetComponent<Stunned>();
 
         currentState = State.Death;
     }
@@ -125,23 +123,8 @@ public class ZombieHeroldStateController : UnitContainsAward
 
     public override void ApplyStun(float timeOfStun)
     {
-        switch (currentState)
-        {
-            case State.Idle:
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-            case State.MoveHorizontal:
-                mover.CancelMove();
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-            case State.Attack:
-                fighter.CancelAttack();
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-        }
+        anim.SetTrigger("stun");
+        SetState(State.Stun);
     }
     #endregion
 

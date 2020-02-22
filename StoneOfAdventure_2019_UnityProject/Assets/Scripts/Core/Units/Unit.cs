@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 namespace StoneOfAdventure.Core
 {
@@ -22,5 +24,14 @@ namespace StoneOfAdventure.Core
         public virtual void Fell() { return; }
         public virtual void Born() { return; }
         public virtual void Landed() { return; }
+
+        protected IEnumerator StunTimer(float time)
+        {
+            yield return new WaitForSeconds(time);
+            StunEnd();
+        }
+
+        protected virtual void StunEnd() { }
+
     }
 }

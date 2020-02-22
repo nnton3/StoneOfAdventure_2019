@@ -13,7 +13,6 @@ public class ZombieStateController : UnitContainsAward
     private Mover mover;
     private Fighter fighter;
     private Animator anim;
-    private Stunned stunned;
 
     private PatrolBehaviour patrolBehaviour;
     private ChaseBehaviour chaseBehaviour;
@@ -31,7 +30,6 @@ public class ZombieStateController : UnitContainsAward
         mover = GetComponent<Mover>();
         fighter = GetComponent<Fighter>();
         anim = GetComponent<Animator>();
-        stunned = GetComponent<Stunned>();
 
         enemyDetector.PlayerDetected.AddListener(UpdateTarget);
         enemyDetector.PlayerLost.AddListener(UpdateTarget);
@@ -144,24 +142,12 @@ public class ZombieStateController : UnitContainsAward
 
     public override void ApplyStun(float timeOfStun)
     {
-        switch (currentState)
-        {
-            case State.Idle:
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-            case State.MoveHorizontal:
-                mover.CancelMove();
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-            case State.Attack:
-                fighter.CancelAttack();
-                stunned.ApplyStun(timeOfStun);
-                StateStun();
-                break;
-        }
+        anim.SetTrigger("stun");
+        StopCoroutine(StunTimer(timeOfStun));
+        StartCoroutine(StunTimer(timeOfStun));
+        StateStun();
     }
+
     #endregion
 
     #region StateTransitions
@@ -202,5 +188,11 @@ public class ZombieStateController : UnitContainsAward
     private void SetState(State value)
     {
         currentState = value;
+    }
+
+    protected override void StunEnd()
+    {
+        anim.SetTrigger("stunEnd");
+        DisableState();
     }
 }

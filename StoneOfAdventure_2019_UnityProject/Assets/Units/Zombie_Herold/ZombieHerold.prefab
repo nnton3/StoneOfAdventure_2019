@@ -197,10 +197,10 @@ GameObject:
   - component: {fileID: 3601460222140525362}
   - component: {fileID: 3601460222140525366}
   - component: {fileID: 5792545510151547752}
-  - component: {fileID: 6127476304878788472}
   - component: {fileID: 1336416322108989253}
   - component: {fileID: 6394804556579325370}
   - component: {fileID: 1815551816791317082}
+  - component: {fileID: 6614450624607186349}
   m_Layer: 9
   m_Name: ZombieHerold
   m_TagString: Enemie
@@ -383,6 +383,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  Dead:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   healthPoints: 80
   untouchable: 1
 --- !u!114 &5792545510151547752
@@ -399,19 +404,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMovespeed: 2.5
   movespeedInTheAir: 5
---- !u!114 &6127476304878788472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3601460222140525370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b089c43499ca5647b1b82f64857749b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeOfStun: 1
 --- !u!114 &1336416322108989253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +446,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b21f7ea3fc552aa448efbee5e68effef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6614450624607186349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601460222140525370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55b74d3f16490e4b8e159490d5ccf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4200216003108321560

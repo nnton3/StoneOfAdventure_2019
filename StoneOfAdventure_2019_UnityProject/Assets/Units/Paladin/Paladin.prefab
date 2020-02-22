@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 8570296056180897558}
   - component: {fileID: 3187409030780022549}
   - component: {fileID: 2939564307757151083}
+  - component: {fileID: 2340505714887398705}
   - component: {fileID: 4479600613558345276}
   m_Layer: 9
   m_Name: Paladin
@@ -394,6 +395,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMovespeed: 5.5
   movespeedInTheAir: 5
+--- !u!114 &2340505714887398705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3187409030780022548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55b74d3f16490e4b8e159490d5ccf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4479600613558345276
 MonoBehaviour:
   m_ObjectHideFlags: 0

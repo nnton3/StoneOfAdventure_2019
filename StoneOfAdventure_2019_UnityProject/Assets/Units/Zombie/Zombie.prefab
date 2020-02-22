@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 658190849188051343}
   - component: {fileID: 658190849188051339}
   - component: {fileID: 658190849188051337}
-  - component: {fileID: 7913249878129167813}
   - component: {fileID: 2677293136967742501}
   - component: {fileID: 8272227125603250269}
   - component: {fileID: 9130162151884358291}
@@ -260,6 +259,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  Dead:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   healthPoints: 120
   untouchable: 1
 --- !u!114 &658190849188051337
@@ -277,19 +281,6 @@ MonoBehaviour:
   currentState: 0
   reward: 5
   experience: 5
---- !u!114 &7913249878129167813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658190849188051335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b089c43499ca5647b1b82f64857749b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeOfStun: 1
 --- !u!114 &2677293136967742501
 MonoBehaviour:
   m_ObjectHideFlags: 0
