@@ -10,6 +10,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var ciriticalDamage = player.AddComponent<CriticalDamage_damageModifier>();
             ciriticalDamage.Initialize(damageScale, criticalChance);
         }

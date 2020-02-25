@@ -8,6 +8,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var dodgeChance = player.AddComponent<DodgeChance>();
             dodgeChance.Initialize(newDodgeChance);
         }

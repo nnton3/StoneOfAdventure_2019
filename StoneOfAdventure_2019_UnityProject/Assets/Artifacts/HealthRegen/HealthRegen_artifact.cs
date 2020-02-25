@@ -10,6 +10,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var healthRegen = player.GetComponent<HealthRegen>();
             healthRegen.HealValue = healValue;
         }

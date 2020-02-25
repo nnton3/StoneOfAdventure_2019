@@ -9,6 +9,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var buff = player.AddComponent<BrokenClock_buff>();
             buff.Initialize(chance, reduceValue);
         }

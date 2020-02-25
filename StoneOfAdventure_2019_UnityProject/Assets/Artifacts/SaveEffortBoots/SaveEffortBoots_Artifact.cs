@@ -11,6 +11,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var buff = player.AddComponent<SaveEffortBoots_buff>();
             buff.Initialize(buffTime, timeToApply, movespeedGain);
         }

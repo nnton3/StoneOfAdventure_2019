@@ -10,6 +10,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var ciriticalDamage = player.AddComponent<TrackingEye_HealthModifier>();
             ciriticalDamage.Initialize(attackBlockedNumber);
         }

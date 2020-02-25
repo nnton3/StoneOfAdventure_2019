@@ -8,6 +8,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var damageResist = player.AddComponent<DamageResistance>();
             damageResist.Initialize(damageResistance);
         }
