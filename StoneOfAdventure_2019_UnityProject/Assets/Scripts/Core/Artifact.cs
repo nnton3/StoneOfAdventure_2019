@@ -9,7 +9,7 @@ namespace StoneOfAdventure.Artifacts
         protected GameObject player;
         private GameObject artifactUI;
         private Animator anim;
-        public UnityEvent ArtifactSelected;
+        [HideInInspector] public UnityEvent ArtifactSelected;
 
         protected virtual void Start()
         {
@@ -25,7 +25,6 @@ namespace StoneOfAdventure.Artifacts
         public void Hide()
         {
             anim = GetComponent<Animator>();
-            Debug.Log($"{gameObject.name} on x = {transform.position.x}");
             anim.SetTrigger("action");
         }
     }

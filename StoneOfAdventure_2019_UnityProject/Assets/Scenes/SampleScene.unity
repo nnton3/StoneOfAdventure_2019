@@ -294,7 +294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &296556184
 Transform:
   m_ObjectHideFlags: 0
@@ -329,7 +329,7 @@ GameObject:
   m_Layer: 0
   m_Name: Firepan
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6996,15 +6996,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
+    - target: {fileID: 7027685105785556204, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
-      propertyPath: m_AnchorMax.x
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524191324942513871, guid: a8f909f40d1a64447ac616323d12e580,
+        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8f909f40d1a64447ac616323d12e580, type: 3}
@@ -7086,15 +7091,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4865179984607352861, guid: e396302606c8c3946b3f1ce351784cc7,
+    - target: {fileID: 73314985327485502, guid: e396302606c8c3946b3f1ce351784cc7,
         type: 3}
-      propertyPath: m_AnchorMax.x
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4865179984607352861, guid: e396302606c8c3946b3f1ce351784cc7,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865179984607352861, guid: e396302606c8c3946b3f1ce351784cc7,
+        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e396302606c8c3946b3f1ce351784cc7, type: 3}
@@ -7325,12 +7335,12 @@ PrefabInstance:
     - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd953698b7982645a400cabe226a846, type: 3}
@@ -8660,17 +8670,17 @@ PrefabInstance:
     - target: {fileID: 2480325433300431632, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6983678032700098867, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 6983678032700098867, guid: 0fdf8d88763870246a7ac3d3d8093284,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fdf8d88763870246a7ac3d3d8093284, type: 3}
@@ -8813,12 +8823,12 @@ PrefabInstance:
     - target: {fileID: 4622652887093216391, guid: f87fb2153fff2954bb9d0bd90cbd54ee,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4622652887093216391, guid: f87fb2153fff2954bb9d0bd90cbd54ee,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f87fb2153fff2954bb9d0bd90cbd54ee, type: 3}
@@ -8898,12 +8908,12 @@ PrefabInstance:
     - target: {fileID: 5997145080051614307, guid: 0987281248004b34c8174a3790911d69,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5997145080051614307, guid: 0987281248004b34c8174a3790911d69,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0987281248004b34c8174a3790911d69, type: 3}
@@ -9782,8 +9792,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
-        type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 9146637608559869787, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9897,7 +9906,7 @@ PrefabInstance:
     - target: {fileID: 6035469755887223896, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
       propertyPath: artifacts.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6035469755887223896, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
@@ -9909,7 +9918,7 @@ PrefabInstance:
         type: 3}
       propertyPath: artifacts.Array.data[1]
       value: 
-      objectReference: {fileID: 2050065993077340214, guid: 7ef7f8647186fae43bbdbfcad4c5eeac,
+      objectReference: {fileID: 6413741846548904570, guid: bd2802031e8b7a9499eedae9305ef343,
         type: 3}
     - target: {fileID: 6035469755887223896, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}

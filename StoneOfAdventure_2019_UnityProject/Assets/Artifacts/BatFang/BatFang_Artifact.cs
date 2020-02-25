@@ -9,6 +9,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var lifesteal = player.AddComponent<BatFang_attackEffect>();
             lifesteal.Initialize(lifestealInPercent);
         }

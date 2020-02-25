@@ -58,9 +58,9 @@ namespace StoneOfAdventure.UI
         {
             selectedArtifacts = new List<GameObject>()
             {
-                artifacts[Random.Range(0, artifacts.Length - 1)],
-                artifacts[Random.Range(0, artifacts.Length - 1)],
-                artifacts[Random.Range(0, artifacts.Length - 1)]
+                artifacts[Random.Range(0, artifacts.Length)],
+                artifacts[Random.Range(0, artifacts.Length)],
+                artifacts[Random.Range(0, artifacts.Length)]
             };
 
             return selectedArtifacts;

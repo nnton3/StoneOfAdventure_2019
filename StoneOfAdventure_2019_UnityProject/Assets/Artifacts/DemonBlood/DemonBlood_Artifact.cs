@@ -10,6 +10,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var demonBlood = player.AddComponent<DemonBlood_HealthModifier>();
             demonBlood.Initialize(maxStucsValue, effectTime, healPerSecPerStuc);
         }

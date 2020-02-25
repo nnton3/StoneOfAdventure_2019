@@ -9,6 +9,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             var playerMover = player.GetComponent<Mover>();
             playerMover.ModifyBaseMovespeed(playerMover.BaseMovespeed * addedMovespeedInPercent);
         }

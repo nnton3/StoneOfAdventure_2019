@@ -17,6 +17,7 @@ namespace StoneOfAdventure.Artifacts
 
         public override void AddEffect()
         {
+            base.AddEffect();
             playerHealth.UpdateMaxHealthPoints(addedHealthPoints);
         }
     }
