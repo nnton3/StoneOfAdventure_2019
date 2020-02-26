@@ -77,16 +77,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 658190849188051331, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: m_SortingOrder
@@ -132,7 +122,7 @@ PrefabInstance:
     - target: {fileID: 658190849188051339, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
       propertyPath: healthPoints
-      value: 90
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
@@ -143,6 +133,16 @@ PrefabInstance:
         type: 3}
       propertyPath: patrolMovespeed
       value: 3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: reward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 658190849188051337, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: experience
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 658190850852845413, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
@@ -158,6 +158,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.x
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082398901812479276, guid: 8dd953698b7982645a400cabe226a846,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1082398901499250090, guid: 8dd953698b7982645a400cabe226a846,
         type: 3}
