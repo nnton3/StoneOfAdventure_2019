@@ -2934,7 +2934,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 22100000, guid: 87783837167383a48ba1559486251a9a, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -4272,21 +4272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9146637608893494899}
     m_Modifications:
-    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 713472708721060686, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: baseDamage
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046496, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_Name
@@ -4347,21 +4332,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 99d2a4916fac7d4438b0c33833e25cba, type: 2}
-    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+      propertyPath: baseDamage
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226845849540991534, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7648582b5995e904babec9e489408320,
+      propertyPath: baseDamage
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 713472708721060686, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
-    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.8125
+      propertyPath: baseDamage
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
@@ -4381,6 +4365,22 @@ PrefabInstance:
     - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 99d2a4916fac7d4438b0c33833e25cba, type: 2}
+    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7648582b5995e904babec9e489408320,
+        type: 3}
+    - target: {fileID: 3520417983458046495, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_Size.x
       value: 1.8125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
