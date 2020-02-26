@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbabf8469da0cd40b7d354aa76dbaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMovespeed: 3
+  baseMovespeed: 2
   movespeedInTheAir: 5
 --- !u!114 &6664449861413909710
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  healthPoints: 120
+  healthPoints: 50
   untouchable: 1
 --- !u!114 &658190849188051337
 MonoBehaviour:
@@ -279,8 +279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  reward: 5
-  experience: 5
+  reward: 2
+  experience: 2
 --- !u!114 &2677293136967742501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,11 +442,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 658190849188051328}
     m_Modifications:
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_Name
-      value: HPBar
-      objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,6 +546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_Name
+      value: HPBar
       objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631240, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}

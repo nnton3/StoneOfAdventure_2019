@@ -191,7 +191,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  baseDamage: 12
+  baseDamage: 18
   attackRange: 3
   layerMask:
     serializedVersion: 2
@@ -212,4 +212,4 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 512
-  lifeTime: 7
+  lifeTime: 6
