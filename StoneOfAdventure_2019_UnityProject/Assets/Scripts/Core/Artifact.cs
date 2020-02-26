@@ -1,6 +1,4 @@
-﻿using StoneOfAdventure.UI;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -9,22 +7,20 @@ namespace StoneOfAdventure.Artifacts
         protected GameObject player;
         private GameObject artifactUI;
         private Animator anim;
-        [HideInInspector] public UnityEvent ArtifactSelected;
+
+        private bool isSelected;
+        public bool IsSelected => isSelected;
 
         protected virtual void Start()
         {
             player = FindObjectOfType<PlayerStateController>().gameObject;
-            ArtifactSelected.AddListener(() => GetComponentInParent<ArtifactSelector>().CloseArtifactSelector(gameObject));
+            anim = GetComponent<Animator>();
         }
 
-        public virtual void AddEffect()
-        {
-            ArtifactSelected?.Invoke();
-        }
+        public virtual void AddEffect() { isSelected = true; }
 
         public void Hide()
         {
-            anim = GetComponent<Animator>();
             anim.SetTrigger("action");
         }
     }

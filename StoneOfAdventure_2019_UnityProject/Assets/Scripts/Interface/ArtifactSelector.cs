@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using StoneOfAdventure.Artifacts;
 using UnityEngine.UI;
+using System;
+using System.Threading.Tasks;
 
 namespace StoneOfAdventure.UI
 {
@@ -20,7 +21,8 @@ namespace StoneOfAdventure.UI
 
         public void EnableArtifactSelector()
         {
-            bck.SetActive(true);
+            Time.timeScale = 0f;
+            anim.SetTrigger("action");
             ShowArtifacts(SelectArtifacts());
         }
 
@@ -30,27 +32,40 @@ namespace StoneOfAdventure.UI
             {
                 var artifact = Instantiate(prefs[i], bck.transform);
                 selectedArtifacts[i] = artifact;
+                selectedArtifacts[i].GetComponent<Button>().onClick.AddListener(CloseArtifactSelector);
             }
         }
 
-        public void CloseArtifactSelector(GameObject selectedArtifact)
+        public void CloseArtifactSelector()
         {
-            selectedArtifacts.Remove(selectedArtifact);
-            StartCoroutine("Hide");
+            Hide();
         }
 
-        IEnumerator Hide()
+        async void Hide()
         {
-            for (int j = 0; j < selectedArtifacts.Count; j++)
-            {
-                selectedArtifacts[j].GetComponent<Artifact>().Hide();
-            }
-            yield return new WaitForSeconds(1f);
+            var arts = GetComponentsInChildren<Artifact>();
+            HideNotSelectedArts(arts);
+            await Task.Delay(TimeSpan.FromSeconds(1));
             anim.SetTrigger("action");
-            yield return new WaitForSeconds(1f);
-            foreach (var art in GetComponentsInChildren<Artifact>())
+            await Task.Delay(TimeSpan.FromSeconds(1));
+            ClearSelector(arts);
+            Time.timeScale = 1f;
+        }
+
+        private static void HideNotSelectedArts(Artifact[] arts)
+        {
+            for (int j = 0; j < arts.Length; j++)
             {
-                Destroy(art.gameObject);
+                Debug.Log(arts[j].IsSelected);
+                if (!arts[j].IsSelected) arts[j].Hide();
+            }
+        }
+
+        private static void ClearSelector(Artifact[] arts)
+        {
+            for (int j = 0; j < arts.Length; j++)
+            {
+                Destroy(arts[j].gameObject);
             }
         }
 
@@ -58,9 +73,9 @@ namespace StoneOfAdventure.UI
         {
             selectedArtifacts = new List<GameObject>()
             {
-                artifacts[Random.Range(0, artifacts.Length)],
-                artifacts[Random.Range(0, artifacts.Length)],
-                artifacts[Random.Range(0, artifacts.Length)]
+                artifacts[UnityEngine.Random.Range(0, artifacts.Length)],
+                artifacts[UnityEngine.Random.Range(0, artifacts.Length)],
+                artifacts[UnityEngine.Random.Range(0, artifacts.Length)]
             };
 
             return selectedArtifacts;
