@@ -1,6 +1,5 @@
 ﻿using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ public class HealthPointsUI : MonoBehaviour
     private void Start()
     {
         health = GetComponentInParent<Health>();
-        unitFlip = GetComponentInParent<Unit>().GetComponent<Flip>();
+        unitFlip = GetComponentInParent<Flip>();
         thisFlip = GetComponent<Flip>();
 
         unitFlip.Flipped.AddListener(FixXScale);
