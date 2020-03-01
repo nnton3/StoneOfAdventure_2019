@@ -2,7 +2,6 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 using System.Collections;
-using System;
 using StoneOfAdventure.Movement;
 
 public class ZombieStateController : UnitContainsAward

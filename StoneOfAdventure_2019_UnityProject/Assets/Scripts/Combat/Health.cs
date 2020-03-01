@@ -22,6 +22,8 @@ namespace StoneOfAdventure.Combat
         private int maxHealthPoints;
         public int MaxHealthPoints => maxHealthPoints;
 
+        public bool Untouchable => untouchable;
+
         [SerializeField] private bool untouchable = false;
         #endregion
 
@@ -35,7 +37,7 @@ namespace StoneOfAdventure.Combat
         public void ApplyDamage(int damage)
         {
             if (HealthPoints == 0) return;
-            if (untouchable) return;
+            if (Untouchable) return;
 
             var currentDamage = damage;
             applyModifiersOfInputDamage?.Invoke(ref currentDamage);
@@ -91,7 +93,7 @@ namespace StoneOfAdventure.Combat
 
         public void SwapUntouchable()
         {
-            untouchable = !untouchable;
+            untouchable = !Untouchable;
         }
 
         public void AddModifierOfInputDamage(ModifiersOfInputDamage modifier)
