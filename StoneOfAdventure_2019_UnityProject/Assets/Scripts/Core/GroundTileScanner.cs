@@ -17,7 +17,7 @@ public class GroundTileScanner : MonoBehaviour
     public bool UnitOnTheGround()
     {
         Vector3 currentDirection = (flip.isFacingRight) ? Vector3.right : Vector3.left;
-        TileBase nextTile = patrolMap.GetTile(patrolMap.WorldToCell(transform.position + Vector3.down));// + currentDirection));
+        TileBase nextTile = patrolMap.GetTile(patrolMap.WorldToCell(transform.position + Vector3.down + currentDirection / 2));
         return nextTile == patrolTile;
     }
 }
