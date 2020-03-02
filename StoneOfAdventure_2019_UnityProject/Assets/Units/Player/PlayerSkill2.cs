@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using StoneOfAdventure.Combat;
-using System.Collections;
-using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 
 public class PlayerSkill2 : SkillBase
@@ -27,13 +24,14 @@ public class PlayerSkill2 : SkillBase
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerScill2Collider = transform.Find("Skill2Collider").gameObject;
+
         playerScill2Collider.SetActive(false);
+        playerScill2Collider.GetComponent<PlayerSkill2Collider>().skill2Damage = baseDamage;
     }
 
     public override void StartUse()
     {
         base.StartUse();
-        playerScill2Collider.GetComponent<PlayerSkill2Collider>().skill2Damage = baseDamage;
         anim.SetTrigger("skill2");
     }
 

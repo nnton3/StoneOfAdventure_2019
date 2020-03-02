@@ -34,8 +34,8 @@ public class PlayerSkill1 : SkillBase
                         layerMask);
         foreach (var enemie in enemiesInApplicationArea)
         {
-            enemie.GetComponent<Unit>().ApplyStun(timeOfStun);
             enemie.GetComponent<Health>().ApplyDamage(baseDamage);
+            enemie.GetComponent<Unit>().ApplyStun(timeOfStun);
         }
     }
 

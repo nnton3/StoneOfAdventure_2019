@@ -113,6 +113,7 @@ public class ZombieStateController : UnitContainsAward
                 TransormToCorrupse();
                 break;
             case State.Stun:
+                StopCoroutine("StunTimer");
                 TransormToCorrupse();
                 break;
         }
@@ -141,10 +142,19 @@ public class ZombieStateController : UnitContainsAward
 
     public override void ApplyStun(float timeOfStun)
     {
-        anim.SetTrigger("stun");
-        StopCoroutine(StunTimer(timeOfStun));
-        StartCoroutine(StunTimer(timeOfStun));
-        StateStun();
+        if (currentState != State.Death)
+        {
+            Debug.Log($"go in stun HP = {GetComponent<Health>().HealthPoints}");
+            anim.SetTrigger("stun");
+            StopCoroutine(StunTimer(timeOfStun));
+            StartCoroutine(StunTimer(timeOfStun));
+            StateStun();
+        }
+        else
+        {
+            Debug.Log("stop stun");
+            StopCoroutine(StunTimer(timeOfStun));
+        }
     }
 
     #endregion
