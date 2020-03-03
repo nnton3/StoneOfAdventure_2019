@@ -12,6 +12,7 @@ namespace StoneOfAdventure.Combat
         private Rigidbody2D rb;
 
         [Header("MELEE ATTACK 1 SETTINGS")]
+        [SerializeField] private OneHitTrigger hitTrigger1;
         [SerializeField] private int damageMelee1;
         [SerializeField] private Vector3 melee1AreaCenter;
         [SerializeField] private Vector3 melee1Area;
@@ -19,6 +20,7 @@ namespace StoneOfAdventure.Combat
 
 
         [Header("MELEE ATTACK 2 SETTINGS")]
+        [SerializeField] private OneHitTrigger hitTrigger2;
         [SerializeField] private int damageMelee2;
         [SerializeField] private Vector3 melee2AreaCenter;
         [SerializeField] private Vector3 melee2Area;
@@ -47,6 +49,8 @@ namespace StoneOfAdventure.Combat
         {
             base.Start();
             rb = GetComponent<Rigidbody2D>();
+            hitTrigger1.Initialize(melee1AreaCenter, melee1Area, damageMelee1);
+            hitTrigger2.Initialize(melee2AreaCenter, melee2Area, damageMelee2);
 
             AddEffectOfAttack(StunEffect);
         }
@@ -58,33 +62,50 @@ namespace StoneOfAdventure.Combat
             rb.AddForce(Vector2.right * dir * power, ForceMode2D.Impulse);
         }
 
+        #region MeleeAttack1
         public override void StartAttack()
         {
             base.StartAttack();
         }
 
+        // Animation event
+        public void EnableDamageCollider1()
+        {
+            hitTrigger1.gameObject.SetActive(true);
+        }
+
+        // Animation event
+        public void DisableDamageCollider1()
+        {
+            hitTrigger1.gameObject.SetActive(false);
+        }
+        #endregion
+
+        #region MeleeAttack2
         public void StartMelee2()
         {
             UseAttack.Invoke();
             anim.SetTrigger("melee2");
         }
 
+        // Animation event
+        public void EableDamageCollider2()
+        {
+            hitTrigger2.gameObject.SetActive(true);
+        }
+
+        // Animation event
+        public void DisableDamageCollider2()
+        {
+            hitTrigger2.gameObject.SetActive(false);
+        }
+        #endregion
+
+        #region MeleeAttack3
         public void StartMelee3()
         {
             UseAttack.Invoke();
             anim.SetTrigger("melee3");
-        }
-
-        // Animation event
-        public void MeleeAttack1Hit()
-        {
-            Hit(damageMelee1, melee1AreaCenter, melee1Area);
-        }
-
-        // Animation event
-        public void MeleeAttack2Hit()
-        {
-            Hit(damageMelee2, melee2AreaCenter, melee2Area);
         }
 
         // Animation event
@@ -112,6 +133,7 @@ namespace StoneOfAdventure.Combat
                 DamageApplied?.Invoke();
             }
         }
+        #endregion
 
         private void StunEffect(GameObject player)
         {

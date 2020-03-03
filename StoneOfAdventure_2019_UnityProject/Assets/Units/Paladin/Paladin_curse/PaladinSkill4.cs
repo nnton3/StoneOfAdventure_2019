@@ -1,36 +1,39 @@
 ﻿using UnityEngine;
 
-public class PaladinSkill4 : SkillBase
+namespace StoneOfAdventure.Combat
 {
-    #region Variables
-    [SerializeField] private float slowInPercent;
-    [SerializeField] private float actionTime;
-    private Animator anim;
-    private Flip flip;
-    private GameObject target;
-    #endregion
-
-    private void Start()
+    public class PaladinSkill4 : SkillBase
     {
-        anim = GetComponent<Animator>();
-        flip = GetComponent<Flip>();
-        target = FindObjectOfType<PlayerStateController>().gameObject;
-    }
+        #region Variables
+        [SerializeField] private float slowInPercent;
+        [SerializeField] private float actionTime;
+        private Animator anim;
+        private Flip flip;
+        private GameObject target;
+        #endregion
 
-    public override void StartUse()
-    {
-        base.StartUse();
+        private void Start()
+        {
+            anim = GetComponent<Animator>();
+            flip = GetComponent<Flip>();
+            target = FindObjectOfType<PlayerStateController>().gameObject;
+        }
 
-        if ((target.transform.position.x > transform.position.x && !flip.isFacingRight) ||
-                    (target.transform.position.x < transform.position.x && flip.isFacingRight))
-            flip.FlipObject();
-        anim.SetTrigger("curse");
-    }
+        public override void StartUse()
+        {
+            base.StartUse();
 
-    public void ApplyCurse()
-    {
-        var movespeedDebuff = target.AddComponent<MovespeedDebuff>();
-        movespeedDebuff.Initialize(slowInPercent, actionTime);
-        movespeedDebuff.ApplyBuff();
+            if ((target.transform.position.x > transform.position.x && !flip.isFacingRight) ||
+                        (target.transform.position.x < transform.position.x && flip.isFacingRight))
+                flip.FlipObject();
+            anim.SetTrigger("curse");
+        }
+
+        public void ApplyCurse()
+        {
+            var movespeedDebuff = target.AddComponent<MovespeedDebuff>();
+            movespeedDebuff.Initialize(slowInPercent, actionTime);
+            movespeedDebuff.ApplyBuff();
+        }
     }
 }
