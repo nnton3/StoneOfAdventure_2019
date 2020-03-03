@@ -1,44 +1,46 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Events;
 
-public class SkillBase : MonoBehaviour
+namespace StoneOfAdventure.Combat
 {
-    [SerializeField] private float coolDown = 2f;
-    public float CoolDown => coolDown;
-    [SerializeField] protected int baseDamage = 10;
-    private float lastTimeUse;
-
-    private bool canUseSkill = true;
-    public bool CanUseSkill => canUseSkill;
-
-    [HideInInspector] public UnityEvent SkillUsed;
-
-    private void Update()
+    public class SkillBase : MonoBehaviour
     {
-        if (!canUseSkill) UpdateCoolDown();
-    }
+        [SerializeField] private float coolDown = 2f;
+        public float CoolDown => coolDown;
+        [SerializeField] protected int baseDamage = 10;
+        private float lastTimeUse;
 
-    public virtual void StartUse()
-    {
-        lastTimeUse = 0f;
-        canUseSkill = false;
-        SkillUsed.Invoke();
-    }
+        private bool canUseSkill = true;
+        public bool CanUseSkill => canUseSkill;
 
-    public void IncreaseBaseDamage(float increaseDamage)
-    {
-        baseDamage += (int)(baseDamage * increaseDamage);
-    }
+        [HideInInspector] public UnityEvent SkillUsed;
+
+        private void Update()
+        {
+            if (!canUseSkill) UpdateCoolDown();
+        }
+
+        public virtual void StartUse()
+        {
+            lastTimeUse = 0f;
+            canUseSkill = false;
+            SkillUsed.Invoke();
+        }
+
+        public void IncreaseBaseDamage(float increaseDamage)
+        {
+            baseDamage += (int)(baseDamage * increaseDamage);
+        }
     
-    private void UpdateCoolDown()
-    {
-        lastTimeUse += Time.deltaTime;
-        if (lastTimeUse >= coolDown) canUseSkill = true;
-    }
+        private void UpdateCoolDown()
+        {
+            lastTimeUse += Time.deltaTime;
+            if (lastTimeUse >= coolDown) canUseSkill = true;
+        }
 
-    public void ReduceCoolDown(float value)
-    {
-        lastTimeUse += value;
+        public void ReduceCoolDown(float value)
+        {
+            lastTimeUse += value;
+        }
     }
 }
