@@ -192,9 +192,12 @@ public class PlayerStateController : Unit
                 StateInTheAir();
                 break;
             case State.MoveVertical:
-                climb.StopVerticalMove();
-                jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
-                StateInTheAir();
+                if (!CollisionWithPlatform())
+                {
+                    climb.StopVerticalMove();
+                    jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
+                    StateInTheAir();
+                }
                 break;
         }
     }
@@ -313,5 +316,27 @@ public class PlayerStateController : Unit
     {
         StartWalk.RemoveAllListeners();
         StopWalk.RemoveAllListeners();
+    }
+
+    private bool CollisionWithPlatform()
+    {
+        //Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y + 0.5f);
+        //RaycastHit2D[] hits = Physics2D.RaycastAll(rayOrigin, Vector2.right, 0.5f);
+        //for (int i = 0; i < hits.Length; i++)
+        //{
+        //    Debug.Log(hits[i].transform.tag + " ");
+        //    if (hits[i].transform.CompareTag("Platform")) return true;
+        //}
+
+        //hits = Physics2D.RaycastAll(rayOrigin, Vector2.left, 0.5f);
+
+        //for (int i = 0; i < hits.Length; i++)
+        //{
+        //    if (hits[i].transform.CompareTag("Platform")) return true;
+        //}
+        
+        GetComponent<Collider2D>().GetContacts()
+
+        return false;
     }
 }

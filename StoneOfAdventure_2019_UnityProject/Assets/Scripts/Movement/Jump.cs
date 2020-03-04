@@ -8,11 +8,11 @@ namespace StoneOfAdventure.Movement
     {
         #region Variables
         public bool isGrounded { get; private set; }
-        [SerializeField] private bool inPlatform;
         private Rigidbody2D rb;
         private Unit unit;
         private Animator anim;
         #endregion
+
         private void Start()
         {
             unit = GetComponent<Unit>();
