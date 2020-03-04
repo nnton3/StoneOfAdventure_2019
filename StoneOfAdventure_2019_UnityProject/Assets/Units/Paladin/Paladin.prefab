@@ -63,7 +63,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5243902, y: 0}
+    pivot: {x: 0.5121951, y: 0}
     oldSize: {x: 2.5625, y: 9.6875}
     newSize: {x: 3.9375, y: 2.0625}
     adaptiveTilingThreshold: 0.5
@@ -216,13 +216,15 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   baseDamage: 0
+  hitTrigger1: {fileID: 0}
   damageMelee1: 15
-  melee1AreaCenter: {x: 1.65, y: 1, z: 0}
-  melee1Area: {x: 2, y: 2, z: 1}
+  melee1AreaCenter: {x: 5, y: 2, z: 0}
+  melee1Area: {x: 7.5, y: 4, z: 1}
   melee1AreaVisible: 0
+  hitTrigger2: {fileID: 0}
   damageMelee2: 10
-  melee2AreaCenter: {x: 0, y: 1, z: 0}
-  melee2Area: {x: 2.5, y: 2, z: 1}
+  melee2AreaCenter: {x: -0.3, y: 1.5, z: 0}
+  melee2Area: {x: 7, y: 3, z: 1}
   melee2AreaVisible: 1
   damageMelee3: 15
   melee3AreaCenter: {x: 0.7, y: 1, z: 0}
