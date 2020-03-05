@@ -156,26 +156,6 @@ TextureImporter:
     21300302: Paladin_atlas_151
     21300304: Paladin_atlas_152
     21300306: Paladin_atlas_153
-    21300308: Paladin_atlas_154
-    21300310: Paladin_atlas_155
-    21300312: Paladin_atlas_156
-    21300314: Paladin_atlas_157
-    21300316: Paladin_atlas_158
-    21300318: Paladin_atlas_159
-    21300320: Paladin_atlas_160
-    21300322: Paladin_atlas_161
-    21300324: Paladin_atlas_162
-    21300326: Paladin_atlas_163
-    21300328: Paladin_atlas_164
-    21300330: Paladin_atlas_165
-    21300332: Paladin_atlas_166
-    21300334: Paladin_atlas_167
-    21300336: Paladin_atlas_168
-    21300338: Paladin_atlas_169
-    21300340: Paladin_atlas_170
-    21300342: Paladin_atlas_171
-    21300344: Paladin_atlas_172
-    21300346: Paladin_atlas_173
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -317,17 +297,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7ea53a8b402934caf7036851bb3055
+      spriteID: 634e895826bf58242b1860b774df1a09
       vertices: []
       indices: 
       edges: []
@@ -337,17 +317,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 41
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9c90b02778e9245bb90d721e2a9e4a
+      spriteID: ac2f5dfd660de86478e807b32e2aaf97
       vertices: []
       indices: 
       edges: []
@@ -357,17 +337,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 82
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396f8da2c8c3b804094cca379b8122f7
+      spriteID: 5c6d91be7491b05469d1cf71d21294ee
       vertices: []
       indices: 
       edges: []
@@ -377,17 +357,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 123
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c99cdce99af5349a4f34f824b8f8d3
+      spriteID: 1ad05231ba906e14f94dae8f3602fa0b
       vertices: []
       indices: 
       edges: []
@@ -397,17 +377,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 164
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a88726ee9cc6d418350ce449084863
+      spriteID: 084d5e17e2453d24f9c07d92a46d7bb3
       vertices: []
       indices: 
       edges: []
@@ -417,17 +397,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 205
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e412383d127a7c4d85b753aede3b3fb
+      spriteID: 285251d7620ac754191a7845b1886e45
       vertices: []
       indices: 
       edges: []
@@ -437,17 +417,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 246
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d48a8b0bbf11947498db9627b18555aa
+      spriteID: cfcca06969a2be746a45dfd8c099381a
       vertices: []
       indices: 
       edges: []
@@ -457,17 +437,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 287
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ec68b00d53c85a4195d8cbb9b3c3d8f
+      spriteID: 8dc63a9cff18e7f4d8bd09be7539d829
       vertices: []
       indices: 
       edges: []
@@ -476,18 +456,18 @@ TextureImporter:
       name: Paladin_atlas_8
       rect:
         serializedVersion: 2
-        x: 327
-        y: 172
-        width: 42
+        x: 328
+        y: 294
+        width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5119048, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b33fe6084df3194e950feff5107e591
+      spriteID: 8851d544f4eaa4241b24c14bd1f0d422
       vertices: []
       indices: 
       edges: []
@@ -497,17 +477,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 369
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3648fb8e35da0b428c5319c59330e3f
+      spriteID: 0712cb84e8bb98a468dbd7ebeec9d284
       vertices: []
       indices: 
       edges: []
@@ -517,17 +497,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 410
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7807ed29c655d83499a1a46a23ef1761
+      spriteID: 92ea5eb8a6f3f014fa12cbf9ca5424de
       vertices: []
       indices: 
       edges: []
@@ -537,17 +517,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 451
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 127704fbfcc703b4baf3dab9b0e89ab8
+      spriteID: 1d0ce8901baae0d4399b2c0ab3543258
       vertices: []
       indices: 
       edges: []
@@ -557,17 +537,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 492
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aafc179f4b176049a6dc3065e616403
+      spriteID: 69074856c6aba984899b0f6e2f43e415
       vertices: []
       indices: 
       edges: []
@@ -577,17 +557,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 533
-        y: 172
+        y: 294
         width: 41
         height: 155
       alignment: 9
-      pivot: {x: 0.5243902, y: 0}
+      pivot: {x: 0.5121951, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28d140179d7252545829e806c74a9c16
+      spriteID: 29fc826447e71bb4295e1b50a895cf1e
       vertices: []
       indices: 
       edges: []
@@ -596,18 +576,18 @@ TextureImporter:
       name: Paladin_atlas_14
       rect:
         serializedVersion: 2
-        x: 574
-        y: 300
-        width: 121
-        height: 27
+        x: 0
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ff66dbbe1861c4891ccedc300d59b4
+      spriteID: 5468699145e0eea499eeba0a597148a6
       vertices: []
       indices: 
       edges: []
@@ -616,18 +596,18 @@ TextureImporter:
       name: Paladin_atlas_15
       rect:
         serializedVersion: 2
-        x: 695
-        y: 300
-        width: 121
-        height: 27
+        x: 123
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cdcc6db33646446a476ee4214ed9d4
+      spriteID: 1d4eb8ad4966a2d45ba7e36e353b976a
       vertices: []
       indices: 
       edges: []
@@ -636,18 +616,18 @@ TextureImporter:
       name: Paladin_atlas_16
       rect:
         serializedVersion: 2
-        x: 816
-        y: 300
-        width: 121
-        height: 27
+        x: 246
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c39f12297a44d41ad010750dad9062
+      spriteID: 13b7baa9a42dc2f49a007f5e1e1cb897
       vertices: []
       indices: 
       edges: []
@@ -656,18 +636,18 @@ TextureImporter:
       name: Paladin_atlas_17
       rect:
         serializedVersion: 2
-        x: 937
-        y: 300
-        width: 121
-        height: 27
+        x: 369
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee94b54795434534db7f02613ad9a3f6
+      spriteID: 8239e3a345f061e4ca547a4c59610109
       vertices: []
       indices: 
       edges: []
@@ -676,18 +656,18 @@ TextureImporter:
       name: Paladin_atlas_18
       rect:
         serializedVersion: 2
-        x: 1058
-        y: 300
-        width: 121
-        height: 27
+        x: 492
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29089c0d1461d24478feaa5ad413e79e
+      spriteID: 493079545a7bb48429177829da17541c
       vertices: []
       indices: 
       edges: []
@@ -696,18 +676,18 @@ TextureImporter:
       name: Paladin_atlas_19
       rect:
         serializedVersion: 2
-        x: 1179
-        y: 300
-        width: 121
-        height: 27
+        x: 615
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cbcce3ff1d64d469583035b65ad77c
+      spriteID: 12b1e0ebe8bc01646b0f18fdc1e97c5e
       vertices: []
       indices: 
       edges: []
@@ -716,18 +696,18 @@ TextureImporter:
       name: Paladin_atlas_20
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 300
-        width: 121
-        height: 27
+        x: 738
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63961cc59fdff2d49bdd26d12c047366
+      spriteID: f8e5f64b5f8052d4a97fd3985c6da6b1
       vertices: []
       indices: 
       edges: []
@@ -736,18 +716,18 @@ TextureImporter:
       name: Paladin_atlas_21
       rect:
         serializedVersion: 2
-        x: 1421
-        y: 300
-        width: 121
-        height: 27
+        x: 861
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 104063246441c2e498302d3dd775f6a1
+      spriteID: b6b5f364f6ca2134ba3f0d237383e5ec
       vertices: []
       indices: 
       edges: []
@@ -756,18 +736,18 @@ TextureImporter:
       name: Paladin_atlas_22
       rect:
         serializedVersion: 2
-        x: 1542
-        y: 300
-        width: 121
-        height: 27
+        x: 984
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4d3580fcaf06a54eb3a33aad5afbb80
+      spriteID: 481b209bb029c7440958bb768e419bd3
       vertices: []
       indices: 
       edges: []
@@ -776,18 +756,18 @@ TextureImporter:
       name: Paladin_atlas_23
       rect:
         serializedVersion: 2
-        x: 1663
-        y: 300
-        width: 121
-        height: 27
+        x: 1107
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20a69373222efb94f8b453c224809592
+      spriteID: e402e56fbe810bd4cad4f168c7b9517b
       vertices: []
       indices: 
       edges: []
@@ -796,18 +776,18 @@ TextureImporter:
       name: Paladin_atlas_24
       rect:
         serializedVersion: 2
-        x: 1784
-        y: 300
-        width: 121
-        height: 27
+        x: 1230
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0309c69d0eb80f94584fbf8ed56e4533
+      spriteID: c9660ef697f2837459c70e1c16b19dfe
       vertices: []
       indices: 
       edges: []
@@ -816,18 +796,18 @@ TextureImporter:
       name: Paladin_atlas_25
       rect:
         serializedVersion: 2
-        x: 1905
-        y: 300
-        width: 121
-        height: 27
+        x: 1353
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65ffdc986a23b4d408de6eaf09b84d87
+      spriteID: e66bcb11678669c4c9da0c62c39a9fb5
       vertices: []
       indices: 
       edges: []
@@ -836,18 +816,18 @@ TextureImporter:
       name: Paladin_atlas_26
       rect:
         serializedVersion: 2
-        x: 2026
-        y: 300
-        width: 121
-        height: 27
+        x: 1476
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12790761ce7bcb84596ef13d3c8ba89e
+      spriteID: c78ca2e95df2e704b8298354d2593264
       vertices: []
       indices: 
       edges: []
@@ -856,18 +836,18 @@ TextureImporter:
       name: Paladin_atlas_27
       rect:
         serializedVersion: 2
-        x: 2147
-        y: 300
-        width: 121
-        height: 27
+        x: 1599
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fe6684b389b7d046b42b6570298c128
+      spriteID: ecc9de4046d65aa44b4307a75c30d158
       vertices: []
       indices: 
       edges: []
@@ -876,18 +856,18 @@ TextureImporter:
       name: Paladin_atlas_28
       rect:
         serializedVersion: 2
-        x: 2268
-        y: 300
-        width: 121
-        height: 27
+        x: 1722
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37cbdd86535f3c745a693f020ef150dd
+      spriteID: 5f8489ed9418fbf40af0f3af304015df
       vertices: []
       indices: 
       edges: []
@@ -896,18 +876,18 @@ TextureImporter:
       name: Paladin_atlas_29
       rect:
         serializedVersion: 2
-        x: 2389
-        y: 300
-        width: 121
-        height: 27
+        x: 1845
+        y: 0
+        width: 123
+        height: 179
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.49593496, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53306fdc64177434db5598005bb690d7
+      spriteID: 3602cc4fbe8bf0644bf3d42f48eca2f0
       vertices: []
       indices: 
       edges: []
@@ -916,18 +896,18 @@ TextureImporter:
       name: Paladin_atlas_30
       rect:
         serializedVersion: 2
-        x: 2510
-        y: 300
+        x: 574
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a5110e428b72a746ae589b1dbe47bc5
+      spriteID: 0341884c111c7ee4b9fedf7bd3c508bc
       vertices: []
       indices: 
       edges: []
@@ -936,18 +916,18 @@ TextureImporter:
       name: Paladin_atlas_31
       rect:
         serializedVersion: 2
-        x: 2631
-        y: 300
+        x: 695
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715d3f463feac624992551ba7734bb76
+      spriteID: c91be9056d2b8d7479a90d0b8cde4ac2
       vertices: []
       indices: 
       edges: []
@@ -956,18 +936,18 @@ TextureImporter:
       name: Paladin_atlas_32
       rect:
         serializedVersion: 2
-        x: 2752
-        y: 300
+        x: 816
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b04778e3afc5b814bbcb8505418b0dee
+      spriteID: 358d5e8939ed63343b9964a01b6a9930
       vertices: []
       indices: 
       edges: []
@@ -976,18 +956,18 @@ TextureImporter:
       name: Paladin_atlas_33
       rect:
         serializedVersion: 2
-        x: 2873
-        y: 300
+        x: 937
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21492c420a51e094a815b40b35652d80
+      spriteID: 7872c1d83510718418fb0ba668c9bfce
       vertices: []
       indices: 
       edges: []
@@ -996,18 +976,18 @@ TextureImporter:
       name: Paladin_atlas_34
       rect:
         serializedVersion: 2
-        x: 2994
-        y: 300
+        x: 1058
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b669fee7ba644ab4ca0768d863545a0c
+      spriteID: 3af7d71079daa8049add58e6db271a02
       vertices: []
       indices: 
       edges: []
@@ -1016,18 +996,18 @@ TextureImporter:
       name: Paladin_atlas_35
       rect:
         serializedVersion: 2
-        x: 3115
-        y: 300
+        x: 1179
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49459157245bba40bfd7fed02288b1f
+      spriteID: d96a4985d52ebd84e86a814680221e81
       vertices: []
       indices: 
       edges: []
@@ -1036,18 +1016,18 @@ TextureImporter:
       name: Paladin_atlas_36
       rect:
         serializedVersion: 2
-        x: 3236
-        y: 300
+        x: 1300
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe8e06c0b6aea0048b2861e4cafe92e9
+      spriteID: 5c3ec4d82ca735347aa0ab5e7cc484ec
       vertices: []
       indices: 
       edges: []
@@ -1056,18 +1036,18 @@ TextureImporter:
       name: Paladin_atlas_37
       rect:
         serializedVersion: 2
-        x: 3357
-        y: 300
+        x: 1421
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0d2d23fa59c434c84a609c7ab028d8
+      spriteID: 9f359b5625acb5443b55cb72a0e8f289
       vertices: []
       indices: 
       edges: []
@@ -1076,18 +1056,18 @@ TextureImporter:
       name: Paladin_atlas_38
       rect:
         serializedVersion: 2
-        x: 3478
-        y: 300
+        x: 1542
+        y: 422
         width: 121
         height: 27
       alignment: 9
-      pivot: {x: 0.78099173, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda112542ead1b04f8493da20228b6f7
+      spriteID: 9781b694d938fa94c81e32efcfde922f
       vertices: []
       indices: 
       edges: []
@@ -1096,18 +1076,18 @@ TextureImporter:
       name: Paladin_atlas_39
       rect:
         serializedVersion: 2
-        x: 574
-        y: 233
-        width: 40
-        height: 34
+        x: 1663
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2db75ae83dbf3b04b8232965c1d16d65
+      spriteID: ab60d26bb75cc5745a4152a6e82ca1fc
       vertices: []
       indices: 
       edges: []
@@ -1116,18 +1096,18 @@ TextureImporter:
       name: Paladin_atlas_40
       rect:
         serializedVersion: 2
-        x: 614
-        y: 233
-        width: 40
-        height: 34
+        x: 1784
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96e812103ac28b949b3e227ea2322306
+      spriteID: dd58d5077ee1c144397154c52cc5b52a
       vertices: []
       indices: 
       edges: []
@@ -1136,18 +1116,18 @@ TextureImporter:
       name: Paladin_atlas_41
       rect:
         serializedVersion: 2
-        x: 654
-        y: 233
-        width: 40
-        height: 34
+        x: 1905
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a1a9f4af2bbf142b5b7c1a060a0f49
+      spriteID: 080224774a1f1a6438380c6fc26f6656
       vertices: []
       indices: 
       edges: []
@@ -1156,18 +1136,18 @@ TextureImporter:
       name: Paladin_atlas_42
       rect:
         serializedVersion: 2
-        x: 694
-        y: 233
-        width: 40
-        height: 34
+        x: 2026
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334db3fcf94feba44b646029dcdf4f1f
+      spriteID: 9465722a5e328aa4f8f79c9542e5fa51
       vertices: []
       indices: 
       edges: []
@@ -1176,18 +1156,18 @@ TextureImporter:
       name: Paladin_atlas_43
       rect:
         serializedVersion: 2
-        x: 734
-        y: 233
-        width: 40
-        height: 34
+        x: 2147
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b4293e7fb09174aa1846bbec2c63a8
+      spriteID: 1f59eb3989923a44b98d07b3faad4e6f
       vertices: []
       indices: 
       edges: []
@@ -1196,18 +1176,18 @@ TextureImporter:
       name: Paladin_atlas_44
       rect:
         serializedVersion: 2
-        x: 774
-        y: 233
-        width: 40
-        height: 34
+        x: 2268
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3dbb6acc302b9b46ab6e3e2a5ab79f2
+      spriteID: f6c2bdb455cb835469665c983a1a4723
       vertices: []
       indices: 
       edges: []
@@ -1216,18 +1196,18 @@ TextureImporter:
       name: Paladin_atlas_45
       rect:
         serializedVersion: 2
-        x: 814
-        y: 233
-        width: 40
-        height: 34
+        x: 2389
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52a1f85404e67504a95379c06f3e71bc
+      spriteID: a18a412a00786d040a64897dc307cfad
       vertices: []
       indices: 
       edges: []
@@ -1236,18 +1216,18 @@ TextureImporter:
       name: Paladin_atlas_46
       rect:
         serializedVersion: 2
-        x: 854
-        y: 233
-        width: 40
-        height: 34
+        x: 2510
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2327abec3b3be9641977ae28958628c7
+      spriteID: 43e4d60c9f4acee439704241e7ad80ed
       vertices: []
       indices: 
       edges: []
@@ -1256,18 +1236,18 @@ TextureImporter:
       name: Paladin_atlas_47
       rect:
         serializedVersion: 2
-        x: 894
-        y: 233
-        width: 40
-        height: 34
+        x: 2631
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03199f0ede81c2345879cb479d2f28ab
+      spriteID: 3d432eaaadb6bbe43b1a238c9c1cb586
       vertices: []
       indices: 
       edges: []
@@ -1276,18 +1256,18 @@ TextureImporter:
       name: Paladin_atlas_48
       rect:
         serializedVersion: 2
-        x: 934
-        y: 233
-        width: 40
-        height: 34
+        x: 2752
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29af3df4d5d4cec48aba0e298ae2150e
+      spriteID: e5ba6a61107a8b64fb004eaf5a50a1ae
       vertices: []
       indices: 
       edges: []
@@ -1296,18 +1276,18 @@ TextureImporter:
       name: Paladin_atlas_49
       rect:
         serializedVersion: 2
-        x: 974
-        y: 233
-        width: 40
-        height: 34
+        x: 2873
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77b8525e7916bc64282ab39ff9ff667a
+      spriteID: fa55a1da0bd3b744fa373f538b923731
       vertices: []
       indices: 
       edges: []
@@ -1316,18 +1296,18 @@ TextureImporter:
       name: Paladin_atlas_50
       rect:
         serializedVersion: 2
-        x: 1014
-        y: 233
-        width: 40
-        height: 34
+        x: 2994
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a2ebe243be04f84290ba7472659590f
+      spriteID: d3721230c67143b4e894262907ca9e48
       vertices: []
       indices: 
       edges: []
@@ -1336,18 +1316,18 @@ TextureImporter:
       name: Paladin_atlas_51
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 233
-        width: 40
-        height: 34
+        x: 3115
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cef38f0fb62cc74aa025786a5ce1349
+      spriteID: 1b410136cb381e24fa171f357bf7a18c
       vertices: []
       indices: 
       edges: []
@@ -1356,18 +1336,18 @@ TextureImporter:
       name: Paladin_atlas_52
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 233
-        width: 40
-        height: 34
+        x: 3236
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0f13e6b337821842872c4e3389a32fe
+      spriteID: b03fa18d6a6a0fc4eaeefe6d97d51630
       vertices: []
       indices: 
       edges: []
@@ -1376,18 +1356,18 @@ TextureImporter:
       name: Paladin_atlas_53
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 233
-        width: 40
-        height: 34
+        x: 3357
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d8815d785e0d0840bb3f3d1201b3ff1
+      spriteID: 289a0e20ac1ef42468c4755621eddbdb
       vertices: []
       indices: 
       edges: []
@@ -1396,18 +1376,18 @@ TextureImporter:
       name: Paladin_atlas_54
       rect:
         serializedVersion: 2
-        x: 1174
-        y: 233
-        width: 40
-        height: 34
+        x: 3478
+        y: 422
+        width: 121
+        height: 27
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.7768595, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0880bf36f44a55498e142553159e1e3
+      spriteID: 3fce3c2c40b81454bbf20150cc1ce41d
       vertices: []
       indices: 
       edges: []
@@ -1416,18 +1396,18 @@ TextureImporter:
       name: Paladin_atlas_55
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 233
+        x: 574
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcbcef042730f504f835be9d24404503
+      spriteID: 58dca9ffaa21a0f47a6dad68a1083c47
       vertices: []
       indices: 
       edges: []
@@ -1436,18 +1416,18 @@ TextureImporter:
       name: Paladin_atlas_56
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 233
+        x: 614
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae325e7aab5d909499f8d5a5e0101e33
+      spriteID: a2391372a0e789b49b2bae1f57976c0a
       vertices: []
       indices: 
       edges: []
@@ -1456,18 +1436,18 @@ TextureImporter:
       name: Paladin_atlas_57
       rect:
         serializedVersion: 2
-        x: 1294
-        y: 233
+        x: 654
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923d804a0d5dbc74e87567279bf1c06a
+      spriteID: 7ecb17d9a0d88b345a642da718ecaa49
       vertices: []
       indices: 
       edges: []
@@ -1476,18 +1456,18 @@ TextureImporter:
       name: Paladin_atlas_58
       rect:
         serializedVersion: 2
-        x: 1334
-        y: 233
+        x: 694
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548a919a9f3585f4693a256bd91f36bd
+      spriteID: 4d2d01ce15f9a7e4abebceef07e024f1
       vertices: []
       indices: 
       edges: []
@@ -1496,18 +1476,18 @@ TextureImporter:
       name: Paladin_atlas_59
       rect:
         serializedVersion: 2
-        x: 1374
-        y: 233
+        x: 734
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257aa76e5a35d0d4b9fdf3ce9aad018b
+      spriteID: 74d374a54131cf34389145abd8af2279
       vertices: []
       indices: 
       edges: []
@@ -1516,18 +1496,18 @@ TextureImporter:
       name: Paladin_atlas_60
       rect:
         serializedVersion: 2
-        x: 1414
-        y: 233
+        x: 774
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2a329ff392a0b941b1d989deebb91c1
+      spriteID: 74c4559727085d346924c0b0e4759243
       vertices: []
       indices: 
       edges: []
@@ -1536,18 +1516,18 @@ TextureImporter:
       name: Paladin_atlas_61
       rect:
         serializedVersion: 2
-        x: 1454
-        y: 233
+        x: 814
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5344b2f96ed7b49bb5981067eb9278
+      spriteID: d3f9a305c710ece4591a25c4cd081727
       vertices: []
       indices: 
       edges: []
@@ -1556,18 +1536,18 @@ TextureImporter:
       name: Paladin_atlas_62
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 233
+        x: 854
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ad6e33c901b76b40842b521ef9fd042
+      spriteID: 089d8afdd01d9f442a3f6db51e314081
       vertices: []
       indices: 
       edges: []
@@ -1576,18 +1556,18 @@ TextureImporter:
       name: Paladin_atlas_63
       rect:
         serializedVersion: 2
-        x: 1534
-        y: 233
+        x: 894
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9f19f99a76dfe49af44e6cd3b1affc
+      spriteID: 76ff98765f654554bacc5d4d5e962ad1
       vertices: []
       indices: 
       edges: []
@@ -1596,18 +1576,18 @@ TextureImporter:
       name: Paladin_atlas_64
       rect:
         serializedVersion: 2
-        x: 1574
-        y: 233
+        x: 934
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 356ba017df284ae4d95f1ffc10d58efa
+      spriteID: c2f92656d4595604f99640bc740355a7
       vertices: []
       indices: 
       edges: []
@@ -1616,18 +1596,18 @@ TextureImporter:
       name: Paladin_atlas_65
       rect:
         serializedVersion: 2
-        x: 1614
-        y: 233
+        x: 974
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5fb2f24c7741c48adb3437766cfc30
+      spriteID: 1f09eda8ebb25aa46a4ef4460e1c3830
       vertices: []
       indices: 
       edges: []
@@ -1636,18 +1616,18 @@ TextureImporter:
       name: Paladin_atlas_66
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 233
+        x: 1014
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7872d61287d2d2044a019adc8a83ea96
+      spriteID: b97c60e68c83ced49987266004efbfef
       vertices: []
       indices: 
       edges: []
@@ -1656,18 +1636,18 @@ TextureImporter:
       name: Paladin_atlas_67
       rect:
         serializedVersion: 2
-        x: 1694
-        y: 233
+        x: 1054
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8bbce609e34fc84e8292bece9a56229
+      spriteID: 3a71a2a4fa29ff348a3046f70ba45208
       vertices: []
       indices: 
       edges: []
@@ -1676,18 +1656,18 @@ TextureImporter:
       name: Paladin_atlas_68
       rect:
         serializedVersion: 2
-        x: 1734
-        y: 233
+        x: 1094
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1955360b75556d4c9c93702e1e88109
+      spriteID: 448722b64f014844ca96e3157f714d5a
       vertices: []
       indices: 
       edges: []
@@ -1696,18 +1676,18 @@ TextureImporter:
       name: Paladin_atlas_69
       rect:
         serializedVersion: 2
-        x: 1774
-        y: 233
+        x: 1134
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc51f8bef83472941aa3838d112b5af3
+      spriteID: dd3c2f0029ccfad47a16e9980b2fdd11
       vertices: []
       indices: 
       edges: []
@@ -1716,18 +1696,18 @@ TextureImporter:
       name: Paladin_atlas_70
       rect:
         serializedVersion: 2
-        x: 1814
-        y: 233
+        x: 1174
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49ed96d0b3f34a5429e52f933f2d0dfc
+      spriteID: d2f94bd37475ee044a234b59c5dd9d4f
       vertices: []
       indices: 
       edges: []
@@ -1736,18 +1716,18 @@ TextureImporter:
       name: Paladin_atlas_71
       rect:
         serializedVersion: 2
-        x: 1854
-        y: 233
+        x: 1214
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2570e0b7bc0ea4faf41d4381c2610c
+      spriteID: 00fac68f6720c8e47946fa8cd9f4fd35
       vertices: []
       indices: 
       edges: []
@@ -1756,18 +1736,18 @@ TextureImporter:
       name: Paladin_atlas_72
       rect:
         serializedVersion: 2
-        x: 1894
-        y: 233
+        x: 1254
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b712bed4476d84c93d93eff9c52560
+      spriteID: 1795e4af844962f479fc54ffe65bb4de
       vertices: []
       indices: 
       edges: []
@@ -1776,18 +1756,18 @@ TextureImporter:
       name: Paladin_atlas_73
       rect:
         serializedVersion: 2
-        x: 1934
-        y: 233
+        x: 1294
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d818d442df14e174aa8686f94b3f8be7
+      spriteID: dcc7036296140f8499732d160011d4f2
       vertices: []
       indices: 
       edges: []
@@ -1796,18 +1776,18 @@ TextureImporter:
       name: Paladin_atlas_74
       rect:
         serializedVersion: 2
-        x: 1974
-        y: 233
+        x: 1334
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b4b037953098141b217efa60491bcc
+      spriteID: 3f1e121373f941f4fb5afce00261f925
       vertices: []
       indices: 
       edges: []
@@ -1816,18 +1796,18 @@ TextureImporter:
       name: Paladin_atlas_75
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 233
+        x: 1374
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e04e615da228a14587d5da4fa23e25c
+      spriteID: ca761b39c682ece408ec1b19c616f4d9
       vertices: []
       indices: 
       edges: []
@@ -1836,18 +1816,18 @@ TextureImporter:
       name: Paladin_atlas_76
       rect:
         serializedVersion: 2
-        x: 2054
-        y: 233
+        x: 1414
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f772ad8c8cf6a124b956ea74642bb469
+      spriteID: eac4dd1a1e5f91949af375a03f468584
       vertices: []
       indices: 
       edges: []
@@ -1856,18 +1836,18 @@ TextureImporter:
       name: Paladin_atlas_77
       rect:
         serializedVersion: 2
-        x: 2094
-        y: 233
+        x: 1454
+        y: 388
         width: 40
         height: 34
       alignment: 9
-      pivot: {x: 0.5375, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1907ef1e17479d642b40c1a368500d80
+      spriteID: afc9c61ff7be24543a7d24190574561b
       vertices: []
       indices: 
       edges: []
@@ -1876,18 +1856,18 @@ TextureImporter:
       name: Paladin_atlas_78
       rect:
         serializedVersion: 2
-        x: 574
-        y: 200
-        width: 63
-        height: 33
+        x: 1494
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7bbde919b0dec48a46bcad2d826b29
+      spriteID: 4083d3e0f0ca2df4e885ec0f12490594
       vertices: []
       indices: 
       edges: []
@@ -1896,18 +1876,18 @@ TextureImporter:
       name: Paladin_atlas_79
       rect:
         serializedVersion: 2
-        x: 637
-        y: 200
-        width: 63
-        height: 33
+        x: 1534
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46c658d127e2934390013330aad0507
+      spriteID: 998fb747f076eff44a9ce54787e68744
       vertices: []
       indices: 
       edges: []
@@ -1916,18 +1896,18 @@ TextureImporter:
       name: Paladin_atlas_80
       rect:
         serializedVersion: 2
-        x: 700
-        y: 200
-        width: 63
-        height: 33
+        x: 1574
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4afaddea6963f0c40810ee92bc05e897
+      spriteID: dff9997d778f00a46b6e8024e8638c98
       vertices: []
       indices: 
       edges: []
@@ -1936,18 +1916,18 @@ TextureImporter:
       name: Paladin_atlas_81
       rect:
         serializedVersion: 2
-        x: 763
-        y: 200
-        width: 63
-        height: 33
+        x: 1614
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29921df024bf6344aae3de3c2f0d52d8
+      spriteID: abbaef5a7126869438c3d855a9edaba8
       vertices: []
       indices: 
       edges: []
@@ -1956,18 +1936,18 @@ TextureImporter:
       name: Paladin_atlas_82
       rect:
         serializedVersion: 2
-        x: 826
-        y: 200
-        width: 63
-        height: 33
+        x: 1654
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4746430e87bb08a4ebb8f91a9fff093f
+      spriteID: f68c490d1a08e5241a1165a2036fc322
       vertices: []
       indices: 
       edges: []
@@ -1976,18 +1956,18 @@ TextureImporter:
       name: Paladin_atlas_83
       rect:
         serializedVersion: 2
-        x: 889
-        y: 200
-        width: 63
-        height: 33
+        x: 1694
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a33d0bc6112eb4ebe0411aea0c5cb5
+      spriteID: 4fa2cfbc8a00bb344b2e11314c88a61b
       vertices: []
       indices: 
       edges: []
@@ -1996,18 +1976,18 @@ TextureImporter:
       name: Paladin_atlas_84
       rect:
         serializedVersion: 2
-        x: 952
-        y: 200
-        width: 63
-        height: 33
+        x: 1734
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a81fd02a2e511e4380e2263fb02c731
+      spriteID: 6938556648e257d499552d7688236b9c
       vertices: []
       indices: 
       edges: []
@@ -2016,18 +1996,18 @@ TextureImporter:
       name: Paladin_atlas_85
       rect:
         serializedVersion: 2
-        x: 1015
-        y: 200
-        width: 63
-        height: 33
+        x: 1774
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73339069e0602f468c57841495d347c
+      spriteID: eacdc7e01775fd04391a66c5a8359336
       vertices: []
       indices: 
       edges: []
@@ -2036,18 +2016,18 @@ TextureImporter:
       name: Paladin_atlas_86
       rect:
         serializedVersion: 2
-        x: 1078
-        y: 200
-        width: 63
-        height: 33
+        x: 1814
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d97d79c0932a4439d5dd913a871536
+      spriteID: e05e308db768061438449c98a7db2155
       vertices: []
       indices: 
       edges: []
@@ -2056,18 +2036,18 @@ TextureImporter:
       name: Paladin_atlas_87
       rect:
         serializedVersion: 2
-        x: 1141
-        y: 200
-        width: 63
-        height: 33
+        x: 1854
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7483ef5263811844874b917e8afcd3d
+      spriteID: e2793ed9016f0ee45aea0f1da96cb2b5
       vertices: []
       indices: 
       edges: []
@@ -2076,18 +2056,18 @@ TextureImporter:
       name: Paladin_atlas_88
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 200
-        width: 63
-        height: 33
+        x: 1894
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a3c9608e31c304b88226f04d51f2a3
+      spriteID: f3e2d003e0ed9b14baf4d0ef63aded99
       vertices: []
       indices: 
       edges: []
@@ -2096,18 +2076,18 @@ TextureImporter:
       name: Paladin_atlas_89
       rect:
         serializedVersion: 2
-        x: 1267
-        y: 200
-        width: 63
-        height: 33
+        x: 1934
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 836667aa85db59a41bca92f418c3f260
+      spriteID: 3f1dbc01fdfd3d34abe8808d14854b51
       vertices: []
       indices: 
       edges: []
@@ -2116,18 +2096,18 @@ TextureImporter:
       name: Paladin_atlas_90
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 200
-        width: 63
-        height: 33
+        x: 1974
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aafc2fcde3595c245aec4bf9b41ed30b
+      spriteID: 88f17470adfe7c045a086ee1d79cd29b
       vertices: []
       indices: 
       edges: []
@@ -2136,18 +2116,18 @@ TextureImporter:
       name: Paladin_atlas_91
       rect:
         serializedVersion: 2
-        x: 1393
-        y: 200
-        width: 63
-        height: 33
+        x: 2014
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d303db0703aa7f848b580ea0d496c2d0
+      spriteID: 840648998fcb3a1428c1130169ec59e4
       vertices: []
       indices: 
       edges: []
@@ -2156,18 +2136,18 @@ TextureImporter:
       name: Paladin_atlas_92
       rect:
         serializedVersion: 2
-        x: 1456
-        y: 200
-        width: 63
-        height: 33
+        x: 2054
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78ea11a97403e274ab566a56ceaf90fd
+      spriteID: fe69335b6eddf144290a590e9fd45bd6
       vertices: []
       indices: 
       edges: []
@@ -2176,18 +2156,18 @@ TextureImporter:
       name: Paladin_atlas_93
       rect:
         serializedVersion: 2
-        x: 1519
-        y: 200
-        width: 63
-        height: 33
+        x: 2094
+        y: 388
+        width: 40
+        height: 34
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.525, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b276456f38e724f8cf918daf88acc8
+      spriteID: d0c779db180803f418fb39981aefacee
       vertices: []
       indices: 
       edges: []
@@ -2196,18 +2176,18 @@ TextureImporter:
       name: Paladin_atlas_94
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 200
-        width: 63
-        height: 33
+        x: 574
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81042fb9029ced54c98b4428377e1f3f
+      spriteID: 306ac8cd26acc2f4691efd58d322da65
       vertices: []
       indices: 
       edges: []
@@ -2216,18 +2196,18 @@ TextureImporter:
       name: Paladin_atlas_95
       rect:
         serializedVersion: 2
-        x: 1645
-        y: 200
-        width: 63
-        height: 33
+        x: 692
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b33b2761d60486946835efce40f1dc13
+      spriteID: e176db954cdeac04aa5862ba9fd88779
       vertices: []
       indices: 
       edges: []
@@ -2236,18 +2216,18 @@ TextureImporter:
       name: Paladin_atlas_96
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 200
-        width: 63
-        height: 33
+        x: 810
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021307a59f57f4f43bde01560d910868
+      spriteID: 11f44e85b9bc80b4b9e2366b098cc976
       vertices: []
       indices: 
       edges: []
@@ -2256,18 +2236,18 @@ TextureImporter:
       name: Paladin_atlas_97
       rect:
         serializedVersion: 2
-        x: 1771
-        y: 200
-        width: 63
-        height: 33
+        x: 928
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.2936508, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1566798884b3ac6499b283124462d88d
+      spriteID: 6d9e590aae59eba46bad5cb8c93f5b1c
       vertices: []
       indices: 
       edges: []
@@ -2276,18 +2256,18 @@ TextureImporter:
       name: Paladin_atlas_98
       rect:
         serializedVersion: 2
-        x: 1834
-        y: 200
-        width: 39
-        height: 33
+        x: 1046
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11609d931871f564c8af55685da3808d
+      spriteID: ab921526f6e81364eaf9727de2e83621
       vertices: []
       indices: 
       edges: []
@@ -2296,18 +2276,18 @@ TextureImporter:
       name: Paladin_atlas_99
       rect:
         serializedVersion: 2
-        x: 1873
-        y: 200
-        width: 39
-        height: 33
+        x: 1163
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8043efe531ab310409ed00ce4d39cd91
+      spriteID: 4e115ffc0197c7a4b81f973dd0d13e99
       vertices: []
       indices: 
       edges: []
@@ -2316,18 +2296,18 @@ TextureImporter:
       name: Paladin_atlas_100
       rect:
         serializedVersion: 2
-        x: 1912
-        y: 200
-        width: 39
-        height: 33
+        x: 1281
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9e1274f8f867e4dbc5c03adc907422
+      spriteID: 86f77a49273082944923810879b8788a
       vertices: []
       indices: 
       edges: []
@@ -2336,18 +2316,18 @@ TextureImporter:
       name: Paladin_atlas_101
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 200
-        width: 39
-        height: 33
+        x: 1399
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb90af15a75feed4890b33fa37c19054
+      spriteID: 51c80731963b00846981884d9a1e9ea8
       vertices: []
       indices: 
       edges: []
@@ -2356,18 +2336,18 @@ TextureImporter:
       name: Paladin_atlas_102
       rect:
         serializedVersion: 2
-        x: 1990
-        y: 200
-        width: 39
-        height: 33
+        x: 1517
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c345afa6434f7734787d484a5b5e80c4
+      spriteID: fc333d6b3ce8a7940b5e172577e10a3d
       vertices: []
       indices: 
       edges: []
@@ -2376,18 +2356,18 @@ TextureImporter:
       name: Paladin_atlas_103
       rect:
         serializedVersion: 2
-        x: 2029
-        y: 200
-        width: 39
-        height: 33
+        x: 1635
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b4ccd99a9654342b83ae5676786605
+      spriteID: 54a36ece15bc1a5458d1eb178a7c2a1a
       vertices: []
       indices: 
       edges: []
@@ -2396,18 +2376,18 @@ TextureImporter:
       name: Paladin_atlas_104
       rect:
         serializedVersion: 2
-        x: 2068
-        y: 200
-        width: 39
-        height: 33
+        x: 1753
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5726f08054552184ab680bb87f8ba95e
+      spriteID: f00872a2dfdfb1b4aa2586f1d99c46c2
       vertices: []
       indices: 
       edges: []
@@ -2416,18 +2396,18 @@ TextureImporter:
       name: Paladin_atlas_105
       rect:
         serializedVersion: 2
-        x: 2107
-        y: 200
-        width: 39
-        height: 33
+        x: 1871
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f4181eca30e7d4a99830628336101d
+      spriteID: e8c0c03e397937f478fe6a3a7d5047b8
       vertices: []
       indices: 
       edges: []
@@ -2436,18 +2416,18 @@ TextureImporter:
       name: Paladin_atlas_106
       rect:
         serializedVersion: 2
-        x: 2146
-        y: 200
-        width: 39
-        height: 33
+        x: 1989
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 409105518908d7544a208e67671d5d9b
+      spriteID: 97c6ba8254f678b4884261b7a9308ae1
       vertices: []
       indices: 
       edges: []
@@ -2456,18 +2436,18 @@ TextureImporter:
       name: Paladin_atlas_107
       rect:
         serializedVersion: 2
-        x: 2185
-        y: 200
-        width: 39
-        height: 33
+        x: 2107
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e49f912e57f7f444b4d35ba9ae75934
+      spriteID: 897c5375681525640a689a1c58966e60
       vertices: []
       indices: 
       edges: []
@@ -2476,18 +2456,18 @@ TextureImporter:
       name: Paladin_atlas_108
       rect:
         serializedVersion: 2
-        x: 2224
-        y: 200
-        width: 39
-        height: 33
+        x: 2225
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa06ffee433b7d448a4f6b25a5f9e125
+      spriteID: e2516c7ccc476414b9312c695a472f0c
       vertices: []
       indices: 
       edges: []
@@ -2496,18 +2476,18 @@ TextureImporter:
       name: Paladin_atlas_109
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 200
-        width: 39
-        height: 33
+        x: 2342
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176e01c42f06b2d4f9bcb4bc4af43716
+      spriteID: ad8b1ddff6750f142aaa88e12e97214e
       vertices: []
       indices: 
       edges: []
@@ -2516,18 +2496,18 @@ TextureImporter:
       name: Paladin_atlas_110
       rect:
         serializedVersion: 2
-        x: 2302
-        y: 200
-        width: 39
-        height: 33
+        x: 2460
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 048da0e36a9252a45ae4089f85953101
+      spriteID: c1db16a19ca4d4b408ca7ac7c3362856
       vertices: []
       indices: 
       edges: []
@@ -2536,18 +2516,18 @@ TextureImporter:
       name: Paladin_atlas_111
       rect:
         serializedVersion: 2
-        x: 2341
-        y: 200
-        width: 39
-        height: 33
+        x: 2578
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 994c9c6f44f58cf4ba6b60aa2e709142
+      spriteID: 7c75c5dede263f4488fbebe1aae0490e
       vertices: []
       indices: 
       edges: []
@@ -2556,18 +2536,18 @@ TextureImporter:
       name: Paladin_atlas_112
       rect:
         serializedVersion: 2
-        x: 2380
-        y: 200
-        width: 39
-        height: 33
+        x: 2696
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70545a0936e03ef44bb7f2d147e4d043
+      spriteID: d59a40393dce36a47a71d3f012f67dde
       vertices: []
       indices: 
       edges: []
@@ -2576,18 +2556,18 @@ TextureImporter:
       name: Paladin_atlas_113
       rect:
         serializedVersion: 2
-        x: 2419
-        y: 200
-        width: 39
-        height: 33
+        x: 2814
+        y: 343
+        width: 112
+        height: 45
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.54464287, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eb7a6e7e7636e3498d222b7c100a13d
+      spriteID: b5a7077fa0bc9cf468e112d74375108e
       vertices: []
       indices: 
       edges: []
@@ -2596,18 +2576,18 @@ TextureImporter:
       name: Paladin_atlas_114
       rect:
         serializedVersion: 2
-        x: 2458
-        y: 200
-        width: 39
-        height: 33
+        x: 574
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4457c9d586faff448a3c4a3fb48c3a97
+      spriteID: cc3322516b2a34d40b5a36e6f9df4ace
       vertices: []
       indices: 
       edges: []
@@ -2616,18 +2596,18 @@ TextureImporter:
       name: Paladin_atlas_115
       rect:
         serializedVersion: 2
-        x: 2497
-        y: 200
-        width: 39
-        height: 33
+        x: 599
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4bd68831e3d694d8ede0c455717398
+      spriteID: e3356c583cb866b4b8ae65ccb5b78c2c
       vertices: []
       indices: 
       edges: []
@@ -2636,18 +2616,18 @@ TextureImporter:
       name: Paladin_atlas_116
       rect:
         serializedVersion: 2
-        x: 2536
-        y: 200
-        width: 39
-        height: 33
+        x: 624
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a7e4f81d12b0042800d973e5776567
+      spriteID: 50235cd6fb0c82749999ea8a0d1b0447
       vertices: []
       indices: 
       edges: []
@@ -2656,18 +2636,18 @@ TextureImporter:
       name: Paladin_atlas_117
       rect:
         serializedVersion: 2
-        x: 2575
-        y: 200
-        width: 39
-        height: 33
+        x: 649
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9972c23e77ab5494db0df60ef33dd9ce
+      spriteID: 9b811294020fdcb418bedf28154690fd
       vertices: []
       indices: 
       edges: []
@@ -2676,18 +2656,18 @@ TextureImporter:
       name: Paladin_atlas_118
       rect:
         serializedVersion: 2
-        x: 2614
-        y: 200
-        width: 39
-        height: 33
+        x: 674
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.525641, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f5a40d25abb315498328fe3167b886a
+      spriteID: 3c20b75f05937f84d9742842999c2d4d
       vertices: []
       indices: 
       edges: []
@@ -2696,18 +2676,18 @@ TextureImporter:
       name: Paladin_atlas_119
       rect:
         serializedVersion: 2
-        x: 2653
-        y: 200
-        width: 35
-        height: 28
+        x: 699
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ee97c1e03975d42933bb32b85eaba3
+      spriteID: 7936205a16bf3ea4eab6bf0088f35db2
       vertices: []
       indices: 
       edges: []
@@ -2716,18 +2696,18 @@ TextureImporter:
       name: Paladin_atlas_120
       rect:
         serializedVersion: 2
-        x: 2688
-        y: 200
-        width: 35
-        height: 28
+        x: 724
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f832bf565928b554a8b41629e67dff93
+      spriteID: d553d6c0022bf9047a0757ce4a4aa63e
       vertices: []
       indices: 
       edges: []
@@ -2736,18 +2716,18 @@ TextureImporter:
       name: Paladin_atlas_121
       rect:
         serializedVersion: 2
-        x: 2723
-        y: 200
-        width: 35
-        height: 28
+        x: 749
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b26b5b483fc8d24486325e2cc5ee789
+      spriteID: da3496dffe750d84baf30ccf059740df
       vertices: []
       indices: 
       edges: []
@@ -2756,18 +2736,18 @@ TextureImporter:
       name: Paladin_atlas_122
       rect:
         serializedVersion: 2
-        x: 2758
-        y: 200
-        width: 35
-        height: 28
+        x: 774
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ef893f42f0396347a13504b7cb642dd
+      spriteID: 3e802da5af0fb7746ad6c2653c5b093a
       vertices: []
       indices: 
       edges: []
@@ -2776,18 +2756,18 @@ TextureImporter:
       name: Paladin_atlas_123
       rect:
         serializedVersion: 2
-        x: 2793
-        y: 200
-        width: 35
-        height: 28
+        x: 799
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b023cd2e7ab4d245bdfb933678b02f5
+      spriteID: 3b1449d71a801bf47bac7e30f5f59954
       vertices: []
       indices: 
       edges: []
@@ -2796,18 +2776,18 @@ TextureImporter:
       name: Paladin_atlas_124
       rect:
         serializedVersion: 2
-        x: 2828
-        y: 200
-        width: 35
-        height: 28
+        x: 824
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17b7914216a85c48be5665bae8674da
+      spriteID: ac4fc16facba6a54ab9730c127eae3ce
       vertices: []
       indices: 
       edges: []
@@ -2816,18 +2796,18 @@ TextureImporter:
       name: Paladin_atlas_125
       rect:
         serializedVersion: 2
-        x: 2863
-        y: 200
-        width: 35
-        height: 28
+        x: 851
+        y: 300
+        width: 25
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.36, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ab408ca79b94884d91cff31f8b28671
+      spriteID: 5949965f86c580948a057a3aa0ba1622
       vertices: []
       indices: 
       edges: []
@@ -2836,18 +2816,18 @@ TextureImporter:
       name: Paladin_atlas_126
       rect:
         serializedVersion: 2
-        x: 2898
-        y: 200
-        width: 35
-        height: 28
+        x: 921
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8323fa0a489f62a40ace810f5193491e
+      spriteID: d8b8b0163d7cbe04d94a769f64159538
       vertices: []
       indices: 
       edges: []
@@ -2856,18 +2836,18 @@ TextureImporter:
       name: Paladin_atlas_127
       rect:
         serializedVersion: 2
-        x: 2933
-        y: 200
-        width: 35
-        height: 28
+        x: 1019
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c47115f4df2e18f46bfb3f31646ebfb3
+      spriteID: 730672c5e5619fa4babcc070b5a3db65
       vertices: []
       indices: 
       edges: []
@@ -2876,18 +2856,18 @@ TextureImporter:
       name: Paladin_atlas_128
       rect:
         serializedVersion: 2
-        x: 2968
-        y: 200
-        width: 35
-        height: 28
+        x: 1116
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cc52829790b71d4c8dde1e382152ce9
+      spriteID: 19220a57e29db264798d713233e980c7
       vertices: []
       indices: 
       edges: []
@@ -2896,18 +2876,18 @@ TextureImporter:
       name: Paladin_atlas_129
       rect:
         serializedVersion: 2
-        x: 3003
-        y: 200
-        width: 35
-        height: 28
+        x: 1213
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8316111d8e7d42b46be678759166fad0
+      spriteID: 06305a3d3a0659840a2fb14658ed2c5f
       vertices: []
       indices: 
       edges: []
@@ -2916,18 +2896,18 @@ TextureImporter:
       name: Paladin_atlas_130
       rect:
         serializedVersion: 2
-        x: 3038
-        y: 200
-        width: 35
-        height: 28
+        x: 1311
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ed9b00290345c94b8d3788ee63b1ece
+      spriteID: c59bf8fcb70b2c543899dc37b132f05b
       vertices: []
       indices: 
       edges: []
@@ -2936,18 +2916,18 @@ TextureImporter:
       name: Paladin_atlas_131
       rect:
         serializedVersion: 2
-        x: 3073
-        y: 200
-        width: 35
-        height: 28
+        x: 1408
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c378310b4520c1643bf0602bb792ce0b
+      spriteID: 31a3dc15384988444a85bc6254bb8f9d
       vertices: []
       indices: 
       edges: []
@@ -2956,18 +2936,18 @@ TextureImporter:
       name: Paladin_atlas_132
       rect:
         serializedVersion: 2
-        x: 3108
-        y: 200
-        width: 35
-        height: 28
+        x: 1505
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9305142b147ba604594de5c0680ce2c0
+      spriteID: 09df4ce6c5036d848b74adb91d870fa1
       vertices: []
       indices: 
       edges: []
@@ -2976,18 +2956,18 @@ TextureImporter:
       name: Paladin_atlas_133
       rect:
         serializedVersion: 2
-        x: 3143
-        y: 200
-        width: 35
-        height: 28
+        x: 1602
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ea123a2750ade48a7d5def271a94a2
+      spriteID: c65b80abf9af37c4e9ab100490d10d4a
       vertices: []
       indices: 
       edges: []
@@ -2996,18 +2976,18 @@ TextureImporter:
       name: Paladin_atlas_134
       rect:
         serializedVersion: 2
-        x: 3178
-        y: 200
-        width: 35
-        height: 28
+        x: 1700
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0742caea2e9519439081fe4823e09f4
+      spriteID: f62d2dfc22b92214a9304ce6375fea88
       vertices: []
       indices: 
       edges: []
@@ -3016,18 +2996,18 @@ TextureImporter:
       name: Paladin_atlas_135
       rect:
         serializedVersion: 2
-        x: 3213
-        y: 200
-        width: 35
-        height: 28
+        x: 1797
+        y: 300
+        width: 27
+        height: 22
       alignment: 9
-      pivot: {x: 0.27142859, y: 0}
+      pivot: {x: 0.33333334, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec336c28617b3545a7e2739449b2dfe
+      spriteID: a1d60bde97fe7b440bd391b845be6068
       vertices: []
       indices: 
       edges: []
@@ -3036,18 +3016,18 @@ TextureImporter:
       name: Paladin_atlas_136
       rect:
         serializedVersion: 2
-        x: 574
-        y: 178
-        width: 25
-        height: 22
+        x: 0
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6cfe00a5c2e96b4489c700de0974729
+      spriteID: 29cbe434cbdfe93468050a6bbf4d3c60
       vertices: []
       indices: 
       edges: []
@@ -3056,18 +3036,18 @@ TextureImporter:
       name: Paladin_atlas_137
       rect:
         serializedVersion: 2
-        x: 599
-        y: 178
-        width: 25
-        height: 22
+        x: 202
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18bd263a806149446962e373fb883643
+      spriteID: f799444c43ea46b48a3febb705e2ac2f
       vertices: []
       indices: 
       edges: []
@@ -3076,18 +3056,18 @@ TextureImporter:
       name: Paladin_atlas_138
       rect:
         serializedVersion: 2
-        x: 624
-        y: 178
-        width: 25
-        height: 22
+        x: 404
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aafeac1bb551d8745b72cfc3cfd62f72
+      spriteID: 287f7fdbcec21c64a81ce3e40b61dd78
       vertices: []
       indices: 
       edges: []
@@ -3096,18 +3076,18 @@ TextureImporter:
       name: Paladin_atlas_139
       rect:
         serializedVersion: 2
-        x: 649
-        y: 178
-        width: 25
-        height: 22
+        x: 808
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cd6c07c5b25e284b9bb8b5b1a97cf48
+      spriteID: 198e35f8fec7af0459025e2456235218
       vertices: []
       indices: 
       edges: []
@@ -3116,18 +3096,18 @@ TextureImporter:
       name: Paladin_atlas_140
       rect:
         serializedVersion: 2
-        x: 674
-        y: 178
-        width: 25
-        height: 22
+        x: 1010
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ff758d141550784d9e3315aee2b4421
+      spriteID: 2471774ef2ab7ab43a40f7b14bdfb284
       vertices: []
       indices: 
       edges: []
@@ -3136,18 +3116,18 @@ TextureImporter:
       name: Paladin_atlas_141
       rect:
         serializedVersion: 2
-        x: 699
-        y: 178
-        width: 25
-        height: 22
+        x: 1212
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df5733c54cf59a44685a48d91a6dafd3
+      spriteID: 769d1471d98609b439eff5682728c779
       vertices: []
       indices: 
       edges: []
@@ -3156,18 +3136,18 @@ TextureImporter:
       name: Paladin_atlas_142
       rect:
         serializedVersion: 2
-        x: 724
-        y: 178
-        width: 25
-        height: 22
+        x: 1414
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 219f2f340acaba64eac1d5a4dcf86f5d
+      spriteID: ba5006b44936f164c8b9105089396b9e
       vertices: []
       indices: 
       edges: []
@@ -3176,18 +3156,18 @@ TextureImporter:
       name: Paladin_atlas_143
       rect:
         serializedVersion: 2
-        x: 749
-        y: 178
-        width: 25
-        height: 22
+        x: 1616
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 994a24318a0f01749a9e286ade0cd7b9
+      spriteID: fe17b757040210a419f44241fedd3723
       vertices: []
       indices: 
       edges: []
@@ -3196,18 +3176,18 @@ TextureImporter:
       name: Paladin_atlas_144
       rect:
         serializedVersion: 2
-        x: 774
-        y: 178
-        width: 25
-        height: 22
+        x: 1818
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a669f04f3859ed448a57696f067466e
+      spriteID: 92f423fa120556f4e8dc3c9cb3e47e95
       vertices: []
       indices: 
       edges: []
@@ -3216,18 +3196,18 @@ TextureImporter:
       name: Paladin_atlas_145
       rect:
         serializedVersion: 2
-        x: 799
-        y: 178
-        width: 25
-        height: 22
+        x: 2020
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.62, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4ca46c14f32ee4d8cb908547e5fb27
+      spriteID: 84ab9e995c0c34143a39e49f7ea1e9db
       vertices: []
       indices: 
       edges: []
@@ -3236,18 +3216,18 @@ TextureImporter:
       name: Paladin_atlas_146
       rect:
         serializedVersion: 2
-        x: 824
-        y: 178
-        width: 27
-        height: 22
+        x: 2222
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557f32cfd90f0f04b8405ec4f2e27338
+      spriteID: 905a23610f41d3d45ad975a2bee18479
       vertices: []
       indices: 
       edges: []
@@ -3256,18 +3236,18 @@ TextureImporter:
       name: Paladin_atlas_147
       rect:
         serializedVersion: 2
-        x: 921
-        y: 178
-        width: 27
-        height: 22
+        x: 2424
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a558f87f530f645a8eb661c2ed9496
+      spriteID: 588a6446a41207a419b611c3a1b00213
       vertices: []
       indices: 
       edges: []
@@ -3276,18 +3256,18 @@ TextureImporter:
       name: Paladin_atlas_148
       rect:
         serializedVersion: 2
-        x: 1019
-        y: 178
-        width: 27
-        height: 22
+        x: 2626
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba5033fc651c464093a70039bab10b7
+      spriteID: bf0c3290143fdeb4fbdb1f7bad034041
       vertices: []
       indices: 
       edges: []
@@ -3296,18 +3276,18 @@ TextureImporter:
       name: Paladin_atlas_149
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 178
-        width: 27
-        height: 22
+        x: 2828
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b106a8f59a528e145968d9b91330b898
+      spriteID: dc1d86e0664e3034cbab3761a6c527e0
       vertices: []
       indices: 
       edges: []
@@ -3316,18 +3296,18 @@ TextureImporter:
       name: Paladin_atlas_150
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 178
-        width: 27
-        height: 22
+        x: 3030
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be1eca8406b5604882781c5f5ec28bb
+      spriteID: 7d90547c8a26adb4b9edd5127423b67e
       vertices: []
       indices: 
       edges: []
@@ -3336,18 +3316,18 @@ TextureImporter:
       name: Paladin_atlas_151
       rect:
         serializedVersion: 2
-        x: 1311
-        y: 178
-        width: 27
-        height: 22
+        x: 3232
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510ef3c8963c124409b4d814031c88b2
+      spriteID: 05625ea6c37646e4b8ef95959abfe5a4
       vertices: []
       indices: 
       edges: []
@@ -3356,18 +3336,18 @@ TextureImporter:
       name: Paladin_atlas_152
       rect:
         serializedVersion: 2
-        x: 1408
-        y: 178
-        width: 27
-        height: 22
+        x: 3434
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494671f553e61894894466594e2bfd00
+      spriteID: 038e49e52ce22534f88515ce06cbadd4
       vertices: []
       indices: 
       edges: []
@@ -3376,418 +3356,18 @@ TextureImporter:
       name: Paladin_atlas_153
       rect:
         serializedVersion: 2
-        x: 1505
-        y: 178
-        width: 27
-        height: 22
+        x: 606
+        y: 179
+        width: 202
+        height: 115
       alignment: 9
-      pivot: {x: 0.35185185, y: 0}
+      pivot: {x: 0.25742576, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 408dca21df8bd44428ad7a3f0335a6c1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_154
-      rect:
-        serializedVersion: 2
-        x: 1602
-        y: 178
-        width: 27
-        height: 22
-      alignment: 9
-      pivot: {x: 0.35185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 674ec50ded1ac64439edc056d505dfe1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_155
-      rect:
-        serializedVersion: 2
-        x: 1700
-        y: 178
-        width: 27
-        height: 22
-      alignment: 9
-      pivot: {x: 0.35185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d85aa16058d480438d6831f2dddbd34
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_156
-      rect:
-        serializedVersion: 2
-        x: 1797
-        y: 178
-        width: 27
-        height: 22
-      alignment: 9
-      pivot: {x: 0.35185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ead61f4d439db37439a4c024868d1998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_157
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b4839bf78c103649b09d9ca07c66054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_158
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74316d68c7a43df43bb86f1781daf2e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_159
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68061c2f3b7f26a45b491dff88ff6ee4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_160
-      rect:
-        serializedVersion: 2
-        x: 760
-        y: 0
-        width: 252
-        height: 172
-      alignment: 9
-      pivot: {x: 0.50992066, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a48dad9945ceb7b418e586d84d5827a1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_161
-      rect:
-        serializedVersion: 2
-        x: 1012
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3684aba8315090a47a59bf352262ba7f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_162
-      rect:
-        serializedVersion: 2
-        x: 1265
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac277a318857a42428cafe4c92b24fab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_163
-      rect:
-        serializedVersion: 2
-        x: 1518
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05cc76f0c263d9f4caadbe5a49931d8a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_164
-      rect:
-        serializedVersion: 2
-        x: 1771
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed8ed2f8612c1e04b82e62c397a667f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_165
-      rect:
-        serializedVersion: 2
-        x: 2024
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f6e181baa052f340bfee7e9a768e10d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_166
-      rect:
-        serializedVersion: 2
-        x: 2277
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a31970075667ee40bc0223c73754b75
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_167
-      rect:
-        serializedVersion: 2
-        x: 2530
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 993cdd251c10e6e48b97debf16b85fad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_168
-      rect:
-        serializedVersion: 2
-        x: 2783
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d3f35f4b341c9c438e88ba8d70c8e12
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_169
-      rect:
-        serializedVersion: 2
-        x: 3036
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e11774999116e0d4ab03e9047185d15f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_170
-      rect:
-        serializedVersion: 2
-        x: 3289
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c84301cdfa4a74748be6473dcb2085b5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_171
-      rect:
-        serializedVersion: 2
-        x: 3542
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ae75adeaf74f54e9218add9ce224c0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_172
-      rect:
-        serializedVersion: 2
-        x: 3795
-        y: 0
-        width: 253
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5079051, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d92a03343413f1544921bc40a5bce61d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paladin_atlas_173
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 178
-        width: 25
-        height: 22
-      alignment: 9
-      pivot: {x: 0.62, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56a5a61a398b6384b941d7497e918bf9
+      spriteID: 8de8ae94406213b41971f87c69c5bce6
       vertices: []
       indices: 
       edges: []
@@ -3795,7 +3375,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d6e91df8722c5b94cbd1887bb0f75919
+    spriteID: 2576faee7c96c04478ff0110d6eb42e1
     vertices: []
     indices: 
     edges: []
