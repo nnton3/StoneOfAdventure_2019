@@ -21,7 +21,6 @@ namespace StoneOfAdventure.Combat
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Debug.Log(damage);
             if (collision.CompareTag("Enemie") || collision.CompareTag("Boss"))
                 collision.GetComponent<Health>().ApplyDamage(damage);
         }

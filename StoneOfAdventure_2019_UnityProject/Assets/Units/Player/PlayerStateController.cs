@@ -10,6 +10,7 @@ public class PlayerStateController : Unit
     [SerializeField] private float jumpPower = 800f;
     [SerializeField] private float jumpPowerScaleOnLadder = 1f;
     [SerializeField] private float verticalMovespeed = 3f;
+    [SerializeField] private ContactFilter2D filter;
     private float jumpDirection;
 
     private Mover mover;
@@ -192,9 +193,12 @@ public class PlayerStateController : Unit
                 StateInTheAir();
                 break;
             case State.MoveVertical:
-                climb.StopVerticalMove();
-                jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
-                StateInTheAir();
+                if (!CollisionWithPlatform())
+                {
+                    climb.StopVerticalMove();
+                    jump.ToJumpOnLadder(new Vector2(0.5f * jumpDirection, 0.5f), jumpPower * jumpPowerScaleOnLadder);
+                    StateInTheAir();
+                }
                 break;
         }
     }
@@ -313,5 +317,10 @@ public class PlayerStateController : Unit
     {
         StartWalk.RemoveAllListeners();
         StopWalk.RemoveAllListeners();
+    }
+
+    private bool CollisionWithPlatform()
+    {
+        return GetComponent<BoxCollider2D>().IsTouching(filter);
     }
 }
