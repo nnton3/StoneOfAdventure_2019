@@ -6971,6 +6971,11 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8833763184507030607, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: maxLocationPoints
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065c7cead172c14a84a48437c4e01cb, type: 3}
 --- !u!1 &857884293
