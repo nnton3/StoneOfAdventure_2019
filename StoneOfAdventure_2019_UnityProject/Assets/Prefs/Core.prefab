@@ -2823,14 +2823,14 @@ GameObject:
   - component: {fileID: 5948473608891130162}
   - component: {fileID: 7653707427932911510}
   - component: {fileID: 4044241411957457241}
-  - component: {fileID: 5474615425837922711}
+  - component: {fileID: 5507541610525394939}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1292519979703338485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2922,25 +2922,19 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
---- !u!95 &5474615425837922711
-Animator:
-  serializedVersion: 3
+--- !u!114 &5507541610525394939
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6667175353273287322}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 87783837167383a48ba1559486251a9a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 2
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf8f32a3daaec542a087131bdb14b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  period: 1
 --- !u!1 &6845239268213043043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,7 +3744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9146637608729146950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9640687, y: 1.5283833, z: -10}
+  m_LocalPosition: {x: 4.22, y: 1.4004154, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9146637608463278448}
@@ -4372,6 +4366,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: filter.layerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: filter.useLayerMask
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
