@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 9e286915e92d4b64c965311f428b16cc
+guid: 6bec3179dd308e9478d613136d843818
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Firepan_0
-    21300002: Firepan_1
-    21300004: Firepan_2
-    21300006: Firepan_3
-    21300008: Firepan_4
-    21300010: Firepan_5
+    21300000: ruins1_0
+    21300002: ruins1_1
+    21300004: ruins1_2
+    21300006: ruins1_3
+    21300008: ruins1_4
+    21300010: ruins1_5
+    21300012: ruins1_6
+    21300014: ruins1_7
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -145,121 +147,161 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Firepan_0
+      name: ruins1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5bed898ed47534ea1452c61a603b2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins1_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5746b0cf83b891440ba4981bca3e54de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ad271c649bde0418656df9a677302e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d957a7936e1beb48bf851495925b043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ruins1_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05899153d0e2d904397800c7cb5b5007
+      spriteID: e4103a9d776cc134f8762061a445d29f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepan_1
+      name: ruins1_5
       rect:
         serializedVersion: 2
-        x: 12
+        x: 16
         y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f245d7b2a8a0ae4489b89ccf7b84860
+      spriteID: 1ee07a0602d1cca43a8a390c4e797a86
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepan_2
+      name: ruins1_6
       rect:
         serializedVersion: 2
-        x: 24
+        x: 32
         y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 194f57d146c4bae4f91270bbbf52bbc2
+      spriteID: 8a7ab62de6f815142991cd0e120f28d0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepan_3
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 996c571ab1ad91145a439acc4f5e8f92
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Firepan_4
+      name: ruins1_7
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 364e43fbcf6a3a9449b4c2ced589cc77
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Firepan_5
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 12
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2580645}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08e2f1be3c654fd4eb76189a689493b5
+      spriteID: 7c7d2a7362f67f54b83027aec85d371a
       vertices: []
       indices: 
       edges: []
@@ -267,7 +309,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c595e2d00f8f6b945ac27d7136df5f9d
+    spriteID: c2c33394fb891784c8c3308255c75e55
     vertices: []
     indices: 
     edges: []
