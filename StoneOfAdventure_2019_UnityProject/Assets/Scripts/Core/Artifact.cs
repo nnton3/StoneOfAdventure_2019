@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using StoneOfAdventure.UI;
+using UnityEngine;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -6,7 +7,7 @@ namespace StoneOfAdventure.Artifacts
     {
         protected GameObject player;
         private GameObject artifactUI;
-        private Animator anim;
+        private Fader fader;
 
         private bool isSelected;
         public bool IsSelected => isSelected;
@@ -14,14 +15,14 @@ namespace StoneOfAdventure.Artifacts
         protected virtual void Start()
         {
             player = FindObjectOfType<PlayerStateController>().gameObject;
-            anim = GetComponent<Animator>();
+            fader = GetComponent<Fader>();
         }
 
         public virtual void AddEffect() { isSelected = true; }
 
         public void Hide()
         {
-            anim.SetTrigger("action");
+            fader.StartCoroutine("Hide");
         }
     }
 }
