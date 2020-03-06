@@ -11,18 +11,18 @@ namespace StoneOfAdventure.UI
     {
         [SerializeField] private GameObject[] artifacts;
         [SerializeField] private List<GameObject> selectedArtifacts;
-        private Animator anim;
+        private Fader fader;
         [SerializeField] private GameObject bck;
 
         private void Start()
         {
-            anim = bck.GetComponentInChildren<Animator>();
+            fader = bck.GetComponentInChildren<Fader>();
         }
 
         public void EnableArtifactSelector()
         {
             Time.timeScale = 0f;
-            anim.SetTrigger("action");
+            fader.StartCoroutine("Show");
             ShowArtifacts(SelectArtifacts());
         }
 
@@ -46,7 +46,7 @@ namespace StoneOfAdventure.UI
             var arts = GetComponentsInChildren<Artifact>();
             HideNotSelectedArts(arts);
             await Task.Delay(TimeSpan.FromSeconds(1));
-            anim.SetTrigger("action");
+            fader.StartCoroutine("Hide");
             await Task.Delay(TimeSpan.FromSeconds(1));
             ClearSelector(arts);
             Time.timeScale = 1f;
@@ -56,7 +56,6 @@ namespace StoneOfAdventure.UI
         {
             for (int j = 0; j < arts.Length; j++)
             {
-                Debug.Log(arts[j].IsSelected);
                 if (!arts[j].IsSelected) arts[j].Hide();
             }
         }

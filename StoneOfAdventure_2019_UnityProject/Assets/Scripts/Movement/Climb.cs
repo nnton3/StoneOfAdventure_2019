@@ -4,6 +4,7 @@ namespace StoneOfAdventure.Movement
 {
     public class Climb : MonoBehaviour
     {
+        #region
         private Rigidbody2D rb;
         private Animator anim;
         private PlayerStateController unit;
@@ -13,6 +14,7 @@ namespace StoneOfAdventure.Movement
         [SerializeField] private bool canClimbDown = true;
         [SerializeField] private bool canClimbUp = true;
         [SerializeField] public bool CanClimb { get; private set; }
+        #endregion
 
         private void Start()
         {
