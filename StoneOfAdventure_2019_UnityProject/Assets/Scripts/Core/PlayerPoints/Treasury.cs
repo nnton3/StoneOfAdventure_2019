@@ -21,7 +21,7 @@ public class Treasury : MonoBehaviour
         TresureUpdated.Invoke();
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         TresureUpdated.RemoveAllListeners();
     }

@@ -30,7 +30,7 @@ public class Flip : MonoBehaviour
         Flipped.Invoke();
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         Flipped.RemoveAllListeners();
     }

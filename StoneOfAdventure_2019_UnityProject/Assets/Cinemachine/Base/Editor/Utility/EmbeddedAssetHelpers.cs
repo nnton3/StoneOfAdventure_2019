@@ -35,7 +35,8 @@ namespace Cinemachine.Editor
         public delegate void OnChangedDelegate(T obj);
 
         /// <summary>
-        /// Free the resources in OnDisable()
+        /// Free the resources in 
+        /// ()
         /// </summary>
         public void OnDisable()
         {

@@ -34,6 +34,12 @@ namespace StoneOfAdventure.Combat
             UpdateMaxHealthPoints(healthPoints);
         }
 
+        public void ResetParams()
+        {
+            untouchable = false;
+            Heal(MaxHealthPoints);
+        }
+
         public void ApplyDamage(int damage)
         {
             if (HealthPoints == 0) return;
@@ -101,7 +107,7 @@ namespace StoneOfAdventure.Combat
             applyModifiersOfInputDamage += modifier;
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             HPDecreased.RemoveAllListeners();
             HPIncreased.RemoveAllListeners();

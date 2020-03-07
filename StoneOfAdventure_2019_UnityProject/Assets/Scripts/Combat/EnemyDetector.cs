@@ -28,7 +28,7 @@ namespace StoneOfAdventure.Combat
             }
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             PlayerDetected.RemoveAllListeners();
             PlayerLost.RemoveAllListeners();

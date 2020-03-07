@@ -28,7 +28,7 @@ public class LocationPointsStorage : MonoBehaviour
         LocationPointsUpdated?.Invoke();
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         LocationPointsUpdated.RemoveAllListeners();
         LocationCompleted.RemoveAllListeners();

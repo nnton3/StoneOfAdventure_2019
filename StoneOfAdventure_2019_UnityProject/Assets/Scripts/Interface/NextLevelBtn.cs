@@ -39,7 +39,7 @@ public class NextLevelBtn : MonoBehaviour
         btn.interactable = false;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         PlayerStartNextLevel.RemoveAllListeners();
     }

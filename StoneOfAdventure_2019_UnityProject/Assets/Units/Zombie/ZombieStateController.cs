@@ -98,27 +98,27 @@ public class ZombieStateController : UnitContainsAward
         switch (currentState)
         {
             case State.Idle:
-                TransormToCorrupse();
+                TransformToCorrupse();
                 break;
             case State.MoveHorizontal:
                 mover.CancelMove();
-                TransormToCorrupse();
+                TransformToCorrupse();
                 break;
             case State.InTheAir:
                 mover.CancelMove();
-                TransormToCorrupse();
+                TransformToCorrupse();
                 break;
             case State.Attack:
                 fighter.CancelAttack();
-                TransormToCorrupse();
+                TransformToCorrupse();
                 break;
             case State.Stun:
                 StopCoroutine("StunTimer");
-                TransormToCorrupse();
+                TransformToCorrupse();
                 break;
         }
 
-        void TransormToCorrupse()
+        void TransformToCorrupse()
         {
             anim.SetTrigger("dead");
             StateDeath();
@@ -191,7 +191,7 @@ public class ZombieStateController : UnitContainsAward
     IEnumerator DestroyCorrupse()
     {
         yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
+        ReturnToPool();
     }
 
     private void SetState(State value)
