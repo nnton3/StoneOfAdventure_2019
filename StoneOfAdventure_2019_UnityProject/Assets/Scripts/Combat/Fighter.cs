@@ -73,7 +73,7 @@ namespace StoneOfAdventure.Combat
             baseDamage = value;
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             UseAttack.RemoveAllListeners();
         }

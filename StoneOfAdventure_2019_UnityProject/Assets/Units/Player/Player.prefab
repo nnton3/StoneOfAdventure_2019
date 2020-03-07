@@ -205,7 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7520c0be0b3864b42906ca472c306ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inPlatform: 0
 --- !u!114 &5276332428803179151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +331,20 @@ MonoBehaviour:
   jumpPower: 1675
   jumpPowerScaleOnLadder: 1
   verticalMovespeed: 5
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
   StartWalk:
     m_PersistentCalls:
       m_Calls: []
@@ -403,6 +416,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundSize: {x: 10, y: 5, z: 1}
+--- !u!114 &612346353578559807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352065608948265188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62684e892d34a2449894ed59074426ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Enemie
+  secondTargetTag: Boss
 --- !u!1001 &8023001163370702183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,8 +497,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2494394143801994279, guid: 4a4997cc5c05b5641841d9ccb16f6927, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a4997cc5c05b5641841d9ccb16f6927, type: 3}
+--- !u!1 &4352065608948265188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+    type: 3}
+  m_PrefabInstance: {fileID: 8023001163370702183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &274004615576891293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7825594463430281978, guid: 4a4997cc5c05b5641841d9ccb16f6927,

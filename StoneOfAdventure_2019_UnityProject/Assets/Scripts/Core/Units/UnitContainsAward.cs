@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Assets.Scripts.Core;
+using StoneOfAdventure.Combat;
 
 namespace StoneOfAdventure.Core
 {
@@ -26,6 +27,10 @@ namespace StoneOfAdventure.Core
             }
         }
 
-        
+        protected void ReturnToPool()
+        {
+            gameObject.SetActive(false);
+            GetComponent<Health>().ResetParams();
+        }
     }
 }

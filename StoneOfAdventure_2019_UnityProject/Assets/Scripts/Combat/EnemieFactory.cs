@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using StoneOfAdventure.Combat;
 
 namespace StoneOfAdventure.Core
 {
@@ -9,7 +10,7 @@ namespace StoneOfAdventure.Core
         #region Variables
         [SerializeField] private float baseSpawnDelay = 5f;
         [SerializeField] private float minSpawnDelay = 1f;
-        [SerializeField] private List<GameObject> units = new List<GameObject>();
+        [SerializeField] private List<string> units = new List<string>();
         [SerializeField] private List<float> baseSpawnChance = new List<float>();
         [SerializeField] private List<float> endSpawnChance = new List<float>();
         [SerializeField] private int totalTickNumber = 40;
@@ -19,12 +20,14 @@ namespace StoneOfAdventure.Core
         private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
         private LocationPointsStorage pointsStorage;
+        private EnemiePool enemiePool;
         #endregion
 
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
             pointsStorage = FindObjectOfType<LocationPointsStorage>();
+            enemiePool = GetComponent<EnemiePool>();
 
             pointsStorage.LocationCompleted.AddListener(StopSpawn);
 
@@ -71,7 +74,10 @@ namespace StoneOfAdventure.Core
                 {
                     var spawnPosition = ChangeSpawnPosition();
                     if (spawnPosition == Vector3.zero) return;
-                    Instantiate(units[i], spawnPosition, Quaternion.identity);
+
+                    var enemie = enemiePool.GetEnemie(units[i]);
+                    enemie.SetActive(true);
+                    enemie.transform.position = spawnPosition;
                 }
             }
         }

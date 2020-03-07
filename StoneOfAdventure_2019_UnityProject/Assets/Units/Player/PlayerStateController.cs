@@ -313,7 +313,7 @@ public class PlayerStateController : Unit
         currentState = value;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         StartWalk.RemoveAllListeners();
         StopWalk.RemoveAllListeners();
