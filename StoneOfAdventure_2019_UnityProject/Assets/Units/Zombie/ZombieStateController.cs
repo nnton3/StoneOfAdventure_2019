@@ -144,7 +144,6 @@ public class ZombieStateController : UnitContainsAward
     {
         if (currentState != State.Death)
         {
-            Debug.Log($"go in stun HP = {GetComponent<Health>().HealthPoints}");
             anim.SetTrigger("stun");
             StopCoroutine(StunTimer(timeOfStun));
             StartCoroutine(StunTimer(timeOfStun));
@@ -152,7 +151,6 @@ public class ZombieStateController : UnitContainsAward
         }
         else
         {
-            Debug.Log("stop stun");
             StopCoroutine(StunTimer(timeOfStun));
         }
     }

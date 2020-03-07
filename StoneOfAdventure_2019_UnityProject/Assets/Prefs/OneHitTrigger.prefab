@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11783482353608309}
   - component: {fileID: 2494394143801994279}
   m_Layer: 0
-  m_Name: Skill2Collider
+  m_Name: OneHitTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5995075674628396419}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.96099997, y: 0.49999997, z: 0}
-  m_LocalScale: {x: 0.6125, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -92,3 +92,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b4b71060ea6b44d9fc56d49e46b0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTag: Enemie
