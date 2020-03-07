@@ -106,29 +106,6 @@ public class PaladinStateController : Unit
     }
 
     [Task]
-    public void Melee3()
-    {
-        switch (currentState)
-        {
-            case State.Idle:
-                UseAttack();
-                break;
-            case State.MoveHorizontal:
-                mover.CancelMove();
-                UseAttack();
-                break;
-        }
-
-        void UseAttack()
-        {
-            StateAttack();
-            attackNumber++;
-            fighter.StartMelee3();
-            Task.current.Succeed();
-        }
-    }
-
-    [Task]
     public void RangeAttack()
     {
         switch (currentState)

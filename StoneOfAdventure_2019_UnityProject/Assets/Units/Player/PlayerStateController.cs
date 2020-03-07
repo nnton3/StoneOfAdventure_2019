@@ -211,6 +211,11 @@ public class PlayerStateController : Unit
 
     public override void ApplyStun(float time)
     {
+        if (currentState == State.Skill2)
+        {
+            playerSkill2.Skill2End();
+        }
+
         anim.SetTrigger("stun");
         StateStun();
     }

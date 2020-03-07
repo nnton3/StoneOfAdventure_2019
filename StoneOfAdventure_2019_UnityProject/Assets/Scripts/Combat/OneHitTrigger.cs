@@ -9,15 +9,17 @@ namespace StoneOfAdventure.Combat
 
         public void Initialize(Vector3 center, Vector3 size, int damage)
         {
-            var collider = GetComponent<BoxCollider>();
-            collider.center = center;
+            var collider = GetComponent<BoxCollider2D>();
+            collider.offset = center;
             collider.size = size;
-            damage = this.damage;
+            this.damage = damage;
+            gameObject.SetActive(false);
         }
 
         public void Initialize(int damage)
         {
             this.damage = damage;
+            gameObject.SetActive(false);
         }
 
         protected virtual void OnTriggerEnter2D(Collider2D collision)
@@ -28,10 +30,8 @@ namespace StoneOfAdventure.Combat
             }
         }
 
-        protected void ApplyDamage(Collider2D collision)
+        protected virtual void ApplyDamage(Collider2D collision)
         {
-            Debug.Log(collision.name);
-            Debug.Log(collision.tag);
             collision.GetComponent<Health>().ApplyDamage(damage);
         }
 

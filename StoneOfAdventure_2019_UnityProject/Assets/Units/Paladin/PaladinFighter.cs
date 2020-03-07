@@ -51,8 +51,6 @@ namespace StoneOfAdventure.Combat
             rb = GetComponent<Rigidbody2D>();
             hitTrigger1.Initialize(melee1AreaCenter, melee1Area, damageMelee1);
             hitTrigger2.Initialize(melee2AreaCenter, melee2Area, damageMelee2);
-
-            AddEffectOfAttack(StunEffect);
         }
 
         // Animation event
@@ -100,44 +98,5 @@ namespace StoneOfAdventure.Combat
             hitTrigger2.gameObject.SetActive(false);
         }
         #endregion
-
-        #region MeleeAttack3
-        public void StartMelee3()
-        {
-            UseAttack.Invoke();
-            anim.SetTrigger("melee3");
-        }
-
-        // Animation event
-        public void MeleeAttack3Hit()
-        {
-            Hit(damageMelee3, melee3AreaCenter, melee3Area);
-        }
-
-        public void Hit(int baseDamage, Vector3 applicationAreaCenter, Vector3 applicationArea)
-        {
-            var currentDamage = baseDamage;
-            applyDamageModifiers?.Invoke(ref currentDamage);
-            Vector2 centerInRelationUnitDirection =
-                transform.position + applicationAreaCenter * ((flip.isFacingRight) ? 1 : -1);
-            var player = Physics2D.OverlapBox(
-                centerInRelationUnitDirection,
-                applicationArea,
-                0f,
-                layerMask);
-
-            if (player != null)
-            {
-                player.GetComponent<Health>().ApplyDamage(currentDamage);
-                applyEffectsOnTarget?.Invoke(player.gameObject);
-                DamageApplied?.Invoke();
-            }
-        }
-        #endregion
-
-        private void StunEffect(GameObject player)
-        {
-            player.GetComponent<Unit>().ApplyStun(0f);
-        }
     }
 }
