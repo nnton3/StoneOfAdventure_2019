@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  meleeAttackDistance: 1
+  meleeAttackDistance: 2
 --- !u!114 &3627798410833376297
 MonoBehaviour:
   m_ObjectHideFlags: 0
