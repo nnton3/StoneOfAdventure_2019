@@ -20,7 +20,6 @@ public class ZombieStateController : UnitContainsAward
     protected override void Start()
     {
         base.Start();
-
         currentState = State.Death;
 
         enemyDetector = GetComponentInChildren<EnemyDetector>();
@@ -113,6 +112,7 @@ public class ZombieStateController : UnitContainsAward
                 TransformToCorrupse();
                 break;
             case State.Stun:
+                anim.ResetTrigger("attack");
                 StopCoroutine("StunTimer");
                 TransformToCorrupse();
                 break;
@@ -201,5 +201,10 @@ public class ZombieStateController : UnitContainsAward
     {
         anim.SetTrigger("stunEnd");
         DisableState();
+    }
+
+    private void OnEnable()
+    {
+        currentState = State.Death;
     }
 }

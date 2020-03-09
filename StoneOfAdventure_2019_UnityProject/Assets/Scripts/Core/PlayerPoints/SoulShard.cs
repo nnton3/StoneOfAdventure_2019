@@ -1,13 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using StoneOfAdventure.Movement;
-using UnityEngine.UI;
 
 public class SoulShard : MonoBehaviour
 {
     #region Variables
     private Rigidbody2D rb;
+    private BoxCollider2D col;
     private GameObject player;
     private bool moveStarted;
     private Flyer flyer;
@@ -20,14 +19,21 @@ public class SoulShard : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<BoxCollider2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         flyer = GetComponent<Flyer>();
-        treasury = GameObject.FindObjectOfType<Treasury>();
+        treasury = FindObjectOfType<Treasury>();
         locationPoints = FindObjectOfType<LocationPointsStorage>();
+        col.isTrigger = false;
 
-        Vector2 impulseDirection = (new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(0f, 1f))).normalized;
-        rb.AddForce(impulseDirection * impulsePower, ForceMode2D.Impulse);
+        AddStartImpulse();
         StartCoroutine("DelayBeforeMove");
+    }
+
+    private void AddStartImpulse()
+    {
+        Vector2 impulseDirection = (new Vector3(Random.Range(-1f, 1f), Random.Range(0f, 1f))).normalized;
+        rb.AddForce(impulseDirection * impulsePower, ForceMode2D.Impulse);
     }
 
     private void Update()
@@ -46,6 +52,7 @@ public class SoulShard : MonoBehaviour
     IEnumerator DelayBeforeMove()
     {
         yield return new WaitForSeconds(0.5f);
+        col.isTrigger = true;
         moveStarted = true;
     }
 
@@ -58,6 +65,6 @@ public class SoulShard : MonoBehaviour
     {
         treasury.Refill(1);
         locationPoints.AddPoints(1);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

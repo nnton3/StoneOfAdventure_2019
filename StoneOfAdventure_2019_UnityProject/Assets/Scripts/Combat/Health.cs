@@ -36,8 +36,9 @@ namespace StoneOfAdventure.Combat
 
         public void ResetParams()
         {
-            untouchable = false;
-            Heal(MaxHealthPoints);
+            untouchable = true;
+            healthPoints = MaxHealthPoints;
+            HPIncreased.Invoke();
         }
 
         public void ApplyDamage(int damage)
