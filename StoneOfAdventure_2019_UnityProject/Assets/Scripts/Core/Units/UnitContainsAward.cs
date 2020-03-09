@@ -1,36 +1,43 @@
 ﻿using UnityEngine;
 using Assets.Scripts.Core;
 using StoneOfAdventure.Combat;
+using System.Collections.Generic;
 
 namespace StoneOfAdventure.Core
 {
     public class UnitContainsAward : Unit
     {
-        private GameObject soulShard;
+        private GameObject soulShardPref;
+        private SoulShardsPool soulShardPool;
         private PlayerLevelObserver levelObserver;
 
         [SerializeField] private int reward = 3;
+        public int Reward => reward;
+
         [SerializeField] private int experience = 5;
 
         protected virtual void Start()
         {
-            soulShard = Resources.Load<GameObject>("Soul_shard");
+            soulShardPool = GetComponent<SoulShardsPool>();
             levelObserver = FindObjectOfType<PlayerLevelObserver>();
         }
 
         protected void CreateReward()
         {
             levelObserver.UpdateExperienceValue(experience);
+            var soulShards = soulShardPool.GetSoulShards();
             for (int i = 0; i < reward; i++)
             {
-                Instantiate(soulShard, transform.position, Quaternion.identity);
+                soulShards[i].SetActive(true);
+                soulShards[i].transform.position = transform.position;
             }
         }
 
         protected void ReturnToPool()
         {
-            gameObject.SetActive(false);
             GetComponent<Health>().ResetParams();
+            gameObject.SetActive(false);
+            DisableState();
         }
     }
 }
