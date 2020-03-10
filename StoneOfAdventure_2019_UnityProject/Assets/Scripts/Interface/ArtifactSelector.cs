@@ -13,16 +13,19 @@ namespace StoneOfAdventure.UI
         private Fader fader;
         private ArtifactsPool artsPool;
         [SerializeField] private GameObject bck;
+        private CanvasGroup canvasGroup;
 
         private void Start()
         {
             fader = bck.GetComponentInChildren<Fader>();
             artsPool = GetComponentInChildren<ArtifactsPool>();
+            canvasGroup = GetComponent<CanvasGroup>();
         }
 
         public void EnableArtifactSelector()
         {
             Time.timeScale = 0f;
+            canvasGroup.interactable = true;
             fader.StartCoroutine("Show");
             ShowArtifacts();
         }
@@ -55,6 +58,7 @@ namespace StoneOfAdventure.UI
                 arts[i].gameObject.SetActive(false);
             }
             selectedArtifacts.RemoveAll(IsArtifact);
+            canvasGroup.interactable = false;
         }
 
         private bool IsArtifact(GameObject obj)

@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using StoneOfAdventure.Core;
+using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts.Core;
 
 namespace StoneOfAdventure.UI
 { 
