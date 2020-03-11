@@ -1,10 +1,8 @@
 ﻿using StoneOfAdventure.Combat;
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Assets.Scripts.Core
+namespace StoneOfAdventure.Core
 {
     public class PlayerLevelObserver : MonoBehaviour
     {

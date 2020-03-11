@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using Assets.Scripts.Core;
 using StoneOfAdventure.Combat;
-using System.Collections.Generic;
 
 namespace StoneOfAdventure.Core
 {
@@ -20,6 +18,8 @@ namespace StoneOfAdventure.Core
         {
             soulShardPool = GetComponent<SoulShardsPool>();
             levelObserver = FindObjectOfType<PlayerLevelObserver>();
+
+            soulShardPool.FillPool(reward);
         }
 
         protected void CreateReward()

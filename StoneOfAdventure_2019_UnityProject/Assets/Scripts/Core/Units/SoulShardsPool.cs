@@ -8,7 +8,7 @@ namespace StoneOfAdventure.Core
         private GameObject soulShardPref;
         private List<GameObject> soulShardPool = new List<GameObject>();
 
-        private void Awake()
+        public void FillPool(int value)
         {
             soulShardPref = Resources.Load<GameObject>("Soul_shard");
 
@@ -16,7 +16,7 @@ namespace StoneOfAdventure.Core
             if (parent == null)
                 parent = Instantiate(new GameObject("SoulShards"));
 
-            for (int i = 0; i < GetComponent<UnitContainsAward>().Reward; i++)
+            for (int i = 0; i < value; i++)
             {
                 var soulShard = Instantiate(soulShardPref, parent.transform);
                 soulShardPool.Add(soulShard);
