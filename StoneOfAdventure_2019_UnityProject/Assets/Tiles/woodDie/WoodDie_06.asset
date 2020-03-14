@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: WoodDie_06
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 5135e4b14761704499f2424ded7e65b7, type: 3}
+  m_Sprite: {fileID: 21300118, guid: 3ebfe5eea5f1a39408526931c0f05f5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
