@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 using Zenject;
@@ -8,18 +7,6 @@ public class GroundTileFinder : MonoBehaviour
 {
     [Inject] private Tilemap groundTilemap;
     [Inject] private TileBase targetTile;
-
-    //private void Start()
-    //{
-    //    targetTile = Resources.Load<TileBase>("2");
-    //    FindGroundTiles(SceneManager.GetActiveScene(), LoadSceneMode.Single);
-    //    SceneManager.sceneLoaded += FindGroundTiles;
-    //}
-
-    //private void FindGroundTiles(Scene arg0, LoadSceneMode arg1)
-    //{
-    //    groundTilemap = GameObject.FindGameObjectWithTag("Ground").GetComponent<Tilemap>();
-    //}
 
     public List<Vector3> FindValidPositions(Vector3Int area, Vector3 center)
     {

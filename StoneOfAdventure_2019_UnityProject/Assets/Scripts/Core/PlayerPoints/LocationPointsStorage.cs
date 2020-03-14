@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Events;
-using StoneOfAdventure.Core;
+using Zenject;
 
 public class LocationPointsStorage : MonoBehaviour
 {
@@ -10,14 +9,14 @@ public class LocationPointsStorage : MonoBehaviour
     [SerializeField] private int maxLocationPoints;
     public int LocationPointsMaxValue => maxLocationPoints;
     [HideInInspector] public UnityEvent LocationPointsUpdated;
-    [HideInInspector] public UnityEvent LocationCompleted;
+    [Inject] readonly SignalBus signalBus;
 
     public void AddPoints(int value)
     {
         if (value == 0) return;
         locationPoints += value;
         if (locationPoints > maxLocationPoints) locationPoints = maxLocationPoints;
-        if (locationPoints == maxLocationPoints) LocationCompleted?.Invoke();
+        if (locationPoints == maxLocationPoints) signalBus.Fire<LocationCompletedSignal>();
 
         LocationPointsUpdated?.Invoke();
     }
@@ -31,6 +30,5 @@ public class LocationPointsStorage : MonoBehaviour
     private void OnDestroy()
     {
         LocationPointsUpdated.RemoveAllListeners();
-        LocationCompleted.RemoveAllListeners();
     }
 }

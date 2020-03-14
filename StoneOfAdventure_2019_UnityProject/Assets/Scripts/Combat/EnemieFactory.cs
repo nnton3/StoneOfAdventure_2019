@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using StoneOfAdventure.Combat;
 using Zenject;
@@ -9,24 +8,23 @@ namespace StoneOfAdventure.Core
     public class EnemieFactory : MonoBehaviour
     {
         #region Variables
-        [Inject]
-        private EnemieSpawnerConfig spawnerConfig;
+        [Inject] private EnemieSpawnerConfig spawnerConfig;
 
         private GroundTileFinder tileFinder;
         private int currentTickNumber = 0;
         private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
-        private LocationPointsStorage pointsStorage;
+        [Inject] readonly SignalBus signalBus;
         private EnemiePool enemiePool;
         #endregion
 
         private void Start()
         {
             tileFinder = GetComponent<GroundTileFinder>();
-            pointsStorage = FindObjectOfType<LocationPointsStorage>();
             enemiePool = GetComponent<EnemiePool>();
 
-            pointsStorage.LocationCompleted.AddListener(StopSpawn);
+            Debug.Log(signalBus == null);
+            signalBus.Subscribe<LocationCompletedSignal>(StopSpawn);
 
             spawnDelayStep = (spawnerConfig.BaseSpawnDelay - spawnerConfig.MinSpawnDelay) / spawnerConfig.TotalTickNumber;
 
