@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -6,7 +7,7 @@ namespace StoneOfAdventure.Combat
     {
         #region Variables
         [SerializeField] private GameObject playerIllusionPref;
-        private GroundTileFinder tileFinder; 
+        [Inject] private GroundTileFinder tileFinder; 
         private readonly int IllusionsNumber = 2;
         [SerializeField] private float positionIsertRelativePlayer = 2f;
         private Animator anim;
@@ -14,7 +15,6 @@ namespace StoneOfAdventure.Combat
 
         private void Start()
         {
-            tileFinder = GetComponent<GroundTileFinder>();
             anim = GetComponent<Animator>();
         }
 

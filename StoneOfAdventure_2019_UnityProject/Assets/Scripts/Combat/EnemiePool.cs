@@ -8,15 +8,18 @@ namespace StoneOfAdventure.Combat
     {
         private Dictionary<string, List<GameObject>> enemieDictionary;
         [SerializeField] private List<Pool> enemiePools;
-        [SerializeField] private GameObject parentObj;
+        private GameObject parentObj;
 
         private void Start()
         {
             enemieDictionary = new Dictionary<string, List<GameObject>>();
 
-            foreach(var pool in enemiePools)
+            SetParentObj();
+
+            foreach (var pool in enemiePools)
             {
                 var enemiePool = new List<GameObject>();
+
 
                 for (int i = 0; i < pool.size; i++)
                 {
@@ -26,6 +29,15 @@ namespace StoneOfAdventure.Combat
                 }
 
                 enemieDictionary.Add(pool.name, enemiePool);
+            }
+        }
+
+        private void SetParentObj()
+        {
+            parentObj = GameObject.Find("EnemiesPool");
+            if (parentObj == null)
+            {
+                parentObj = Instantiate(new GameObject("EnemiesPool"));
             }
         }
 

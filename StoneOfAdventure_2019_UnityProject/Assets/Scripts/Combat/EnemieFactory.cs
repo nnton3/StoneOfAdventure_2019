@@ -2,18 +2,15 @@
 using UnityEngine;
 using System.Collections;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 namespace StoneOfAdventure.Core
 {
     public class EnemieFactory : MonoBehaviour
     {
         #region Variables
-        [SerializeField] private float baseSpawnDelay = 5f;
-        [SerializeField] private float minSpawnDelay = 1f;
-        [SerializeField] private List<string> units = new List<string>();
-        [SerializeField] private List<float> baseSpawnChance = new List<float>();
-        [SerializeField] private List<float> endSpawnChance = new List<float>();
-        [SerializeField] private int totalTickNumber = 40;
+        [Inject]
+        private EnemieSpawnerConfig spawnerConfig;
 
         private GroundTileFinder tileFinder;
         private int currentTickNumber = 0;
@@ -31,7 +28,7 @@ namespace StoneOfAdventure.Core
 
             pointsStorage.LocationCompleted.AddListener(StopSpawn);
 
-            spawnDelayStep = (baseSpawnDelay - minSpawnDelay) / totalTickNumber;
+            spawnDelayStep = (spawnerConfig.BaseSpawnDelay - spawnerConfig.MinSpawnDelay) / spawnerConfig.TotalTickNumber;
 
             StartCoroutine("SpawnEmmiter");
         }
@@ -51,31 +48,32 @@ namespace StoneOfAdventure.Core
 
         private float CalculateSpawnDelay()
         {
-            if (currentTickNumber >= totalTickNumber) return minSpawnDelay;
-            var currentSpawnDelay = baseSpawnDelay - currentTickNumber * spawnDelayStep;
+            if (currentTickNumber >= spawnerConfig.TotalTickNumber) return spawnerConfig.MinSpawnDelay;
+            var currentSpawnDelay = spawnerConfig.BaseSpawnDelay - currentTickNumber * spawnDelayStep;
             return currentSpawnDelay;
         }
 
         private void SpawnEnemie()
         {
-            for (int i = 0; i < units.Count; i++)
+            for (int i = 0; i < spawnerConfig.Units.Count; i++)
             {
                 float chance = Random.Range(0f, 100f);
                 var currentChance = 0f;
 
-                if (currentTickNumber == totalTickNumber) currentChance = endSpawnChance[i];
+                if (currentTickNumber == spawnerConfig.TotalTickNumber) currentChance = spawnerConfig.EndSpawnChance[i];
                 else
                 {
-                spawnChanceIncreaseStep = (endSpawnChance[i] - baseSpawnChance[i]) / totalTickNumber;
-                currentChance = baseSpawnChance[i] + 
+                    spawnChanceIncreaseStep = (spawnerConfig.EndSpawnChance[i] - spawnerConfig.BaseSpawnChance[i]) / spawnerConfig.TotalTickNumber;
+                    currentChance = spawnerConfig.BaseSpawnChance[i] + 
                      currentTickNumber * spawnChanceIncreaseStep;
                 }
+
                 if (chance <= currentChance)
                 {
                     var spawnPosition = ChangeSpawnPosition();
                     if (spawnPosition == Vector3.zero) return;
 
-                    var enemie = enemiePool.GetEnemie(units[i]);
+                    var enemie = enemiePool.GetEnemie(spawnerConfig.Units[i]);
                     enemie.SetActive(true);
                     enemie.transform.position = spawnPosition;
                 }
@@ -84,11 +82,11 @@ namespace StoneOfAdventure.Core
 
         private Vector3 ChangeSpawnPosition()
         {
-            List<Vector3> targetPositions = tileFinder.FindValidPositions();
+            var targetPositions = tileFinder.FindValidPositions(spawnerConfig.BoundSize, transform.position);
 
             if (targetPositions.Count == 0) return Vector3.zero;
 
-            Vector3 positionForSpawn = targetPositions[UnityEngine.Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
+            Vector3 positionForSpawn = targetPositions[Random.Range(0, targetPositions.Count - 1)] + Vector3.up;
             Vector2 positionForSpawn2d = positionForSpawn;
             return positionForSpawn2d;
         }

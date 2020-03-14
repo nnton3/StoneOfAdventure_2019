@@ -3577,7 +3577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9146637608729146950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.22, y: 1.4004154, z: -10}
+  m_LocalPosition: {x: 0, y: 1.4004154, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9146637608463278448}
@@ -3750,6 +3750,7 @@ GameObject:
   - component: {fileID: 5422405309103757829}
   - component: {fileID: 8833763184507030607}
   - component: {fileID: 6660649367290964178}
+  - component: {fileID: 3873619035942790283}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -3786,69 +3787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fabbd33a55c07c47ac9adf4f6cb90d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 15
-  minSpawnDelay: 1
-  units:
-  - Zombie1
-  - Zombie2
-  - ZombieDown
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  baseSpawnChance:
-  - 35
-  - 45
-  - 40
-  - 25
-  - 25
-  - 25
-  - 25
-  - 35
-  - 35
-  - 35
-  - 45
-  - 45
-  - 45
-  - 25
-  - 25
-  - 40
-  - 40
-  - 40
-  - 40
-  endSpawnChance:
-  - 60
-  - 70
-  - 65
-  - 50
-  - 40
-  - 40
-  - 40
-  - 60
-  - 60
-  - 60
-  - 70
-  - 70
-  - 70
-  - 50
-  - 50
-  - 65
-  - 65
-  - 65
-  - 65
-  totalTickNumber: 200
 --- !u!114 &9146637608893494897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3878,7 +3816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8855fa06666ebc4aa79c88f84944a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundSize: {x: 20, y: 10, z: 1}
 --- !u!114 &73245196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3964,7 +3901,24 @@ MonoBehaviour:
   - name: ZombieDown
     pref: {fileID: 6133069997062176456, guid: 0987281248004b34c8174a3790911d69, type: 3}
     size: 10
-  parentObj: {fileID: 0}
+--- !u!114 &3873619035942790283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9146637608893494898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 9146637608893494902}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &9146637608941526687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6572,7 +6526,7 @@ PrefabInstance:
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3520417983458046490, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
