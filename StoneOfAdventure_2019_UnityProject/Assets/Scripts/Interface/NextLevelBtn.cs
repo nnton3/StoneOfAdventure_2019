@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using Zenject;
 
 public class NextLevelBtn : MonoBehaviour
 {
     private Button btn;
     private GameObject child;
     private TransitionAnimStarter loadScreen;
-    private LocationPointsStorage storage;
+    [Inject] readonly SignalBus signalBus;
 
     [HideInInspector] public UnityEvent PlayerStartNextLevel;
 
@@ -15,14 +16,14 @@ public class NextLevelBtn : MonoBehaviour
     {
         btn = GetComponent<Button>();
         loadScreen = FindObjectOfType<TransitionAnimStarter>();
-        storage = FindObjectOfType<LocationPointsStorage>();
 
         btn.onClick.AddListener(() =>
         {
             PlayerStartNextLevel?.Invoke();
             DisableBtn();
         });
-        storage.LocationCompleted.AddListener(EnableBtn);
+        Debug.Log(signalBus == null);
+        signalBus.Subscribe<LocationCompletedSignal>(EnableBtn);
         child = transform.GetChild(0).gameObject;
         DisableBtn();
     }
