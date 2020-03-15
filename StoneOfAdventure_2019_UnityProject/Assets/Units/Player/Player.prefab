@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 6294659417202341041}
   - component: {fileID: 4221212495678884504}
   - component: {fileID: 4085254988495093279}
-  - component: {fileID: 883296961756211521}
+  - component: {fileID: 5095959846434565982}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealValue: 1
   temporaryRegen: 0
---- !u!114 &883296961756211521
+--- !u!114 &5095959846434565982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,10 +412,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3520417983458046496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8855fa06666ebc4aa79c88f84944a26, type: 3}
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundSize: {x: 10, y: 5, z: 1}
+  _components:
+  - {fileID: 8427074520926705902}
+  - {fileID: 4603871013170009232}
+  - {fileID: 5276332428803179151}
+  - {fileID: 3824255337682141441}
+  - {fileID: 5790436647658446409}
+  - {fileID: 7226845849540991534}
+  - {fileID: 713472708721060686}
+  - {fileID: 4221212495678884504}
+  - {fileID: 4085254988495093279}
+  _identifier: Player
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!114 &612346353578559807
 MonoBehaviour:
   m_ObjectHideFlags: 0

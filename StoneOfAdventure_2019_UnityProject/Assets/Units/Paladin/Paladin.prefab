@@ -466,6 +466,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 672385946025317692}
     m_Modifications:
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_Name
+      value: OneHitTrigger2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7825594463430281978, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -526,30 +541,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+    - target: {fileID: 1280327921865754773, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
-      propertyPath: m_Name
-      value: OneHitTrigger2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_TagString
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Offset.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2494394143801994279, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
       propertyPath: targetTag
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280327921865754773, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2494394143801994279, guid: 4a4997cc5c05b5641841d9ccb16f6927, type: 3}
@@ -573,6 +573,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 672385946025317692}
     m_Modifications:
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_Name
+      value: OneHitTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7825594463430281978, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,30 +648,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
+    - target: {fileID: 1280327921865754773, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
-      propertyPath: m_Name
-      value: OneHitTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_TagString
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995075674628396419, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Offset.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2494394143801994279, guid: 4a4997cc5c05b5641841d9ccb16f6927,
         type: 3}
       propertyPath: targetTag
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280327921865754773, guid: 4a4997cc5c05b5641841d9ccb16f6927,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2494394143801994279, guid: 4a4997cc5c05b5641841d9ccb16f6927, type: 3}

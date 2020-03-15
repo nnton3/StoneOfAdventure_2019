@@ -9,12 +9,12 @@ namespace StoneOfAdventure.Core
     {
         #region Variables
         [Inject] private EnemieSpawnerConfig spawnerConfig;
+        [Inject] private GroundTileFinder tileFinder;
+        [Inject] readonly SignalBus signalBus;
 
-        private GroundTileFinder tileFinder;
         private int currentTickNumber = 0;
         private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
-        [Inject] readonly SignalBus signalBus;
         private EnemiePool enemiePool;
         #endregion
 
@@ -23,7 +23,6 @@ namespace StoneOfAdventure.Core
             tileFinder = GetComponent<GroundTileFinder>();
             enemiePool = GetComponent<EnemiePool>();
 
-            Debug.Log(signalBus == null);
             signalBus.Subscribe<LocationCompletedSignal>(StopSpawn);
 
             spawnDelayStep = (spawnerConfig.BaseSpawnDelay - spawnerConfig.MinSpawnDelay) / spawnerConfig.TotalTickNumber;
@@ -31,10 +30,7 @@ namespace StoneOfAdventure.Core
             StartCoroutine("SpawnEmmiter");
         }
 
-        public void StopSpawn()
-        {
-            StopCoroutine("SpawnEmmiter");
-        }
+        public void StopSpawn() => StopCoroutine("SpawnEmmiter");
 
         private IEnumerator SpawnEmmiter()
         {

@@ -1,27 +1,30 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
-using System;
+using Zenject;
 
 public class LocationPointsBar : MonoBehaviour
 {
-    private LocationPointsStorage pointsStorage;
     private Slider slider;
+    [Inject] private SignalBus signalBus;
+    [Inject] private LocationPointsStorage pointsStorage;
 
     private void Start()
     {
-        pointsStorage = FindObjectOfType<LocationPointsStorage>();
         slider = GetComponent<Slider>();
+        SetStartValue();
 
-        slider.maxValue = pointsStorage.LocationPointsMaxValue;
-        UpdateLocationPointsUI();
-
-        pointsStorage.LocationPointsUpdated.AddListener(UpdateLocationPointsUI);
+        signalBus.Subscribe<LocationPointsUpdated>(UpdateLocationPointsUI);
     }
 
-    private void UpdateLocationPointsUI()
+    private void SetStartValue()
     {
+        slider.maxValue = pointsStorage.LocationPointsMaxValue;
         slider.value = pointsStorage.LocationPointsValue;
+    }
+
+    private void UpdateLocationPointsUI(LocationPointsUpdated args)
+    {
+        slider.value = args.currentValue;
     }
 
     internal void SetActive(bool v)

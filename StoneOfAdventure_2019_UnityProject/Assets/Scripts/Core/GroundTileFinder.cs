@@ -5,7 +5,7 @@ using Zenject;
 
 public class GroundTileFinder : MonoBehaviour
 {
-    [Inject] private Tilemap groundTilemap;
+    [Inject(Id = "CurrentLvl")] private Tilemap groundTilemap;
     [Inject] private TileBase targetTile;
 
     public List<Vector3> FindValidPositions(Vector3Int area, Vector3 center)

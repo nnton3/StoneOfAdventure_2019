@@ -8,7 +8,6 @@ public class LocationPointsStorage : MonoBehaviour
     public int LocationPointsValue => locationPoints;
     [SerializeField] private int maxLocationPoints;
     public int LocationPointsMaxValue => maxLocationPoints;
-    [HideInInspector] public UnityEvent LocationPointsUpdated;
     [Inject] readonly SignalBus signalBus;
 
     public void AddPoints(int value)
@@ -18,17 +17,12 @@ public class LocationPointsStorage : MonoBehaviour
         if (locationPoints > maxLocationPoints) locationPoints = maxLocationPoints;
         if (locationPoints == maxLocationPoints) signalBus.Fire<LocationCompletedSignal>();
 
-        LocationPointsUpdated?.Invoke();
+        signalBus.Fire(new LocationPointsUpdated { currentValue = locationPoints });
     }
 
     public void ResetPointValue()
     {
         locationPoints = 0;
-        LocationPointsUpdated?.Invoke();
-    }
-
-    private void OnDestroy()
-    {
-        LocationPointsUpdated.RemoveAllListeners();
+        signalBus.Fire(new LocationPointsUpdated { currentValue = locationPoints});
     }
 }

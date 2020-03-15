@@ -1,20 +1,15 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Core;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
     public class PlayerSkill1 : SkillBase
     {
         [SerializeField] private float timeOfStun;
-   
-        private Flip flip;
-        private Animator anim;
 
-        private void Start()
-        {
-            anim = GetComponent<Animator>();
-            flip = GetComponent<Flip>();
-        }
+        [Inject(Id = "Player")] private Flip flip;
+        [Inject(Id = "Player")] private Animator anim;
 
         public override void StartUse()
         {
