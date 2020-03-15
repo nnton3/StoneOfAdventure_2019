@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Zenject;
 
 public class TransitionAnimStarter : MonoBehaviour
 {
     #region Variables
     private Animator anim;
-    private NextLevelBtn nextLevelBtn;
+    [Inject] private SignalBus signalBus;
     #endregion
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        nextLevelBtn = FindObjectOfType<NextLevelBtn>();
 
-        nextLevelBtn.PlayerStartNextLevel.AddListener(StartAnimation);
+        signalBus.Subscribe<PlayerStartNextLevel>(StartAnimation);
     }
 
     private void StartAnimation()

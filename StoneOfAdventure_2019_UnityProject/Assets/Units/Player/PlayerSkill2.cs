@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Movement;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -8,23 +9,17 @@ namespace StoneOfAdventure.Combat
         #region Vatiables
         [SerializeField] private float movespeed = 10f;
 
-        private Animator anim;
-        private Rigidbody2D rb;
-        private PlayerStateController unit;
-        private Mover mover;
-        private Jump jump;
-        private Flip flip;
+        [Inject(Id = "Player")] private Animator anim;
+        [Inject(Id = "Player")] private Rigidbody2D rb;
+        [Inject(Id = "Player")] private Mover mover;
+        [Inject(Id = "Player")] private Jump jump;
+        [Inject(Id = "Player")] private Flip flip;
+        [Inject(Id = "Player")] private PlayerStateController unit;
         private GameObject playerScill2Collider;
         #endregion
 
         private void Start()
         {
-            unit = GetComponent<PlayerStateController>();
-            mover = GetComponent<Mover>();
-            jump = GetComponent<Jump>();
-            flip = GetComponent<Flip>();
-            anim = GetComponent<Animator>();
-            rb = GetComponent<Rigidbody2D>();
             playerScill2Collider = transform.Find("Skill2Collider").gameObject;
 
             playerScill2Collider.SetActive(false);

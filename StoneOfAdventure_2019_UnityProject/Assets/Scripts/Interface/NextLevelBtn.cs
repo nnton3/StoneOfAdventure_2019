@@ -1,47 +1,36 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 using Zenject;
 
 public class NextLevelBtn : MonoBehaviour
 {
     private Button btn;
-    private GameObject child;
-    private TransitionAnimStarter loadScreen;
+    private GameObject interactiveText;
     [Inject] readonly SignalBus signalBus;
-
-    [HideInInspector] public UnityEvent PlayerStartNextLevel;
 
     void Start()
     {
         btn = GetComponent<Button>();
-        loadScreen = FindObjectOfType<TransitionAnimStarter>();
 
         btn.onClick.AddListener(() =>
         {
-            PlayerStartNextLevel?.Invoke();
+            signalBus.Fire<PlayerStartNextLevel>();
             DisableBtn();
         });
-        Debug.Log(signalBus == null);
         signalBus.Subscribe<LocationCompletedSignal>(EnableBtn);
-        child = transform.GetChild(0).gameObject;
+        interactiveText = GetComponentInChildren<Text>().gameObject;
         DisableBtn();
     }
 
     private void EnableBtn()
     {
-        child.SetActive(true);
+        interactiveText.SetActive(true);
         btn.interactable = true;
     }
 
     private void DisableBtn()
     {
-        child.SetActive(false);
+        interactiveText.SetActive(false);
         btn.interactable = false;
-    }
-
-    private void OnDestroy()
-    {
-        PlayerStartNextLevel.RemoveAllListeners();
     }
 }

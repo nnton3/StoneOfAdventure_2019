@@ -3,6 +3,7 @@ using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using StoneOfAdventure.Combat;
 using UnityEngine.Events;
+using Zenject;
 
 public class PlayerStateController : Unit
 {
@@ -11,18 +12,19 @@ public class PlayerStateController : Unit
     [SerializeField] private float jumpPowerScaleOnLadder = 1f;
     [SerializeField] private float verticalMovespeed = 3f;
     [SerializeField] private ContactFilter2D filter;
-    private float jumpDirection;
 
-    private Mover mover;
-    private Fighter fighter;
-    private Climb climb;
-    private Jump jump;
-    private PlayerSkill1 playerSkill1;
-    private PlayerSkill2 playerSkill2;
-    private PlayerUltimateSkill ultimateSkill;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private NextLevelBtn nextLevelBtn;
+    [Inject] private SignalBus signalBus;
+
+    [Inject(Id = "Player")] private Mover mover;
+    [Inject(Id = "Player")] private Fighter fighter;
+    [Inject(Id = "Player")] private Climb climb;
+    [Inject(Id = "Player")] private Jump jump;
+    [Inject(Id = "Player")] private PlayerSkill1 playerSkill1;
+    [Inject(Id = "Player")] private PlayerSkill2 playerSkill2;
+    [Inject(Id = "Player")] private PlayerUltimateSkill ultimateSkill;
+    [Inject(Id = "Player")] private Rigidbody2D rb;
+    [Inject(Id = "Player")] private Animator anim;
+    private float jumpDirection;
 
     [HideInInspector] public UnityEvent StartWalk;
     [HideInInspector] public UnityEvent StopWalk;
@@ -30,18 +32,7 @@ public class PlayerStateController : Unit
 
     private void Start()
     {
-        mover = GetComponent<Mover>();
-        fighter = GetComponent<Fighter>();
-        climb = GetComponent<Climb>();
-        jump = GetComponent<Jump>();
-        playerSkill1 = GetComponent<PlayerSkill1>();
-        playerSkill2 = GetComponent<PlayerSkill2>();
-        ultimateSkill = GetComponent<PlayerUltimateSkill>();
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        nextLevelBtn = FindObjectOfType<NextLevelBtn>();
-
-        nextLevelBtn.PlayerStartNextLevel.AddListener(PlayerStartNextLvl);
+        signalBus.Subscribe<PlayerStartNextLevel>(PlayerStartNextLvl);
     }
 
     private void Update()

@@ -2,24 +2,23 @@
 using UnityEngine;
 using StoneOfAdventure.Artifacts;
 using UnityEngine.UI;
-using System;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace StoneOfAdventure.UI
 {
     public class ArtifactSelector : MonoBehaviour
     {
         [SerializeField] private List<GameObject> selectedArtifacts;
+        [SerializeField] private GameObject bck;
         private Fader fader;
         private ArtifactsPool artsPool;
-        [SerializeField] private GameObject bck;
         private CanvasGroup canvasGroup;
 
         private void Start()
         {
             fader = bck.GetComponentInChildren<Fader>();
             artsPool = GetComponentInChildren<ArtifactsPool>();
-            canvasGroup = GetComponent<CanvasGroup>();
+            canvasGroup = GetComponentInChildren<CanvasGroup>();
         }
 
         public void EnableArtifactSelector()
@@ -35,17 +34,17 @@ namespace StoneOfAdventure.UI
             for (int i = 0; i < 3; i++)
             {
                 selectedArtifacts.Add(artsPool.GetArt());
-                selectedArtifacts[i].GetComponent<Button>().onClick.AddListener(Hide);
+                selectedArtifacts[i].GetComponent<Button>().onClick.AddListener(() => StartCoroutine("Hide"));
             }
         }
 
-        async void Hide()
+        private IEnumerator Hide()
         {
             var arts = GetComponentsInChildren<Artifact>();
             HideNotSelectedArts(arts);
-            await Task.Delay(TimeSpan.FromSeconds(1));
+            yield return new WaitForSecondsRealtime(1f);
             fader.StartCoroutine("Hide");
-            await Task.Delay(TimeSpan.FromSeconds(1));
+            yield return new WaitForSecondsRealtime(1f);
             ClearSelector(arts);
             Time.timeScale = 1f;
         }
@@ -57,13 +56,8 @@ namespace StoneOfAdventure.UI
                 
                 arts[i].gameObject.SetActive(false);
             }
-            selectedArtifacts.RemoveAll(IsArtifact);
+            selectedArtifacts.RemoveAll((isArt) => true);
             canvasGroup.interactable = false;
-        }
-
-        private bool IsArtifact(GameObject obj)
-        {
-            return true;
         }
 
         private static void HideNotSelectedArts(Artifact[] arts)

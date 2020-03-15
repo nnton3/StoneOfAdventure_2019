@@ -1,21 +1,22 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.UI;
+using Zenject;
+
 namespace StoneOfAdventure.Core
 {
     public class Chest : MonoBehaviour
     {
-        private Treasury treasury;
+        [Inject] private Treasury treasury;
+        [Inject] private UIController uiController;
+
         [SerializeField] private int price = 10;
         private GameObject chestUI;
         private Animator anim;
-        private ArtifactSelector artifactSelector;
 
         private void Start()
         {
             anim = GetComponent<Animator>();
-            treasury = FindObjectOfType<Treasury>();
             chestUI = GetComponentInChildren<Canvas>().gameObject;
-            artifactSelector = FindObjectOfType<ArtifactSelector>();
         }
 
         // Animation event
@@ -25,9 +26,6 @@ namespace StoneOfAdventure.Core
             anim.SetTrigger("use");
         }
 
-        public void GiveReward()
-        {
-            artifactSelector.EnableArtifactSelector();
-        }
+        public void GiveReward() => uiController.ShowArtifactSelector();
     }
 }

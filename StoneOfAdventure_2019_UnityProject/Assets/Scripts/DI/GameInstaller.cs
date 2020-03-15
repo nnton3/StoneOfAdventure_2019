@@ -6,5 +6,8 @@ public class GameInstaller : MonoInstaller
     {
         SignalBusInstaller.Install(Container);
         Container.DeclareSignal<LocationCompletedSignal>();
+        Container.DeclareSignal<PlayerStartNextLevel>();
+        Container.DeclareSignal<LocationPointsUpdated>();
+        Container.DeclareSignal<LocationPointsTargetValueUpdated>();
     }
 }

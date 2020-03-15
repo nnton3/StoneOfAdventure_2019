@@ -22,7 +22,6 @@ namespace StoneOfAdventure.Artifacts
             int i = Random.Range(0, artsInPool.Count - 1);
             while (artsInPool[i].activeSelf)
             {
-                Debug.Log("get next art");
                 i = Random.Range(0, artsInPool.Count - 1);
             }
 
