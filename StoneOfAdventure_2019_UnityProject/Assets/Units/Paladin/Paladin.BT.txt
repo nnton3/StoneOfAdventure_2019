@@ -11,15 +11,15 @@ tree("Range")
 	while CompareAttackNumber(3)
 		sequence
 			JumpInRange
-			Wait(1.1)
+			Wait(3.8333)
 			Curse
-			Wait(1.0)
+			Wait(0.9)
 			RangeAttack
 			Wait(2.0)
 			Meteor
-			Wait(1.1)
+			Wait(2.0)
 			JumpInMelee
-			Wait(1.1)
+			Wait(3.8333)
 			ResetAttackEnumerator
 
 tree("Melee")
@@ -41,7 +41,7 @@ tree("MeleeAlgorithm")
 		random
 			sequence
 				Melee1
-				Wait(1.1)
+				Wait(2.083)
 			sequence
 				Melee2
-				Wait(1.1)
+				Wait(2.95)
