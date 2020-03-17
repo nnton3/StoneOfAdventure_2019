@@ -3615,8 +3615,8 @@ MonoBehaviour:
   _components:
   - {fileID: 8873797739833855045}
   _identifier: Player
-  _useSceneContext: 0
-  _context: {fileID: 0}
+  _useSceneContext: 1
+  _context: {fileID: 8470130008952389351}
   _bindType: 3
 --- !u!1 &9146637608729146950
 GameObject:
@@ -5005,8 +5005,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7061288498060851920, guid: 528442986daa46a4fbf7b2ac9917e63e, type: 3}
+    - target: {fileID: 2399485404749328449, guid: 528442986daa46a4fbf7b2ac9917e63e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528442986daa46a4fbf7b2ac9917e63e, type: 3}
 --- !u!224 &8867921898310371321 stripped
 RectTransform:
@@ -6506,31 +6510,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9146637608893494899}
     m_Modifications:
-    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: _components.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: _components.Array.data[9]
-      value: 
-      objectReference: {fileID: 9146637608559869791}
-    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: _components.Array.data[10]
-      value: 
-      objectReference: {fileID: 9146637608559869786}
-    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: _components.Array.data[11]
-      value: 
-      objectReference: {fileID: 9146637608559869785}
-    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
-        type: 3}
-      propertyPath: _components.Array.data[3]
-      value: 
-      objectReference: {fileID: 9146637608559869784}
     - target: {fileID: 3520417983458046496, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: m_Name
@@ -6591,6 +6570,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[3]
+      value: 
+      objectReference: {fileID: 9146637608559869784}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[9]
+      value: 
+      objectReference: {fileID: 9146637608559869791}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[10]
+      value: 
+      objectReference: {fileID: 9146637608559869786}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[11]
+      value: 
+      objectReference: {fileID: 9146637608559869785}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[12]
+      value: 
+      objectReference: {fileID: 1832811748607932917}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _useSceneContext
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _context
+      value: 
+      objectReference: {fileID: 8470130008952389351}
     - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: filter.useLayerMask
