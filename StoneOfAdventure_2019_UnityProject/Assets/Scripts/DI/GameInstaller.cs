@@ -9,5 +9,7 @@ public class GameInstaller : MonoInstaller
         Container.DeclareSignal<PlayerStartNextLevel>();
         Container.DeclareSignal<LocationPointsUpdated>();
         Container.DeclareSignal<LocationPointsTargetValueUpdated>();
+        Container.DeclareSignal<PlayerStartWalk>();
+        Container.DeclareSignal<PlayerStopWalk>();
     }
 }
