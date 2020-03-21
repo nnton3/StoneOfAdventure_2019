@@ -385,6 +385,46 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6825026598629614930, guid: 0bacb836c57284b4b893926b7720a626,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -393,46 +433,6 @@ PrefabInstance:
     - target: {fileID: 6825026598629614930, guid: 0bacb836c57284b4b893926b7720a626,
         type: 3}
       propertyPath: m_MaskInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1539276472061674391, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203881511290417669, guid: 0bacb836c57284b4b893926b7720a626,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -138965,7 +138965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1925852126
 Light:
   m_ObjectHideFlags: 0
@@ -138976,8 +138976,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.86722165, g: 0.5424528, b: 1, a: 1}
-  m_Intensity: 0.65
+  m_Color: {r: 0.25943398, g: 0.28665727, b: 1, a: 1}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
