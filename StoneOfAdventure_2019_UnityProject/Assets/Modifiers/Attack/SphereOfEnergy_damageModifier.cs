@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
     public class SphereOfEnergy_damageModifier : MonoBehaviour
     {
         #region Variables
-        private Fighter fighter;
-        private PlayerStateController playerController;
+        [Inject(Id = "Player")] private Fighter fighter;
+        [Inject] SignalBus signalBus;
         private float targetTimeOnFeet = 2f;
         private float bonusDamageInPercent = 1.5f;
         [SerializeField] private float currentTimeOnFeet = 0f;
@@ -21,11 +22,8 @@ namespace StoneOfAdventure.Combat
 
         private void Start()
         {
-            fighter = GetComponent<AOE_Fighter>();
-            playerController = GetComponent<PlayerStateController>();
-
-            playerController.StartWalk.AddListener(StartOnFeetTimer);
-            playerController.StopWalk.AddListener(StopOnFeetTimer);
+            signalBus.Subscribe<PlayerStartWalk>(StartOnFeetTimer);
+            signalBus.Subscribe<PlayerStopWalk>(StopOnFeetTimer);
             fighter.AddModifierOfDamage(CalculateAddedDamage);
         }
 

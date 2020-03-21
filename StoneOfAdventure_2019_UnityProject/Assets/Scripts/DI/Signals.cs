@@ -10,3 +10,6 @@ public class LocationPointsTargetValueUpdated
 {
     public int targetValue;
 }
+
+public class PlayerStartWalk { }
+public class PlayerStopWalk { }
