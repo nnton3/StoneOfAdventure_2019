@@ -25,9 +25,6 @@ public class PlayerStateController : Unit
     [Inject(Id = "Player")] private Rigidbody2D rb;
     [Inject(Id = "Player")] private Animator anim;
     private float jumpDirection;
-
-    [HideInInspector] public UnityEvent StartWalk;
-    [HideInInspector] public UnityEvent StopWalk;
     #endregion
 
     private void Start()
@@ -250,7 +247,6 @@ public class PlayerStateController : Unit
         switch (currentState)
         {
             case State.MoveHorizontal:
-                StopWalk.Invoke();
                 mover.CancelMove();
                 break;
         }
@@ -260,7 +256,8 @@ public class PlayerStateController : Unit
     private void StateMoveHorizontal()
     {
         if (currentState == State.InTheAir) anim.ResetTrigger("landed");
-        StartWalk.Invoke();
+
+        signalBus.Fire<PlayerStartWalk>();
         SetState(State.MoveHorizontal);
     }
 
@@ -276,7 +273,6 @@ public class PlayerStateController : Unit
         {
             case State.MoveHorizontal:
                 anim.SetTrigger("jump");
-                StopWalk.Invoke();
                 break;
             case State.Skill2:
                 anim.SetTrigger("skill2end");
@@ -306,15 +302,10 @@ public class PlayerStateController : Unit
 
     private void SetState(State value)
     {
+        if (currentState == State.MoveHorizontal) signalBus.Fire<PlayerStopWalk>();
         currentState = value;
     }
-
-    private void OnDestroy()
-    {
-        StartWalk.RemoveAllListeners();
-        StopWalk.RemoveAllListeners();
-    }
-
+    
     private bool CollisionWithPlatform()
     {
         return GetComponent<BoxCollider2D>().IsTouching(filter);
