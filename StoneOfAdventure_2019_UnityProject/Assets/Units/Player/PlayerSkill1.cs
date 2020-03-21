@@ -34,7 +34,6 @@ namespace StoneOfAdventure.Combat
             }
         }
 
-        #region Application area params
         [SerializeField] private Vector3 applicationAreaCenter;
         [SerializeField] private Vector3 applicationArea;
         [SerializeField] private bool applicationAreaVisible;
@@ -46,6 +45,5 @@ namespace StoneOfAdventure.Combat
             if (applicationAreaVisible)
                 Gizmos.DrawWireCube(transform.position + applicationAreaCenter, applicationArea);
         }
-        #endregion
     }
 }
