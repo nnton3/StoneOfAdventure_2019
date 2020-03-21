@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 900051935074013849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3, y: -5.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5469723366187207823}
   m_Father: {fileID: 0}
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19668ee0d4891414286e3802b4940328, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,13 +114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 60
-  artifactList:
-  - {fileID: 5622249330947774985, guid: fc0db13e48b5fa4418764337df9dbc40, type: 3}
-  - {fileID: 8007720152722476586, guid: 9c4a596b58d7a3d4c851210de71b1173, type: 3}
-  - {fileID: 4449557665590569239, guid: cb5e5a50b78d9b944bf4261d3aee1a33, type: 3}
-  - {fileID: 7817645331754166194, guid: 42ff5042914e443488a0f2727270a9b4, type: 3}
-  - {fileID: 8705216893909326726, guid: bc628fe5aa2856946ad60cb97ec56e81, type: 3}
-  - {fileID: 376464270646256237, guid: 6dcab8b0f372d484fa81ca6240c15043, type: 3}
 --- !u!1001 &4623744529936245929
 PrefabInstance:
   m_ObjectHideFlags: 0

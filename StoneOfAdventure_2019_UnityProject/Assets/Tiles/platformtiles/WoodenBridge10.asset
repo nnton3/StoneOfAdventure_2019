@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: upright2
+  m_Name: WoodenBridge10
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300004, guid: 3ebfe5eea5f1a39408526931c0f05f5b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

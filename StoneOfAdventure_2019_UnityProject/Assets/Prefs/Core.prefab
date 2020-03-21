@@ -4542,16 +4542,6 @@ PrefabInstance:
       propertyPath: unit
       value: 
       objectReference: {fileID: 9146637608559869796}
-    - target: {fileID: 5631418488830450640, guid: 999f8af39c5dfb448bddb7f505f34e05,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5631418488830450640, guid: 999f8af39c5dfb448bddb7f505f34e05,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999f8af39c5dfb448bddb7f505f34e05, type: 3}
 --- !u!224 &4691493537457811541 stripped
@@ -5682,12 +5672,27 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 576265518748566918, guid: 0e01510acbc51b649a66af5d387ebd9b,
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e01510acbc51b649a66af5d387ebd9b, type: 3}
+--- !u!224 &3480567728789504998 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2262320073866459790, guid: 0e01510acbc51b649a66af5d387ebd9b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3397990066770180456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3404020344579181127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1292519979703338485}
+    m_Modifications:
+    - target: {fileID: 5420605579126933021, guid: 52759fddd6f33f44da25b7de0bd65aeb,
         type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+      propertyPath: m_Name
+      value: BrokenClock_Artifact Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 576265518748566918, guid: 0e01510acbc51b649a66af5d387ebd9b,
+    - target: {fileID: 7531046894924579825, guid: 52759fddd6f33f44da25b7de0bd65aeb,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6683,6 +6688,51 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[3]
+      value: 
+      objectReference: {fileID: 9146637608559869784}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[9]
+      value: 
+      objectReference: {fileID: 9146637608559869791}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[10]
+      value: 
+      objectReference: {fileID: 9146637608559869786}
+    - target: {fileID: 5095959846434565982, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: _components.Array.data[11]
+      value: 
+      objectReference: {fileID: 9146637608559869785}
+    - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: filter.useLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294659417202341041, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: filter.layerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790436647658446409, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: baseDamage
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.37878788
+      objectReference: {fileID: 0}
+    - target: {fileID: 3520417983458046492, guid: df114cc1da34c114b981af620e5b6e52,
         type: 3}
       propertyPath: _context
       value: 
