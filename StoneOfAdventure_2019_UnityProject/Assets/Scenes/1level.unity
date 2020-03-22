@@ -12200,26 +12200,7 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 615893137964622362, guid: 1065c7cead172c14a84a48437c4e01cb,
-        type: 3}
-      propertyPath: _useSceneContext
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2193156824575529741, guid: 1065c7cead172c14a84a48437c4e01cb,
-        type: 3}
-      propertyPath: applicationAreaVisible
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 251229781289797682, guid: 1065c7cead172c14a84a48437c4e01cb,
-        type: 3}
-      propertyPath: _useSceneContext
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713097796062446047, guid: 1065c7cead172c14a84a48437c4e01cb,
-        type: 3}
-      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
+
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065c7cead172c14a84a48437c4e01cb, type: 3}
 --- !u!1001 &835775992
@@ -12835,7 +12816,6 @@ GameObject:
   - component: {fileID: 1088895889}
   - component: {fileID: 1088895888}
   - component: {fileID: 1088895887}
-  - component: {fileID: 1088895892}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Ground
@@ -16763,24 +16743,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1088895892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088895885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _components:
-  - {fileID: 1088895891}
-  _identifier: CurrentLvl
-  _useSceneContext: 0
-  _context: {fileID: 0}
-  _bindType: 0
 --- !u!1 &1126196356
 GameObject:
   m_ObjectHideFlags: 0

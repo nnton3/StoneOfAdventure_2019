@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ef0a6c2c99c948b57db18de10a4c3, type: 3}
   m_Name: EnemieSpawnerConfigSampleScene
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 5
+  baseSpawnDelay: 10
   minSpawnDelay: 1
   units:
   - Zombie1
   - Zombie2
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
   - ZombieDown
   baseSpawnChance:
   - 30
@@ -27,4 +34,4 @@ MonoBehaviour:
   - 30
   - 30
   totalTickNumber: 50
-  boundSize: {x: 10, y: 10, z: 1}
+  boundSize: {x: 20, y: 10, z: 1}
