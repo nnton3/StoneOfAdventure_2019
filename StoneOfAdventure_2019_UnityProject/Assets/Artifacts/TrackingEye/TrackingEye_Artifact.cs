@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using StoneOfAdventure.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StoneOfAdventure.Artifacts
 {
     public class TrackingEye_Artifact : Artifact
     {
-        [SerializeField] private int attackBlockedNumber = 9;
+        [SerializeField] private float timeToBlock = 9;
+        [SerializeField] private float timeToBlock_lvlCoef;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            var ciriticalDamage = player.AddComponent<TrackingEye_HealthModifier>();
-            ciriticalDamage.Initialize(attackBlockedNumber);
+            if (artifactsController.GetArtLvl(this) == 1)
+            {
+                var ciriticalDamage = Container.InstantiateComponent<TrackingEye_HealthModifier>(player);
+                ciriticalDamage.Initialize(timeToBlock);
+            }
+            else
+                player.GetComponent<TrackingEye_HealthModifier>().Initialize(timeToBlock - artifactsController.GetArtLvl(this) * timeToBlock_lvlCoef);
         }
     }
 }

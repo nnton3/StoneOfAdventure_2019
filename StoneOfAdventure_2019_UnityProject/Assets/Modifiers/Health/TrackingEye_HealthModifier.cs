@@ -1,32 +1,43 @@
 ﻿using UnityEngine;
-using System.Collections;
 using StoneOfAdventure.Combat;
-using System;
+using Zenject;
+using System.Collections;
 
 public class TrackingEye_HealthModifier : MonoBehaviour
 {
     #region Variables
-    private int attackNumberBlocked = 3;
-    private int numerator;
+    private float timeToBlock = 3;
+    [Inject(Id = "Player")] private Health health;
+    [Inject] private DiContainer Container;
+    private bool blockIsReady;
     #endregion
 
-    public void Initialize(int attackNumberBlocked)
+    public void Initialize(float timeToBlock)
     {
-        this.attackNumberBlocked = attackNumberBlocked;
+        this.timeToBlock = timeToBlock;
+
+        Container.Inject(this);
     }
 
     private void Start()
     {
-        GetComponent<Health>().AddModifierOfInputDamage(TryToBlockNextAttack);
+        health.AddModifierOfInputDamage(TryToBlockNextAttack);
+        StartCoroutine("TimeToBlockTimer");
+    }
+
+    private IEnumerator TimeToBlockTimer()
+    {
+        yield return new WaitForSeconds(timeToBlock);
+        blockIsReady = true;
     }
 
     private void TryToBlockNextAttack(ref int damage)
     {
-        numerator++;
-        if (numerator == attackNumberBlocked)
+        if (blockIsReady)
         {
             damage = 0;
-            numerator = 0;
         }
+        blockIsReady = false;
+        StartCoroutine("TimeToBlockTimer");
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -8,6 +9,7 @@ namespace StoneOfAdventure.Combat
         private float lifestealValueInPercent;
         private float periodicity;
         private Health health;
+        [Inject] private DiContainer Container;
 
         public void Initialize(float damageInPercent, float lifesteal, float periodicity)
         {
@@ -15,6 +17,8 @@ namespace StoneOfAdventure.Combat
             this.lifestealValueInPercent = lifesteal;
             this.periodicity = periodicity;
             layerMask = LayerMask.GetMask("Enemie");
+
+            Container.Inject(this);
         }
 
         private void Start()

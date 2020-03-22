@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 public class RingOfDetermination_buff : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class RingOfDetermination_buff : MonoBehaviour
     private int sixtyPercentHeal;
     private int fourtyPercentHeal;
     private int twetyPercentHeal;
+    [Inject] private DiContainer Container;
     #endregion
 
     public void Initialize(int sixtyPercentHeal, int fourtyPercentHeal, int twetyPercentHeal)
@@ -17,6 +19,8 @@ public class RingOfDetermination_buff : MonoBehaviour
         this.sixtyPercentHeal = sixtyPercentHeal;
         this.fourtyPercentHeal = fourtyPercentHeal;
         this.twetyPercentHeal = twetyPercentHeal;
+
+        Container.Inject(this);
     }
 
     private void Start()

@@ -5,14 +5,24 @@ namespace StoneOfAdventure.Artifacts
 {
     public class CriticalDamage_Artifact : Artifact
     {
-        [SerializeField] private float criticalChance = 50f;
-        [SerializeField] private float damageScale = 1.5f;
+        [SerializeField] private float criticalChance = 15f;
+        [SerializeField] private float addedDamageinPercent = 0.5f;
+        [SerializeField] private float denominatorOfProgression;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            var ciriticalDamage = player.AddComponent<CriticalDamage_damageModifier>();
-            ciriticalDamage.Initialize(damageScale, criticalChance);
+            if (artifactsController.GetArtLvl(this) == 1)
+            {
+                var ciriticalDamage = Container.InstantiateComponent<CriticalDamage_damageModifier>(player);
+                ciriticalDamage.Initialize(addedDamageinPercent, criticalChance);
+            }
+            else
+                player.GetComponent<CriticalDamage_damageModifier>().Initialize
+                    (
+                        addedDamageinPercent, 
+                        CalculateNewChanceValue(criticalChance, denominatorOfProgression)
+                    );
         }
     }
 }
