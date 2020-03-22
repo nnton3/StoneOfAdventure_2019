@@ -7,7 +7,7 @@ namespace StoneOfAdventure.Artifacts
     {
         private List<GameObject> artsInPool = new List<GameObject>();
 
-        private void Awake()
+        private void Start()
         {
             var arts = GetComponentsInChildren<Artifact>();
             foreach (var art in arts)

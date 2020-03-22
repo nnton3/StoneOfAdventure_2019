@@ -1,24 +1,20 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 namespace StoneOfAdventure.Artifacts
 {
     public class AttackspeedUpper_artifact : Artifact
     {
-        [SerializeField][Range(0f, 1f)] private float addedAttackspeedInPercent;
+        [SerializeField] private float addedAttackSpeed;
 
-        private Fighter playerFighter;
-
-        protected override void Start()
-        {
-            base.Start();
-            playerFighter = player.GetComponent<Fighter>();
-        }
+        [Inject(Id = "Player")] private Fighter playerFighter;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            playerFighter.ModifyAttackSpeed(addedAttackspeedInPercent);
+            artifactsController.AddArt(this);
+            playerFighter.ModifyAttackSpeed(addedAttackSpeed);
         }
     }
 }

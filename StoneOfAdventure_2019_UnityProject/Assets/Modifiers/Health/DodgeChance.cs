@@ -1,13 +1,17 @@
 ﻿using StoneOfAdventure.Combat;
 using UnityEngine;
+using Zenject;
 
 public class DodgeChance : MonoBehaviour
 {
     private float dodgeChance;
+    [Inject] private DiContainer Container;
 
     public void Initialize(float dodgeChance)
     {
         this.dodgeChance = dodgeChance;
+
+        Container.Inject(this);
     }
 
     private void Start()

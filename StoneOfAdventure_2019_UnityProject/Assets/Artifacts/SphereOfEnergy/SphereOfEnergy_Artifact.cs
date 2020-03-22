@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -7,12 +8,20 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] private float targetTimeOnFeet = 2f;
         [SerializeField] private float bonusDamageInPercent = 1.5f;
+        [SerializeField] private float bonusDamageInPercent_lvlCoef;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            var ciriticalDamage = player.AddComponent<SphereOfEnergy_damageModifier>();
-            ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
+            if (artifactsController.GetArtLvl(this) == 1)
+            {
+                var ciriticalDamage = Container.InstantiateComponent<SphereOfEnergy_damageModifier>(player);
+                ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
+            }
+            else
+                player.GetComponent<SphereOfEnergy_damageModifier>().Initialize(
+                    targetTimeOnFeet,
+                    bonusDamageInPercent + artifactsController.GetArtLvl(this) * bonusDamageInPercent_lvlCoef);
         }
     }
 }

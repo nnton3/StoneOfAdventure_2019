@@ -8,6 +8,7 @@ namespace StoneOfAdventure.Combat
         #region Variables
         [Inject(Id = "Player")] private Fighter fighter;
         [Inject] SignalBus signalBus;
+        [Inject] DiContainer Container;
         private float targetTimeOnFeet = 2f;
         private float bonusDamageInPercent = 1.5f;
         [SerializeField] private float currentTimeOnFeet = 0f;
@@ -18,6 +19,8 @@ namespace StoneOfAdventure.Combat
         {
             targetTimeOnFeet = _targetTimeOnFeet;
             bonusDamageInPercent = _bonusDamageInPercent;
+
+            Container.Inject(this);
         }
 
         private void Start()

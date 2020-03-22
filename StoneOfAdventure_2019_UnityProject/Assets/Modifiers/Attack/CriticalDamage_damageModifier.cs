@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
     public class CriticalDamage_damageModifier : MonoBehaviour
     {
-        private Fighter fighter;
+        [Inject(Id = "Player")] private Fighter fighter;
+        [Inject] private DiContainer Container;
         private float addedDamageInPercent = 0.5f;
         private float criticalChance = 50f;
 
@@ -12,12 +14,12 @@ namespace StoneOfAdventure.Combat
         {
             addedDamageInPercent = _damageScale;
             criticalChance = _criticalChance;
+
+            Container.Inject(this);
         }
 
         private void Start()
         {
-            fighter = GetComponent<Fighter>();
-
             fighter.AddModifierOfDamage(CalculateDamageScale);
         }
 

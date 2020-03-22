@@ -1,5 +1,6 @@
 ﻿using StoneOfAdventure.UI;
 using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -8,6 +9,8 @@ namespace StoneOfAdventure.Artifacts
         protected GameObject player;
         private GameObject artifactUI;
         private Fader fader;
+        [Inject] protected ArtifactsController artifactsController;
+        [Inject] protected DiContainer Container;
 
         private bool isSelected;
         public bool IsSelected => isSelected;
@@ -18,11 +21,29 @@ namespace StoneOfAdventure.Artifacts
             fader = GetComponent<Fader>();
         }
 
-        public virtual void AddEffect() { isSelected = true; }
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                AddEffect();
+            }
+        }
+
+        public virtual void AddEffect()
+        {
+            artifactsController.AddArt(this);
+            isSelected = true;
+        }
 
         public void Hide()
         {
             fader.StartCoroutine("Hide");
+        }
+
+        protected float CalculateNewChanceValue(float baseChance, float denominatorOfProgression)
+        {
+            var addedChance = baseChance * Mathf.Pow(denominatorOfProgression, artifactsController.GetArtLvl(this) - 1);
+            return (baseChance - addedChance * denominatorOfProgression) / (1 - denominatorOfProgression);
         }
     }
 }

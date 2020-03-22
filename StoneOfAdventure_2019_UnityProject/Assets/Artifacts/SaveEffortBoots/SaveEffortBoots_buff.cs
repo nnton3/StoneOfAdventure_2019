@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using StoneOfAdventure.Movement;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -14,6 +15,7 @@ namespace StoneOfAdventure.Combat
         private float buffTime;
         private float timeToApply;
         private float movespeedGain;
+        [Inject] private DiContainer Container;
         #endregion
 
         public void Initialize(float buffTime, float timeToApply, float movespeedGain)
@@ -21,6 +23,8 @@ namespace StoneOfAdventure.Combat
             this.buffTime = buffTime;
             this.timeToApply = timeToApply;
             this.movespeedGain = movespeedGain;
+
+            Container.Inject(this);
         }
 
         private void Start()
