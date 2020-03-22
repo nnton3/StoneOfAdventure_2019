@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -6,26 +7,25 @@ namespace StoneOfAdventure.Combat
     {
         #region Variables
         private float lifestealInPersent = 0f;
-        private Fighter fighter;
-        private Health health;
+        [Inject(Id = "Player")] private Fighter fighter;
+        [Inject(Id = "Player")] private Health health;
+        [Inject] DiContainer Container;
         #endregion
 
         public void Initialize(float lifestealInPersent)
         {
             this.lifestealInPersent = lifestealInPersent;
+
+            Container.Inject(this);
         }
 
         private void Start()
         {
-            fighter = GetComponent<Fighter>();
-            health = GetComponent<Health>();
-
             fighter.AddEffectOfAttack(ApplyLifesteal);
         }
 
         private void ApplyLifesteal(GameObject target)
         {
-            Debug.Log("Lifestealed");
             var targetHealth = target.GetComponent<Health>();
             var lifestealedHP = (int)(targetHealth.HealthPoints * lifestealInPersent);
             targetHealth.ApplyDamage(lifestealedHP);

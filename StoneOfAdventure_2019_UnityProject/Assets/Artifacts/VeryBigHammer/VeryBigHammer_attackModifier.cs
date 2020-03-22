@@ -1,5 +1,6 @@
 ﻿using StoneOfAdventure.Core;
 using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -11,6 +12,7 @@ namespace StoneOfAdventure.Combat
         private float chance;
         private float timeInStun;
         private int damage;
+        [Inject] private DiContainer Container;
         #endregion
 
         public void Initialize(float chance, float timeInStun, int damage)
@@ -18,6 +20,8 @@ namespace StoneOfAdventure.Combat
             this.chance = chance;
             this.timeInStun = timeInStun;
             this.damage = damage;
+
+            Container.Inject(this);
         }
 
         private void Start()

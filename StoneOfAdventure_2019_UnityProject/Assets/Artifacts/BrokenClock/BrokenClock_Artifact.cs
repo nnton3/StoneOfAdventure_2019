@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -6,12 +7,18 @@ namespace StoneOfAdventure.Artifacts
     {
         [SerializeField] [Range(0f, 1f)] private float chance = 0.2f;
         [SerializeField] private float reduceValue = 2.5f;
+        [SerializeField] private float denominatorOfProgression;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            var buff = player.AddComponent<BrokenClock_buff>();
-            buff.Initialize(chance, reduceValue);
+            if (artifactsController.GetArtLvl(this) == 1)
+            {
+                var buff = Container.InstantiateComponent<BrokenClock_buff>(player);
+                buff.Initialize(chance, reduceValue);
+            }
+            else
+                player.GetComponent<BrokenClock_buff>().Initialize(CalculateNewChanceValue(chance, denominatorOfProgression), reduceValue);
         }
     }
 }

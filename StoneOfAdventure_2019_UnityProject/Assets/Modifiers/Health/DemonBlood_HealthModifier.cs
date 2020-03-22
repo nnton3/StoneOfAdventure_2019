@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 public class DemonBlood_HealthModifier : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DemonBlood_HealthModifier : MonoBehaviour
 
     private Health health;
     private HealthRegen healthRegen;
+    [Inject] private DiContainer Container;
     #endregion
 
     public void Initialize(int _maxStucsValue, float _effectTime, float _healPerSecPerStuc)
@@ -19,6 +21,8 @@ public class DemonBlood_HealthModifier : MonoBehaviour
         maxStucsValue = _maxStucsValue;
         effectTime = _effectTime;
         healPerSecPerStuc = _healPerSecPerStuc;
+
+        Container.Inject(this);
     }
 
     private void Start()
