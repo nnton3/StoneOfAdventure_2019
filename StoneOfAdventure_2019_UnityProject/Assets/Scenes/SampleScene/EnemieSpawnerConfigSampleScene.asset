@@ -18,13 +18,6 @@ MonoBehaviour:
   - Zombie1
   - Zombie2
   - ZombieDown
-  - ZombieDown
-  - ZombieDown
-  - ZombieDown
-  - ZombieDown
-  - ZombieDown
-  - ZombieDown
-  - ZombieDown
   baseSpawnChance:
   - 30
   - 30
