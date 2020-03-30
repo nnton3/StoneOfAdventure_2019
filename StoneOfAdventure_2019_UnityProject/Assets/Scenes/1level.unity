@@ -12253,8 +12253,13 @@ PrefabInstance:
         type: 3}
       propertyPath: _scriptableObjectInstallers.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 4d1e24eebf773974a980344ad2ebc768,
+      objectReference: {fileID: 11400000, guid: 52f736a7e4c5e6945b7a9e61e9b3fd4f,
         type: 2}
+    - target: {fileID: 8833763184507030607, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: maxLocationPoints
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1065c7cead172c14a84a48437c4e01cb, type: 3}
 --- !u!1001 &835775992
