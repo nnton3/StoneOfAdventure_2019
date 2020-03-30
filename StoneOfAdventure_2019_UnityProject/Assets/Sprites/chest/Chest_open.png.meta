@@ -8,6 +8,10 @@ TextureImporter:
     21300006: Chest_open_3
     21300008: Chest_open_4
     21300010: Chest_open_5
+    21300012: Chest_open_6
+    21300014: Chest_open_7
+    21300016: Chest_open_8
+    21300018: Chest_open_9
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -47,7 +51,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -148,9 +152,9 @@ TextureImporter:
       name: Chest_open_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 16
+        x: 5
+        y: 29
+        width: 12
         height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -159,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572c4df14a0aee54bbc5d3b442a3f0ac
+      spriteID: 28441e933d1618340840a7ab78845441
       vertices: []
       indices: 
       edges: []
@@ -168,10 +172,10 @@ TextureImporter:
       name: Chest_open_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 3
-        width: 16
-        height: 8
+        x: 123
+        y: 28
+        width: 12
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a701f57f6f380e449ba6a28f5b93261
+      spriteID: 88f5abd9b1087ff4a836c4aa8cde1656
       vertices: []
       indices: 
       edges: []
@@ -188,10 +192,10 @@ TextureImporter:
       name: Chest_open_2
       rect:
         serializedVersion: 2
-        x: 194
-        y: 3
-        width: 16
-        height: 8
+        x: 242
+        y: 27
+        width: 12
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +203,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f1e0e851e0bd934e929bf7bb3c529a3
+      spriteID: 1437b1e0a0862fa4d9fe3ce8ee7c1207
       vertices: []
       indices: 
       edges: []
@@ -208,10 +212,10 @@ TextureImporter:
       name: Chest_open_3
       rect:
         serializedVersion: 2
-        x: 289
-        y: 3
+        x: 358
+        y: 28
         width: 16
-        height: 8
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ca4bf817162d2f4b834b0011ca7ac79
+      spriteID: e8bcdec762505924b8c19a342f5b39df
       vertices: []
       indices: 
       edges: []
@@ -228,9 +232,9 @@ TextureImporter:
       name: Chest_open_4
       rect:
         serializedVersion: 2
-        x: 385
-        y: 3
-        width: 16
+        x: 4
+        y: 0
+        width: 14
         height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -239,7 +243,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61f0a6d86c2e5864ba6c1b461ca3bd9b
+      spriteID: 02fb8a86ca50ff54bbe6353fc235ee0d
       vertices: []
       indices: 
       edges: []
@@ -248,9 +252,29 @@ TextureImporter:
       name: Chest_open_5
       rect:
         serializedVersion: 2
-        x: 480
-        y: 3
+        x: 98
+        y: 0
         width: 16
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d122a50f82e4745aca5523a0de4e0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_open_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 14
         height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -259,7 +283,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc9f0be225a08043826260520980595
+      spriteID: dbee7e783c6736e43a5fab4533294d7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_open_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 14
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222f37e8d31d8f24084ba986c26d57e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_open_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 14
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a152d747ff83545a75cd7c1e88f655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_open_9
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 14
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002552255e4fc764093111bad8b5dfd2
       vertices: []
       indices: 
       edges: []
