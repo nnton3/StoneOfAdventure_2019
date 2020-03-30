@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240a9b4d694ae394a865f0d0449a3d6a, type: 3}
+  m_Name: LvlConfig
+  m_EditorClassIdentifier: 
+  spawnerConfig: {fileID: 11400000, guid: e7ef2e7dadab65e4592e1f156b31fc59, type: 2}
+  groundTile: {fileID: 11400000, guid: 5eece359f1848404b9f8e6cbc6d4a042, type: 2}
