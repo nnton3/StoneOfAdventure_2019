@@ -8,8 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FrontMaterial
-  m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHAPREMULTIPLY_ON _ALPHATEST_ON _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHAPREMULTIPLY_ON _BLENDMODE_ALPHA _DISABLE_DECALS
+    _DISABLE_SSR _DISPLACEMENT_LOCK_TILING_SCALE _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+    _NORMALMAP _NORMALMAP_TANGENT_SPACE _PIXEL_DISPLACEMENT _PIXEL_DISPLACEMENT_LOCK_OBJECT_SCALE
+    _SPECULARHIGHLIGHTS_OFF _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,7 +27,6 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - MOTIONVECTORS
-  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -37,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3ebfe5eea5f1a39408526931c0f05f5b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -121,7 +123,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3ebfe5eea5f1a39408526931c0f05f5b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal0:
@@ -141,7 +143,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ed36bba7c3ffc2a4fb25370be1222f61, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -233,7 +235,7 @@ Material:
     - _DiffusionProfile: 0
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
-    - _DisplacementMode: 0
+    - _DisplacementMode: 2
     - _DistortionBlendMode: 0
     - _DistortionBlurBlendMode: 0
     - _DistortionBlurDstBlend: 1
@@ -254,22 +256,22 @@ Material:
     - _DstBlend: 10
     - _EmissionEnabled: 0
     - _EmissiveColorMode: 1
-    - _EnableBlendModePreserveSpecularLighting: 1
+    - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableExternalAlpha: 0
-    - _EnableFogOnTransparent: 1
+    - _EnableFogOnTransparent: 0
     - _EnableGeometricSpecularAA: 0
     - _EnableMotionVectorForVertexAnimation: 0
     - _EnableSpecularOcclusion: 0
     - _EnableWind: 0
     - _EnergyConservingSpecularColor: 1
     - _FlipbookMode: 1
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossinessSource: 1
     - _GlossyReflections: 0
     - _HdrpVersion: 2
     - _HeightAmplitude: 0.02
-    - _HeightCenter: 0.5
+    - _HeightCenter: 1
     - _HeightMapParametrization: 0
     - _HeightMax: 1
     - _HeightMin: -1
@@ -285,7 +287,7 @@ Material:
     - _LightingEnabled: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
-    - _Metallic: 0
+    - _Metallic: 1
     - _Metallic0: 0
     - _Metallic1: 0
     - _Metallic2: 0
@@ -303,14 +305,14 @@ Material:
     - _Parallax: 0.02
     - _PreRefractionPass: 0
     - _ReceiveShadows: 1
-    - _ReceivesSSR: 1
+    - _ReceivesSSR: 0
     - _RefractionModel: 0
     - _SSRefractionProjectionModel: 0
     - _SampleGI: 0
     - _Shininess: 0.03
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _Smoothness0: 0.5
     - _Smoothness1: 0.5
     - _Smoothness2: 0.5
@@ -326,15 +328,15 @@ Material:
     - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 0
     - _SrcBlend: 1
-    - _StencilRef: 2
+    - _StencilRef: 34
     - _StencilRefMV: 128
-    - _StencilWriteMask: 7
+    - _StencilWriteMask: 39
     - _StencilWriteMaskMV: 128
     - _Stiffness: 1
     - _SubsurfaceMask: 1
-    - _SupportDecals: 1
+    - _SupportDecals: 0
     - _Surface: 1
-    - _SurfaceType: 0
+    - _SurfaceType: 1
     - _TERRAIN_INSTANCED_PERPIXEL_NORMAL: 0
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
@@ -359,7 +361,7 @@ Material:
     - _UseShadowThreshold: 0
     - _WindQuality: 0
     - _WorkflowMode: 0
-    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 0
