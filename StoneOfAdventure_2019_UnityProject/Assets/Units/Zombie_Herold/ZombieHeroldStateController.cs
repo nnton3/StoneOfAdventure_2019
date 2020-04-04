@@ -2,7 +2,7 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 using System.Collections;
-using UnityEngine.Experimental.VFX;
+using UnityEngine.VFX;
 using StoneOfAdventure.Movement;
 
 public class ZombieHeroldStateController : UnitContainsAward
