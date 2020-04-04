@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using System;
-using StoneOfAdventure.Core;
-using StoneOfAdventure.Combat;
 using System.Linq;
-using UnityEngine.Experimental.VFX;
+using UnityEngine.VFX;
 
 public class BuffArea : MonoBehaviour
 {

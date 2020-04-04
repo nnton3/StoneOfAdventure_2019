@@ -1,20 +1,42 @@
 fileFormatVersion: 2
 guid: e5a8cc61c4e187b4f89156be666c1239
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Portal1_0
-    21300002: Portal1_1
-    21300004: Portal1_2
-    21300006: Portal1_3
-    21300008: Portal1_4
-    21300010: Portal1_5
-    21300012: Portal1_6
-    21300014: Portal1_7
-    21300016: Portal1_8
-    21300018: Portal1_9
-    21300020: Portal1_10
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Portal1_0
+  - first:
+      213: 21300002
+    second: Portal1_1
+  - first:
+      213: 21300004
+    second: Portal1_2
+  - first:
+      213: 21300006
+    second: Portal1_3
+  - first:
+      213: 21300008
+    second: Portal1_4
+  - first:
+      213: 21300010
+    second: Portal1_5
+  - first:
+      213: 21300012
+    second: Portal1_6
+  - first:
+      213: 21300014
+    second: Portal1_7
+  - first:
+      213: 21300016
+    second: Portal1_8
+  - first:
+      213: 21300018
+    second: Portal1_9
+  - first:
+      213: 21300020
+    second: Portal1_10
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,8 +90,9 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +103,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -91,7 +115,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -102,7 +127,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: tvOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,7 +139,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -124,7 +151,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -135,7 +163,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -146,6 +175,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -165,6 +195,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4ae6a641f49ffc94db461dd57eadc95b
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -185,6 +216,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c4353650d272faa48b3e98fdb18f6614
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -205,6 +237,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1b04fd56551e66843b30167cd477ad91
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -225,6 +258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9cd5706ad0899d54092844ca32cae259
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -245,6 +279,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3dae6de76f031a74e82f81b2b8cf478c
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -265,6 +300,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 782e4ef7e9d57874eb818d1016ddd8ef
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -285,6 +321,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 15de650bc8fe8d14cb4f1ba84fda2621
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -305,6 +342,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e6f55a375327cc347804dbbcef3e9bb8
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -325,6 +363,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b4bc2b15299cba648b71de225e84550c
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -345,6 +384,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 88832a6fb58383b45a41ee37c58c4953
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -365,6 +405,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8e1e4a030f85f944e9279282955e31db
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -373,10 +414,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 7fa8ee41b7365574aab2a62d432886a1
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
