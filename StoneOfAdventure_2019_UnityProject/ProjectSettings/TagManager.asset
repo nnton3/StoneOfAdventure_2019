@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Ladder
-  - DownStopper
-  - UpperStopper
-  - Enemie
-  - Platform
-  - PatrolTile
-  - Boss
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Enemie
-  - Illusion
-  - AttackTrigger
-  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -48,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Particals
-    uniqueID: 768804955
     locked: 0
