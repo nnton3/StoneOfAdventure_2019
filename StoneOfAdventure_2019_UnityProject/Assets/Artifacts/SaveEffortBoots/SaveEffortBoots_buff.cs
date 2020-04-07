@@ -36,7 +36,7 @@ namespace StoneOfAdventure.Combat
             StartCoroutine("TimeWithoutDamage");
         }
 
-        private void ResetTimer()
+        private void ResetTimer(int value)
         {
             StopCoroutine("TimeWithoutDamage");
             if (buffIsActive)

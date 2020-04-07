@@ -14,7 +14,7 @@ public class DamagedColorIndication : MonoBehaviour
         health.HPDecreased.AddListener(SwapColor);
     }
 
-    private void SwapColor()
+    private void SwapColor(int value)
     {
         anim.SetTrigger("damaged");
     }

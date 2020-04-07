@@ -1,48 +1,38 @@
 ﻿using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-public class HealthPointsUI : MonoBehaviour
+namespace StoneOfAdventure.UI
 {
-    private Health health;
-    private float lastHealthSave;
-    private Flip unitFlip;
-    private Flip thisFlip;
-
-    private void Start()
+    public class HealthPointsUI : MonoBehaviour
     {
-        health = GetComponentInParent<Health>();
-        unitFlip = GetComponentInParent<Flip>();
-        thisFlip = GetComponent<Flip>();
+        [SerializeField] private GameObject pointsUI;
+        [Inject (Id = "HP_UI")] private ObjectPool hp_uiPool;
+        [Inject] private Camera mainCamera;
 
-        unitFlip.Flipped.AddListener(FixXScale);
-        lastHealthSave = health.HealthPoints;
-        health.HPDecreased.AddListener(CalculateHealthDifference);
+        private Health health;
+
+        private void Start()
+        {
+            health = GetComponentInParent<Health>();
+
+            health.HPDecreased.AddListener((value) => CreatePointsUI(value.ToString(), Color.red));
+            health.HPIncreased.AddListener((value) => CreatePointsUI(value.ToString(), Color.green));
+        }
+
+        private void CreatePointsUI(string text, Color pointsColor)
+        {
+            var hp_ui = hp_uiPool.GetObject();
+            hp_ui.SetActive(true);
+            hp_ui.transform.position = transform.position;
+            var textComponent = hp_ui.GetComponentInChildren<Text>();
+            textComponent.text = text;
+            textComponent.color = pointsColor;
+            hp_ui.GetComponent<DysableTimer>().StartCoroutine("ReturnToPool");
+            hp_ui.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 3f, ForceMode2D.Impulse);
+        }
     }
-
-    private void FixXScale()
-    {
-        thisFlip.CheckDirection((unitFlip.isFacingRight) ? 1f : -1f);
-    }
-
-    private void CalculateHealthDifference()
-    {
-        var healthDifference = lastHealthSave - health.HealthPoints;
-        if (healthDifference == 0f) return;
-        if (healthDifference > 0) CreatePointsUI($"{healthDifference}", Color.red);
-        if (healthDifference < 0) CreatePointsUI($"{healthDifference}", Color.green);
-        lastHealthSave = health.HealthPoints;
-    }
-
-    [SerializeField] private GameObject pointsUI;
-    private void CreatePointsUI(string text, Color pointsColor)
-    {
-        GameObject currentInstance = Instantiate(pointsUI, Vector3.zero, Quaternion.identity, transform);
-        currentInstance.transform.localPosition = Vector3.zero;
-        var textComponent = currentInstance.GetComponent<Text>();
-        textComponent.text = text;
-        textComponent.color = pointsColor;
-        currentInstance.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 3f, ForceMode2D.Impulse);
-     }
 }

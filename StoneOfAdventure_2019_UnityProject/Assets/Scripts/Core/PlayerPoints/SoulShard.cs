@@ -58,7 +58,12 @@ public class SoulShard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) PlayerGetReward();
+        if (collision.CompareTag("Player") && moveStarted) PlayerGetReward();
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && moveStarted) PlayerGetReward();
     }
 
     private void PlayerGetReward()
