@@ -24,7 +24,6 @@ public class ZombieHeroldStateController : UnitContainsAward
     protected override void Start()
     {
         base.Start();
-
         flip = GetComponent<Flip>();
         patrolBehaviour = GetComponent<PatrolBehaviour>();
         mover = GetComponent<Mover>();

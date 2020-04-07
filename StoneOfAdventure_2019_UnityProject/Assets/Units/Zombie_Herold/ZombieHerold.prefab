@@ -45,6 +45,8 @@ VisualEffect:
   m_GameObject: {fileID: 2480325433300431635}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: db25a00e39ab9c34f9ce5d00f8ac891b, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
@@ -84,10 +86,10 @@ VFXRenderer:
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,6 +97,7 @@ VFXRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -201,7 +204,6 @@ GameObject:
   - component: {fileID: 6394804556579325370}
   - component: {fileID: 1815551816791317082}
   - component: {fileID: 6614450624607186349}
-  - component: {fileID: 2768004787438883093}
   m_Layer: 9
   m_Name: ZombieHerold
   m_TagString: Enemie
@@ -239,6 +241,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -250,6 +253,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -355,8 +359,6 @@ MonoBehaviour:
   Flipped:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &3601460222140525366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,23 +374,15 @@ MonoBehaviour:
   HPDecreased:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   HPIncreased:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   MaxHealthUpdated:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   Dead:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   healthPoints: 35
   untouchable: 1
 --- !u!114 &5792545510151547752
@@ -461,18 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55b74d3f16490e4b8e159490d5ccf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2768004787438883093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3601460222140525370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee37375c8f4b3344a928d136f33709b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4200216003108321560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,15 +462,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3601460222140525373}
     m_Modifications:
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
-      propertyPath: m_Name
-      value: HPBar
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018956296930, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
@@ -595,20 +582,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6530545018956296930, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
+      propertyPath: m_Name
+      value: HPBar
       objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd7cb08365df33f4fa61ad4e9673ca9e, type: 3}
