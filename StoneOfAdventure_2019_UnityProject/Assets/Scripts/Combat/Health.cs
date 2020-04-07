@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-using System;
 using StoneOfAdventure.Core;
 
 namespace StoneOfAdventure.Combat
 {
+    public class HPDecreasedEvent : UnityEvent<int> { }
+    public class HPIncreasedEvent : UnityEvent<int> { }
+
     public class Health : MonoBehaviour, IDamaged
     {
         #region Variables
         private Unit unit;
 
-        [HideInInspector] public UnityEvent HPDecreased;
-        [HideInInspector] public UnityEvent HPIncreased;
+        [HideInInspector] public HPDecreasedEvent HPDecreased = new HPDecreasedEvent();
+        [HideInInspector] public HPDecreasedEvent HPIncreased = new HPDecreasedEvent();
         [HideInInspector] public UnityEvent MaxHealthUpdated;
         [HideInInspector] public UnityEvent Dead;
         public delegate void ModifiersOfInputDamage(ref int damage);
@@ -38,7 +40,6 @@ namespace StoneOfAdventure.Combat
         {
             untouchable = true;
             healthPoints = MaxHealthPoints;
-            HPIncreased.Invoke();
         }
 
         public void ApplyDamage(int damage)
@@ -58,12 +59,12 @@ namespace StoneOfAdventure.Combat
             {
                 healthPoints -= currentDamage;
             }
-            HPDecreased?.Invoke();
+            HPDecreased?.Invoke(currentDamage);
         }
 
         private bool CheckYourChance(float value)
         {
-            var chance = UnityEngine.Random.Range(0, 1);
+            var chance = Random.Range(0, 1);
             return chance < value;
         }
         
@@ -75,7 +76,7 @@ namespace StoneOfAdventure.Combat
         public void Heal(int healValue)
         {
             if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
-            HPIncreased.Invoke();
+            HPIncreased.Invoke(healValue);
         }
 
         /// <summary>

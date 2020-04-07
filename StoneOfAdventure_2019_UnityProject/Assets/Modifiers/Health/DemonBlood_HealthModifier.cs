@@ -33,7 +33,7 @@ public class DemonBlood_HealthModifier : MonoBehaviour
         health.HPDecreased.AddListener(TryToAddStuc);
     }
 
-    private void TryToAddStuc()
+    private void TryToAddStuc(int value)
     {
         if (currentStucsValue < maxStucsValue) currentStucsValue++;
         healthRegen.SetTemporaryRegen(currentStucsValue * healPerSecPerStuc, effectTime);
