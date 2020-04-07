@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace StoneOfAdventure.Core
 {
     public class SoulsChest : MonoBehaviour
     {
-        private GameObject soulShardPref;
-        private SoulShardsPool soulShardPool;
+        [Inject(Id = "SoulShard")] private ObjectPool soulShardPool;
         [SerializeField] private int reward = 3;
 
         protected virtual void Start()
         {
-            soulShardPool = GetComponent<SoulShardsPool>();
+            soulShardPool = GetComponent<ObjectPool>();
             soulShardPool.FillPool(reward);
 
             GetComponentInChildren<Button>().onClick.AddListener(CreateReward);
@@ -19,11 +19,11 @@ namespace StoneOfAdventure.Core
 
         public void CreateReward()
         {
-            var soulShards = soulShardPool.GetSoulShards();
             for (int i = 0; i < reward; i++)
             {
-                soulShards[i].SetActive(true);
-                soulShards[i].transform.position = transform.position;
+                var soulShard = soulShardPool.GetObject();
+                soulShard.SetActive(true);
+                soulShard.transform.position = transform.position;
             }
         }
     }

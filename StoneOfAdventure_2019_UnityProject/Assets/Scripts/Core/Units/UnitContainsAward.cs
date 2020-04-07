@@ -1,35 +1,31 @@
 ﻿using UnityEngine;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 namespace StoneOfAdventure.Core
 {
     public class UnitContainsAward : Unit
     {
-        private GameObject soulShardPref;
-        private SoulShardsPool soulShardPool;
-        private PlayerLevelObserver levelObserver;
+        [Inject (Id = "SoulShard")] private ObjectPool soulShardPool;
+        [Inject] private PlayerLevelObserver levelObserver;
+        [Inject] DiContainer container;
 
         [SerializeField] private int reward = 3;
-        public int Reward => reward;
-
         [SerializeField] private int experience = 5;
 
         protected virtual void Start()
         {
-            soulShardPool = GetComponent<SoulShardsPool>();
-            levelObserver = FindObjectOfType<PlayerLevelObserver>();
-
-            soulShardPool.FillPool(reward);
+            container.Inject(this);
         }
 
         protected void CreateReward()
         {
             levelObserver.UpdateExperienceValue(experience);
-            var soulShards = soulShardPool.GetSoulShards();
             for (int i = 0; i < reward; i++)
             {
-                soulShards[i].SetActive(true);
-                soulShards[i].transform.position = transform.position;
+                var soulShard = soulShardPool.GetObject();
+                soulShard.transform.position = transform.position;
+                soulShard.SetActive(true);
             }
         }
 

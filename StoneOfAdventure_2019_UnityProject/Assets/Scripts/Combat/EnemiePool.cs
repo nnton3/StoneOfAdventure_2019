@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
     public class EnemiePool : MonoBehaviour
     {
-        private Dictionary<string, List<GameObject>> enemieDictionary;
+        [Inject] private DiContainer container;
+
         [SerializeField] private List<Pool> enemiePools;
+
+        private Dictionary<string, List<GameObject>> enemieDictionary;
         private GameObject parentObj;
 
         private void Start()
@@ -23,9 +26,9 @@ namespace StoneOfAdventure.Combat
 
                 for (int i = 0; i < pool.size; i++)
                 {
-                    var obj = Instantiate(pool.pref, parentObj.transform);
-                    obj.SetActive(false);
+                    var obj = container.InstantiatePrefab(pool.pref, parentObj.transform);
                     enemiePool.Add(obj);
+                    obj.SetActive(false);
                 }
 
                 enemieDictionary.Add(pool.name, enemiePool);
@@ -51,9 +54,9 @@ namespace StoneOfAdventure.Combat
                 }
             }
 
-            var newInstance = Instantiate(enemieDictionary[name][0]);
-            newInstance.SetActive(false);
+            var newInstance = container.InstantiatePrefab(enemieDictionary[name][0], parentObj.transform);
             enemieDictionary[name].Add(newInstance);
+            newInstance.SetActive(false);
             return enemieDictionary[name][enemieDictionary[name].Count - 1];
         }
 
