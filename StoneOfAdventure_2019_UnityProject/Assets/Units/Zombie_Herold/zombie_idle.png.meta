@@ -1,21 +1,13 @@
 fileFormatVersion: 2
 guid: 0d58bda8d67b2c240b5f0cb727fbaf03
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: zombie_idle_0
-  - first:
-      213: 21300002
-    second: zombie_idle_1
-  - first:
-      213: 21300004
-    second: zombie_idle_2
-  - first:
-      213: 21300006
-    second: zombie_idle_3
+  fileIDToRecycleName:
+    21300000: zombie_idle_0
+    21300002: zombie_idle_1
+    21300004: zombie_idle_2
+    21300006: zombie_idle_3
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,9 +61,8 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -82,8 +73,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -94,8 +84,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,8 +95,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: tvOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -118,8 +106,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -130,8 +117,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -142,8 +128,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -154,7 +139,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -174,7 +158,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f85342c85eb143e46b7d8870ef9b1ea8
-      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -195,7 +178,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c957de08d8451b74398654dd4cdc81c4
-      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -216,7 +198,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cb1b1dea245842c4798cb73bb32d7224
-      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -237,7 +218,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2d9c70cce58ac1f43a4623ada8f087a3
-      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -246,12 +226,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 4f709c7a403dd7240b8656d4387d9e6e
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Platform
   - Ground
-  - PatrolTile
-  - Enemie
   - Ladder
   - DownStopper
   - UpperStopper
+  - Enemie
+  - Platform
+  - PatrolTile
   - Boss
   layers:
   - Default
@@ -24,8 +24,8 @@ TagManager:
   - Player
   - Enemie
   - Illusion
-  - SoulShard
-  - 
+  - AttackTrigger
+  - Platform
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Particals
+    uniqueID: 768804955
     locked: 0

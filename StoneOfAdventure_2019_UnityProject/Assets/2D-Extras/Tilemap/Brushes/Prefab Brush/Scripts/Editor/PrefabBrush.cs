@@ -7,7 +7,7 @@ namespace UnityEditor
 {
     [CreateAssetMenu(fileName = "Prefab brush", menuName = "Brushes/Prefab brush")]
     [CustomGridBrush(false, true, false, "Prefab Brush")]
-    public class PrefabBrush : UnityEditor.Tilemaps.GridBrush
+    public class PrefabBrush : GridBrush
     {
         private const float k_PerlinOffset = 100000f;
         public GameObject[] m_Prefabs;
@@ -83,7 +83,7 @@ namespace UnityEditor
     }
 
     [CustomEditor(typeof(PrefabBrush))]
-    public class PrefabBrushEditor : UnityEditor.Tilemaps.GridBrushEditor
+    public class PrefabBrushEditor : GridBrushEditor
     {
         private PrefabBrush prefabBrush { get { return target as PrefabBrush; } }
 

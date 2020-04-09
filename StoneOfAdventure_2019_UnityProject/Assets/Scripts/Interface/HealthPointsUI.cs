@@ -1,6 +1,5 @@
 ﻿using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;

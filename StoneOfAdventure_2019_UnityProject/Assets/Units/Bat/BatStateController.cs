@@ -10,8 +10,10 @@ public class BatStateController : UnitContainsAward
 
     [SerializeField] private float movespeed;
     
-    protected void Start()
+    protected override void Start()
     {
+        base.Start();
+
         player = GameObject.FindGameObjectWithTag("Player");
         flyer = GetComponent<Flyer>();
         anim = GetComponent<Animator>();

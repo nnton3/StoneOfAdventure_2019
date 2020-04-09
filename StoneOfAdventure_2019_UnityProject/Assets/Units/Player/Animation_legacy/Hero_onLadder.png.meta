@@ -1,33 +1,17 @@
 fileFormatVersion: 2
 guid: 0101792ec0a904e469eea474fc8f010c
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: Hero_onLadder_0
-  - first:
-      213: 21300002
-    second: Hero_onLadder_1
-  - first:
-      213: 21300004
-    second: Hero_onLadder_2
-  - first:
-      213: 21300006
-    second: Hero_onLadder_3
-  - first:
-      213: 21300008
-    second: Hero_onLadder_4
-  - first:
-      213: 21300010
-    second: Hero_onLadder_5
-  - first:
-      213: 21300012
-    second: Hero_onLadder_6
-  - first:
-      213: 21300014
-    second: Hero_onLadder_7
+  fileIDToRecycleName:
+    21300000: Hero_onLadder_0
+    21300002: Hero_onLadder_1
+    21300004: Hero_onLadder_2
+    21300006: Hero_onLadder_3
+    21300008: Hero_onLadder_4
+    21300010: Hero_onLadder_5
+    21300012: Hero_onLadder_6
+    21300014: Hero_onLadder_7
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,9 +65,8 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -94,8 +77,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -106,8 +88,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -118,7 +99,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -138,7 +118,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ea89eea25768b7048a9a80067edd8e11
-      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -159,7 +138,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 35ff6b76c4d9fd744ac04ec83f35804b
-      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -180,7 +158,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 99f83c34a073ab948bbb014d108dfd73
-      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -201,7 +178,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4625fbfc3eb7a06479c69fb93aa397b3
-      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -222,7 +198,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4bb6efdb17c3e0e48ae21cd322fb26a4
-      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -243,7 +218,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0322339ee9de81f41adb4a51083a2046
-      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -264,7 +238,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 64bd8ce613b50fb468c57cd5fdc2b3fa
-      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -285,7 +258,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf1482a2196e3e840a081532cd2c0144
-      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -294,12 +266,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
