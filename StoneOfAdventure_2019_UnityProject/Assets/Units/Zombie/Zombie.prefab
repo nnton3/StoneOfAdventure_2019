@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 8272227125603250269}
   - component: {fileID: 9130162151884358291}
   - component: {fileID: 865230716897373113}
+  - component: {fileID: 2599508912254677038}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Enemie
@@ -60,7 +61,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -72,7 +72,6 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -203,9 +202,13 @@ MonoBehaviour:
   UseAttack:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   DamageApplied:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   baseDamage: 9
   attackRange: 1
   layerMask:
@@ -227,6 +230,8 @@ MonoBehaviour:
   Flipped:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &658190849188051339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,15 +247,23 @@ MonoBehaviour:
   HPDecreased:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   HPIncreased:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   MaxHealthUpdated:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   Dead:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   healthPoints: 50
   untouchable: 1
 --- !u!114 &658190849188051337
@@ -318,6 +331,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b21f7ea3fc552aa448efbee5e68effef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2599508912254677038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658190849188051335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee37375c8f4b3344a928d136f33709b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &658190850852845413
@@ -415,9 +440,13 @@ MonoBehaviour:
   PlayerDetected:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   PlayerLost:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &6171158582829593863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,41 +454,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 658190849188051328}
     m_Modifications:
-    - target: {fileID: 6530545018259370157, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636200, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 77820fe6287a13d4a9ff7f9e29f7dfad,
-        type: 3}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530545018956296930, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
+      propertyPath: m_Name
+      value: HPBar
       objectReference: {fileID: 0}
     - target: {fileID: 6530545018956296931, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
@@ -566,20 +564,51 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6530545018956296935, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
-        type: 3}
-      propertyPath: m_Name
-      value: HPBar
-      objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631240, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.024
       objectReference: {fileID: 0}
+    - target: {fileID: 6530545018956296930, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6530545019037631241, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
         type: 3}
       propertyPath: m_Value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018508636203, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530545018508636200, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77820fe6287a13d4a9ff7f9e29f7dfad,
+        type: 3}
+    - target: {fileID: 6530545018259370157, guid: dd7cb08365df33f4fa61ad4e9673ca9e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd7cb08365df33f4fa61ad4e9673ca9e, type: 3}

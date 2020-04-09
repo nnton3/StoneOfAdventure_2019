@@ -1,27 +1,15 @@
 fileFormatVersion: 2
 guid: 08a169acc6aeb624ab5de8e2e9978c10
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: zombie_take_damage_0
-  - first:
-      213: 21300002
-    second: zombie_take_damage_1
-  - first:
-      213: 21300004
-    second: zombie_take_damage_2
-  - first:
-      213: 21300006
-    second: zombie_take_damage_3
-  - first:
-      213: 21300008
-    second: zombie_take_damage_4
-  - first:
-      213: 21300010
-    second: zombie_take_damage_5
+  fileIDToRecycleName:
+    21300000: zombie_take_damage_0
+    21300002: zombie_take_damage_1
+    21300004: zombie_take_damage_2
+    21300006: zombie_take_damage_3
+    21300008: zombie_take_damage_4
+    21300010: zombie_take_damage_5
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -75,9 +63,8 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,8 +75,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,7 +86,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,7 +105,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 80c17c77dc18fbe43977e89e15a59f83
-      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -141,7 +125,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 38000c7457672db48ae23383ff34dab6
-      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -162,7 +145,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3fb03df5588c184419e4e1ee5966dbb2
-      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -183,7 +165,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 88af5918c9bb5da479b9dd3d5bf7f72d
-      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -204,7 +185,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 425e6b70a1c9a6b41b0bea08b5b44381
-      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -225,7 +205,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8154b63afd565fc4582d51003a814c8c
-      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -234,12 +213,10 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: d7c1fc2fac772e1488ef37f74229829c
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
