@@ -9,8 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240a9b4d694ae394a865f0d0449a3d6a, type: 3}
-  m_Name: LvlConfig
+  m_Script: {fileID: 11500000, guid: db7ef0a6c2c99c948b57db18de10a4c3, type: 3}
+  m_Name: TestConfig
   m_EditorClassIdentifier: 
-  spawnerConfig: {fileID: 11400000, guid: 4f592cb49d237cd42a807c9692b383eb, type: 2}
-  groundTile: {fileID: 11400000, guid: 5eece359f1848404b9f8e6cbc6d4a042, type: 2}
+  baseSpawnDelay: 2
+  minSpawnDelay: 1
+  units:
+  - Zombie
+  baseSpawnChance:
+  - 50
+  endSpawnChance:
+  - 50
+  totalTickNumber: 40
+  boundSize: {x: 10, y: 10, z: 1}
