@@ -3861,6 +3861,15 @@ MonoBehaviour:
   - name: Zombie
     pref: {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
     size: 10
+  - name: Zombie
+    pref: {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
+    size: 10
+  - name: Zombie
+    pref: {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
+    size: 10
+  - name: Zombie
+    pref: {fileID: 658190849188051335, guid: 8dd953698b7982645a400cabe226a846, type: 3}
+    size: 10
 --- !u!114 &8480661959928158877
 MonoBehaviour:
   m_ObjectHideFlags: 0
