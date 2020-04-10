@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f285251e27c5d9b45aa1d197a19aef91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTimeOnFeet: 2
-  bonusDamageInPercent: 1.5
+  targetTimeOnFeet: 3
+  bonusDamageInPercent: 1
   bonusDamageInPercent_lvlCoef: 0
 --- !u!1001 &6910813758529090080
 PrefabInstance:
@@ -22,11 +22,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6887241593286825753, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_Name
-      value: SphereOfEnergy_Artifact Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 8948123110230282997, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -131,6 +126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6887241593286825753, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_Name
+      value: SphereOfEnergy_Artifact Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
         type: 3}

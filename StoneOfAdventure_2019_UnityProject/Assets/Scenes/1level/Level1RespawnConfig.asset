@@ -16,9 +16,36 @@ MonoBehaviour:
   minSpawnDelay: 4
   units:
   - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
+  - Zombie
   baseSpawnChance:
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
   - 30
   endSpawnChance:
   - 80
-  totalTickNumber: 50
+  - 80
+  - 80
+  - 80
+  - 80
+  - 80
+  - 80
+  - 80
+  - 80
+  - 80
+  totalTickNumber: 80
   boundSize: {x: 10, y: 10, z: 1}

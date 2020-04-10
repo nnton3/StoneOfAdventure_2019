@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd61204cb4afc64cb5fe424bfdbf017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addedAttackSpeed: 0
+  addedAttackSpeed: 0.5
 --- !u!1001 &474660851034549603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20,11 +20,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6887241593286825753, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_Name
-      value: AttackSpeedUpper
-      objectReference: {fileID: 0}
     - target: {fileID: 8948123110230282997, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -129,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6887241593286825753, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_Name
+      value: AttackSpeedUpper
       objectReference: {fileID: 0}
     - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
         type: 3}
