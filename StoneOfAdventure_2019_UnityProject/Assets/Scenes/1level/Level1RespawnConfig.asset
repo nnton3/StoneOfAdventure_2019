@@ -15,37 +15,10 @@ MonoBehaviour:
   baseSpawnDelay: 12
   minSpawnDelay: 4
   units:
-  - Zombie1
-  - Zombie1
-  - Zombie1
-  - Bat
-  - Bat
-  - Bat
-  - ZombieDown
-  - ZombieDown
-  - ZombieHerold1
-  - ZombieHerold1
+  - Zombie
   baseSpawnChance:
   - 30
-  - 30
-  - 30
-  - 50
-  - 50
-  - 50
-  - 40
-  - 40
-  - 20
-  - 20
   endSpawnChance:
   - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 50
-  - 50
   totalTickNumber: 50
   boundSize: {x: 10, y: 10, z: 1}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healValue: 0
+  addedHealPerArtLvl: 0
 --- !u!1001 &6797554266924882052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24,21 +25,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthRegen_Artifact Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1580008440995371979}
-    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddEffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8948123110230282997, guid: 633678203710a984989b4d796141fe35,
         type: 3}
@@ -145,6 +131,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 292951470109771226, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -165,31 +171,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 801565832962156283, guid: 633678203710a984989b4d796141fe35,
+    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
         type: 3}
-      propertyPath: m_Sprite
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 21300000, guid: 8210afb2561df7a41821051085f97345,
+      objectReference: {fileID: 1580008440995371979}
+    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
         type: 3}
-    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddEffect
       objectReference: {fileID: 0}
-    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+    - target: {fileID: 8096017687803892575, guid: 633678203710a984989b4d796141fe35,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
+    - target: {fileID: 5673825405449912407, guid: 633678203710a984989b4d796141fe35,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256478768857247229, guid: 633678203710a984989b4d796141fe35,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+      propertyPath: m_Name
+      value: TMP SubMeshUI [LiberationSans SDF Material]
       objectReference: {fileID: 0}
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
@@ -204,22 +204,24 @@ PrefabInstance:
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_text
-      value: Health regen
+      value: '
+
+        Increases health regeneration'
       objectReference: {fileID: 0}
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 12
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
@@ -229,7 +231,33 @@ PrefabInstance:
     - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
         type: 3}
       propertyPath: m_textInfo.spaceCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887205544925208390, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 258
+      objectReference: {fileID: 0}
+    - target: {fileID: 801565832962156283, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8210afb2561df7a41821051085f97345,
+        type: 3}
+    - target: {fileID: 2404890041260158825, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404890041260158825, guid: 633678203710a984989b4d796141fe35,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 633678203710a984989b4d796141fe35, type: 3}
