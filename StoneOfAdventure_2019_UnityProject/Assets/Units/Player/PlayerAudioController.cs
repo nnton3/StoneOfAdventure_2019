@@ -9,6 +9,7 @@ public class PlayerAudioController : MonoBehaviour
     [SerializeField] private AudioClip steps;
     [SerializeField] private AudioClip attack;
     [SerializeField] private AudioClip hit;
+    [SerializeField] private AudioClip brockenClockTriggered;
 
     [Inject(Id = "Player")] private Fighter fighter; 
     [Inject(Id = "Player")] private AudioSource audioSource;
@@ -19,6 +20,7 @@ public class PlayerAudioController : MonoBehaviour
     {
         signalBus.Subscribe<PlayerStartWalk>(PlaySteps);
         signalBus.Subscribe<PlayerStopWalk>(StopSteps);
+        signalBus.Subscribe<BrokenClockTriggered>(PlaySkillsCoolDownReduced);
         fighter.UseAttack.AddListener(PlayAttackEffect);
         fighter.DamageApplied.AddListener(PlayHitEffect);
     }
@@ -44,5 +46,10 @@ public class PlayerAudioController : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.loop = false;
+    }
+
+    private void PlaySkillsCoolDownReduced()
+    {
+        audioSource.PlayOneShot(brockenClockTriggered, 0.5f);
     }
 }

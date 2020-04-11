@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using StoneOfAdventure.Combat;
+using Zenject;
 
 public class SkillButton : MonoBehaviour
 {
@@ -12,16 +13,22 @@ public class SkillButton : MonoBehaviour
     [Range(0, 100)] public float currentPercent;
     [Range(0, 100)] public int speed;
 
+    [Inject] private SignalBus signalBus;
 
     private void Start()
     {
         speed = (int)(100 / targetSkill.CoolDown);
         targetSkill.SkillUsed.AddListener(ResetSkill);
+        signalBus.Subscribe<BrokenClockTriggered>(ReduceCoolDown);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (currentPercent >= 100) return;
+        if (currentPercent >= 100)
+        {
+            loadingBar.GetComponent<Image>().fillAmount = 1f;
+            return;
+        }
 
         currentPercent += speed * Time.deltaTime;
 
@@ -29,4 +36,9 @@ public class SkillButton : MonoBehaviour
     }
 
     private void ResetSkill() { currentPercent = 0; }
+
+    private void ReduceCoolDown(BrokenClockTriggered args)
+    {
+        currentPercent += (speed * args.reducedTime);
+    }
 }

@@ -17,16 +17,20 @@ namespace StoneOfAdventure.Artifacts
             }
         }
 
-        public GameObject GetArt()
+        public List<GameObject> GetArt()
         {
-            int i = Random.Range(0, artsInPool.Count - 1);
-            while (artsInPool[i].activeSelf)
+            var notUsableArts = new List<GameObject>(artsInPool);
+            var selectedArts = new List<GameObject>();
+
+            for (int i = 0; i < 3; i++)
             {
-                i = Random.Range(0, artsInPool.Count - 1);
+                var selectedArt = notUsableArts[Random.Range(0, notUsableArts.Count - 1)];
+                notUsableArts.Remove(selectedArt);
+                selectedArt.SetActive(true);
+                selectedArts.Add(selectedArt);
             }
 
-            artsInPool[i].SetActive(true);
-            return artsInPool[i];
+            return selectedArts;
         }
     }
 }
