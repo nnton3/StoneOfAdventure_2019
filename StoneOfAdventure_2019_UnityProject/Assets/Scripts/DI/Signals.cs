@@ -13,3 +13,7 @@ public class LocationPointsTargetValueUpdated
 
 public class PlayerStartWalk { }
 public class PlayerStopWalk { }
+public class BrokenClockTriggered
+{
+    public float reducedTime;
+}

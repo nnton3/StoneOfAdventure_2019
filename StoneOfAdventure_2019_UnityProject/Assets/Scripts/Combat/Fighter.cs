@@ -45,7 +45,7 @@ namespace StoneOfAdventure.Combat
         public void ModifyAttackSpeed(float addedAttackspeedInPercent)
         {
             currentAttackSpeed += addedAttackspeedInPercent;
-            anim.SetFloat("currentAttackspeed", currentAttackSpeed);
+            anim.SetFloat("currentAttackSpeed", currentAttackSpeed);
         }
 
         public void AddEffectOfAttack(EffectsOnTarget effect)

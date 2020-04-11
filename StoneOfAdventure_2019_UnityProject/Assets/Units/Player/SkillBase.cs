@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -14,8 +15,11 @@ namespace StoneOfAdventure.Combat
         public bool CanUseSkill => canUseSkill;
 
         [HideInInspector] public UnityEvent SkillUsed;
+        [HideInInspector] public UnityEvent CoolDownReduced;
 
-        private void Update()
+        [Inject] private SignalBus signalBus;
+
+        private void FixedUpdate()
         {
             if (!canUseSkill) UpdateCoolDown();
         }

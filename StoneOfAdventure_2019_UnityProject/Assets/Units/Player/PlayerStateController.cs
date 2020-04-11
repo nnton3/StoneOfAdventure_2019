@@ -216,7 +216,6 @@ public class PlayerStateController : Unit
 
     public override void Fell()
     {
-        Debug.Log("Fell");
         switch (currentState)
         {
             case State.Idle:

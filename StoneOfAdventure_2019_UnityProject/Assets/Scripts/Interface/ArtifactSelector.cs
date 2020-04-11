@@ -31,9 +31,10 @@ namespace StoneOfAdventure.UI
 
         private void ShowArtifacts()
         {
-            for (int i = 0; i < 3; i++)
+            var arts = artsPool.GetArt();
+            for (int i = 0; i < arts.Count; i++)
             {
-                selectedArtifacts.Add(artsPool.GetArt());
+                selectedArtifacts.Add(arts[i]);
                 selectedArtifacts[i].GetComponent<Button>().onClick.AddListener(() => StartCoroutine("Hide"));
             }
         }

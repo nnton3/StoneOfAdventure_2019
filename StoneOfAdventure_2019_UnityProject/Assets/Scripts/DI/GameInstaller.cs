@@ -11,5 +11,6 @@ public class GameInstaller : MonoInstaller
         Container.DeclareSignal<LocationPointsTargetValueUpdated>();
         Container.DeclareSignal<PlayerStartWalk>();
         Container.DeclareSignal<PlayerStopWalk>();
+        Container.DeclareSignal<BrokenClockTriggered>();
     }
 }
