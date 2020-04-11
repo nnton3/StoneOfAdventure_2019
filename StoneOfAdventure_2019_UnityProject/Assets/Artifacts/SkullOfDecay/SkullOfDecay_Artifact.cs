@@ -14,7 +14,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var ciriticalDamage = Container.InstantiateComponent<SkullOfDecay_buff>(player);
+                var ciriticalDamage = Container.InstantiateComponent<SkullOfDecay_buff>(player.gameObject);
                 ciriticalDamage.Initialize(damageInPercent, lifesteal, periodicity);
             }
             else

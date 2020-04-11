@@ -15,7 +15,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var buff = Container.InstantiateComponent<SaveEffortBoots_buff>(player);
+                var buff = Container.InstantiateComponent<SaveEffortBoots_buff>(player.gameObject);
                 buff.Initialize(buffTime, timeToApply, movespeedGain);
             }
             else

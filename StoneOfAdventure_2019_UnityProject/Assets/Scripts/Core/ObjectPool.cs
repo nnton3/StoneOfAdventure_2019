@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace StoneOfAdventure.Core
 {
@@ -9,8 +10,10 @@ namespace StoneOfAdventure.Core
         [SerializeField] private string parentObjName = "Pool";
         [SerializeField] private int size;
 
+        [Inject] private DiContainer container;
+
         private List<GameObject> objectList = new List<GameObject>();
-        private GameObject parentObj;
+        private Transform parentObj;
 
         private void Start()
         {
@@ -25,9 +28,7 @@ namespace StoneOfAdventure.Core
                 return;
             }
 
-            parentObj = GameObject.Find(parentObjName);
-            if (parentObj == null)
-                parentObj = Instantiate(new GameObject(parentObjName));
+            parentObj = Instantiate(new GameObject(parentObjName)).transform;
 
             for (int i = 0; i < value; i++)
             {
@@ -47,7 +48,7 @@ namespace StoneOfAdventure.Core
 
         private GameObject CreateNewObject()
         {
-            var newObj = Instantiate(targetPref, parentObj.transform);
+            var newObj = container.InstantiatePrefab(targetPref, parentObj);
             objectList.Add(newObj);
             return newObj;
         }

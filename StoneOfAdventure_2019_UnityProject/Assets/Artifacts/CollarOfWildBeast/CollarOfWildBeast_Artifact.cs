@@ -13,7 +13,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var dodgeChance = Container.InstantiateComponent<DodgeChance>(player);
+                var dodgeChance = Container.InstantiateComponent<DodgeChance>(player.gameObject);
                 dodgeChance.Initialize(this.dodgeChance);
             }
             else

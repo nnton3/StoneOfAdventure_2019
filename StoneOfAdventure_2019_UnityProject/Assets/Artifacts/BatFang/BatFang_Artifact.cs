@@ -7,15 +7,14 @@ namespace StoneOfAdventure.Artifacts
     public class BatFang_Artifact : Artifact
     {
         [SerializeField] private float lifestealInPercent = 0.02f;
-        [Inject] DiContainer Container;
+        [Inject] private DiContainer container;
 
         public override void AddEffect()
         {
             base.AddEffect();
-            artifactsController.AddArt(this);
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var lifesteal = Container.InstantiateComponent<BatFang_attackEffect>(player);
+                var lifesteal = container.InstantiateComponent<BatFang_attackEffect>(player.gameObject);
                 lifesteal.Initialize(lifestealInPercent);
             }
             else

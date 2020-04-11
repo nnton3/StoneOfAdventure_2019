@@ -14,7 +14,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var buff = Container.InstantiateComponent<BrokenClock_buff>(player);
+                var buff = Container.InstantiateComponent<BrokenClock_buff>(player.gameObject);
                 buff.Initialize(chance, reduceValue);
             }
             else

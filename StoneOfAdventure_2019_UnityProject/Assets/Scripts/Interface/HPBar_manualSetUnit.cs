@@ -21,16 +21,14 @@ namespace StoneOfAdventure.UI
             health = target.GetComponent<Health>();
             HPValueText = GetComponentInChildren<Text>();
 
-            health.MaxHealthUpdated.AddListener(UpdateHPBar);
-            health.HPDecreased.AddListener(UpdateHPBar);
-            health.HPIncreased.AddListener(UpdateHPBar);
+            health.HealthUpdated.AddListener(UpdateHPBar);
             UpdateHPBar();
         }
 
-        protected override void UpdateHPBar(int value)
+        protected override void UpdateHPBar()
         {
             base.UpdateHPBar();
-            HPValueText.text = $"{value}/{health.MaxHealthPoints}";
+            HPValueText.text = $"{health.HealthPoints}/{health.MaxHealthPoints}";
         }
     }
 }

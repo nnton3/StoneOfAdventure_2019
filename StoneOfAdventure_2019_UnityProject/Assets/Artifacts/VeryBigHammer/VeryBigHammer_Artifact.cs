@@ -16,7 +16,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var buff = Container.InstantiateComponent<VeryBigHammer_attackModifier>(player);
+                var buff = Container.InstantiateComponent<VeryBigHammer_attackModifier>(player.gameObject);
                 buff.Initialize(chance, timeInStun, damage);
             }
             else
