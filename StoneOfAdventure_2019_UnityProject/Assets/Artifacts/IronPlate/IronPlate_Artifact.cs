@@ -12,7 +12,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var damageResist = Container.InstantiateComponent<DamageResistance>(player);
+                var damageResist = Container.InstantiateComponent<DamageResistance>(player.gameObject);
                 damageResist.Initialize(damageResistanceInPercent);
             }
             else

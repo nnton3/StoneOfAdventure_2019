@@ -15,7 +15,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var ciriticalDamage = Container.InstantiateComponent<SphereOfEnergy_damageModifier>(player);
+                var ciriticalDamage = Container.InstantiateComponent<SphereOfEnergy_damageModifier>(player.gameObject);
                 ciriticalDamage.Initialize(targetTimeOnFeet, bonusDamageInPercent);
             }
             else

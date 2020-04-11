@@ -15,6 +15,7 @@ namespace StoneOfAdventure.Combat
         [HideInInspector] public HPDecreasedEvent HPDecreased = new HPDecreasedEvent();
         [HideInInspector] public HPDecreasedEvent HPIncreased = new HPDecreasedEvent();
         [HideInInspector] public UnityEvent MaxHealthUpdated;
+        [HideInInspector] public UnityEvent HealthUpdated;
         [HideInInspector] public UnityEvent Dead;
         public delegate void ModifiersOfInputDamage(ref int damage);
         private ModifiersOfInputDamage applyModifiersOfInputDamage;
@@ -40,6 +41,7 @@ namespace StoneOfAdventure.Combat
         {
             untouchable = true;
             healthPoints = MaxHealthPoints;
+            HealthUpdated.Invoke();
         }
 
         public void ApplyDamage(int damage)
@@ -59,6 +61,7 @@ namespace StoneOfAdventure.Combat
             {
                 healthPoints -= currentDamage;
             }
+            HealthUpdated.Invoke();
             HPDecreased?.Invoke(currentDamage);
         }
 
@@ -76,6 +79,7 @@ namespace StoneOfAdventure.Combat
         public void Heal(int healValue)
         {
             if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
+            HealthUpdated.Invoke();
             HPIncreased.Invoke(healValue);
         }
 
@@ -86,6 +90,7 @@ namespace StoneOfAdventure.Combat
         public void UpdateMaxHealthPoints(int newValue)
         {
             maxHealthPoints = newValue;
+            HealthUpdated.Invoke();
             MaxHealthUpdated.Invoke();
         }
 

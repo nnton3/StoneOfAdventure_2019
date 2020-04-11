@@ -12,7 +12,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var ciriticalDamage = Container.InstantiateComponent<TrackingEye_HealthModifier>(player);
+                var ciriticalDamage = Container.InstantiateComponent<TrackingEye_HealthModifier>(player.gameObject);
                 ciriticalDamage.Initialize(timeToBlock);
             }
             else

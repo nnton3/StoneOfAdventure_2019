@@ -1,5 +1,4 @@
 ﻿using StoneOfAdventure.Combat;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,23 +14,14 @@ namespace StoneOfAdventure.UI
             health = GetComponentInParent<Health>();
             hpBar = GetComponent<Slider>();
             
-            health.MaxHealthUpdated.AddListener(UpdateHPBar);
-            health.HPDecreased.AddListener(UpdateHPBar);
-            health.HPIncreased.AddListener(UpdateHPBar);
-            health.Dead.AddListener(UpdateHPBar);
+            health.HealthUpdated.AddListener(UpdateHPBar);
             UpdateHPBar();
-        }
-
-        protected virtual void UpdateHPBar(int value)
-        {
-            hpBar.maxValue = health.MaxHealthPoints;
-            hpBar.value = health.HealthPoints;
         }
 
         protected virtual void UpdateHPBar()
         {
             hpBar.maxValue = health.MaxHealthPoints;
-            hpBar.value = health.MaxHealthPoints;
+            hpBar.value = health.HealthPoints;
         }
     }
 }

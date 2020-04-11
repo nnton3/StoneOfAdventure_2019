@@ -14,7 +14,7 @@ namespace StoneOfAdventure.Artifacts
             base.AddEffect();
             if (artifactsController.GetArtLvl(this) == 1)
             {
-                var ciriticalDamage = Container.InstantiateComponent<CriticalDamage_damageModifier>(player);
+                var ciriticalDamage = Container.InstantiateComponent<CriticalDamage_damageModifier>(player.gameObject);
                 ciriticalDamage.Initialize(addedDamageinPercent, criticalChance);
             }
             else

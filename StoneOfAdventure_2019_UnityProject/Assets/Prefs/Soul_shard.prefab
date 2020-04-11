@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4506257742231669805}
   - component: {fileID: 4226727168689229110}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 3233463862068692756}
   - component: {fileID: 7329378704673772223}
   - component: {fileID: 8851102064355831990}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Soul_shard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

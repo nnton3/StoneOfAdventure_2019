@@ -6,9 +6,9 @@ namespace StoneOfAdventure.Artifacts
 {
     public class Artifact : MonoBehaviour
     {
-        protected GameObject player;
         private GameObject artifactUI;
         private Fader fader;
+        [Inject (Id = "Player")] protected PlayerStateController player;
         [Inject] protected ArtifactsController artifactsController;
         [Inject] protected DiContainer Container;
 
@@ -17,7 +17,6 @@ namespace StoneOfAdventure.Artifacts
 
         protected virtual void Start()
         {
-            player = FindObjectOfType<PlayerStateController>().gameObject;
             fader = GetComponent<Fader>();
         }
 

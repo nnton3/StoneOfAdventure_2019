@@ -14,7 +14,7 @@ namespace StoneOfAdventure.Artifacts
             var currentArtLvl = artifactsController.GetArtLvl(this);
             if (currentArtLvl == 1)
             {
-                var buff = Container.InstantiateComponent<RingOfDetermination_buff>(player);
+                var buff = Container.InstantiateComponent<RingOfDetermination_buff>(player.gameObject);
                 buff.Initialize(sixtyPercentHeal, fourtyPercentHeal, twentyPercentHeal);
             }
             else

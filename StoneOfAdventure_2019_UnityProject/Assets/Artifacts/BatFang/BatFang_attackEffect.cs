@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using StoneOfAdventure.Core;
+using UnityEngine;
 using Zenject;
 
 namespace StoneOfAdventure.Combat
@@ -8,15 +9,14 @@ namespace StoneOfAdventure.Combat
         #region Variables
         private float lifestealInPersent = 0f;
         [Inject(Id = "Player")] private Fighter fighter;
-        [Inject(Id = "Player")] private Health health;
-        [Inject] DiContainer Container;
+        [Inject(Id = "BloodShard")] private ObjectPool bloodShardsPool;
+        [Inject] private DiContainer container;
         #endregion
 
         public void Initialize(float lifestealInPersent)
         {
+            container.Inject(this);
             this.lifestealInPersent = lifestealInPersent;
-
-            Container.Inject(this);
         }
 
         private void Start()
@@ -29,7 +29,14 @@ namespace StoneOfAdventure.Combat
             var targetHealth = target.GetComponent<Health>();
             var lifestealedHP = (int)(targetHealth.HealthPoints * lifestealInPersent);
             targetHealth.ApplyDamage(lifestealedHP);
-            health.Heal(lifestealedHP);
+            Debug.Log(lifestealedHP);
+            for (int i = 0; i < lifestealedHP; i++)
+            {
+                var bloodShard = bloodShardsPool.GetObject();
+                bloodShard.transform.position = target.transform.position;
+                bloodShard.SetActive(true);
+                Debug.Log("work");
+            }
         }
     }
 }
