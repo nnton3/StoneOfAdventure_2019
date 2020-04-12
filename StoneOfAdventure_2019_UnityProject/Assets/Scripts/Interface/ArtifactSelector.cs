@@ -25,7 +25,7 @@ namespace StoneOfAdventure.UI
         {
             Time.timeScale = 0f;
             canvasGroup.interactable = true;
-            fader.StartCoroutine("Show");
+            fader.Show();
             ShowArtifacts();
         }
 
@@ -44,7 +44,7 @@ namespace StoneOfAdventure.UI
             var arts = GetComponentsInChildren<Artifact>();
             HideNotSelectedArts(arts);
             yield return new WaitForSecondsRealtime(1f);
-            fader.StartCoroutine("Hide");
+            fader.Hide();
             yield return new WaitForSecondsRealtime(1f);
             ClearSelector(arts);
             Time.timeScale = 1f;

@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
-using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using StoneOfAdventure.Combat;
-using UnityEngine.Events;
 using Zenject;
-using UnityEditor;
+using UniRx;
+using UniRx.Triggers;
 
-public class PlayerStateController : Unit
+public class PlayerStateController : StoneOfAdventure.Core.Unit
 {
     #region Variables
     [SerializeField] private float jumpPower = 800f;
@@ -31,17 +30,33 @@ public class PlayerStateController : Unit
     private void Start()
     {
         signalBus.Subscribe<PlayerStartNextLevel>(PlayerStartNextLvl);
+
+        BindInput();
     }
 
-    private void Update()
+    private void BindInput()
     {
-        MoveHorizontal(Input.GetAxisRaw("Horizontal"));
-        MoveVertical(Input.GetAxisRaw("Vertical"));
-        if (Input.GetAxisRaw("Fire1") != 0f) Attack();
-        if (Input.GetAxisRaw("Fire2") != 0f) Skill1();
-        if (Input.GetAxisRaw("Fire3") != 0f) Skill2();
-        if (Input.GetKeyDown(KeyCode.Space)) Jump();
-        if (Input.GetAxisRaw("UltimateSkill") != 0f) UltimateSkill();
+        this.UpdateAsObservable()
+            .Subscribe(_ =>
+            {
+                MoveHorizontal(Input.GetAxisRaw("Horizontal"));
+                MoveVertical(Input.GetAxisRaw("Vertical"));
+            });
+        this.UpdateAsObservable()
+            .Where(_ => Input.GetAxisRaw("Fire1") != 0f)
+            .Subscribe(_ => Attack());
+        this.UpdateAsObservable()
+           .Where(_ => Input.GetAxisRaw("Fire2") != 0f)
+           .Subscribe(_ => Skill1());
+        this.UpdateAsObservable()
+           .Where(_ => Input.GetAxisRaw("Fire3") != 0f)
+           .Subscribe(_ => Skill2());
+        this.UpdateAsObservable()
+           .Where(_ => Input.GetAxisRaw("UltimateSkill") != 0f)
+           .Subscribe(_ => UltimateSkill());
+        this.UpdateAsObservable()
+            .Where(_ => Input.GetKeyDown(KeyCode.Space))
+            .Subscribe(_ => Jump());
     }
 
     #region Events
