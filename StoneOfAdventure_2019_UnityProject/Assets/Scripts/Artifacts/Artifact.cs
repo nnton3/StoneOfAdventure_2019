@@ -1,6 +1,9 @@
 ﻿using StoneOfAdventure.UI;
 using UnityEngine;
 using Zenject;
+using UniRx;
+using UniRx.Triggers;
+using UnityEngine.UI;
 
 namespace StoneOfAdventure.Artifacts
 {
@@ -8,30 +11,23 @@ namespace StoneOfAdventure.Artifacts
     {
         private GameObject artifactUI;
         private Fader fader;
+        private CanvasGroup canvasGroup;
+
         [Inject (Id = "Player")] protected PlayerStateController player;
         [Inject] protected ArtifactsController artifactsController;
         [Inject] protected DiContainer Container;
-
-        private bool isSelected;
-        public bool IsSelected => isSelected;
+        [Inject] private SignalBus signalBus;
 
         protected virtual void Start()
         {
             fader = GetComponent<Fader>();
-        }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                AddEffect();
-            }
+            canvasGroup = GetComponent<CanvasGroup>();
+            GetComponent<Button>().onClick.AddListener(() => signalBus.Fire(new ArtifactSelected { art = gameObject }));            
         }
 
         public virtual void AddEffect()
         {
             artifactsController.AddArt(this);
-            isSelected = true;
         }
 
         public void Hide()

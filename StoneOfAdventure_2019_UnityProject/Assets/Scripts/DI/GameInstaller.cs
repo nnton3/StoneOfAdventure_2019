@@ -12,5 +12,6 @@ public class GameInstaller : MonoInstaller
         Container.DeclareSignal<PlayerStartWalk>();
         Container.DeclareSignal<PlayerStopWalk>();
         Container.DeclareSignal<BrokenClockTriggered>();
+        Container.DeclareSignal<ArtifactSelected>();
     }
 }

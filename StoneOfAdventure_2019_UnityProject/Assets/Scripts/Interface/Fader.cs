@@ -25,19 +25,21 @@ namespace StoneOfAdventure.UI
         private void BindEvents()
         {
             this.UpdateAsObservable()
-                            .Where(_ => startShow)
-                            .Subscribe(_ =>
-                            {
-                                if (canvasGroup.alpha < 1f)
-                                    canvasGroup.alpha += Time.fixedDeltaTime / period;
-                                else
-                                    startShow = false;
-                            });
+                .Where(_ => startShow)
+                .Subscribe(_ =>
+                {
+                    Debug.Log($"show {gameObject.name}");
+                    if (canvasGroup.alpha < 1f)
+                        canvasGroup.alpha += Time.fixedDeltaTime / period;
+                    else
+                        startShow = false;
+                });
 
             this.UpdateAsObservable()
                 .Where(_ => startHide)
                 .Subscribe(_ =>
                 {
+                    Debug.Log($"hide {gameObject.name}");
                     if (canvasGroup.alpha > 0f)
                         canvasGroup.alpha -= Time.fixedDeltaTime / period;
                     else

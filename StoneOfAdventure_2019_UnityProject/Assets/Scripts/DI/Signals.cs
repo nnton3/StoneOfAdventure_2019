@@ -1,4 +1,7 @@
-﻿public class LocationCompletedSignal { }
+﻿using StoneOfAdventure.Artifacts;
+using UnityEngine;
+
+public class LocationCompletedSignal { }
 public class PlayerStartNextLevel { }
 
 public class LocationPointsUpdated
@@ -13,7 +16,13 @@ public class LocationPointsTargetValueUpdated
 
 public class PlayerStartWalk { }
 public class PlayerStopWalk { }
+
 public class BrokenClockTriggered
 {
     public float reducedTime;
+}
+
+public class ArtifactSelected
+{
+    public GameObject art;
 }
