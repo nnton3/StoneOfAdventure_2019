@@ -9,10 +9,9 @@ namespace StoneOfAdventure.Artifacts
         private List<GameObject> notUsableArts = new List<GameObject>();
         private List<GameObject> selectedArts = new List<GameObject>();
 
-        private void Start()
+        private void Awake()
         {
-            var arts = GetComponentsInChildren<Artifact>();
-            foreach (var art in arts)
+            foreach (var art in GetComponentsInChildren<Artifact>())
             {
                 artsInPool.Add(art.gameObject);
                 art.gameObject.SetActive(false);
@@ -21,12 +20,10 @@ namespace StoneOfAdventure.Artifacts
 
         public List<GameObject> GetArt()
         {
-            notUsableArts = artsInPool;
-
             for (int i = 0; i < 3; i++)
             {
-                var selectedArt = notUsableArts[Random.Range(0, notUsableArts.Count - 1)];
-                notUsableArts.Remove(selectedArt);
+                var selectedArt = artsInPool[Random.Range(0, notUsableArts.Count - 1)];
+                artsInPool.Remove(selectedArt);
                 selectedArt.SetActive(true);
                 selectedArts.Add(selectedArt);
             }

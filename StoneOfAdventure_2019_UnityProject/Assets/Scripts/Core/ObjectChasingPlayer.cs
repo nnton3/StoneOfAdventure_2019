@@ -2,6 +2,8 @@
 using UnityEngine;
 using StoneOfAdventure.Movement;
 using Zenject;
+using UniRx;
+using UniRx.Triggers;
 
 public class ObjectChasingPlayer : MonoBehaviour
 {
@@ -22,6 +24,18 @@ public class ObjectChasingPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         flyer = GetComponent<Flyer>();
         container.Inject(this);
+    }
+
+    private void Start()
+    {
+        this.OnTriggerStay2DAsObservable()
+            .Subscribe(collision =>
+            {
+                if (collision.CompareTag("Player") && moveStarted)
+                {
+                    PlayerGetObject();
+                }
+            });
     }
 
     private void OnEnable()
@@ -55,24 +69,7 @@ public class ObjectChasingPlayer : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         moveStarted = true;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && moveStarted)
-        {
-            PlayerGetObject();
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && moveStarted)
-        {
-            moveStarted = false;
-            PlayerGetObject();
-        }
-    }
-
+    
     protected virtual void PlayerGetObject()
     {
         gameObject.SetActive(false);
