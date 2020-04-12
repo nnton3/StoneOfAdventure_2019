@@ -6,6 +6,8 @@ namespace StoneOfAdventure.Artifacts
     public class ArtifactsPool : MonoBehaviour
     {
         private List<GameObject> artsInPool = new List<GameObject>();
+        private List<GameObject> notUsableArts = new List<GameObject>();
+        private List<GameObject> selectedArts = new List<GameObject>();
 
         private void Start()
         {
@@ -19,8 +21,7 @@ namespace StoneOfAdventure.Artifacts
 
         public List<GameObject> GetArt()
         {
-            var notUsableArts = new List<GameObject>(artsInPool);
-            var selectedArts = new List<GameObject>();
+            notUsableArts = artsInPool;
 
             for (int i = 0; i < 3; i++)
             {

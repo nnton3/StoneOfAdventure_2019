@@ -36,7 +36,7 @@ namespace StoneOfAdventure.Artifacts
 
         public void Hide()
         {
-            fader.StartCoroutine("Hide");
+            fader.Hide();
         }
 
         protected float CalculateNewChanceValue(float baseChance, float denominatorOfProgression)
