@@ -257,7 +257,7 @@ namespace UniRx
         /// <para>Specialized for single async operations like Task.WhenAll, Zip.Take(1).</para>
         /// <para>If sequence is empty, return T[0] array.</para>
         /// </summary>
-        public static IObservable<T[]> WhenAll<T>(this IEnumerable<IObservable<T>> sources, object p)
+        public static IObservable<T[]> WhenAll<T>(this IEnumerable<IObservable<T>> sources)
         {
             var array = sources as IObservable<T>[];
             if (array != null) return WhenAll(array);
