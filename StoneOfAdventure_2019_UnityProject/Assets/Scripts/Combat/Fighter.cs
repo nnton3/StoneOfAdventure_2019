@@ -10,19 +10,18 @@ namespace StoneOfAdventure.Combat
         #region Variables
         protected Animator anim;
         protected Flip flip;
+        protected EffectsOnTarget applyEffectsOnTarget;
+        protected ModifiersOfDamage applyDamageModifiers;
+        private float currentAttackSpeed = 1f;
+
         [HideInInspector] public UnityEvent UseAttack;
         [HideInInspector] public UnityEvent DamageApplied;
-        private float currentAttackSpeed = 1f;
+        public int BaseDamage => baseDamage;
         public float CurrentAttackSpeed => currentAttackSpeed;
+        public delegate void EffectsOnTarget(GameObject target);
+        public delegate void ModifiersOfDamage(ref int damage);
 
         [SerializeField] protected int baseDamage;
-        public int BaseDamage => baseDamage;
-
-        // The impact of the attack modifiers
-        public delegate void EffectsOnTarget(GameObject target);
-        protected EffectsOnTarget applyEffectsOnTarget;
-        public delegate void ModifiersOfDamage(ref int damage);
-        protected ModifiersOfDamage applyDamageModifiers;
         #endregion
 
         protected virtual void Start()

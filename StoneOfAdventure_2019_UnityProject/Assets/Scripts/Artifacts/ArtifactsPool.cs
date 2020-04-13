@@ -17,33 +17,30 @@ namespace StoneOfAdventure.Artifacts
                 artsInPool.Add(art.gameObject);
                 art.gameObject.SetActive(false);
             }
-            Shuffle(artsInPool);
         }
 
-        private async void Shuffle(List<GameObject> list)
+        private void Shuffle (ref List<GameObject> list)
         {
-            await Task.Run(() =>
+            for (int i = list.Count - 1; i >= 1; i--)
             {
-                for (int i = list.Count - 1; i >= 1; i--)
-                {
-                    int j = random.Next(i + 1);
+                int j = random.Next(i + 1);
 
-                    var tmp = list[j];
-                    list[j] = list[i];
-                    list[i] = tmp;
-                }
-            });
+                var tmp = list[j];
+                list[j] = list[i];
+                list[i] = tmp;
+            }
         }
 
         public List<GameObject> GetArt()
         {
+            selectedArts.Clear();
+            Shuffle(ref artsInPool);
+
             for (int i = 0; i < 3; i++)
             {
                 var selectedArt = artsInPool[i];
                 selectedArts.Add(selectedArt);
             }
-
-            Shuffle(artsInPool);
 
             return selectedArts;
         }

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f56e412287cdea42b633683cc39f80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsUI: {fileID: 3756439879945803741, guid: a6abf61797120cb4ba918b563031117e,
+  pointsUI: {fileID: 5471911245559210639, guid: a6abf61797120cb4ba918b563031117e,
     type: 3}
 --- !u!114 &3157352045856574829
 MonoBehaviour:

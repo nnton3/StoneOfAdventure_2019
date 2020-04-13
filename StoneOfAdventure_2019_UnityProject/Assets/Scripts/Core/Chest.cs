@@ -7,11 +7,13 @@ namespace StoneOfAdventure.Core
     public class Chest : MonoBehaviour
     {
         [Inject] private Treasury treasury;
-        [Inject] private UIController uiController;
+        [Inject] private ArtifactSelector artifactSelector;
 
         [SerializeField] private int price = 10;
+
         private GameObject chestUI;
         private Animator anim;
+        private bool wasUsed;
 
         private void Start()
         {
@@ -22,10 +24,10 @@ namespace StoneOfAdventure.Core
         // Animation event
         public void TryOpenChest()
         {
-            if (price > treasury.CurrentSoulsPoints) return;
+            if (price > treasury.CurrentSoulsPoints || wasUsed) return;
+            wasUsed = true;
             anim.SetTrigger("use");
+            artifactSelector.OpenArtifactSelector();
         }
-
-        public void GiveReward() => uiController.ShowArtifactSelector();
     }
 }
