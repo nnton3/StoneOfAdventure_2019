@@ -2,6 +2,9 @@
 using UnityEngine;
 using StoneOfAdventure.Artifacts;
 using Zenject;
+using UniRx;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace StoneOfAdventure.UI
 {
@@ -47,13 +50,11 @@ namespace StoneOfAdventure.UI
 
             for (int i = 0; i < selectedArtifacts.Count; i++)
             {
-                Debug.Log($"i take {i} element");   
                 selectedArtifacts[i].gameObject.SetActive(false);
             }
 
             selectedArtifacts = artsPool.GetArt();
 
-            Debug.Log($"Arts number = {selectedArtifacts.Count}");
 
             for (int i = 0; i < selectedArtifacts.Count; i++)
             {
