@@ -2,9 +2,6 @@
 using UnityEngine;
 using StoneOfAdventure.Artifacts;
 using Zenject;
-using UniRx;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace StoneOfAdventure.UI
 {
@@ -26,14 +23,13 @@ namespace StoneOfAdventure.UI
             canvasGroup = GetComponentInChildren<CanvasGroup>();
 
             signalBus.Subscribe<ArtifactSelected>(CloseSelector);
-
-            FillSelector();
         }
 
-        public void EnableArtifactSelector()
+        public void OpenArtifactSelector()
         {
             Time.timeScale = 0f;
             canvasGroup.interactable = true;
+            FillSelector();
             fader.Show();
         }
 
@@ -41,20 +37,17 @@ namespace StoneOfAdventure.UI
         {
             fader.Hide();
             Time.timeScale = 1f;
-            FillSelector();
+            canvasGroup.interactable = false;
         }
 
         private void FillSelector()
         {
-            canvasGroup.interactable = false;
-
-            for (int i = 0; i < selectedArtifacts.Count; i++)
+                for (int i = 0; i < selectedArtifacts.Count; i++)
             {
                 selectedArtifacts[i].gameObject.SetActive(false);
             }
 
             selectedArtifacts = artsPool.GetArt();
-
 
             for (int i = 0; i < selectedArtifacts.Count; i++)
             {

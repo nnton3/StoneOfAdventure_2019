@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using StoneOfAdventure.Core;
+using StoneOfAdventure.UI;
 
 namespace StoneOfAdventure.Combat
 {
@@ -10,29 +11,31 @@ namespace StoneOfAdventure.Combat
     public class Health : MonoBehaviour, IDamaged
     {
         #region Variables
-        private Unit unit;
 
         [HideInInspector] public HPDecreasedEvent HPDecreased = new HPDecreasedEvent();
         [HideInInspector] public HPDecreasedEvent HPIncreased = new HPDecreasedEvent();
         [HideInInspector] public UnityEvent MaxHealthUpdated;
         [HideInInspector] public UnityEvent HealthUpdated;
         [HideInInspector] public UnityEvent Dead;
+
         public delegate void ModifiersOfInputDamage(ref int damage);
-        private ModifiersOfInputDamage applyModifiersOfInputDamage;
-
-        [SerializeField] private int healthPoints = 100;
         public int HealthPoints => healthPoints;
-        private int maxHealthPoints;
         public int MaxHealthPoints => maxHealthPoints;
-
         public bool Untouchable => untouchable;
 
+        private ModifiersOfInputDamage applyModifiersOfInputDamage;
+        private Unit unit;
+        private int maxHealthPoints;
+        private PointsUI pointsUI;
+
+        [SerializeField] private int healthPoints = 100;
         [SerializeField] private bool untouchable = false;
         #endregion
 
         private void Start()
         {
             unit = GetComponent<Unit>();
+            pointsUI = GetComponentInChildren<PointsUI>();
 
             UpdateMaxHealthPoints(healthPoints);
         }
@@ -62,6 +65,7 @@ namespace StoneOfAdventure.Combat
                 healthPoints -= currentDamage;
             }
             HealthUpdated.Invoke();
+            pointsUI.CreatePointsUI(currentDamage.ToString(), Color.yellow, 20);
             HPDecreased?.Invoke(currentDamage);
         }
 
@@ -78,7 +82,12 @@ namespace StoneOfAdventure.Combat
 
         public void Heal(int healValue)
         {
-            if (healthPoints < maxHealthPoints && healthPoints > 0f) healthPoints += healValue;
+            if (healthPoints != maxHealthPoints)
+                pointsUI.CreatePointsUI(healValue.ToString(), Color.green);
+
+            if (healthPoints < maxHealthPoints && healthPoints > 0f)
+                healthPoints += healValue;
+
             HealthUpdated.Invoke();
             HPIncreased.Invoke(healValue);
         }

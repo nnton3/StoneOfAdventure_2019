@@ -9,7 +9,7 @@ namespace StoneOfAdventure.UI
 
         internal void ShowArtifactSelector()
         {
-            artifactSelector.EnableArtifactSelector();
+            artifactSelector.OpenArtifactSelector();
         }
     }
 }
