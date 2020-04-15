@@ -1,15 +1,17 @@
 fileFormatVersion: 2
-guid: 1ddfd399b2341024885f5339debed1df
+guid: a53f12bf17ea2b246b70b43124e77d90
 TextureImporter:
   fileIDToRecycleName:
-    21300000: zombie_walk_0
-    21300002: zombie_walk_1
-    21300004: zombie_walk_2
-    21300006: zombie_walk_3
-    21300008: zombie_walk_4
-    21300010: zombie_walk_5
-    21300012: zombie_walk_6
-    21300014: zombie_walk_7
+    21300000: BatAtlas_0
+    21300002: BatAtlas_1
+    21300004: BatAtlas_2
+    21300006: BatAtlas_3
+    21300008: BatAtlas_4
+    21300010: BatAtlas_5
+    21300012: BatAtlas_6
+    21300014: BatAtlas_7
+    21300016: BatAtlas_8
+    21300018: BatAtlas_9
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -44,7 +46,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -88,165 +90,249 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_walk_0
+      name: BatAtlas_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
+        x: 0
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eb3cae75ee99534e8a195270667d72a
+      spriteID: 0daca21f6370aaa4ead515e50541886c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_1
+      name: BatAtlas_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 1
+        x: 14
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 593b8986c8e46a2439ebf631ac7cca75
+      spriteID: 49a478215a714a7469c127eb0dc5ba2f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_2
+      name: BatAtlas_2
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1
+        x: 28
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f34b78df7ca53a42830ac9fffa8dc05
+      spriteID: a88785d59c1bebf4cbd4df1617b731b4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_3
+      name: BatAtlas_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1
+        x: 42
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6e0129e5b9971b4daaa8edc65cc88d8
+      spriteID: a20d667d2df4e7142adb9f5f29a0bafb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_4
+      name: BatAtlas_4
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1
+        x: 56
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1252f3a1f998c545ba38268797c4f8c
+      spriteID: 3bcf4d6cfc8875a40ad66271970425cb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_5
+      name: BatAtlas_5
       rect:
         serializedVersion: 2
-        x: 345
-        y: 1
+        x: 70
+        y: 85
         width: 14
-        height: 18
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 388cdbc7671c2b64db147f8aa3f4d53d
+      spriteID: 9466a6ba5b2b0bd448f6a60068043de0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_6
+      name: BatAtlas_6
       rect:
         serializedVersion: 2
-        x: 413
-        y: 1
-        width: 14
-        height: 18
+        x: 0
+        y: 70
+        width: 19
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd91fbeb629727a4da3a536eed1c839c
+      spriteID: 8358d996664a0f3458de4a1921a535bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_7
+      name: BatAtlas_7
       rect:
         serializedVersion: 2
-        x: 482
-        y: 1
-        width: 14
-        height: 18
+        x: 19
+        y: 70
+        width: 19
+        height: 15
       alignment: 9
-      pivot: {x: 0.35, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feeb951bc80ab4544bb1491d4894b772
+      spriteID: 58fd32ee30f97404b84e104b2c27013f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BatAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 70
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307cdc137da721643ac320a2d6d99417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BatAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 70
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2221c28454c99aa448d6b75843116e51
       vertices: []
       indices: 
       edges: []
@@ -254,7 +340,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cad7853baf4643a4e85af421e9f7922f
+    spriteID: 68b84d0acf5efb84d9cb6c23e4963a03
     vertices: []
     indices: 
     edges: []

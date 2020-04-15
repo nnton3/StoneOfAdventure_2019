@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: bddf4d758547cfa40b6179b0c014f745
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ZombieWithKnifeAtlas_0
+    21300002: ZombieWithKnifeAtlas_1
+    21300004: ZombieWithKnifeAtlas_2
+    21300006: ZombieWithKnifeAtlas_3
+    21300008: ZombieWithKnifeAtlas_4
+    21300010: ZombieWithKnifeAtlas_5
+    21300012: ZombieWithKnifeAtlas_6
+    21300014: ZombieWithKnifeAtlas_7
+    21300016: ZombieWithKnifeAtlas_8
+    21300018: ZombieWithKnifeAtlas_9
+    21300020: ZombieWithKnifeAtlas_10
+    21300022: ZombieWithKnifeAtlas_11
+    21300024: ZombieWithKnifeAtlas_12
+    21300026: ZombieWithKnifeAtlas_13
+    21300028: ZombieWithKnifeAtlas_14
+    21300030: ZombieWithKnifeAtlas_15
+    21300032: ZombieWithKnifeAtlas_16
+    21300034: ZombieWithKnifeAtlas_17
+    21300036: ZombieWithKnifeAtlas_18
+    21300038: ZombieWithKnifeAtlas_19
+    21300040: ZombieWithKnifeAtlas_20
+    21300042: ZombieWithKnifeAtlas_21
+    21300044: ZombieWithKnifeAtlas_22
+    21300046: ZombieWithKnifeAtlas_23
+    21300048: ZombieWithKnifeAtlas_24
+    21300050: ZombieWithKnifeAtlas_25
+    21300052: ZombieWithKnifeAtlas_26
+    21300054: ZombieWithKnifeAtlas_27
+    21300056: ZombieWithKnifeAtlas_28
+    21300058: ZombieWithKnifeAtlas_29
+    21300060: ZombieWithKnifeAtlas_30
+    21300062: ZombieWithKnifeAtlas_31
+    21300064: ZombieWithKnifeAtlas_32
+    21300066: ZombieWithKnifeAtlas_33
+    21300068: ZombieWithKnifeAtlas_34
+    21300070: ZombieWithKnifeAtlas_35
+    21300072: ZombieWithKnifeAtlas_36
+    21300074: ZombieWithKnifeAtlas_37
+    21300076: ZombieWithKnifeAtlas_38
+    21300078: ZombieWithKnifeAtlas_39
+    21300080: ZombieWithKnifeAtlas_40
+    21300082: ZombieWithKnifeAtlas_41
+    21300084: ZombieWithKnifeAtlas_42
+    21300086: ZombieWithKnifeAtlas_43
+    21300088: ZombieWithKnifeAtlas_44
+    21300090: ZombieWithKnifeAtlas_45
+    21300092: ZombieWithKnifeAtlas_46
+    21300094: ZombieWithKnifeAtlas_47
+    21300096: ZombieWithKnifeAtlas_48
+    21300098: ZombieWithKnifeAtlas_49
+    21300100: ZombieWithKnifeAtlas_50
+    21300102: ZombieWithKnifeAtlas_51
+    21300104: ZombieWithKnifeAtlas_52
+    21300106: ZombieWithKnifeAtlas_53
+    21300108: ZombieWithKnifeAtlas_54
+    21300110: ZombieWithKnifeAtlas_55
+    21300112: ZombieWithKnifeAtlas_56
+    21300114: ZombieWithKnifeAtlas_57
+    21300116: ZombieWithKnifeAtlas_58
+    21300118: ZombieWithKnifeAtlas_59
+    21300120: ZombieWithKnifeAtlas_60
+    21300122: ZombieWithKnifeAtlas_61
+    21300124: ZombieWithKnifeAtlas_62
+    21300126: ZombieWithKnifeAtlas_63
+    21300128: ZombieWithKnifeAtlas_64
+    21300130: ZombieWithKnifeAtlas_65
+    21300132: ZombieWithKnifeAtlas_66
+    21300134: ZombieWithKnifeAtlas_67
+    21300136: ZombieWithKnifeAtlas_68
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d39c24247dabb94db42bb26c32b5544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 183
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623671a5312c1c943bde15eb957afb7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 183
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacaf1630b5315b43b9d644d4bc81c0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 183
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8b5f8ee2fbf3841be129a6b5a6f53a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99a8128b5cf90b458cf778a3f9fcd61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f987f493f1c2e43ac98c1dc073689b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bf14576f0c96447ba2ae577eaedd34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e427603ce455cd498131e2ac47c80b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f29ec9c5fe89148bfc692a091383bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07aca1994de722e44a01432c6d47157f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b07a43359288544a9b2e44638f71c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 165
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87c8f227144b504aa1b159cf3c879b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc85da7a4c18c943a2a70a4e5b9f71e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9494b99c267314b96454a50d90bbd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36977c445091c6741982529e5a2984d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4212d62daedeec4e9b2d142e0de366e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63c355d55a33434c9393c365d5bb0ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27162d0c80e77c41a1d9a34e0364462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b84f32e2ea6eb439e19715b6c74f77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe5347c2a0a51d4a971334e5cf7238b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd251d6787b882a45976317b94b8d15a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1139dfb502b8acf43a2d19ddc9b3568a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064b251b66b1f0d45972f96cc3243894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccddf7e4b7bd874ba6180e65cb90155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fc3bd9b8b42e84e91ceb5b4e6ceb99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 142
+        width: 37
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27af7afd5a62694e9e8326a5af768da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288b3e29c63a29345baadb5c6e64447c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44023f5006d0d540a4cb0a4c90a823b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad37809bcc08b47a92bdc835a2102b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c2503e688cdf04eb5808a71eb1c9ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263c295c5ce0c614c9641b98248a3855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61adeaddfb51ba249b960341047c9005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8692c206ae78124469804d607a7415fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6210f4fe1d3f080409fd06ffbc8e7c50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc16ad5d49cd224598e3389a5cdc21c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 126
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65136e1e6a863641a40ed66bfaa1c2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddef74287ec94e4d829cb917b1a6b03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84643a439f16e9a47ae27f830fced8c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d625be0521e642abfeef774c0a6a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec60df74ff936648b85762ae3191c36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4bd4681ae4f014badf218f43ccb87c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfc793136bd67f4b88159a844ef2be5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9b3690f11efff499bdb7d582e78766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f77c1dca19c06f489424e5335878936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c2c626c3f0a4e499d8ad3ec3e0bc9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd16f5a550e0f34f8c16fb161593d1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fd8314e503b2a44a5416459068ceef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbad0c8ad2bc3e41b861f7a7f8df19a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fd2c4d7bec535478ff0d702121e86e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d31c8b973b828b498040314e0c56f10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a332177c246dbb458d63407ae800d14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c84ecf220b894c449dad290f5333050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca4c0ac4d64e4346ac323fb6e4b8564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373ec32452d79104888e1d7c8e43fb69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6453ef4d147de8f4a87636a5d0d93d09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6bc212724ce245afcaf61c39134c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb83928031980040856fa5f718d6345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 107
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc3ce079b37cf04e95b23453c16c1b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d8f9c72b130cd409d09200e48fe1e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_59
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac0c336d63d4b84fa9857e6295fc7e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_60
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18efb3266cc61c24bbb060c64a3b453f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_61
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9057b39dd8553784ba737a8e3e7f0fa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_62
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8c4d844494ffb40840481e2bf0bf3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_63
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dcdfacff5bd3648b1c043cbc27bce6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_64
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ade5eeb9f0b5e40925656623965e0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_65
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eecb0d6ff2af048bcd3330a870942b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_66
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb307fd8274eccd4d92d3335c00b2d6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_67
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d25fd317840844c8819d66463b9ae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieWithKnifeAtlas_68
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 90
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db33d7b10b3f46f449ae747d9a3afdc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 07e547db496679845b2ad600df01835d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
