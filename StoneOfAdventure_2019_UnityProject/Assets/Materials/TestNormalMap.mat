@@ -203,7 +203,7 @@ Material:
     - _EnableWind: 0
     - _EnergyConservingSpecularColor: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.992
     - _GlossinessSource: 1
     - _GlossyReflections: 1
     - _HdrpVersion: 2
@@ -274,6 +274,7 @@ Material:
     - _UVEmissive: 0
     - _UVSec: 0
     - _UseShadowThreshold: 0
+    - _WorkflowMode: 1
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 8
