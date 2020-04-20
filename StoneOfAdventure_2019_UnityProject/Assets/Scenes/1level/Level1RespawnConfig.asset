@@ -12,40 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ef0a6c2c99c948b57db18de10a4c3, type: 3}
   m_Name: Level1RespawnConfig
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 12
-  minSpawnDelay: 4
+  baseSpawnDelay: 4
+  minSpawnDelay: 2
   units:
   - Zombie
   - Zombie
   - Zombie
-  - Zombie
-  - Zombie
-  - Zombie
-  - Zombie
-  - Zombie
-  - Zombie
-  - Zombie
+  - ZombieDown
+  - ZombieDown
+  - ZombieDown
+  - ZombieHerold
+  - ZombieHerold
+  - Bat
+  - Bat
   baseSpawnChance:
+  - 20
+  - 20
+  - 20
   - 30
   - 30
   - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
-  - 30
+  - 15
+  - 15
+  - 35
+  - 35
   endSpawnChance:
+  - 65
+  - 65
+  - 65
+  - 75
+  - 75
+  - 75
+  - 50
+  - 50
   - 80
   - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  - 80
-  totalTickNumber: 80
+  totalTickNumber: 120
   boundSize: {x: 10, y: 10, z: 1}
