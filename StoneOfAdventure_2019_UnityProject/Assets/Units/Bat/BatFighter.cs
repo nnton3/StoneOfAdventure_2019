@@ -20,8 +20,8 @@ namespace StoneOfAdventure.Combat
             if (enemie.CompareTag("Player")) { CancelAttack(); }
         }
         
-        private void Hit() { playerHealth.ApplyDamage(baseDamage); }
-
-        public override void CancelAttack() { CancelInvoke("Hit"); }
+        private void Hit() => playerHealth.ApplyDamage(baseDamage);
+        public override void CancelAttack() => CancelInvoke("Hit");
+        private void OnDisable() => CancelAttack();
     }
 }

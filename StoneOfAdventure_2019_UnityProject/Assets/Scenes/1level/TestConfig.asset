@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ef0a6c2c99c948b57db18de10a4c3, type: 3}
   m_Name: TestConfig
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 2
-  minSpawnDelay: 1
+  baseSpawnDelay: 4
+  minSpawnDelay: 3
   units:
-  - Zombie
+  - Bat
   baseSpawnChance:
   - 50
   endSpawnChance:

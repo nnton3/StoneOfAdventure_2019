@@ -11,7 +11,6 @@ namespace StoneOfAdventure.Combat
     public class Health : MonoBehaviour, IDamaged
     {
         #region Variables
-
         [HideInInspector] public HPDecreasedEvent HPDecreased = new HPDecreasedEvent();
         [HideInInspector] public HPDecreasedEvent HPIncreased = new HPDecreasedEvent();
         [HideInInspector] public UnityEvent MaxHealthUpdated;
@@ -32,11 +31,14 @@ namespace StoneOfAdventure.Combat
         [SerializeField] private bool untouchable = false;
         #endregion
 
-        private void Start()
+        private void Awake()
         {
             unit = GetComponent<Unit>();
             pointsUI = GetComponentInChildren<PointsUI>();
+        }
 
+        private void Start()
+        {
             UpdateMaxHealthPoints(healthPoints);
         }
 

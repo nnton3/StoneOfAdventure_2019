@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
+using Zenject;
 
 public class GroundTileScanner : MonoBehaviour
 {
-    private TileBase patrolTile;
+    [Inject] private TileBase patrolTile;
     private Tilemap patrolMap;
     private Flip flip;
 
-    private void Start()
+    private void Awake()
     {
         patrolMap = GameObject.FindGameObjectWithTag("PatrolTile").GetComponent<Tilemap>();
-        patrolTile = Resources.Load<TileBase>("2");
         flip = GetComponent<Flip>();
     }
 

@@ -11,6 +11,7 @@ namespace StoneOfAdventure.Core
         [Inject] private EnemieSpawnerConfig spawnerConfig;
         [Inject] private GroundTileFinder tileFinder;
         [Inject] readonly SignalBus signalBus;
+        [Inject (Id = "Player")] private PlayerStateController player;
 
         private int currentTickNumber = 0;
         private float spawnDelayStep = 0f;
@@ -18,15 +19,15 @@ namespace StoneOfAdventure.Core
         private EnemiePool enemiePool;
         #endregion
 
+        private void Awake()
+        {
+            enemiePool = GetComponent<EnemiePool>();
+        }
+
         private void Start()
         {
-            tileFinder = GetComponent<GroundTileFinder>();
-            enemiePool = GetComponent<EnemiePool>();
-
             signalBus.Subscribe<LocationCompletedSignal>(StopSpawn);
-
             spawnDelayStep = (spawnerConfig.BaseSpawnDelay - spawnerConfig.MinSpawnDelay) / spawnerConfig.TotalTickNumber;
-
             StartCoroutine("SpawnEmmiter");
         }
 
@@ -76,7 +77,7 @@ namespace StoneOfAdventure.Core
 
         private Vector3 ChangeSpawnPosition()
         {
-            var targetPositions = tileFinder.FindValidPositions(spawnerConfig.BoundSize, transform.position);
+            var targetPositions = tileFinder.FindValidPositions(spawnerConfig.BoundSize, player.transform.position);
 
             if (targetPositions.Count == 0) return Vector3.zero;
 
