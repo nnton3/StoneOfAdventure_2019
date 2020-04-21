@@ -1,24 +1,39 @@
-﻿using StoneOfAdventure.Core;
+﻿using System;
+using StoneOfAdventure.Combat;
+using StoneOfAdventure.Core;
 using StoneOfAdventure.Movement;
 using UnityEngine;
+using Zenject;
 
 public class BatStateController : UnitContainsAward
 {
-    private GameObject player;
+    [Inject (Id = "Player")] private PlayerStateController player;
+    [Inject] DiContainer container;
     private Flyer flyer;
     private Animator anim;
+    private Health health;
 
     [SerializeField] private float movespeed;
-    
-    protected override void Start()
-    {
-        base.Start();
 
-        player = GameObject.FindGameObjectWithTag("Player");
+    private void OnEnable()
+    {
+        if (health == null) Initialize();
+
+        if (health.Untouchable) health.SwapUntouchable();
+
+        Debug.Log($"My postion: {transform.position}");
+        Debug.Log($"Enemie position {player.transform.position}");
+        transform.position = player.transform.position + Vector3.left * 20f;
+        Debug.Log($"My new position {transform.position}");
+        Debug.Log($"Have I target {player != null}");
+    }
+
+    private void Initialize()
+    {
+        container.Inject(this);
+        health = GetComponent<Health>();
         flyer = GetComponent<Flyer>();
         anim = GetComponent<Animator>();
-
-        transform.position = transform.position + Vector3.left * 20f;
     }
 
     private void FixedUpdate()
@@ -33,14 +48,14 @@ public class BatStateController : UnitContainsAward
 
     public override void Dead()
     {
-        player = null;
         Move(Vector2.zero);
         anim.SetTrigger("dead");
         CreateReward();
     }
 
-    public void DestroyUnit()
+    // Animation event
+    public void DisableObject()
     {
-        Destroy(gameObject);
+        ReturnToPool();
     }
 }

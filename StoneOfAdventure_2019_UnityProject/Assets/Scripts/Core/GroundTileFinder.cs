@@ -13,10 +13,7 @@ public class GroundTileFinder : MonoBehaviour
         var groundTIlesPosition = new List<Vector3>();
 
         if (groundTilemap == null)
-        {
-            Debug.Log("Ground tilemap does not itialize");
             return groundTIlesPosition;
-        }
 
         var startCheckPoint = center - (Vector3)area / 2;
 

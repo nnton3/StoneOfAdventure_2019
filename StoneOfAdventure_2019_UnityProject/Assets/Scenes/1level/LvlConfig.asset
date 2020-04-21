@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240a9b4d694ae394a865f0d0449a3d6a, type: 3}
   m_Name: LvlConfig
   m_EditorClassIdentifier: 
-  spawnerConfig: {fileID: 11400000, guid: e7ef2e7dadab65e4592e1f156b31fc59, type: 2}
+  spawnerConfig: {fileID: 11400000, guid: 4f592cb49d237cd42a807c9692b383eb, type: 2}
   groundTile: {fileID: 11400000, guid: 5eece359f1848404b9f8e6cbc6d4a042, type: 2}

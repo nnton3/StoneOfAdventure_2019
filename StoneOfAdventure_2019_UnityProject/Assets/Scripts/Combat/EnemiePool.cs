@@ -23,7 +23,6 @@ namespace StoneOfAdventure.Combat
             {
                 var enemiePool = new List<GameObject>();
 
-
                 for (int i = 0; i < pool.size; i++)
                 {
                     var obj = container.InstantiatePrefab(pool.pref, parentObj.transform);
@@ -57,7 +56,7 @@ namespace StoneOfAdventure.Combat
             var newInstance = container.InstantiatePrefab(enemieDictionary[name][0], parentObj.transform);
             enemieDictionary[name].Add(newInstance);
             newInstance.SetActive(false);
-            return enemieDictionary[name][enemieDictionary[name].Count - 1];
+            return newInstance;
         }
 
         [System.Serializable]
