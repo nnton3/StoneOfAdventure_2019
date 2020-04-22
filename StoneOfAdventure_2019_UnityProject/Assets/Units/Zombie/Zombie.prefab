@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  reward: 2
-  experience: 2
+  reward: 3
+  experience: 3
 --- !u!114 &2677293136967742501
 MonoBehaviour:
   m_ObjectHideFlags: 0
