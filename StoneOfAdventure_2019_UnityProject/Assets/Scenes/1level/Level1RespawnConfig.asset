@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ef0a6c2c99c948b57db18de10a4c3, type: 3}
   m_Name: Level1RespawnConfig
   m_EditorClassIdentifier: 
-  baseSpawnDelay: 4
+  baseSpawnDelay: 9
   minSpawnDelay: 2
   units:
   - Zombie
