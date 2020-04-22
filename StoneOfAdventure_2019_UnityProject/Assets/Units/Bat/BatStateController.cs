@@ -21,11 +21,7 @@ public class BatStateController : UnitContainsAward
 
         if (health.Untouchable) health.SwapUntouchable();
 
-        Debug.Log($"My postion: {transform.position}");
-        Debug.Log($"Enemie position {player.transform.position}");
         transform.position = player.transform.position + Vector3.left * 20f;
-        Debug.Log($"My new position {transform.position}");
-        Debug.Log($"Have I target {player != null}");
     }
 
     private void Initialize()
