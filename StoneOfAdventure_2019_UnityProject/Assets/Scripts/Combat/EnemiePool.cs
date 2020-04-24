@@ -53,10 +53,17 @@ namespace StoneOfAdventure.Combat
                 }
             }
 
-            var newInstance = container.InstantiatePrefab(enemieDictionary[name][0], parentObj.transform);
-            enemieDictionary[name].Add(newInstance);
-            newInstance.SetActive(false);
-            return newInstance;
+            for (int i = 0; i < enemiePools.Count; i++)
+            {
+                if (enemiePools[i].name == name)
+                {
+                    var newInstance = container.InstantiatePrefab(enemiePools[i].pref, parentObj.transform);
+                    enemieDictionary[name].Add(newInstance);
+                    newInstance.SetActive(false);
+                    return newInstance;
+                }
+            }
+            return null;
         }
 
         [System.Serializable]
