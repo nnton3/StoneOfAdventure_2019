@@ -12,17 +12,12 @@ namespace StoneOfAdventure.Core
         [Inject] private GroundTileFinder tileFinder;
         [Inject] readonly SignalBus signalBus;
         [Inject (Id = "Player")] private PlayerStateController player;
+        [Inject] private EnemiePool enemiePool;
 
         private int currentTickNumber = 0;
         private float spawnDelayStep = 0f;
         private float spawnChanceIncreaseStep = 0f;
-        private EnemiePool enemiePool;
         #endregion
-
-        private void Awake()
-        {
-            enemiePool = GetComponent<EnemiePool>();
-        }
 
         private void Start()
         {

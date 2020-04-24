@@ -12425,7 +12425,7 @@ PrefabInstance:
     - target: {fileID: 6660649367290964178, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
       propertyPath: enemiePools.Array.data[2].size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6660649367290964178, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
@@ -12447,6 +12447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660649367290964178, guid: 1065c7cead172c14a84a48437c4e01cb,
+        type: 3}
+      propertyPath: enemiePools.Array.data[0].size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2820792830736796495, guid: 1065c7cead172c14a84a48437c4e01cb,
         type: 3}
@@ -131892,7 +131897,7 @@ Tilemap:
       - {fileID: 21300002, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300004, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300006, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
-      m_AnimationSpeed: 12.000001
+      m_AnimationSpeed: 12
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: -17, z: 0}
@@ -131912,7 +131917,7 @@ Tilemap:
       - {fileID: 21300002, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300004, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
       - {fileID: 21300006, guid: 7da4b8af000b9164c87fc7e0996d131d, type: 3}
-      m_AnimationSpeed: 12
+      m_AnimationSpeed: 12.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 14, y: -14, z: 0}

@@ -2,7 +2,7 @@
 using StoneOfAdventure.Combat;
 using StoneOfAdventure.Core;
 using System.Collections;
-using UnityEngine.Experimental.VFX;
+//using UnityEngine.Experimental.VFX;
 using StoneOfAdventure.Movement;
 
 public class ZombieHeroldStateController : UnitContainsAward
@@ -103,7 +103,7 @@ public class ZombieHeroldStateController : UnitContainsAward
         {
             anim.SetTrigger("dead");
             StateDeath();
-            GetComponentInChildren<VisualEffect>().Stop();
+            //GetComponentInChildren<VisualEffect>().Stop();
             GetComponentInChildren<BuffArea>().RemoveAllBuffs();
             StartCoroutine("DestroyCorrupse");
             CreateReward();
