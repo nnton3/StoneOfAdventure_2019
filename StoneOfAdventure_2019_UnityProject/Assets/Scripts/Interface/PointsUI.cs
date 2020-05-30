@@ -9,7 +9,14 @@ namespace StoneOfAdventure.UI
     {
         [SerializeField] private GameObject pointsUI;
         [Inject (Id = "HP_UI")] private ObjectPool hp_uiPool;
-        [Inject] private Camera mainCamera;
+
+        private void Start()
+        {
+            GetComponentInParent<Flip>().Flipped.AddListener(() =>
+            {
+                transform.localScale = new Vector3(transform.localScale .x * - 1f, 1f, 1f);
+            });
+        }
 
         public void CreatePointsUI(string text, Color pointsColor, int size = 14)
         {

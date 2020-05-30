@@ -48,4 +48,4 @@ MonoBehaviour:
   - 80
   - 80
   totalTickNumber: 120
-  boundSize: {x: 10, y: 10, z: 1}
+  boundSize: {x: 100, y: 100, z: 1}
