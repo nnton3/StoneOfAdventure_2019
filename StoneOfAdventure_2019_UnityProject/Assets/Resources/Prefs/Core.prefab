@@ -3982,7 +3982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451273d48eb1c6f4bac9c8f40471b6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLocationPoints: 500
+  maxLocationPoints: 175
 --- !u!114 &3611817995202837186
 MonoBehaviour:
   m_ObjectHideFlags: 0
