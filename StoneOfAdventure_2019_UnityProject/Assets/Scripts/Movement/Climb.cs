@@ -41,11 +41,11 @@ namespace StoneOfAdventure.Movement
 
         public void StopVerticalMove()
         {
-            moveVertical = Vector2.zero;
             onLadder = false;
             rb.bodyType = RigidbodyType2D.Dynamic;
             unit.DisableState();
             anim.SetBool("climb", onLadder);
+            moveVertical = Vector2.zero;
         }
 
         public bool LadderEnd(float playerClimbInput)

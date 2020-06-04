@@ -32,7 +32,7 @@ public class RingOfDetermination_buff : MonoBehaviour
 
     private void TryToHeal()
     {
-        var currentHealthInPercent = health.HealthPoints / (health.MaxHealthPoints / 100);
+        var currentHealthInPercent = health.HealthPoints.Value / (health.MaxHealthPoints.Value / 100);
 
         if (currentHealthInPercent < 60f && currentHealthInPercent >= 40f)
             health.Heal(sixtyPercentHeal);
