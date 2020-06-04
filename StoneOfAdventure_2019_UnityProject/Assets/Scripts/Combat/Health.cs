@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 using StoneOfAdventure.Core;
 using StoneOfAdventure.UI;
+using UniRx;
 
 namespace StoneOfAdventure.Combat
 {
@@ -18,40 +19,37 @@ namespace StoneOfAdventure.Combat
         [HideInInspector] public UnityEvent Dead;
 
         public delegate void ModifiersOfInputDamage(ref int damage);
-        public int HealthPoints => healthPoints;
-        public int MaxHealthPoints => maxHealthPoints;
         public bool Untouchable => untouchable;
 
+        public ReactiveProperty<int> HealthPoints { get; private set; }
+        public ReactiveProperty<int> MaxHealthPoints { get; private set; }
+
         private ModifiersOfInputDamage applyModifiersOfInputDamage;
-        private Unit unit;
-        private int maxHealthPoints;
+        private StoneOfAdventure.Core.Unit unit;
         private PointsUI pointsUI;
 
-        [SerializeField] private int healthPoints = 100;
         [SerializeField] private bool untouchable = false;
         #endregion
 
         private void Awake()
         {
-            unit = GetComponent<Unit>();
+            unit = GetComponent<StoneOfAdventure.Core.Unit>();
             pointsUI = GetComponentInChildren<PointsUI>();
-        }
 
-        private void Start()
-        {
-            UpdateMaxHealthPoints(healthPoints);
+            HealthPoints = new ReactiveProperty<int>(100);
+            MaxHealthPoints = new ReactiveProperty<int>(HealthPoints.Value);
         }
 
         public void ResetParams()
         {
             untouchable = true;
-            healthPoints = MaxHealthPoints;
+            HealthPoints.Value = MaxHealthPoints.Value;
             HealthUpdated.Invoke();
         }
 
         public void ApplyDamage(int damage)
         {
-            if (HealthPoints == 0) return;
+            if (HealthPoints.Value == 0) return;
             if (Untouchable) return;
 
             var currentDamage = damage;
@@ -60,11 +58,11 @@ namespace StoneOfAdventure.Combat
             if (IsDead(currentDamage))
             {
                 unit.Dead();
-                healthPoints = 0;
+                HealthPoints.Value = 0;
             }
             else
             {
-                healthPoints -= currentDamage;
+                HealthPoints.Value -= currentDamage;
             }
             HealthUpdated.Invoke();
             pointsUI.CreatePointsUI(currentDamage.ToString(), Color.yellow, 20);
@@ -79,16 +77,16 @@ namespace StoneOfAdventure.Combat
         
         private bool IsDead(float damage)
         {
-            return HealthPoints <= damage;
+            return HealthPoints.Value <= damage;
         }
 
         public void Heal(int healValue)
         {
-            if (healthPoints != maxHealthPoints)
+            if (HealthPoints.Value != MaxHealthPoints.Value)
                 pointsUI.CreatePointsUI(healValue.ToString(), Color.green);
 
-            if (healthPoints < maxHealthPoints && healthPoints > 0f)
-                healthPoints += healValue;
+            if (HealthPoints.Value < MaxHealthPoints.Value && HealthPoints.Value > 0f)
+                HealthPoints.Value += healValue;
 
             HealthUpdated.Invoke();
             HPIncreased.Invoke(healValue);
@@ -100,7 +98,7 @@ namespace StoneOfAdventure.Combat
         /// <param name="newValue"></param>
         public void UpdateMaxHealthPoints(int newValue)
         {
-            maxHealthPoints = newValue;
+            MaxHealthPoints.Value = newValue;
             HealthUpdated.Invoke();
             MaxHealthUpdated.Invoke();
         }
@@ -111,7 +109,7 @@ namespace StoneOfAdventure.Combat
         /// <param name="increaseCurrentValue">На сколько процентов увеличить максимальное количество здоровья</param>
         public void UpdateMaxHealthPoints(float increaseCurrentValue)
         {
-            maxHealthPoints += (int)(maxHealthPoints * increaseCurrentValue);
+            MaxHealthPoints.Value += (int)(MaxHealthPoints.Value * increaseCurrentValue);
             MaxHealthUpdated.Invoke();
         }
 

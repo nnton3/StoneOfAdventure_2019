@@ -27,7 +27,7 @@ namespace StoneOfAdventure.Combat
         private void ApplyLifesteal(GameObject target)
         {
             var targetHealth = target.GetComponent<Health>();
-            var lifestealedHP = (int)(targetHealth.HealthPoints * lifestealInPersent);
+            var lifestealedHP = (int)(targetHealth.HealthPoints.Value * lifestealInPersent);
             targetHealth.ApplyDamage(lifestealedHP);
             Debug.Log(lifestealedHP);
             for (int i = 0; i < lifestealedHP; i++)

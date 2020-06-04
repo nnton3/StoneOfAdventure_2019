@@ -44,7 +44,7 @@ namespace StoneOfAdventure.Combat
                 foreach (var enemie in enemiesInApplicationArea)
                 {
                     var enemieHealth = enemie.GetComponent<Health>();
-                    var damage = (int)(enemieHealth.HealthPoints * damageInPercent);
+                    var damage = (int)(enemieHealth.HealthPoints.Value * damageInPercent);
                     enemieHealth.ApplyDamage(damage);
                     heal += damage * lifestealValueInPercent;
                 }

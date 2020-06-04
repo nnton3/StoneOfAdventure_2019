@@ -1,6 +1,7 @@
 ﻿using StoneOfAdventure.Combat;
 using UnityEngine.UI;
 using UnityEngine;
+using UniRx;
 
 namespace StoneOfAdventure.UI
 {
@@ -13,6 +14,13 @@ namespace StoneOfAdventure.UI
         {
             if (unit == null) return;
             Initialize(unit);
+
+            health.HealthPoints
+                .ObserveEveryValueChanged(x => x.Value)
+                .Subscribe(_ => UpdateHPBar())
+                .AddTo(this);
+
+            UpdateHPBar();
         }
 
         public void Initialize(GameObject target)
@@ -21,7 +29,6 @@ namespace StoneOfAdventure.UI
             health = target.GetComponent<Health>();
             HPValueText = GetComponentInChildren<Text>();
 
-            health.HealthUpdated.AddListener(UpdateHPBar);
             UpdateHPBar();
         }
 

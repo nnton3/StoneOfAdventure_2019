@@ -40,7 +40,7 @@ namespace StoneOfAdventure.Core
         {
             var playerHealth = player.GetComponent<Health>();
             playerHealth.UpdateMaxHealthPoints(healthGetForLevel);
-            playerHealth.Heal(playerHealth.MaxHealthPoints - playerHealth.HealthPoints);
+            playerHealth.Heal(playerHealth.MaxHealthPoints.Value - playerHealth.HealthPoints.Value);
             player.GetComponent<Fighter>().IncreaseBaseDamage(damageGetForLevel);
             var skills = player.GetComponents<SkillBase>();
             foreach (var skill in skills)
