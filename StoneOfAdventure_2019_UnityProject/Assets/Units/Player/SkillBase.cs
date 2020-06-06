@@ -18,6 +18,12 @@ namespace StoneOfAdventure.Combat
         [HideInInspector] public UnityEvent CoolDownReduced;
 
         [Inject] private SignalBus signalBus;
+        [Inject] private MainLvlConfig config;
+
+        private void Awake()
+        {
+            signalBus.Subscribe<LevelUp>(() => IncreaseBaseDamage(config.DamageGetForLevel));
+        }
 
         private void FixedUpdate()
         {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 [CreateAssetMenu(fileName ="NewSpawnConfig", menuName = "Create new spawn config")]
-public class EnemieSpawnerConfig : ScriptableObject
+public class MainLvlConfig : ScriptableObject
 {
     [SerializeField] private float baseSpawnDelay = 5f;
     [SerializeField] private float minSpawnDelay = 1f;
@@ -19,4 +19,9 @@ public class EnemieSpawnerConfig : ScriptableObject
     public List<float> EndSpawnChance => endSpawnChance;
     public int TotalTickNumber => totalTickNumber;
     public Vector3Int BoundSize => boundSize;
+    public int TargetLocationPointsValue = 100;
+    public float HealthGetForLevel = 0.1f;
+    public float IncreaseLevelUpExperience = 0.1f;
+    public float DamageGetForLevel = 0.1f;
+    public int ExpValueNeedToLevelUp = 100;
 }

@@ -8,7 +8,7 @@ namespace StoneOfAdventure.Core
     public class EnemieFactory : MonoBehaviour
     {
         #region Variables
-        [Inject] private EnemieSpawnerConfig spawnerConfig;
+        [Inject] private MainLvlConfig spawnerConfig;
         [Inject] private GroundTileFinder tileFinder;
         [Inject] readonly SignalBus signalBus;
         [Inject (Id = "Player")] private PlayerStateController player;
@@ -21,7 +21,7 @@ namespace StoneOfAdventure.Core
 
         private void Start()
         {
-            signalBus.Subscribe<LocationCompletedSignal>(StopSpawn);
+            signalBus.Subscribe<LocationMissionComplete>(StopSpawn);
             spawnDelayStep = (spawnerConfig.BaseSpawnDelay - spawnerConfig.MinSpawnDelay) / spawnerConfig.TotalTickNumber;
             StartCoroutine("SpawnEmmiter");
         }

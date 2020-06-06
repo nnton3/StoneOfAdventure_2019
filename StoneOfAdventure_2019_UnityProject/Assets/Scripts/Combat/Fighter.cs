@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
 namespace StoneOfAdventure.Combat
 {
@@ -12,22 +13,29 @@ namespace StoneOfAdventure.Combat
         protected Flip flip;
         protected EffectsOnTarget applyEffectsOnTarget;
         protected ModifiersOfDamage applyDamageModifiers;
-        private float currentAttackSpeed = 1f;
+
+        [Inject] private SignalBus signalBus;
+        [Inject] private MainLvlConfig config;
 
         [HideInInspector] public UnityEvent UseAttack;
         [HideInInspector] public UnityEvent DamageApplied;
+        [SerializeField] protected int baseDamage;
         public int BaseDamage => baseDamage;
+        private float currentAttackSpeed = 1f;
         public float CurrentAttackSpeed => currentAttackSpeed;
         public delegate void EffectsOnTarget(GameObject target);
         public delegate void ModifiersOfDamage(ref int damage);
-
-        [SerializeField] protected int baseDamage;
         #endregion
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
             anim = GetComponent<Animator>();
             flip = GetComponent<Flip>();
+
+            if (gameObject.CompareTag("Player"))
+            {
+                signalBus.Subscribe<LevelUp>(() => IncreaseBaseDamage(config.DamageGetForLevel));
+            }
         }
 
         public virtual void StartAttack()
