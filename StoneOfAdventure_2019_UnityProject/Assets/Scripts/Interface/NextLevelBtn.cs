@@ -17,7 +17,7 @@ public class NextLevelBtn : MonoBehaviour
             signalBus.Fire<PlayerStartNextLevel>();
             DisableBtn();
         });
-        signalBus.Subscribe<LocationCompletedSignal>(EnableBtn);
+        signalBus.Subscribe<LocationMissionComplete>(EnableBtn);
         interactiveText = GetComponentInChildren<Text>().gameObject;
         DisableBtn();
     }

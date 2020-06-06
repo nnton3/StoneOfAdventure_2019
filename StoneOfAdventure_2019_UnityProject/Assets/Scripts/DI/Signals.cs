@@ -1,13 +1,8 @@
-﻿using StoneOfAdventure.Artifacts;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class LocationCompletedSignal { }
+public class LocationMissionComplete { }
 public class PlayerStartNextLevel { }
-
-public class LocationPointsUpdated
-{
-    public int currentValue;
-}
+public class LevelUp { }
 
 public class LocationPointsTargetValueUpdated
 {

@@ -1,24 +1,28 @@
 ﻿using StoneOfAdventure.Combat;
 using UnityEngine;
-using UnityEngine.Events;
+using UniRx;
+using Zenject;
 
 namespace StoneOfAdventure.Core
 {
     public class PlayerLevelObserver : MonoBehaviour
     {
         #region Variables
-        [SerializeField] private int baseExpirienceNeedToLevelUp = 100;
-        public int MaxExperience => baseExpirienceNeedToLevelUp;
-        [SerializeField] private float damageGetForLevel = 0.1f;
-        [SerializeField] private float healthGetForLevel = 0.1f;
-        [SerializeField] private float increaseLevelUpExperience = 0.1f;
-        [HideInInspector] public UnityEvent UpdateCurrentExperience;
-        [HideInInspector] public UnityEvent UpdateMaxExperience;
-
-        private int currentExperienceValue = 0;
-        public int CurrentExperience => currentExperienceValue;
         private GameObject player;
+
+        [Inject] private SignalBus signalBus;
+        [Inject] private MainLvlConfig config;
+        [Inject] private LevelUpUI levelUpUI;
+
+        public ReactiveProperty<int> CurrentExperience { get; private set; }
+        public ReactiveProperty<int> ExpValueNeedToLevelUp { get; private set; } 
         #endregion
+
+        private void Awake()
+        {
+            CurrentExperience = new ReactiveProperty<int>(0);
+            ExpValueNeedToLevelUp = new ReactiveProperty<int>(config.ExpValueNeedToLevelUp);
+        }
 
         private void Start()
         {
@@ -27,29 +31,19 @@ namespace StoneOfAdventure.Core
 
         public void UpdateExperienceValue(int experience)
         {
-            currentExperienceValue += experience;
-            if (currentExperienceValue >= baseExpirienceNeedToLevelUp)
+            CurrentExperience.Value += experience;
+            if (CurrentExperience.Value >= ExpValueNeedToLevelUp.Value)
             {
-                currentExperienceValue -= baseExpirienceNeedToLevelUp;
+                CurrentExperience.Value -= ExpValueNeedToLevelUp.Value;
                 LevelUp();
             }
-            UpdateCurrentExperience?.Invoke();
         }
 
         private void LevelUp()
         {
-            var playerHealth = player.GetComponent<Health>();
-            playerHealth.UpdateMaxHealthPoints(healthGetForLevel);
-            playerHealth.Heal(playerHealth.MaxHealthPoints.Value - playerHealth.HealthPoints.Value);
-            player.GetComponent<Fighter>().IncreaseBaseDamage(damageGetForLevel);
-            var skills = player.GetComponents<SkillBase>();
-            foreach (var skill in skills)
-            {
-                skill.IncreaseBaseDamage(damageGetForLevel);
-            }
-            baseExpirienceNeedToLevelUp += (int)(increaseLevelUpExperience * baseExpirienceNeedToLevelUp);
-            UpdateMaxExperience?.Invoke();
-            Instantiate(Resources.Load("LevelUp"), player.transform.position, Quaternion.identity);
+            signalBus.Fire<LevelUp>();
+            ExpValueNeedToLevelUp.Value += (int)(config.IncreaseLevelUpExperience * ExpValueNeedToLevelUp.Value);
+            levelUpUI.gameObject.SetActive(true);
         }
     }
 }

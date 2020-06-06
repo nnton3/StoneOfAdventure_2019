@@ -1,28 +1,30 @@
-﻿using UnityEngine;
+﻿using UniRx;
+using UnityEngine;
 using UnityEngine.Events;
 using Zenject;
 
 public class LocationPointsStorage : MonoBehaviour
 {
-    private int locationPoints;
-    public int LocationPointsValue => locationPoints;
-    [SerializeField] private int maxLocationPoints;
-    public int LocationPointsMaxValue => maxLocationPoints;
+    [Inject] readonly MainLvlConfig config;
     [Inject] readonly SignalBus signalBus;
+
+    public ReactiveProperty<int> LocationPoints { get; private set; }
+
+    private void Awake()
+    {
+        LocationPoints = new ReactiveProperty<int>(0);
+    }
 
     public void AddPoints(int value)
     {
         if (value == 0) return;
-        locationPoints += value;
-        if (locationPoints > maxLocationPoints) locationPoints = maxLocationPoints;
-        if (locationPoints == maxLocationPoints) signalBus.Fire<LocationCompletedSignal>();
-
-        signalBus.Fire(new LocationPointsUpdated { currentValue = locationPoints });
+        LocationPoints.Value += value;
+        if (LocationPoints.Value > config.TargetLocationPointsValue) LocationPoints.Value = config.TargetLocationPointsValue;
+        if (LocationPoints.Value == config.TargetLocationPointsValue) signalBus.Fire<LocationMissionComplete>();
     }
 
     public void ResetPointValue()
     {
-        locationPoints = 0;
-        signalBus.Fire(new LocationPointsUpdated { currentValue = locationPoints});
+        LocationPoints.Value = 0;
     }
 }

@@ -45,10 +45,11 @@ namespace StoneOfAdventure.Combat
                 Gizmos.DrawWireCube(transform.position + melee3AreaCenter, melee3Area);
         }
 
-        protected override void Start()
+        protected override void Awake()
         {
-            base.Start();
+            base.Awake();
             rb = GetComponent<Rigidbody2D>();
+
             hitTrigger1.Initialize(melee1AreaCenter, melee1Area, damageMelee1);
             hitTrigger2.Initialize(melee2AreaCenter, melee2Area, damageMelee2);
         }
